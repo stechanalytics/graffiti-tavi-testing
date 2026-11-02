@@ -1,0 +1,31 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "fte-2024-03-31-pl.tavi.json",
+  "source": "fte-2024-03-31-pl.xhtml",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 533,
+  "leftOut": 0,
+  "detailsMissing": 388,
+  "taviCannotExpress": 388,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "count": 388,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 82,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

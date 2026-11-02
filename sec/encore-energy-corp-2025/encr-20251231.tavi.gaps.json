@@ -1,0 +1,87 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "encr-20251231.tavi.json",
+  "source": "encr-20251231.htm",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 1118,
+  "leftOut": 0,
+  "detailsMissing": 869,
+  "taviCannotExpress": 869,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:f-36",
+   "concept": "dei:EntityCentralIndexKey",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-37",
+   "concept": "dei:DocumentFiscalYearFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-38",
+   "concept": "dei:DocumentFiscalPeriodFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-39",
+   "concept": "dei:AmendmentFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-853",
+   "concept": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod1",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1117",
+   "concept": "ecd:TrdArrDuration",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-913",
+   "concept": "us-gaap:DebtInstrumentConvertibleConversionRatio1",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1101",
+   "concept": "us-gaap:NumberOfReportableSegments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "count": 861,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 52,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

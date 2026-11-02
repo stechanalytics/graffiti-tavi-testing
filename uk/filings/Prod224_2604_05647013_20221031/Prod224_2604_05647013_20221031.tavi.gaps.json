@@ -1,0 +1,501 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "Prod224_2604_05647013_20221031.tavi.json",
+  "source": "Prod224_2604_05647013_20221031.html",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 68,
+  "leftOut": 0,
+  "detailsMissing": 108,
+  "taviCannotExpress": 108,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:fact-141aea03abcea49f",
+   "concept": "bus:StartDateForPeriodCoveredByReport",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-9185eb0d0d6026f1",
+   "concept": "bus:EndDateForPeriodCoveredByReport",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f5602c49cead480d",
+   "concept": "bus:EntityTradingStatus",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-064ed3b74e1cbe83",
+   "concept": "bus:EntityDormantTruefalse",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-30613943523b3587",
+   "concept": "bus:LegalFormEntity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-932139373b2f598b",
+   "concept": "bus:ApplicableLegislation",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-4244b66738d62ccb",
+   "concept": "bus:AccountsType",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-262c1d5aebf1f836",
+   "concept": "bus:AccountsStatusAuditedOrUnaudited",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-04357b5c5c7ff3e8",
+   "concept": "bus:AccountingStandardsApplied",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-5e549f51eaa9ab65",
+   "concept": "core:DirectorSigningFinancialStatements",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-4668cd12110986b6",
+   "concept": "bus:NameProductionSoftware",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d9d1d6f7c68db94b",
+   "concept": "bus:VersionProductionSoftware",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-03f09e17f06020eb",
+   "concept": "bus:UKCompaniesHouseRegisteredNumber",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-e0c3eaf808948a94",
+   "concept": "bus:EntityCurrentLegalOrRegisteredName",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d5497ded83b6ce79",
+   "concept": "bus:ReportTitle",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-141aea03abcea49f-2",
+   "concept": "bus:StartDateForPeriodCoveredByReport",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-9185eb0d0d6026f1-2",
+   "concept": "bus:EndDateForPeriodCoveredByReport",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-558748d3864a7057",
+   "concept": "accrep:DateAccountantsReport",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-42c5e26a422fe876",
+   "concept": "bus:BalanceSheetDate",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-6dc5a16c0c1c6df8",
+   "concept": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-89973ec49cfc7160",
+   "concept": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-c03cd1c8387bc124",
+   "concept": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-949f49a35f16f3ef",
+   "concept": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f7912ee4ea26b5a8",
+   "concept": "direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f85c02888ddddb0c",
+   "concept": "core:DateAuthorisationFinancialStatementsForIssue",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-229f0e861a749ffa",
+   "concept": "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d4c934334a874a0f",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-aad5b064a1624098",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-2708c08c00e31b48",
+   "concept": "core:FixedAssets",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-680c098b743e8acf",
+   "concept": "core:FixedAssets",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-a0df3194cebd53e0",
+   "concept": "core:Debtors",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-be499c406e3ef834",
+   "concept": "core:Debtors",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-557c6547e3558a33",
+   "concept": "core:CashBankOnHand",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-b10174c00cffbfdc",
+   "concept": "core:CashBankOnHand",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-9d844fd15b630c65",
+   "concept": "core:CurrentAssets",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-7ee1928249d1f53e",
+   "concept": "core:CurrentAssets",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f099124d22866159",
+   "concept": "core:Creditors",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-b1314540661ff0bc",
+   "concept": "core:Creditors",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-26e23d2b0b237ac7",
+   "concept": "core:NetCurrentAssetsLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-731b7f8ef17f2962",
+   "concept": "core:NetCurrentAssetsLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-87b90ca56277d0f9",
+   "concept": "core:TotalAssetsLessCurrentLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d519eef0e22fe674",
+   "concept": "core:TotalAssetsLessCurrentLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-e060ee1283af1f06",
+   "concept": "core:NetAssetsLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-0b06de9542a56789",
+   "concept": "core:NetAssetsLiabilities",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-b108e668a94721dc",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d875bc473352b7db",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-6cd46f8859e2b98c",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-42dbf79dd8144dd9",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-b7259a10ed57bb94",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-0e78f57bd412ed0f",
+   "concept": "core:Equity",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-1c5618a275c6b486",
+   "concept": "core:AverageNumberEmployeesDuringPeriod",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d761f81c6300d9b0",
+   "concept": "core:AverageNumberEmployeesDuringPeriod",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-721e0b4f540557cb",
+   "concept": "core:PropertyPlantEquipmentGrossCost",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f99ec4013d010fcd",
+   "concept": "core:PropertyPlantEquipmentGrossCost",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-131b0b536ce3e387",
+   "concept": "core:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-f7372bc501492aa9",
+   "concept": "core:AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-573249c4533b8f98",
+   "concept": "core:PropertyPlantEquipmentGrossCost",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-a477c8cee3a5f822",
+   "concept": "core:PropertyPlantEquipmentGrossCost",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-5978e8507743fc8c",
+   "concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-0a393c6a82cb4ac6",
+   "concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-77181878f720b294",
+   "concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-270fc6eee2dfb50a",
+   "concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-63d00a6c33517410",
+   "concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-2336b98e4403f722",
+   "concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-83034ccb8b62a8f7",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-d4c934334a874a0f-2",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-41be1c2c0504af70",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:fact-aad5b064a1624098-2",
+   "concept": "core:PropertyPlantEquipment",
+   "what": "its place in the filing",
+   "why": "the tag has no id, and the draft locates an HTML element only by its id (14.3.11); Arelle's htmlElementPointer is not in the draft"
+  },
+  {
+   "leftOut": false,
+   "count": 40,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": []
+}

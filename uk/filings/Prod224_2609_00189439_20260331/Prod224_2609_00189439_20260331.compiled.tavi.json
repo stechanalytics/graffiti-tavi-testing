@@ -1,0 +1,4989 @@
+{
+ "documentInfo": {
+  "documentType": "https://xbrl.org/PWD/2026-09-01/compiled",
+  "description": "Facts of the Inline XBRL filing Prod224_2609_00189439_20260331.html, converted in Graffiti, compiled with the parts of the taxonomy at https://xbrl.frc.org.uk/char/2026-01-01/char-2026-01-01.xsd that they use.",
+  "namespaces": {
+   "aurep": "http://xbrl.frc.org.uk/reports/2026-01-01/aurep",
+   "bus": "http://xbrl.frc.org.uk/cd/2026-01-01/business",
+   "char": "http://xbrl.frc.org.uk/char/2026-01-01",
+   "core": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+   "direp": "http://xbrl.frc.org.uk/reports/2026-01-01/direp",
+   "gr": "https://stechanalytics.com/tavi/Prod224_2609_00189439_20260331",
+   "iso4217": "http://www.xbrl.org/2003/iso4217",
+   "scheme": "http://www.companieshouse.gov.uk/",
+   "types": "http://xbrl.frc.org.uk/general/2026-01-01/types",
+   "xbrl": "https://xbrl.org/PWD/2026-09-01",
+   "xbrla": "https://xbrl.org/PWD/2026-09-01/accounting",
+   "xbrlr": "https://xbrl.org/PWD/2026-09-01/report",
+   "xs": "http://www.w3.org/2001/XMLSchema"
+  },
+  "sourceMappings": [
+   {
+    "sourceName": "gr:html",
+    "url": "Prod224_2609_00189439_20260331.html"
+   }
+  ]
+ },
+ "xbrlModel": {
+  "name": "gr:Prod224_2609_00189439_20260331",
+  "headings": [
+   {
+    "name": "aurep:AuditorInformationHeading"
+   },
+   {
+    "name": "bus:BusinessReport-specificDimensionsHeading"
+   },
+   {
+    "name": "bus:DimensionsContentHeading"
+   },
+   {
+    "name": "bus:EntityIdentifyingCodesHeading"
+   },
+   {
+    "name": "bus:EntityInformationHeading"
+   },
+   {
+    "name": "bus:EntityNamesHeading"
+   },
+   {
+    "name": "bus:EntityOfficers-specificDimensionsHeading"
+   },
+   {
+    "name": "bus:EntityOfficersIncludingDirectorsPartnersHeading"
+   },
+   {
+    "name": "bus:OperationalStatusEntityHeading"
+   },
+   {
+    "name": "bus:ReportDatesPeriodsCoveredHeading"
+   },
+   {
+    "name": "bus:ReportInformationHeading"
+   },
+   {
+    "name": "bus:ThirdPartyAgentsHeading"
+   },
+   {
+    "name": "bus:XBRLProductionSoftwareHeading"
+   },
+   {
+    "name": "char:AnalysisNetAssetsBetweenFundsHeading"
+   },
+   {
+    "name": "char:AnalysisNetAssetsDateMergerHeading"
+   },
+   {
+    "name": "char:AnalysisPrincipalSoFAComponentsRelatingToCharityMergerHeading"
+   },
+   {
+    "name": "char:CharityAuditReportHeading"
+   },
+   {
+    "name": "char:CharityFundsHeading"
+   },
+   {
+    "name": "char:DisclosuresOnCharityMergersHeading"
+   },
+   {
+    "name": "char:FinancialReviewHeading"
+   },
+   {
+    "name": "char:IndependentExaminerInformationHeading"
+   },
+   {
+    "name": "char:IndependentExaminersReportHeading"
+   },
+   {
+    "name": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading"
+   },
+   {
+    "name": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading"
+   },
+   {
+    "name": "char:LinkedCharitiesHeading"
+   },
+   {
+    "name": "char:ListTrusteesHeading"
+   },
+   {
+    "name": "char:ReferenceAdministrationDetailsHeading"
+   },
+   {
+    "name": "char:StatementFinancialActivitiesHeading"
+   },
+   {
+    "name": "char:TrusteesAnnualReportHeading"
+   },
+   {
+    "name": "core:AdditionalIndustrySectorDataItemsHeading"
+   },
+   {
+    "name": "core:ApprovalFinancialStatementsHeading"
+   },
+   {
+    "name": "core:AverageNumberEmployeesByDepartmentHeading"
+   },
+   {
+    "name": "core:BalanceSheetBankingFinanceSectorHeading"
+   },
+   {
+    "name": "core:BalanceSheetFormat1Heading"
+   },
+   {
+    "name": "core:BalanceSheetStatementFinancialPositionHeading"
+   },
+   {
+    "name": "core:BankingFinanceSectorItemsHeading"
+   },
+   {
+    "name": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading"
+   },
+   {
+    "name": "core:BusinessCombinationsHeading"
+   },
+   {
+    "name": "core:DisclosuresOnSpecificBusinessCombinationsHeading"
+   },
+   {
+    "name": "core:EmployeeBenefitsOtherEmployeeInformationHeading"
+   },
+   {
+    "name": "core:EmployeeInformationHeading"
+   },
+   {
+    "name": "core:NotesDetailedDisclosuresHeading"
+   },
+   {
+    "name": "direp:DirectorsStrategicReportHeading"
+   },
+   {
+    "name": "direp:EntityDirectorsStatementsHeading"
+   },
+   {
+    "name": "direp:ListDirectorsHeading"
+   }
+  ],
+  "concepts": [
+   {
+    "name": "bus:AccountingStandardsApplied",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:AccountsStatusAuditedOrUnaudited",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:AccountsType",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:BalanceSheetDate",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "bus:EndDateForPeriodCoveredByReport",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "bus:EntityCurrentLegalOrRegisteredName",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:EntityDormantTruefalse",
+    "dataType": "xs:boolean",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:EntityTradingStatus",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:NameEntityAuditors",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:NameEntityExaminers",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:NameEntityOfficer",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:NameProductionSoftware",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+    "dataType": "xs:boolean",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:StartDateForPeriodCoveredByReport",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "bus:UKCompaniesHouseRegisteredNumber",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "bus:VersionProductionSoftware",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse",
+    "dataType": "xs:boolean",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "char:CharityFunds",
+    "dataType": "xbrlr:monetary",
+    "periodType": "instant",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
+   },
+   {
+    "name": "char:CharityRegistrationNumberEnglandWales",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "char:DateIndependentExaminersReport",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "core:AverageNumberEmployeesDuringPeriod",
+    "dataType": "types:nonNegativeDecimalItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "core:DateAuthorisationFinancialStatementsForIssue",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "core:DirectorSigningFinancialStatements",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "direp:DateSigningDirectorsReport",
+    "dataType": "xs:date",
+    "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "direp:DirectorSigningDirectorsReport",
+    "dataType": "types:fixedItemType",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   },
+   {
+    "name": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+    "dataType": "xs:string",
+    "periodType": "duration",
+    "nillable": true
+   }
+  ],
+  "dataTypes": [
+   {
+    "name": "types:fixedItemType",
+    "baseType": "xs:string"
+   },
+   {
+    "name": "types:nonNegativeDecimalItemType",
+    "baseType": "xs:decimal"
+   },
+   {
+    "name": "xbrl:languageType",
+    "baseType": "xs:string",
+    "patterns": [
+     "^[a-zA-Z]{2,3}(-[a-zA-Z0-9]{2,8})*$"
+    ]
+   },
+   {
+    "name": "xbrla:balanceType",
+    "baseType": "xs:string",
+    "enumeration": [
+     "debit",
+     "credit"
+    ],
+    "allowedObjects": [
+     "xbrl:propertyTypeObject"
+    ]
+   },
+   {
+    "name": "xbrlr:monetary",
+    "baseType": "xs:decimal",
+    "allowedObjects": [
+     "xbrl:conceptObject",
+     "xbrl:unitObject"
+    ]
+   },
+   {
+    "name": "xs:anySimpleType",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:boolean",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:date",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:dateTime",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:decimal",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:QName",
+    "baseType": "xs:anySimpleType"
+   },
+   {
+    "name": "xs:string",
+    "baseType": "xs:anySimpleType"
+   }
+  ],
+  "dimensions": [
+   {
+    "name": "bus:AccountingStandardsDimension",
+    "domainClass": "bus:AccountingStandardsHeading"
+   },
+   {
+    "name": "bus:AccountsStatusDimension",
+    "domainClass": "bus:AccountsStatusHeading"
+   },
+   {
+    "name": "bus:AccountsTypeDimension",
+    "domainClass": "bus:AccountsTypeHeading"
+   },
+   {
+    "name": "bus:EntityOfficersDimension",
+    "domainClass": "bus:AllEntityOfficersEntityOfficersTotalDefault"
+   },
+   {
+    "name": "xbrl:concept",
+    "domainClass": "xbrl:conceptDomain"
+   },
+   {
+    "name": "xbrl:entity",
+    "domainClass": "xbrl:entityDomain"
+   },
+   {
+    "name": "xbrl:language",
+    "domainClass": "xbrl:languageDomain"
+   },
+   {
+    "name": "xbrl:period",
+    "domainClass": "xbrl:periodDomain"
+   },
+   {
+    "name": "xbrl:unit",
+    "domainClass": "xbrl:unitDomain"
+   }
+  ],
+  "domainClasses": [
+   {
+    "name": "bus:AccountingStandardsHeading",
+    "allowedDomainItem": "xbrl:memberObject"
+   },
+   {
+    "name": "bus:AccountsStatusHeading",
+    "allowedDomainItem": "xbrl:memberObject"
+   },
+   {
+    "name": "bus:AccountsTypeHeading",
+    "allowedDomainItem": "xbrl:memberObject"
+   },
+   {
+    "name": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "allowedDomainItem": "xbrl:memberObject"
+   },
+   {
+    "name": "xbrl:conceptDomain",
+    "allowedDomainItem": "xbrl:conceptObject"
+   },
+   {
+    "name": "xbrl:entityDomain",
+    "allowedDomainItem": "xbrl:entityObject"
+   },
+   {
+    "name": "xbrl:languageDomain",
+    "allowedDomainItem": "xbrl:languageType"
+   },
+   {
+    "name": "xbrl:periodDomain",
+    "allowedDomainItem": "xs:dateTime"
+   },
+   {
+    "name": "xbrl:unitDomain",
+    "allowedDomainItem": "xbrl:unitObject"
+   }
+  ],
+  "members": [
+   {
+    "name": "bus:CompanySecretary1",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director1",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director2",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director3",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director4",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director5",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:Director6",
+    "domainClasses": [
+     "bus:AllEntityOfficersEntityOfficersTotalDefault"
+    ]
+   },
+   {
+    "name": "bus:FRS102",
+    "domainClasses": [
+     "bus:AccountingStandardsHeading"
+    ]
+   },
+   {
+    "name": "bus:FullAccounts",
+    "domainClasses": [
+     "bus:AccountsTypeHeading"
+    ]
+   },
+   {
+    "name": "char:IndependentExaminationCharity",
+    "domainClasses": [
+     "bus:AccountsStatusHeading"
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "forObject": "bus:AccountingStandardsApplied",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Use accounting standards dimension to identify accounting standards applied to report."
+   },
+   {
+    "forObject": "bus:AccountingStandardsApplied",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounting standards applied"
+   },
+   {
+    "forObject": "bus:AccountingStandardsApplied",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Defnyddiwch dimensiwn safonau cyfrifyddu i enwi'r safonau cyfrifyddu a gymhwyswyd i'r adroddiad"
+   },
+   {
+    "forObject": "bus:AccountingStandardsApplied",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Safonau cyfrifydd a gymhwyswyd"
+   },
+   {
+    "forObject": "bus:AccountsStatusAuditedOrUnaudited",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Use accounts status dimension to identify audited or unaudited status of accounts."
+   },
+   {
+    "forObject": "bus:AccountsStatusAuditedOrUnaudited",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts status, audited or unaudited"
+   },
+   {
+    "forObject": "bus:AccountsStatusAuditedOrUnaudited",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Defnyddiwch dimensiwn statws cyfrifon i enwi statws archwilio neu ddim wedi eu harchwilio y cyfrifon"
+   },
+   {
+    "forObject": "bus:AccountsStatusAuditedOrUnaudited",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Statws cyfrifon, wedi eu harchwilio neu heb eu harchwilio"
+   },
+   {
+    "forObject": "bus:AccountsType",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts type"
+   },
+   {
+    "forObject": "bus:AccountsType",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Math o gyfrifon"
+   },
+   {
+    "forObject": "bus:BalanceSheetDate",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "This is the normal fiscal year or accounting period end-date"
+   },
+   {
+    "forObject": "bus:BalanceSheetDate",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Balance sheet date"
+   },
+   {
+    "forObject": "bus:BalanceSheetDate",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Hon yw'r flwyddyn ariannol arferol neu ddyddiad diwedd y cyfnod cyfrifyddu"
+   },
+   {
+    "forObject": "bus:BalanceSheetDate",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad mantolen"
+   },
+   {
+    "forObject": "bus:EndDateForPeriodCoveredByReport",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Date of day on which period ended."
+   },
+   {
+    "forObject": "bus:EndDateForPeriodCoveredByReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "End date for period covered by report"
+   },
+   {
+    "forObject": "bus:EndDateForPeriodCoveredByReport",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Dyddiad y diwrnod y daeth y cyfnod i ben."
+   },
+   {
+    "forObject": "bus:EndDateForPeriodCoveredByReport",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad terfyn cyfnod yr adroddiad"
+   },
+   {
+    "forObject": "bus:EntityCurrentLegalOrRegisteredName",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Name under which entity is officially registered and identified.  Should be current name at end of reporting period."
+   },
+   {
+    "forObject": "bus:EntityCurrentLegalOrRegisteredName",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity current legal or registered name"
+   },
+   {
+    "forObject": "bus:EntityCurrentLegalOrRegisteredName",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Enw cofrestru ac adnabod swyddogol yr endid.  Dylai fod yr enw cyfredol ar ddiwedd y cyfnod adrodd."
+   },
+   {
+    "forObject": "bus:EntityCurrentLegalOrRegisteredName",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enw cyfreithiol neu gofrestredig presennol yr endid"
+   },
+   {
+    "forObject": "bus:EntityDormantTruefalse",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Include tag as 'TRUE' if statement applies.  No tagging required if 'FALSE'"
+   },
+   {
+    "forObject": "bus:EntityDormantTruefalse",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity is dormant [true/false]"
+   },
+   {
+    "forObject": "bus:EntityDormantTruefalse",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Endid yn segur [gwir/anwir]"
+   },
+   {
+    "forObject": "bus:EntityDormantTruefalse",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Dylech gynnwys y tag ‘GWIR' os yw'r datganiad yn berthnasol."
+   },
+   {
+    "forObject": "bus:EntityTradingStatus",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Use entity trading status dimension to identify trading status."
+   },
+   {
+    "forObject": "bus:EntityTradingStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity trading status"
+   },
+   {
+    "forObject": "bus:EntityTradingStatus",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Defnyddiwch dimensiwn statws masnachu yr endid i enwi statws masnachu."
+   },
+   {
+    "forObject": "bus:EntityTradingStatus",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Statws masnachu'r endid"
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Name of organisation responsible for audit."
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Name of entity auditors"
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Enw'r sefydliad sydd yn gyfrifol am archwilio."
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enw archwilwyr yr endid"
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:verboseLabel",
+    "language": "cy",
+    "value": "Enw'r cwmni archwilio"
+   },
+   {
+    "forObject": "bus:NameEntityAuditors",
+    "labelType": "xbrl:verboseLabel",
+    "language": "en",
+    "value": "Name of audit firm"
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:verboseLabel",
+    "language": "en",
+    "value": "Name of entity independent examiner"
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:verboseLabel",
+    "language": "cy",
+    "value": "Enw archwiliwr annibynnol yr endid"
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Name of organisation responsible for independent examination."
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Name of entity examiners"
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Enw'r sefydliad sydd yn gyfrifol am archwilio annibynnol."
+   },
+   {
+    "forObject": "bus:NameEntityExaminers",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enw archwilwyr yr endid"
+   },
+   {
+    "forObject": "bus:NameEntityOfficer",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Name of entity officer.  Use entity officer dimensions to identify role."
+   },
+   {
+    "forObject": "bus:NameEntityOfficer",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Name of entity officer"
+   },
+   {
+    "forObject": "bus:NameEntityOfficer",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Enw Swyddog yr endid.  Defnyddiwch ddimensiwn swyddogion endid i enwi rolau"
+   },
+   {
+    "forObject": "bus:NameEntityOfficer",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enw Swyddog yr endid"
+   },
+   {
+    "forObject": "bus:NameProductionSoftware",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Expected to be entered automatically by software."
+   },
+   {
+    "forObject": "bus:NameProductionSoftware",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Name of production software"
+   },
+   {
+    "forObject": "bus:NameProductionSoftware",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Disgwylir i hyn gael ei roi yn awtomatig gan feddalwedd."
+   },
+   {
+    "forObject": "bus:NameProductionSoftware",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enw meddalwedd cynhyrchu"
+   },
+   {
+    "forObject": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report includes a Detailed Profit and Loss statement [true/false]"
+   },
+   {
+    "forObject": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adroddiad yn cynnwys datganiad Elw a Cholled Manwl [gwir/anwir]"
+   },
+   {
+    "forObject": "bus:StartDateForPeriodCoveredByReport",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Date of day on which period started."
+   },
+   {
+    "forObject": "bus:StartDateForPeriodCoveredByReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Start date for period covered by report"
+   },
+   {
+    "forObject": "bus:StartDateForPeriodCoveredByReport",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Dyddiad y diwrnod y dechreuodd y cyfnod."
+   },
+   {
+    "forObject": "bus:StartDateForPeriodCoveredByReport",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad cychwyn y cyfnod y mae'r adroddiad yn ei gynnwys"
+   },
+   {
+    "forObject": "bus:UKCompaniesHouseRegisteredNumber",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "UK Companies House registered number"
+   },
+   {
+    "forObject": "bus:UKCompaniesHouseRegisteredNumber",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Rhif cofrestredig Tŷ'r Cwmnïau yn y DU"
+   },
+   {
+    "forObject": "bus:VersionProductionSoftware",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Expected to be entered automatically by software."
+   },
+   {
+    "forObject": "bus:VersionProductionSoftware",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Version of production software"
+   },
+   {
+    "forObject": "bus:VersionProductionSoftware",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Disgwylir i hyn gael ei roi yn awtomatig gan feddalwedd."
+   },
+   {
+    "forObject": "bus:VersionProductionSoftware",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Fersiwn meddalwedd cynhyrchu"
+   },
+   {
+    "forObject": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Charity audit carried out in accordance with the Charities Act 2011 [true/false]"
+   },
+   {
+    "forObject": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Archwiliad elusennol a gynhaliwyd yn unol â Deddf Elusennau 2011 [gwir/anwir]"
+   },
+   {
+    "forObject": "char:CharityFunds",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Charity funds"
+   },
+   {
+    "forObject": "char:CharityFunds",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cronfeydd elusennol"
+   },
+   {
+    "forObject": "char:CharityRegistrationNumberEnglandWales",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Charity registration number (England and Wales)"
+   },
+   {
+    "forObject": "char:CharityRegistrationNumberEnglandWales",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Rhif cofrestru'r elusen (Cymru a Lloegr)"
+   },
+   {
+    "forObject": "char:DateIndependentExaminersReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Date of independent examiner's report"
+   },
+   {
+    "forObject": "char:DateIndependentExaminersReport",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad adroddiad yw archwiliwr annibynnol"
+   },
+   {
+    "forObject": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement on respective responsibilities of directors/trustees and independent examiner"
+   },
+   {
+    "forObject": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad ar gyfrifoldebau perthnasol cyfarwyddwyr/ymddiriedolwyr a'r archwiliwr annibynnol"
+   },
+   {
+    "forObject": "core:AverageNumberEmployeesDuringPeriod",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Average number of employees during the period"
+   },
+   {
+    "forObject": "core:AverageNumberEmployeesDuringPeriod",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Nifer cyfartalog y gweithwyr yn ystod y cyfnod"
+   },
+   {
+    "forObject": "core:DateAuthorisationFinancialStatementsForIssue",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "For FRS 101 and FRS 102, this requirement is effectively covered by Company Act requirements on date and authorisation for issue."
+   },
+   {
+    "forObject": "core:DateAuthorisationFinancialStatementsForIssue",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Date of authorisation of financial statements for issue"
+   },
+   {
+    "forObject": "core:DateAuthorisationFinancialStatementsForIssue",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Ar gyfer FRS 101 a FRS 102, mae'r gofyniad i bob pwrpas yn cael ei gynnwys gan ofynion Deddf Cwmnïau ynghylch dyddiad ac awdurdod rhoi."
+   },
+   {
+    "forObject": "core:DateAuthorisationFinancialStatementsForIssue",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad awdurdodi datganiad ariannol ar gyfer eu cyhoeddi"
+   },
+   {
+    "forObject": "core:DirectorSigningFinancialStatements",
+    "labelType": "xbrl:verboseLabel",
+    "language": "en",
+    "value": "Director/trustee signing financial statements"
+   },
+   {
+    "forObject": "core:DirectorSigningFinancialStatements",
+    "labelType": "xbrl:verboseLabel",
+    "language": "cy",
+    "value": "Cyfarwyddwr/ymddiriedolwr sydd yn llofnodi datganiad ariannol"
+   },
+   {
+    "forObject": "core:DirectorSigningFinancialStatements",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director signing financial statements"
+   },
+   {
+    "forObject": "core:DirectorSigningFinancialStatements",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr sydd yn llofnodi datganiad ariannol"
+   },
+   {
+    "forObject": "direp:DateSigningDirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Date of signing of Directors' Report"
+   },
+   {
+    "forObject": "direp:DateSigningDirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiad llofnodi Adroddiad y Cyfarwyddwyr"
+   },
+   {
+    "forObject": "direp:DirectorSigningDirectorsReport",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Use entity officer dimensions to identify director(s) signing report."
+   },
+   {
+    "forObject": "direp:DirectorSigningDirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director signing Directors' Report"
+   },
+   {
+    "forObject": "direp:DirectorSigningDirectorsReport",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Ddefnyddiwch dimensiwn swyddog endid i enwi'r cyfarwyddwyr sydd yn llofnodi'r adroddiad"
+   },
+   {
+    "forObject": "direp:DirectorSigningDirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr sydd yn llofnodi Adroddiad y Cyfarwyddwyr"
+   },
+   {
+    "forObject": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement that accounts have been prepared in accordance with the provisions of the small companies regime"
+   },
+   {
+    "forObject": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad bod cyfrifon wedi cael eu paratoi yn unol â darpariaethau y gyfundrefn cwmnïau bach"
+   },
+   {
+    "forObject": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement that company entitled to exemption from audit under section 477 Companies Act 2006 relating to small companies"
+   },
+   {
+    "forObject": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad bod gan y cwmni hawl i esemptiad o archwiliad o dan adran 477 Deddf Cwmnïau 2006 mewn perthynas â chwmnïau bach"
+   },
+   {
+    "forObject": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+    "labelType": "xbrl:documentation",
+    "language": "en",
+    "value": "Tag may be used for the directors' acknowledgement of responsibilities both for audited entities and for entities exempt from audit."
+   },
+   {
+    "forObject": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement that directors acknowledge their responsibilities under the Companies Act"
+   },
+   {
+    "forObject": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+    "labelType": "xbrl:documentation",
+    "language": "cy",
+    "value": "Gellir defnyddio'r tag ar gyfer cydnabyddiaeth y cyfarwyddwyr o gyfrifoldebau ar ran endidau archwiliedig ac endidau sydd wedi eu hesemptio o archwiliad"
+   },
+   {
+    "forObject": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad bod cyfarwyddwyr yn cydnabod eu cyfrifoldebau o dan y Ddeddf Cwmnïau"
+   },
+   {
+    "forObject": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement that members have not required the company to obtain an audit"
+   },
+   {
+    "forObject": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad nad yw aelodau wedi ei gwneud yn ofynnol i'r cwmni gael archwiliad"
+   },
+   {
+    "forObject": "bus:AccountingStandardsDimension",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounting standards [Dimension]"
+   },
+   {
+    "forObject": "bus:AccountingStandardsDimension",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Safonau cyfrifyddu [Dimensiwn]"
+   },
+   {
+    "forObject": "bus:AccountingStandardsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounting standards [heading]"
+   },
+   {
+    "forObject": "bus:AccountingStandardsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Safonau cyfrifyddu [pennawd]"
+   },
+   {
+    "forObject": "bus:AccountsStatusDimension",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts status [Dimension]"
+   },
+   {
+    "forObject": "bus:AccountsStatusDimension",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Statws cyfrifon [Dimensiwn]"
+   },
+   {
+    "forObject": "bus:AccountsStatusHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts status [heading]"
+   },
+   {
+    "forObject": "bus:AccountsStatusHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Statws cyfrifon [pennawd]"
+   },
+   {
+    "forObject": "bus:AccountsTypeDimension",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts type [Dimension]"
+   },
+   {
+    "forObject": "bus:AccountsTypeDimension",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Math o gyfrifon [Dimensiwn]"
+   },
+   {
+    "forObject": "bus:AccountsTypeHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Accounts type [heading]"
+   },
+   {
+    "forObject": "bus:AccountsTypeHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Math o gyfrifon [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityOfficersDimension",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity officers [Dimension]"
+   },
+   {
+    "forObject": "bus:EntityOfficersDimension",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Swyddogion yr endid [Dimensiwn]"
+   },
+   {
+    "forObject": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "All entity officers / Entity officers total [default]"
+   },
+   {
+    "forObject": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Pob swyddog endid / cyfanswm swyddogion endid [diofyn]"
+   },
+   {
+    "forObject": "bus:CompanySecretary1",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Company secretary 1"
+   },
+   {
+    "forObject": "bus:CompanySecretary1",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Ysgrifennydd y Cwmni 1"
+   },
+   {
+    "forObject": "bus:Director1",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 1"
+   },
+   {
+    "forObject": "bus:Director1",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 1"
+   },
+   {
+    "forObject": "bus:Director2",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 2"
+   },
+   {
+    "forObject": "bus:Director2",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 2"
+   },
+   {
+    "forObject": "bus:Director3",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 3"
+   },
+   {
+    "forObject": "bus:Director3",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 3"
+   },
+   {
+    "forObject": "bus:Director4",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 4"
+   },
+   {
+    "forObject": "bus:Director4",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 4"
+   },
+   {
+    "forObject": "bus:Director5",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 5"
+   },
+   {
+    "forObject": "bus:Director5",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 5"
+   },
+   {
+    "forObject": "bus:Director6",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 6"
+   },
+   {
+    "forObject": "bus:Director6",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 6"
+   },
+   {
+    "forObject": "bus:FRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "FRS 102"
+   },
+   {
+    "forObject": "bus:FRS102",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "FRS 102"
+   },
+   {
+    "forObject": "bus:FullAccounts",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Full accounts"
+   },
+   {
+    "forObject": "bus:FullAccounts",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfrifon llawn"
+   },
+   {
+    "forObject": "char:IndependentExaminationCharity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Independent examination (charity)"
+   },
+   {
+    "forObject": "char:IndependentExaminationCharity",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Archwiliad Annibynnol (elusen)"
+   },
+   {
+    "forObject": "aurep:AuditorInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Auditor information [heading]"
+   },
+   {
+    "forObject": "aurep:AuditorInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth yr archwilydd [pennawd]"
+   },
+   {
+    "forObject": "bus:BusinessReport-specificDimensionsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Business report-specific dimensions [heading]"
+   },
+   {
+    "forObject": "bus:BusinessReport-specificDimensionsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adrodd Busnes - dimensiynau penodol [pennawd]"
+   },
+   {
+    "forObject": "bus:DimensionsContentHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Dimensions content [heading]"
+   },
+   {
+    "forObject": "bus:DimensionsContentHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cynnwys dimensiynau [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityIdentifyingCodesHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity identifying codes [heading]"
+   },
+   {
+    "forObject": "bus:EntityIdentifyingCodesHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Codau adnabod yr endid [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity information [heading]"
+   },
+   {
+    "forObject": "bus:EntityInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth am yr endid [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityNamesHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity names [heading]"
+   },
+   {
+    "forObject": "bus:EntityNamesHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Enwau'r endid [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityOfficers-specificDimensionsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity officers-specific dimensions [heading]"
+   },
+   {
+    "forObject": "bus:EntityOfficers-specificDimensionsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Swyddogion yr endid-Dimensiynau penodol [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+    "labelType": "xbrl:verboseLabel",
+    "language": "en",
+    "value": "Entity officers, including directors, partners and trustees [heading]"
+   },
+   {
+    "forObject": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+    "labelType": "xbrl:verboseLabel",
+    "language": "cy",
+    "value": "Swyddogion yr endid, yn cynnwys cyfarwyddwyr, partneriaid ac ymddiriedolwyr [pennawd]"
+   },
+   {
+    "forObject": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity officers, including directors and partners [heading]"
+   },
+   {
+    "forObject": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Swyddogion yr endid, yn cynnwys cyfarwyddwyr a phartneriaid [pennawd]"
+   },
+   {
+    "forObject": "bus:OperationalStatusEntityHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Operational status of entity [heading]"
+   },
+   {
+    "forObject": "bus:OperationalStatusEntityHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Statws gweithredol yr endid [pennawd]"
+   },
+   {
+    "forObject": "bus:ReportDatesPeriodsCoveredHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report dates and periods covered [heading]"
+   },
+   {
+    "forObject": "bus:ReportDatesPeriodsCoveredHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dyddiadau a chyfnodau y mae'r adroddiad yn eu cynnwys [pennawd]"
+   },
+   {
+    "forObject": "bus:ReportInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report information [heading]"
+   },
+   {
+    "forObject": "bus:ReportInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth yr adroddiad [pennawd]"
+   },
+   {
+    "forObject": "bus:ThirdPartyAgentsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Third party agents [heading]"
+   },
+   {
+    "forObject": "bus:ThirdPartyAgentsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Asiantau trydydd parti [pennawd]"
+   },
+   {
+    "forObject": "bus:XBRLProductionSoftwareHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "XBRL production software [heading]"
+   },
+   {
+    "forObject": "bus:XBRLProductionSoftwareHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Meddalwedd cynhyrchu XBRL [pennawd]"
+   },
+   {
+    "forObject": "char:AnalysisNetAssetsBetweenFundsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Analysis of net assets between funds [heading]"
+   },
+   {
+    "forObject": "char:AnalysisNetAssetsBetweenFundsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dadansoddiad o asedau net rhwng cronfeydd [pennawd]"
+   },
+   {
+    "forObject": "char:AnalysisNetAssetsDateMergerHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Analysis of net assets at date of merger [heading]"
+   },
+   {
+    "forObject": "char:AnalysisNetAssetsDateMergerHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dadansoddiad o asedau net ar y dyddiad uno [pennawd]"
+   },
+   {
+    "forObject": "char:AnalysisPrincipalSoFAComponentsRelatingToCharityMergerHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Analysis of principal SoFA components relating to charity merger [heading]"
+   },
+   {
+    "forObject": "char:AnalysisPrincipalSoFAComponentsRelatingToCharityMergerHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Dadansoddiad o brif rannau SoFA cysylltiedig ag uno elusennau [pennawd]"
+   },
+   {
+    "forObject": "char:CharityAuditReportHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Charity audit report [heading]"
+   },
+   {
+    "forObject": "char:CharityAuditReportHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adroddiad archwilio elusen [pennawd]"
+   },
+   {
+    "forObject": "char:CharityFundsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Charity funds [heading]"
+   },
+   {
+    "forObject": "char:CharityFundsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cronfeydd elusen [pennawd]"
+   },
+   {
+    "forObject": "char:DisclosuresOnCharityMergersHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Disclosures on charity mergers [heading]"
+   },
+   {
+    "forObject": "char:DisclosuresOnCharityMergersHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datgeliadau ynghylch uno elusennau [pennawd]"
+   },
+   {
+    "forObject": "char:FinancialReviewHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Financial Review [heading]"
+   },
+   {
+    "forObject": "char:FinancialReviewHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adolygiad Ariannol [pennawd]"
+   },
+   {
+    "forObject": "char:IndependentExaminerInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Independent examiner information [heading]"
+   },
+   {
+    "forObject": "char:IndependentExaminerInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth yr archwiliwr annibynnol [pennawd]"
+   },
+   {
+    "forObject": "char:IndependentExaminersReportHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Independent examiner's report [heading]"
+   },
+   {
+    "forObject": "char:IndependentExaminersReportHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adroddiad yr archwiliwr Annibynnol [pennawd]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:terseLabel",
+    "language": "en",
+    "value": "Information required from tier 1, 2 and 3 charities [heading]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Information required from tier 1, 2 and 3 charities, reference and administration details [heading]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth sydd ei hangen gan elusennau haen 1, 2 a 3, manylion gweinyddu a chyfeirio [pennawd]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:terseLabel",
+    "language": "cy",
+    "value": "Gwybodaeth sydd ei hangen gan elusennau haen 1, 2 a 3 [pennawd]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+    "labelType": "xbrl:terseLabel",
+    "language": "en",
+    "value": "Information required from tier 2 and 3 charities [heading]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Information required from tier 2 and 3 charities, financial review [heading]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth sydd ei hangen gan elusennau haen 2 a 3, adolygiad ariannol [pennawd]"
+   },
+   {
+    "forObject": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+    "labelType": "xbrl:terseLabel",
+    "language": "cy",
+    "value": "Gwybodaeth sydd ei hangen gan elusennau haen 2 a 3 [pennawd]"
+   },
+   {
+    "forObject": "char:LinkedCharitiesHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Linked charities [heading]"
+   },
+   {
+    "forObject": "char:LinkedCharitiesHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Elusennau gysylltiedig [pennawd]"
+   },
+   {
+    "forObject": "char:ListTrusteesHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "List of trustees [heading]"
+   },
+   {
+    "forObject": "char:ListTrusteesHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Rhestr o ymddiriedolwyr [pennawd]"
+   },
+   {
+    "forObject": "char:ReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Reference and administration details [heading]"
+   },
+   {
+    "forObject": "char:ReferenceAdministrationDetailsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Manylion cyfeirio a gweinyddu [pennawd]"
+   },
+   {
+    "forObject": "char:StatementFinancialActivitiesHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statement of financial activities [heading]"
+   },
+   {
+    "forObject": "char:StatementFinancialActivitiesHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiad o weithgareddau ariannol [pennawd]"
+   },
+   {
+    "forObject": "char:TrusteesAnnualReportHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Trustees' Annual Report [heading]"
+   },
+   {
+    "forObject": "char:TrusteesAnnualReportHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Adroddiad blynyddol yr Ymddiriedolwyr [pennawd]"
+   },
+   {
+    "forObject": "core:AdditionalIndustrySectorDataItemsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Additional industry sector data items [heading]"
+   },
+   {
+    "forObject": "core:AdditionalIndustrySectorDataItemsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Eitemau data sector y diwydiant ychwanegol [pennawd]"
+   },
+   {
+    "forObject": "core:ApprovalFinancialStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Approval of financial statements [heading]"
+   },
+   {
+    "forObject": "core:ApprovalFinancialStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cymeradwyaeth i ddatganiadau ariannol [pennawd]"
+   },
+   {
+    "forObject": "core:AverageNumberEmployeesByDepartmentHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Average number of employees by department [heading]"
+   },
+   {
+    "forObject": "core:AverageNumberEmployeesByDepartmentHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Nifer cyfartalog y gweithwyr yn ôl adrannau [pennawd]"
+   },
+   {
+    "forObject": "core:BalanceSheetBankingFinanceSectorHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Balance sheet, banking and finance sector [heading]"
+   },
+   {
+    "forObject": "core:BalanceSheetBankingFinanceSectorHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Mantolen, sector bancio a chyllid [pennawd]"
+   },
+   {
+    "forObject": "core:BalanceSheetFormat1Heading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Balance sheet format 1 [heading]"
+   },
+   {
+    "forObject": "core:BalanceSheetFormat1Heading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Mantolen fformat 1 [pennawd]"
+   },
+   {
+    "forObject": "core:BalanceSheetStatementFinancialPositionHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Balance sheet / Statement of financial position [heading]"
+   },
+   {
+    "forObject": "core:BalanceSheetStatementFinancialPositionHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Mantolen / Datganiad Sefyllfa Ariannol [pennawd]"
+   },
+   {
+    "forObject": "core:BankingFinanceSectorItemsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Banking and finance sector items [heading]"
+   },
+   {
+    "forObject": "core:BankingFinanceSectorItemsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Eitemau sector bancio a chyllid [pennawd]"
+   },
+   {
+    "forObject": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Basis of preparation and general information on financial statements [heading]"
+   },
+   {
+    "forObject": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Sail paratoi a gwybodaeth gyffredinol ar ddatganiadau ariannol [pennawd]"
+   },
+   {
+    "forObject": "core:BusinessCombinationsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Business combinations [heading]"
+   },
+   {
+    "forObject": "core:BusinessCombinationsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfuniadau Busnes [pennawd]"
+   },
+   {
+    "forObject": "core:DisclosuresOnSpecificBusinessCombinationsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Disclosures on specific business combinations [heading]"
+   },
+   {
+    "forObject": "core:DisclosuresOnSpecificBusinessCombinationsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datgeliadau ynghylch cyfuniadau Busnes penodol [pennawd]"
+   },
+   {
+    "forObject": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Employee benefits and other employee information [heading]"
+   },
+   {
+    "forObject": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Sylwad testun rhydd a gwybodaeth arall am weithwyr [pennawd]"
+   },
+   {
+    "forObject": "core:EmployeeInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Employee information [heading]"
+   },
+   {
+    "forObject": "core:EmployeeInformationHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwybodaeth gweithwyr [pennawd]"
+   },
+   {
+    "forObject": "core:NotesDetailedDisclosuresHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Notes and detailed disclosures [heading]"
+   },
+   {
+    "forObject": "core:NotesDetailedDisclosuresHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Nodiadau a datgeliadau manwl [pennawd]"
+   },
+   {
+    "forObject": "direp:DirectorsStrategicReportHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Directors'/Strategic Report [heading]"
+   },
+   {
+    "forObject": "direp:DirectorsStrategicReportHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwyr/Adroddiad Strategol [pennawd]"
+   },
+   {
+    "forObject": "direp:EntityDirectorsStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Entity and directors' statements [heading]"
+   },
+   {
+    "forObject": "direp:EntityDirectorsStatementsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Datganiadau endid a chyfarwyddwyr [pennawd]"
+   },
+   {
+    "forObject": "direp:ListDirectorsHeading",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "List of directors [heading]"
+   },
+   {
+    "forObject": "direp:ListDirectorsHeading",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Rhestr o gyfarwyddwyr [pennawd]"
+   },
+   {
+    "forObject": "gr:Entity-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "002 - Entity Information"
+   },
+   {
+    "forObject": "gr:Report-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "003 - Report Information"
+   },
+   {
+    "forObject": "gr:DirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "010 - Directors'/Strategic Report"
+   },
+   {
+    "forObject": "gr:TrusteesAnnualReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "011 - Trustees' Annual Report"
+   },
+   {
+    "forObject": "gr:AuditReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "015 - Audit Report"
+   },
+   {
+    "forObject": "gr:CharityAuditReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "017 - Charity Audit Report"
+   },
+   {
+    "forObject": "gr:IndependentExaminersReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "018 - Independent Examiner's Report"
+   },
+   {
+    "forObject": "gr:StatementFinancialActivities",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "210 - Statement of Financial Activities"
+   },
+   {
+    "forObject": "gr:BalanceSheetCharitiesFRS102SORP",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "224 - Balance Sheet (Charities FRS 102 SORP)"
+   },
+   {
+    "forObject": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "304 - Notes and Detailed Disclosures (Charities FRS 102 SORP)"
+   },
+   {
+    "forObject": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "404 - Additional Industry Sector Data (Charities FRS 102 SORP)"
+   },
+   {
+    "forObject": "gr:Dimensions-Content",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "500 - Dimensions Content"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic_BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-ThirdPartyAgents",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9016 - Hypercube - Third Party Agents"
+   },
+   {
+    "forObject": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9016 - Hypercube - Third Party Agents"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-BusinessCombinations",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9154 - Hypercube - Business Combinations"
+   },
+   {
+    "forObject": "gr:Hypercube-BusinessCombinations_BusinessCombinationsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9154 - Hypercube - Business Combinations"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:Hypercube-BusinessCombinations-LinkedCharity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9167 - Hypercube - Business Combinations - Linked Charity"
+   },
+   {
+    "forObject": "gr:Hypercube-BusinessCombinations-LinkedCharity_BusinessCombinations-LinkedCharityHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9167 - Hypercube - Business Combinations - Linked Charity"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialActivitiesCharities",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9270 - Hypercube - Financial Activities (Charities)"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialActivitiesCharities_FinancialActivitiesCharitiesHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9270 - Hypercube - Financial Activities (Charities)"
+   },
+   {
+    "forObject": "gr:Hypercube-CharityFunds",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9310 - Hypercube - Charity Funds"
+   },
+   {
+    "forObject": "gr:Hypercube-CharityFunds_CharityFundsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Char - 9310 - Hypercube - Charity Funds"
+   },
+   {
+    "forObject": "gr:section_Reportinformation",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report information"
+   },
+   {
+    "forObject": "gr:section_Statements",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statements"
+   },
+   {
+    "forObject": "gr:section_Notes",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Notes"
+   },
+   {
+    "forObject": "gr:section_Other",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Other"
+   }
+  ],
+  "factSources": [
+   {
+    "name": "gr:html",
+    "factMapName": "gr:htmlMap"
+   }
+  ],
+  "factMaps": [
+   {
+    "name": "gr:htmlMap",
+    "factLocatorType": "xbrl:htmlElementLocatorType"
+   }
+  ],
+  "cubes": [
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Basic_BasicHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts"
+     },
+     {
+      "dimension": "bus:EntityOfficersDimension",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountingStandardsDimension",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsStatusDimension",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsTypeDimension",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations_BusinessCombinationsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-BusinessCombinations_BusinessCombinationsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Empty_EmptyHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations-LinkedCharity_BusinessCombinations-LinkedCharityHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-BusinessCombinations-LinkedCharity_BusinessCombinations-LinkedCharityHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialActivitiesCharities_FinancialActivitiesCharitiesHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialActivitiesCharities_FinancialActivitiesCharitiesHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-CharityFunds_CharityFundsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-CharityFunds_CharityFundsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "name": "gr:fact-9c49d697fa176ba3",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-2_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-dae0af7721e1c173-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-dae0af7721e1c173-2_fv",
+      "value": "Mr G Rafferty"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8969318ad41d171e-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director2",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8969318ad41d171e-2_fv",
+      "value": "Mr J Mace"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-017f69bede70c85a-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director3",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-017f69bede70c85a-2_fv",
+      "value": "Mr W Bowley"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f38705c1a83532d5-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director4",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f38705c1a83532d5-2_fv",
+      "value": "Mr D MacLeod"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-0a1705c6f49f897a-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director6",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-0a1705c6f49f897a-2_fv",
+      "value": "Mr F Robotham"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-350b279c93058ad0",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:CompanySecretary1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-350b279c93058ad0_fv",
+      "value": "Mr J Wilson"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b5bfbec7a12f33b3",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityRegistrationNumberEnglandWales",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b5bfbec7a12f33b3_fv",
+      "value": "220793"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4723492b100edbff",
+    "factDimensions": {
+     "xbrl:concept": "bus:UKCompaniesHouseRegisteredNumber",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4723492b100edbff_fv",
+      "value": "189439"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-2073863ca296d268",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameEntityAuditors",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-2073863ca296d268_fv",
+      "value": "Helen Furlong FCCAXeinadin North West Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-3",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-3_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-4",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-4_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-5",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-5_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-6",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-6_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-7",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-7_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-8",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-8_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-dae0af7721e1c173",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-dae0af7721e1c173_fv",
+      "value": "Mr G Rafferty"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8969318ad41d171e",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director2",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8969318ad41d171e_fv",
+      "value": "Mr J Mace"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-017f69bede70c85a",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director3",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-017f69bede70c85a_fv",
+      "value": "Mr W Bowley"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f38705c1a83532d5",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director4",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f38705c1a83532d5_fv",
+      "value": "Mr D MacLeod"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3c4719e4e23ddc90",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director5",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3c4719e4e23ddc90_fv",
+      "value": "Mr S F Gallimore"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-0a1705c6f49f897a",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director6",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-0a1705c6f49f897a_fv",
+      "value": "Mr F Robotham"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5bd26daeedaa74e2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director1",
+     "xbrl:concept": "direp:DirectorSigningDirectorsReport",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5bd26daeedaa74e2_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-90f95915d59be279",
+    "factDimensions": {
+     "xbrl:concept": "direp:DateSigningDirectorsReport",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-90f95915d59be279_fv",
+      "value": "2026-09-17"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-9",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-9_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e7a0b11845051df4",
+    "factDimensions": {
+     "xbrl:concept": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e7a0b11845051df4_fv",
+      "value": "As the trustees of the charity (and also its directors for the purposes of company law), you are responsible for the preparation of the financial statements in accordance with the requirements of the Companies Act 2006.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_NN_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_NN_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_NN_2"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_NN_3"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-50fd226bf98763ff",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameEntityExaminers",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-50fd226bf98763ff_fv",
+      "value": "Helen Furlong FCCAXeinadin North West Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3306168b12ce7eaf",
+    "factDimensions": {
+     "xbrl:concept": "char:DateIndependentExaminersReport",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3306168b12ce7eaf_fv",
+      "value": "2026-09-17"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-10",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-10_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-11",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-11_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-12",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-12_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-640629824064736e",
+    "factDimensions": {
+     "xbrl:concept": "bus:BalanceSheetDate",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-640629824064736e_fv",
+      "value": "2026-03-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-2815a220a26f2f1c",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-2815a220a26f2f1c_fv",
+      "value": "The company is entitled to the exemption from the audit requirement contained in section 477 of the Companies Act 2006, for the year ended 31 March 2026.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_NO_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cd7bc357a1130843",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cd7bc357a1130843_fv",
+      "value": "The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4f39b06ff1d9cccb",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4f39b06ff1d9cccb_fv",
+      "value": "The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-63aeb4a705cf9c63",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-63aeb4a705cf9c63_fv",
+      "value": "These financial statements have been prepared in accordance with the provisions applicable to companies subject to the small companies regime."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6e3010190e8a6955",
+    "factDimensions": {
+     "xbrl:concept": "core:DateAuthorisationFinancialStatementsForIssue",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6e3010190e8a6955_fv",
+      "value": "2026-09-17"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-79b246af527cc43b",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director1",
+     "xbrl:concept": "core:DirectorSigningFinancialStatements",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-79b246af527cc43b_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-13",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-13_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-14",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-14_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-15",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-15_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-16",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-16_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-17",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-17_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-18",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-18_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-19",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-19_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-20",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-20_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-21",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-21_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9c49d697fa176ba3-22",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9c49d697fa176ba3-22_fv",
+      "value": "THE MERSEY MISSION TO SEAFARERS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-484cc0b9d1e81d3d",
+    "factDimensions": {
+     "xbrl:concept": "bus:EndDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-484cc0b9d1e81d3d_fv",
+      "value": "2026-03-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3f2c26b1d4434e75",
+    "factDimensions": {
+     "xbrl:concept": "bus:StartDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3f2c26b1d4434e75_fv",
+      "value": "2025-04-01"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6e84e7ca10078b1e",
+    "factDimensions": {
+     "bus:AccountingStandardsDimension": "bus:FRS102",
+     "xbrl:concept": "bus:AccountingStandardsApplied",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6e84e7ca10078b1e_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7eb24c00bf2d441c",
+    "factDimensions": {
+     "bus:AccountsStatusDimension": "char:IndependentExaminationCharity",
+     "xbrl:concept": "bus:AccountsStatusAuditedOrUnaudited",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7eb24c00bf2d441c_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-987fe0e613639102",
+    "factDimensions": {
+     "xbrl:concept": "bus:VersionProductionSoftware",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-987fe0e613639102_fv",
+      "value": "CCH Accounts Production 2026.200"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e89be13a51424ae6",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e89be13a51424ae6_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b8f14ade56c63a9a",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b8f14ade56c63a9a_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8d930e7927c29b4d",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityDormantTruefalse",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8d930e7927c29b4d_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-aa4553b7782c0853",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityTradingStatus",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-aa4553b7782c0853_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-00a30e847ab118d0",
+    "factDimensions": {
+     "bus:AccountsTypeDimension": "bus:FullAccounts",
+     "xbrl:concept": "bus:AccountsType",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-00a30e847ab118d0_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-97d7fb49e92f33cd",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameProductionSoftware",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-97d7fb49e92f33cd_fv",
+      "value": "CCH Software"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c957b8af0e8a433b",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityFunds",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c957b8af0e8a433b_fv",
+      "value": "1347304.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-59fa29ed7e6c7bd1",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityFunds",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-59fa29ed7e6c7bd1_fv",
+      "value": "1319090.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-59fa29ed7e6c7bd1-2",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityFunds",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-59fa29ed7e6c7bd1-2_fv",
+      "value": "1319090.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c957b8af0e8a433b-2",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityFunds",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2026-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c957b8af0e8a433b-2_fv",
+      "value": "1347304.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-59fa29ed7e6c7bd1-3",
+    "factDimensions": {
+     "xbrl:concept": "char:CharityFunds",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-59fa29ed7e6c7bd1-3_fv",
+      "value": "1319090.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-41a6df61d697d165",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-41a6df61d697d165_fv",
+      "value": "0.01",
+      "decimals": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4ba204e37009c627",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:189439",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4ba204e37009c627_fv",
+      "value": "0.01",
+      "decimals": 2
+     }
+    ]
+   }
+  ],
+  "domainNetworks": [
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityCurrentLegalOrRegisteredName"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityDormantTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:BalanceSheetDate"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:StartDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EndDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportIncludesDetailedProfitLossStatementTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:DateSigningDirectorsReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:DateIndependentExaminersReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityOfficer"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityTradingStatus"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityOfficer"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:DirectorSigningDirectorsReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DirectorSigningFinancialStatements"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+    "root": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "relationships": [
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:CompanySecretary1"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director1"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director2"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director3"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director4"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director5"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director6"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityAuditors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityExaminers"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountingStandardsApplied"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension",
+    "root": "bus:AccountingStandardsHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsStatusAuditedOrUnaudited"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension",
+    "root": "bus:AccountsStatusHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "char:IndependentExaminationCharity"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsType"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension",
+    "root": "bus:AccountsTypeHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:AverageNumberEmployeesDuringPeriod"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations_BusinessCombinationsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityFunds"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:UKCompaniesHouseRegisteredNumber"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityRegistrationNumberEnglandWales"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameProductionSoftware"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:VersionProductionSoftware"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations-LinkedCharity_BusinessCombinations-LinkedCharityHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityFunds"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialActivitiesCharities_FinancialActivitiesCharitiesHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityFunds"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-CharityFunds_CharityFundsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "char:CharityFunds"
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "name": "gr:Entity-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Entity-Information"
+   },
+   {
+    "name": "gr:Report-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Report-Information"
+   },
+   {
+    "name": "gr:DirectorsReport",
+    "groupURI": "http://xbrl.frc.org.uk/direp/roles/DirectorsReport"
+   },
+   {
+    "name": "gr:TrusteesAnnualReport",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/TrusteesAnnualReport"
+   },
+   {
+    "name": "gr:AuditReport",
+    "groupURI": "http://xbrl.frc.org.uk/aurep/roles/AuditReport"
+   },
+   {
+    "name": "gr:CharityAuditReport",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/CharityAuditReport"
+   },
+   {
+    "name": "gr:IndependentExaminersReport",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/IndependentExaminersReport"
+   },
+   {
+    "name": "gr:StatementFinancialActivities",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/StatementFinancialActivities"
+   },
+   {
+    "name": "gr:BalanceSheetCharitiesFRS102SORP",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/BalanceSheetCharitiesFRS102SORP"
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/NotesAndDetailedDisclosuresCharitiesFRS102SORP"
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/AdditionalIndustrySectorDataCharitiesFRS102SORP"
+   },
+   {
+    "name": "gr:Dimensions-Content",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Dimensions-Content"
+   },
+   {
+    "name": "gr:Hypercube-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Basic"
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityTradingStatus"
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityOfficers"
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-ThirdPartyAgents"
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountingStandardsApplied"
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsStatus"
+   },
+   {
+    "name": "gr:Hypercube-AccountsType",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsType"
+   },
+   {
+    "name": "gr:Hypercube-Income-Main",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Income-Main"
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-BusinessCombinations"
+   },
+   {
+    "name": "gr:Hypercube-Empty",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Empty"
+   },
+   {
+    "name": "gr:Hypercube-BusinessCombinations-LinkedCharity",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/Hypercube-BusinessCombinations-LinkedCharity"
+   },
+   {
+    "name": "gr:Hypercube-FinancialActivitiesCharities",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/Hypercube-FinancialActivitiesCharities"
+   },
+   {
+    "name": "gr:Hypercube-CharityFunds",
+    "groupURI": "http://xbrl.frc.org.uk/char/roles/Hypercube-CharityFunds"
+   },
+   {
+    "name": "gr:section_Reportinformation"
+   },
+   {
+    "name": "gr:section_Statements"
+   },
+   {
+    "name": "gr:section_Notes"
+   },
+   {
+    "name": "gr:section_Other"
+   }
+  ],
+  "groupContents": [
+   {
+    "groupName": "gr:Entity-Information",
+    "forObject": "gr:Entity-Information_presentation"
+   },
+   {
+    "groupName": "gr:Report-Information",
+    "forObject": "gr:Report-Information_presentation"
+   },
+   {
+    "groupName": "gr:DirectorsReport",
+    "forObject": "gr:DirectorsReport_presentation"
+   },
+   {
+    "groupName": "gr:TrusteesAnnualReport",
+    "forObject": "gr:TrusteesAnnualReport_presentation"
+   },
+   {
+    "groupName": "gr:AuditReport",
+    "forObject": "gr:AuditReport_presentation"
+   },
+   {
+    "groupName": "gr:CharityAuditReport",
+    "forObject": "gr:CharityAuditReport_presentation"
+   },
+   {
+    "groupName": "gr:IndependentExaminersReport",
+    "forObject": "gr:IndependentExaminersReport_presentation"
+   },
+   {
+    "groupName": "gr:StatementFinancialActivities",
+    "forObject": "gr:StatementFinancialActivities_presentation"
+   },
+   {
+    "groupName": "gr:BalanceSheetCharitiesFRS102SORP",
+    "forObject": "gr:BalanceSheetCharitiesFRS102SORP_presentation"
+   },
+   {
+    "groupName": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP",
+    "forObject": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP_presentation"
+   },
+   {
+    "groupName": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP",
+    "forObject": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP_presentation"
+   },
+   {
+    "groupName": "gr:Dimensions-Content",
+    "forObject": "gr:Dimensions-Content_presentation"
+   },
+   {
+    "groupName": "gr:Hypercube-Basic",
+    "forObject": "gr:Hypercube-Basic_BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityTradingStatus",
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityOfficers",
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-ThirdPartyAgents",
+    "forObject": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountingStandardsApplied",
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsStatus",
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsType",
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Income-Main",
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-BusinessCombinations",
+    "forObject": "gr:Hypercube-BusinessCombinations_BusinessCombinationsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Empty",
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-BusinessCombinations-LinkedCharity",
+    "forObject": "gr:Hypercube-BusinessCombinations-LinkedCharity_BusinessCombinations-LinkedCharityHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialActivitiesCharities",
+    "forObject": "gr:Hypercube-FinancialActivitiesCharities_FinancialActivitiesCharitiesHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-CharityFunds",
+    "forObject": "gr:Hypercube-CharityFunds_CharityFundsHypercube"
+   }
+  ],
+  "groupTree": {
+   "name": "gr:groupTree",
+   "relationships": [
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Reportinformation",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Entity-Information",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Report-Information",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:DirectorsReport",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:TrusteesAnnualReport",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:AuditReport",
+     "order": 5
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:CharityAuditReport",
+     "order": 6
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:IndependentExaminersReport",
+     "order": 7
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Statements",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementFinancialActivities",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:BalanceSheetCharitiesFRS102SORP",
+     "order": 2
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Notes",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Notes",
+     "target": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP",
+     "order": 1
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Other",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Dimensions-Content",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Basic",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityTradingStatus",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityOfficers",
+     "order": 5
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-ThirdPartyAgents",
+     "order": 6
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountingStandardsApplied",
+     "order": 7
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsStatus",
+     "order": 8
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsType",
+     "order": 9
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Income-Main",
+     "order": 10
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-BusinessCombinations",
+     "order": 11
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Empty",
+     "order": 12
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-BusinessCombinations-LinkedCharity",
+     "order": 13
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialActivitiesCharities",
+     "order": 14
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-CharityFunds",
+     "order": 15
+    }
+   ]
+  },
+  "networks": [
+   {
+    "name": "gr:Entity-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:EntityInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityNamesHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityNamesHeading",
+      "target": "bus:EntityCurrentLegalOrRegisteredName",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityIdentifyingCodesHeading",
+      "order": 2
+     },
+     {
+      "source": "bus:EntityIdentifyingCodesHeading",
+      "target": "bus:UKCompaniesHouseRegisteredNumber",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityIdentifyingCodesHeading",
+      "target": "char:CharityRegistrationNumberEnglandWales",
+      "order": 1.2
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:OperationalStatusEntityHeading",
+      "order": 6
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityDormantTruefalse",
+      "order": 1
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityTradingStatus",
+      "order": 3
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "order": 7,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:ThirdPartyAgentsHeading",
+      "order": 9
+     },
+     {
+      "source": "bus:ThirdPartyAgentsHeading",
+      "target": "bus:NameEntityAuditors",
+      "order": 3
+     },
+     {
+      "source": "bus:ThirdPartyAgentsHeading",
+      "target": "bus:NameEntityExaminers",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:Report-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:ReportInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountingStandardsApplied",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsStatusAuditedOrUnaudited",
+      "order": 6
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsType",
+      "order": 6.5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportDatesPeriodsCoveredHeading",
+      "order": 8
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:BalanceSheetDate",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:StartDateForPeriodCoveredByReport",
+      "order": 2
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:EndDateForPeriodCoveredByReport",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:XBRLProductionSoftwareHeading",
+      "order": 19
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:NameProductionSoftware",
+      "order": 1
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:VersionProductionSoftware",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:DirectorsReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "direp:DirectorsStrategicReportHeading",
+      "order": 1
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:ListDirectorsHeading",
+      "order": 3
+     },
+     {
+      "source": "direp:ListDirectorsHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 4.85
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:EntityDirectorsStatementsHeading",
+      "order": 11
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+      "order": 1
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+      "order": 3
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+      "order": 11
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+      "order": 14
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:DirectorSigningDirectorsReport",
+      "order": 16
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:DateSigningDirectorsReport",
+      "order": 17
+     }
+    ]
+   },
+   {
+    "name": "gr:TrusteesAnnualReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "char:TrusteesAnnualReportHeading",
+      "order": 1
+     },
+     {
+      "source": "char:TrusteesAnnualReportHeading",
+      "target": "char:FinancialReviewHeading",
+      "order": 0.7
+     },
+     {
+      "source": "char:FinancialReviewHeading",
+      "target": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+      "order": 0.5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:terseLabel"
+       }
+      ]
+     },
+     {
+      "source": "char:InformationRequiredFromTier23CharitiesFinancialReviewHeading",
+      "target": "char:CharityFunds",
+      "order": 11
+     },
+     {
+      "source": "char:TrusteesAnnualReportHeading",
+      "target": "char:ReferenceAdministrationDetailsHeading",
+      "order": 0.9
+     },
+     {
+      "source": "char:ReferenceAdministrationDetailsHeading",
+      "target": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+      "order": 0,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:terseLabel"
+       }
+      ]
+     },
+     {
+      "source": "char:InformationRequiredFromTier123CharitiesReferenceAdministrationDetailsHeading",
+      "target": "char:ListTrusteesHeading",
+      "order": 4
+     },
+     {
+      "source": "char:ListTrusteesHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:AuditReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "aurep:AuditorInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "aurep:AuditorInformationHeading",
+      "target": "bus:NameEntityAuditors",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:CharityAuditReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "char:CharityAuditReportHeading",
+      "order": 1
+     },
+     {
+      "source": "char:CharityAuditReportHeading",
+      "target": "char:CharityAuditCarriedOutInAccordanceWithCharitiesAct2011Truefalse",
+      "order": 3.5
+     }
+    ]
+   },
+   {
+    "name": "gr:IndependentExaminersReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "char:IndependentExaminersReportHeading",
+      "order": 1
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "char:IndependentExaminerInformationHeading",
+      "order": 2
+     },
+     {
+      "source": "char:IndependentExaminersReportHeading",
+      "target": "char:StatementOnRespectiveResponsibilitiesDirectorstrusteesIndependentExaminer",
+      "order": 2
+     },
+     {
+      "source": "char:IndependentExaminersReportHeading",
+      "target": "char:DateIndependentExaminersReport",
+      "order": 6
+     },
+     {
+      "source": "char:IndependentExaminerInformationHeading",
+      "target": "bus:NameEntityExaminers",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementFinancialActivities_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "char:StatementFinancialActivitiesHeading",
+      "order": 1
+     },
+     {
+      "source": "char:StatementFinancialActivitiesHeading",
+      "target": "char:CharityFunds",
+      "order": 14
+     }
+    ]
+   },
+   {
+    "name": "gr:BalanceSheetCharitiesFRS102SORP_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:BalanceSheetStatementFinancialPositionHeading",
+      "order": 1
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:BalanceSheetFormat1Heading",
+      "order": 1
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "char:CharityFunds",
+      "order": 10.7
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 4
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresCharitiesFRS102SORP_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:NotesDetailedDisclosuresHeading",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:BusinessCombinationsHeading",
+      "order": 8
+     },
+     {
+      "source": "core:BusinessCombinationsHeading",
+      "target": "core:DisclosuresOnSpecificBusinessCombinationsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:DisclosuresOnSpecificBusinessCombinationsHeading",
+      "target": "char:LinkedCharitiesHeading",
+      "order": 2.5
+     },
+     {
+      "source": "char:LinkedCharitiesHeading",
+      "target": "char:CharityFunds",
+      "order": 3
+     },
+     {
+      "source": "core:BusinessCombinationsHeading",
+      "target": "char:DisclosuresOnCharityMergersHeading",
+      "order": 3
+     },
+     {
+      "source": "char:DisclosuresOnCharityMergersHeading",
+      "target": "char:AnalysisPrincipalSoFAComponentsRelatingToCharityMergerHeading",
+      "order": 4
+     },
+     {
+      "source": "char:AnalysisPrincipalSoFAComponentsRelatingToCharityMergerHeading",
+      "target": "char:AnalysisNetAssetsDateMergerHeading",
+      "order": 2
+     },
+     {
+      "source": "char:AnalysisNetAssetsDateMergerHeading",
+      "target": "char:CharityFunds",
+      "order": 3
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "char:CharityFundsHeading",
+      "order": 11.5
+     },
+     {
+      "source": "char:CharityFundsHeading",
+      "target": "char:AnalysisNetAssetsBetweenFundsHeading",
+      "order": 1
+     },
+     {
+      "source": "char:AnalysisNetAssetsBetweenFundsHeading",
+      "target": "char:CharityFunds",
+      "order": 7
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "order": 13
+     },
+     {
+      "source": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "target": "core:EmployeeInformationHeading",
+      "order": 4
+     },
+     {
+      "source": "core:EmployeeInformationHeading",
+      "target": "core:AverageNumberEmployeesByDepartmentHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AverageNumberEmployeesByDepartmentHeading",
+      "target": "core:AverageNumberEmployeesDuringPeriod",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataCharitiesFRS102SORP_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:AdditionalIndustrySectorDataItemsHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AdditionalIndustrySectorDataItemsHeading",
+      "target": "core:BankingFinanceSectorItemsHeading",
+      "order": 1
+     },
+     {
+      "source": "core:BankingFinanceSectorItemsHeading",
+      "target": "core:BalanceSheetBankingFinanceSectorHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BalanceSheetBankingFinanceSectorHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 5
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:Dimensions-Content_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:DimensionsContentHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:EntityOfficers-specificDimensionsHeading",
+      "order": 4
+     },
+     {
+      "source": "bus:EntityOfficers-specificDimensionsHeading",
+      "target": "bus:EntityOfficersDimension",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityOfficersDimension",
+      "target": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "order": 1
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:CompanySecretary1",
+      "order": 5
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director1",
+      "order": 10
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director2",
+      "order": 11
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director3",
+      "order": 12
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director4",
+      "order": 13
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director5",
+      "order": 14
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director6",
+      "order": 15
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:BusinessReport-specificDimensionsHeading",
+      "order": 7
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountingStandardsDimension",
+      "order": 2
+     },
+     {
+      "source": "bus:AccountingStandardsDimension",
+      "target": "bus:AccountingStandardsHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102",
+      "order": 3
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsStatusDimension",
+      "order": 5
+     },
+     {
+      "source": "bus:AccountsStatusDimension",
+      "target": "bus:AccountsStatusHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "char:IndependentExaminationCharity",
+      "order": 4
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsTypeDimension",
+      "order": 5.5
+     },
+     {
+      "source": "bus:AccountsTypeDimension",
+      "target": "bus:AccountsTypeHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts",
+      "order": 1
+     }
+    ]
+   }
+  ],
+  "units": [
+   {
+    "name": "iso4217:GBP",
+    "dataType": "xbrlr:monetary"
+   }
+  ],
+  "labelTypes": [
+   {
+    "name": "xbrl:documentation",
+    "uri": "http://www.xbrl.org/2003/role/documentation",
+    "formatType": "text"
+   },
+   {
+    "name": "xbrl:label",
+    "uri": "http://www.xbrl.org/2003/role/label",
+    "formatType": "text"
+   },
+   {
+    "name": "xbrl:terseLabel",
+    "uri": "http://www.xbrl.org/2003/role/terseLabel",
+    "formatType": "text"
+   },
+   {
+    "name": "xbrl:verboseLabel",
+    "uri": "http://www.xbrl.org/2003/role/verboseLabel",
+    "formatType": "text"
+   }
+  ],
+  "propertyTypes": [
+   {
+    "name": "xbrl:htmlElementId",
+    "dataType": "xbrlr:stringCollection",
+    "definitional": false,
+    "allowedObjects": [
+     "xbrl:factValueSourceObject",
+     "xbrl:factValueAnchorObject"
+    ]
+   },
+   {
+    "name": "xbrl:htmlEscape",
+    "dataType": "xs:boolean",
+    "definitional": false,
+    "allowedObjects": [
+     "xbrl:factValueSourceObject",
+     "xbrl:factValueAnchorObject"
+    ]
+   },
+   {
+    "name": "xbrl:preferredLabel",
+    "dataType": "xs:QName",
+    "definitional": false,
+    "allowedObjects": [
+     "xbrl:relationshipObject",
+     "xbrl:networkObject"
+    ]
+   },
+   {
+    "name": "xbrla:balance",
+    "dataType": "xbrla:balanceType",
+    "definitional": true,
+    "allowedObjects": [
+     "xbrl:conceptObject"
+    ]
+   }
+  ],
+  "factLocatorTypes": [
+   {
+    "name": "xbrl:htmlElementLocatorType",
+    "sourceMediaType": "text/html",
+    "requiredProperties": [
+     "xbrl:htmlElementId"
+    ],
+    "allowedProperties": [
+     "xbrl:htmlElementId",
+     "xbrl:htmlEscape"
+    ]
+   }
+  ],
+  "relationshipTypes": [
+   {
+    "name": "xbrl:parent-child",
+    "uri": "http://www.xbrl.org/2003/arcrole/parent-child",
+    "cycles": "undirected",
+    "allowedLinkProperties": [
+     "xbrl:preferredLabel"
+    ]
+   }
+  ],
+  "cubeTypes": [
+   {
+    "name": "xbrl:reportCube",
+    "coreDimensions": [
+     "xbrl:concept",
+     "xbrl:period",
+     "xbrl:unit",
+     "xbrl:entity",
+     "xbrl:language"
+    ],
+    "coreDomainClasses": [
+     "xbrl:conceptDomain"
+    ]
+   }
+  ],
+  "collectionTypes": [
+   {
+    "name": "xbrlr:stringCollection",
+    "dataType": "xs:string",
+    "minItems": 1,
+    "orderedValues": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "lmnd-20251231.tavi.json",
+  "source": "lmnd-20251231.htm",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 1883,
+  "leftOut": 0,
+  "detailsMissing": 1612,
+  "taviCannotExpress": 1612,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:f-32",
+   "concept": "dei:AmendmentFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-33",
+   "concept": "dei:EntityCentralIndexKey",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-34",
+   "concept": "dei:DocumentFiscalYearFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-35",
+   "concept": "dei:DocumentFiscalPeriodFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-814",
+   "concept": "us-gaap:OperatingLeaseRightOfUseAssetStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-815",
+   "concept": "us-gaap:OperatingLeaseRightOfUseAssetStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1278",
+   "concept": "us-gaap:OperatingLeaseLiabilityStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1279",
+   "concept": "us-gaap:OperatingLeaseLiabilityStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1882",
+   "concept": "ecd:TrdArrDuration",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-1850",
+   "concept": "us-gaap:NumberOfReportableSegments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "count": 1602,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 44,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

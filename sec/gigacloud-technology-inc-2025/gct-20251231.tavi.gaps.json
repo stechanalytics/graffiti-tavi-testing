@@ -1,0 +1,101 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "gct-20251231.tavi.json",
+  "source": "gct-20251231.htm",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 1499,
+  "leftOut": 0,
+  "detailsMissing": 1291,
+  "taviCannotExpress": 1291,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:f-35",
+   "concept": "dei:EntityCentralIndexKey",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-36",
+   "concept": "dei:DocumentFiscalYearFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-37",
+   "concept": "dei:DocumentFiscalPeriodFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-38",
+   "concept": "dei:AmendmentFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-595",
+   "concept": "us-gaap:DebtInstrumentVariableInterestRateTypeExtensibleEnumeration",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-964",
+   "concept": "us-gaap:LesseeFinanceLeaseTermOfContract1",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-969",
+   "concept": "us-gaap:FinanceLeaseRightOfUseAssetStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-970",
+   "concept": "us-gaap:FinanceLeaseRightOfUseAssetStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-977",
+   "concept": "us-gaap:FinanceLeaseLiabilityCurrentStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:f-978",
+   "concept": "us-gaap:FinanceLeaseLiabilityCurrentStatementOfFinancialPositionExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "count": 1281,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 57,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

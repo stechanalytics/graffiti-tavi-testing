@@ -1,0 +1,4766 @@
+{
+ "documentInfo": {
+  "documentType": "https://xbrl.org/PWD/2026-09-01/module",
+  "documentNamespacePrefix": "gr",
+  "description": "Facts of the Inline XBRL filing 894500HY2CI6QZICGC33-2025-12-31-1-en.xhtml, converted in Graffiti, importing the taxonomy at http://xbrl.corecapital.dk/2025-12-31/894500HY2CI6QZICGC33-2025-12-31.xsd.",
+  "namespaces": {
+   "COR": "http://xbrl.corecapital.dk/2025-12-31",
+   "esef_cor": "https://www.esma.europa.eu/taxonomy/2024-03-27/esef_cor",
+   "gr": "https://stechanalytics.com/tavi/894500HY2CI6QZICGC33-2025-12-31-1-en",
+   "ifrs-full": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+   "iso4217": "http://www.xbrl.org/2003/iso4217",
+   "lei": "http://standards.iso.org/iso/17442",
+   "taxonomy": "http://xbrl.corecapital.dk/2025-12-31/894500HY2CI6QZICGC33-2025-12-31.xsd",
+   "xbrl": "https://xbrl.org/PWD/2026-09-01",
+   "xbrlm": "https://xbrl.org/PWD/2026-09-01/model"
+  },
+  "importMapping": {
+   "taxonomy:_894500HY2CI6QZICGC33-2025-12-31": "http://xbrl.corecapital.dk/2025-12-31/894500HY2CI6QZICGC33-2025-12-31.xsd"
+  },
+  "sourceMappings": [
+   {
+    "sourceName": "gr:html",
+    "url": "894500HY2CI6QZICGC33-2025-12-31-1-en.xhtml"
+   }
+  ]
+ },
+ "xbrlModel": {
+  "name": "gr:_894500HY2CI6QZICGC33-2025-12-31-1-en",
+  "importedTaxonomies": [
+   {
+    "xbrlModelName": "xbrlm:base"
+   },
+   {
+    "xbrlModelName": "taxonomy:_894500HY2CI6QZICGC33-2025-12-31",
+    "importObjects": [
+     "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+     "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+     "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities",
+     "ifrs-full:AdditionalPaidinCapital",
+     "ifrs-full:AddressOfRegisteredOfficeOfEntity",
+     "ifrs-full:AdministrativeExpense",
+     "ifrs-full:Assets",
+     "ifrs-full:CashAndCashEquivalents",
+     "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+     "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+     "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+     "ifrs-full:CashFlowsFromUsedInOperations",
+     "ifrs-full:ComprehensiveIncome",
+     "ifrs-full:CurrentAssets",
+     "ifrs-full:CurrentLiabilities",
+     "ifrs-full:Equity",
+     "ifrs-full:EquityAndLiabilities",
+     "ifrs-full:FinanceCosts",
+     "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities",
+     "ifrs-full:FinanceIncome",
+     "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities",
+     "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+     "ifrs-full:IncreaseDecreaseInWorkingCapital",
+     "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "ifrs-full:LegalFormOfEntity",
+     "ifrs-full:Liabilities",
+     "ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification",
+     "ifrs-full:NoncurrentAssets",
+     "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "ifrs-full:OtherCurrentPayables",
+     "ifrs-full:OtherCurrentReceivables",
+     "ifrs-full:OtherExpenseByFunction",
+     "ifrs-full:ProceedsFromCurrentBorrowings",
+     "ifrs-full:ProfitLoss",
+     "ifrs-full:ProfitLossFromOperatingActivities",
+     "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities",
+     "ifrs-full:RetainedEarnings",
+     "ifrs-full:RevenueAndOperatingIncome",
+     "ifrs-full:ShorttermBorrowings",
+     "esef_cor:NotesAccountingPoliciesAndMandatoryTags",
+     "ifrs-full:AssetsAbstract",
+     "ifrs-full:CashFlowsFromUsedInFinancingActivitiesAbstract",
+     "ifrs-full:CashFlowsFromUsedInInvestingActivitiesAbstract",
+     "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+     "ifrs-full:CurrentAssetsAbstract",
+     "ifrs-full:CurrentLiabilitiesAbstract",
+     "ifrs-full:EquityAbstract",
+     "ifrs-full:EquityAndLiabilitiesAbstract",
+     "ifrs-full:LiabilitiesAbstract",
+     "ifrs-full:NoncurrentAssetsAbstract",
+     "ifrs-full:StatementOfCashFlowsAbstract",
+     "ifrs-full:StatementOfChangesInEquityAbstract",
+     "ifrs-full:StatementOfChangesInEquityLineItems",
+     "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+     "ifrs-full:StatementOfFinancialPositionAbstract",
+     "ifrs-full:ComponentsOfEquityAxis",
+     "ifrs-full:ComponentsOfEquityDomain",
+     "ifrs-full:AdditionalPaidinCapitalMember",
+     "ifrs-full:RetainedEarningsMember"
+    ]
+   }
+  ],
+  "factSources": [
+   {
+    "name": "gr:html",
+    "factMapName": "gr:htmlMap"
+   }
+  ],
+  "factMaps": [
+   {
+    "name": "gr:htmlMap",
+    "factLocatorType": "xbrl:htmlElementLocatorType"
+   }
+  ],
+  "cubes": [
+   {
+    "name": "gr:ChangesinEquity_StatementOfChangesInEquityTable",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:ChangesinEquity_StatementOfChangesInEquityTable_concepts"
+     },
+     {
+      "dimension": "ifrs-full:ComponentsOfEquityAxis",
+      "domainNetwork": "gr:ChangesinEquity_StatementOfChangesInEquityTable_ComponentsOfEquityAxis",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:esef_role-999999_LineItemsNotDimensionallyQualified",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:esef_role-999999_LineItemsNotDimensionallyQualified_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "name": "gr:f1__s7__7__63",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:language": "en",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s7__7__63_fv",
+      "value": "CoreCapital I K/S",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s7__7__63"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s7__7__64",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:LegalFormOfEntity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:language": "en",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s7__7__64_fv",
+      "value": "K/S",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s7__7__64"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s7__7__65",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:AddressOfRegisteredOfficeOfEntity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:language": "en",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s7__7__65_fv",
+      "value": "Helga Pedersens Gade 107  8000 Aarhus C",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s7__7__65"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s7__7__65-t--2"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__5_fv",
+      "value": "22776920.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__5_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__6",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:RevenueAndOperatingIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__6_fv",
+      "value": "22776920.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__6",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:RevenueAndOperatingIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__6_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:AdministrativeExpense",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__7_fv",
+      "value": "10207015.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:AdministrativeExpense",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__7_fv",
+      "value": "16714981.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherExpenseByFunction",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__8_fv",
+      "value": "10207015.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherExpenseByFunction",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__8_fv",
+      "value": "16714981.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__9",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLossFromOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__9_fv",
+      "value": "12569905.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__9"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__9",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLossFromOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__9_fv",
+      "value": "-16714981.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__9"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__10_fv",
+      "value": "674937.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__10_fv",
+      "value": "15308.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceCosts",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__11_fv",
+      "value": "554580.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceCosts",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__11_fv",
+      "value": "655181.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__12",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__12_fv",
+      "value": "12690262.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__12"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__12",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__12_fv",
+      "value": "-17354854.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__12"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__3__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ComprehensiveIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__3__15_fv",
+      "value": "12690262.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__3__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s2__4__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ComprehensiveIncome",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s2__4__15_fv",
+      "value": "-17354854.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s2__4__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__5_fv",
+      "value": "98941458.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__5_fv",
+      "value": "38593115.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__6",
+    "factDimensions": {
+     "xbrl:concept": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__6_fv",
+      "value": "98941458.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__6",
+    "factDimensions": {
+     "xbrl:concept": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__6_fv",
+      "value": "38593115.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:NoncurrentAssets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__7_fv",
+      "value": "98941458.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:NoncurrentAssets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__7_fv",
+      "value": "38593115.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherCurrentReceivables",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__10_fv",
+      "value": "5281527.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherCurrentReceivables",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__10_fv",
+      "value": "383242.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__11_fv",
+      "value": "2490748.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__11_fv",
+      "value": "185976.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__12",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CurrentAssets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__12_fv",
+      "value": "7772275.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__12"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__12",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CurrentAssets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__12_fv",
+      "value": "569218.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__12"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Assets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__15_fv",
+      "value": "106713733.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Assets",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__15_fv",
+      "value": "39162333.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__23",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ShorttermBorrowings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__23_fv",
+      "value": "2408583.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__23"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__23",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ShorttermBorrowings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__23_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__23"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__24",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherCurrentPayables",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__24_fv",
+      "value": "1482448.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__24"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__24",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:OtherCurrentPayables",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__24_fv",
+      "value": "4230901.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__24"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__25",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CurrentLiabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__25_fv",
+      "value": "3891031.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__25"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__25",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CurrentLiabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__25_fv",
+      "value": "4230901.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__25"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__28",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Liabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__28_fv",
+      "value": "3891031.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__28"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__28",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Liabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__28_fv",
+      "value": "4230901.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__28"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__18",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:AdditionalPaidinCapital",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__18_fv",
+      "value": "114793997.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__18",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:AdditionalPaidinCapital",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__18_fv",
+      "value": "59592989.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__19",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:RetainedEarnings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__19_fv",
+      "value": "-11971295.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__19",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:RetainedEarnings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__19_fv",
+      "value": "-24661557.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__20",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__20_fv",
+      "value": "102822702.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__20"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__20",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__20_fv",
+      "value": "34931432.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__20"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__3__31",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:EquityAndLiabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__3__31_fv",
+      "value": "106713733.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__3__31"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s3__4__31",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:EquityAndLiabilities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s3__4__31_fv",
+      "value": "39162333.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s3__4__31"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__5_fv",
+      "value": "59592989.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__5_fv",
+      "value": "-24661557.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__5_fv",
+      "value": "34931432.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__6",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__6_fv",
+      "value": "55201008.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__6",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__6_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__6",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__6_fv",
+      "value": "55201008.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__7_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__7_fv",
+      "value": "12690262.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__7_fv",
+      "value": "12690262.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__8_fv",
+      "value": "114793997.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__8_fv",
+      "value": "-11971295.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__8_fv",
+      "value": "102822702.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__17",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2024-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__17_fv",
+      "value": "6242859.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__17"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__17",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2024-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__17_fv",
+      "value": "-7306703.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__17"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__17",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__17_fv",
+      "value": "-1063844.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__17"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__18",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__18_fv",
+      "value": "53350130.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__18",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__18_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__18",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__18_fv",
+      "value": "53350130.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__19",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__19_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__19",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__19_fv",
+      "value": "-17354854.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__19",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__19_fv",
+      "value": "-17354854.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__3__20",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:AdditionalPaidinCapitalMember",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__3__20_fv",
+      "value": "59592989.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__3__20"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__4__20",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "ifrs-full:ComponentsOfEquityAxis": "ifrs-full:RetainedEarningsMember",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__4__20_fv",
+      "value": "-24661557.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__4__20"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s4__5__20",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:Equity",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s4__5__20_fv",
+      "value": "34931432.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s4__5__20"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLossFromOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__5_fv",
+      "value": "12569905.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__5",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProfitLossFromOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__5_fv",
+      "value": "-16714981.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__5"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__6",
+    "factDimensions": {
+     "xbrl:concept": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__6_fv",
+      "value": "22776920.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__6",
+    "factDimensions": {
+     "xbrl:concept": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__6_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__6"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseInWorkingCapital",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__7_fv",
+      "value": "7646738.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__7",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseInWorkingCapital",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__7_fv",
+      "value": "-2230879.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__7"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInOperations",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__8_fv",
+      "value": "-17853753.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__8",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInOperations",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__8_fv",
+      "value": "-14484102.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__9",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__9_fv",
+      "value": "674937.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__9"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__9",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__9_fv",
+      "value": "15308.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__9"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__10_fv",
+      "value": "554580.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__10",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__10_fv",
+      "value": "655182.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__10"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__11_fv",
+      "value": "-17733396.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__11",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__11_fv",
+      "value": "-15123976.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__11"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__14",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__14_fv",
+      "value": "37571423.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__14"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__14",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__14_fv",
+      "value": "38553115.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__14"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__15_fv",
+      "value": "-37571423.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__15",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__15_fv",
+      "value": "-38553115.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__15"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__18",
+    "factDimensions": {
+     "xbrl:concept": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__18_fv",
+      "value": "-55304819.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__18",
+    "factDimensions": {
+     "xbrl:concept": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__18_fv",
+      "value": "-53677091.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__18"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__21",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProceedsFromCurrentBorrowings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__21_fv",
+      "value": "2408583.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__21"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__21",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:ProceedsFromCurrentBorrowings",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__21_fv",
+      "value": "0.0",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__21"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__22",
+    "factDimensions": {
+     "xbrl:concept": "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__22_fv",
+      "value": "55201008.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__22"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__22",
+    "factDimensions": {
+     "xbrl:concept": "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__22_fv",
+      "value": "53350130.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__22"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__23",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__23_fv",
+      "value": "57609591.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__23"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__23",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__23_fv",
+      "value": "53350130.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__23"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__26",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00/2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__26_fv",
+      "value": "2304772.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__26"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__26",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00/2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__26_fv",
+      "value": "-326961.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__26"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__27",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__27_fv",
+      "value": "185976.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__27"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__27",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2024-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__27_fv",
+      "value": "512937.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__27"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__3__28",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2026-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__3__28_fv",
+      "value": "2490748.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__3__28"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1__s5__4__28",
+    "factDimensions": {
+     "xbrl:concept": "ifrs-full:CashAndCashEquivalents",
+     "xbrl:entity": "lei:894500HY2CI6QZICGC33",
+     "xbrl:period": "2025-01-01T00:00:00",
+     "xbrl:unit": "iso4217:EUR"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1__s5__4__28_fv",
+      "value": "185976.0",
+      "decimals": 0,
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "f1__s5__4__28"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "domainNetworks": [
+   {
+    "name": "gr:ChangesinEquity_StatementOfChangesInEquityTable_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:Equity"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:ProfitLoss"
+     }
+    ]
+   },
+   {
+    "name": "gr:ChangesinEquity_StatementOfChangesInEquityTable_ComponentsOfEquityAxis",
+    "root": "ifrs-full:ComponentsOfEquityDomain",
+    "relationships": [
+     {
+      "source": "ifrs-full:ComponentsOfEquityDomain",
+      "target": "ifrs-full:AdditionalPaidinCapitalMember"
+     },
+     {
+      "source": "ifrs-full:ComponentsOfEquityDomain",
+      "target": "ifrs-full:RetainedEarningsMember"
+     }
+    ]
+   },
+   {
+    "name": "gr:esef_role-999999_LineItemsNotDimensionallyQualified_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:RevenueAndOperatingIncome"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:AdministrativeExpense"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:OtherExpenseByFunction"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:FinanceIncome"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:FinanceCosts"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:ComprehensiveIncome"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:NoncurrentAssets"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:OtherCurrentReceivables"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CashAndCashEquivalents"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CurrentAssets"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:Assets"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:AdditionalPaidinCapital"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:RetainedEarnings"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:ShorttermBorrowings"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:OtherCurrentPayables"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CurrentLiabilities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:Liabilities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:EquityAndLiabilities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:IncreaseDecreaseInWorkingCapital"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CashFlowsFromUsedInOperations"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CashFlowsFromUsedInOperatingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CashFlowsFromUsedInInvestingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:ProceedsFromCurrentBorrowings"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:CashFlowsFromUsedInFinancingActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:LegalFormOfEntity"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "ifrs-full:AddressOfRegisteredOfficeOfEntity"
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "name": "gr:StatementOfComprehensiveIncome",
+    "groupURI": "http://xbrl.corecapital.dk/role/StatementOfComprehensiveIncome"
+   },
+   {
+    "name": "gr:StatementOfFinancialPosition",
+    "groupURI": "http://xbrl.corecapital.dk/role/StatementOfFinancialPosition"
+   },
+   {
+    "name": "gr:ChangesinEquity",
+    "groupURI": "http://xbrl.corecapital.dk/role/ChangesinEquity"
+   },
+   {
+    "name": "gr:CashFlowStatement",
+    "groupURI": "http://xbrl.corecapital.dk/role/CashFlowStatement"
+   },
+   {
+    "name": "gr:Notes",
+    "groupURI": "http://xbrl.corecapital.dk/role/Notes"
+   },
+   {
+    "name": "gr:esef_role-999999",
+    "groupURI": "https://www.esma.europa.eu/xbrl/role/cor/esef_role-999999"
+   },
+   {
+    "name": "gr:section_Statements"
+   },
+   {
+    "name": "gr:section_Notes"
+   },
+   {
+    "name": "gr:section_Other"
+   }
+  ],
+  "groupContents": [
+   {
+    "groupName": "gr:StatementOfComprehensiveIncome",
+    "forObject": "gr:StatementOfComprehensiveIncome_presentation"
+   },
+   {
+    "groupName": "gr:StatementOfComprehensiveIncome",
+    "forObject": "gr:StatementOfComprehensiveIncome_calculation"
+   },
+   {
+    "groupName": "gr:StatementOfFinancialPosition",
+    "forObject": "gr:StatementOfFinancialPosition_presentation"
+   },
+   {
+    "groupName": "gr:StatementOfFinancialPosition",
+    "forObject": "gr:StatementOfFinancialPosition_calculation"
+   },
+   {
+    "groupName": "gr:ChangesinEquity",
+    "forObject": "gr:ChangesinEquity_presentation"
+   },
+   {
+    "groupName": "gr:ChangesinEquity",
+    "forObject": "gr:ChangesinEquity_StatementOfChangesInEquityTable"
+   },
+   {
+    "groupName": "gr:CashFlowStatement",
+    "forObject": "gr:CashFlowStatement_presentation"
+   },
+   {
+    "groupName": "gr:CashFlowStatement",
+    "forObject": "gr:CashFlowStatement_calculation"
+   },
+   {
+    "groupName": "gr:Notes",
+    "forObject": "gr:Notes_presentation"
+   },
+   {
+    "groupName": "gr:esef_role-999999",
+    "forObject": "gr:esef_role-999999_LineItemsNotDimensionallyQualified"
+   }
+  ],
+  "groupTree": {
+   "name": "gr:groupTree",
+   "relationships": [
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Statements",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementOfComprehensiveIncome",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementOfFinancialPosition",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:ChangesinEquity",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:CashFlowStatement",
+     "order": 4
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Notes",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Notes",
+     "target": "gr:Notes",
+     "order": 1
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Other",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:esef_role-999999",
+     "order": 1
+    }
+   ]
+  },
+  "networks": [
+   {
+    "name": "gr:StatementOfComprehensiveIncome_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:RevenueAndOperatingIncome",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:AdministrativeExpense",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:OtherExpenseByFunction",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:FinanceIncome",
+      "order": 6,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:FinanceCosts",
+      "order": 7,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:ProfitLoss",
+      "order": 8,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfComprehensiveIncomeAbstract",
+      "target": "ifrs-full:ComprehensiveIncome",
+      "order": 9,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementOfComprehensiveIncome_calculation",
+    "relationshipTypeName": "xbrl:summation-item",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:ComprehensiveIncome",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:RevenueAndOperatingIncome",
+      "target": "ifrs-full:GainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:OtherExpenseByFunction",
+      "target": "ifrs-full:AdministrativeExpense",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ProfitLossFromOperatingActivities",
+      "target": "ifrs-full:RevenueAndOperatingIncome",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ProfitLoss",
+      "target": "ifrs-full:FinanceIncome",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ComprehensiveIncome",
+      "target": "ifrs-full:ProfitLoss",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ProfitLossFromOperatingActivities",
+      "target": "ifrs-full:OtherExpenseByFunction",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ProfitLoss",
+      "target": "ifrs-full:FinanceCosts",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:ProfitLoss",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementOfFinancialPosition_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:StatementOfFinancialPositionAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:StatementOfFinancialPositionAbstract",
+      "target": "ifrs-full:AssetsAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:AssetsAbstract",
+      "target": "ifrs-full:NoncurrentAssetsAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:NoncurrentAssetsAbstract",
+      "target": "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:NoncurrentAssetsAbstract",
+      "target": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:NoncurrentAssetsAbstract",
+      "target": "ifrs-full:NoncurrentAssets",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:AssetsAbstract",
+      "target": "ifrs-full:CurrentAssetsAbstract",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:CurrentAssetsAbstract",
+      "target": "ifrs-full:OtherCurrentReceivables",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentAssetsAbstract",
+      "target": "ifrs-full:CashAndCashEquivalents",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentAssetsAbstract",
+      "target": "ifrs-full:CurrentAssets",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:AssetsAbstract",
+      "target": "ifrs-full:Assets",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfFinancialPositionAbstract",
+      "target": "ifrs-full:EquityAndLiabilitiesAbstract",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:EquityAndLiabilitiesAbstract",
+      "target": "ifrs-full:EquityAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:EquityAbstract",
+      "target": "ifrs-full:AdditionalPaidinCapital",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAbstract",
+      "target": "ifrs-full:RetainedEarnings",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAbstract",
+      "target": "ifrs-full:Equity",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAndLiabilitiesAbstract",
+      "target": "ifrs-full:LiabilitiesAbstract",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:LiabilitiesAbstract",
+      "target": "ifrs-full:CurrentLiabilitiesAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:CurrentLiabilitiesAbstract",
+      "target": "ifrs-full:ShorttermBorrowings",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentLiabilitiesAbstract",
+      "target": "ifrs-full:OtherCurrentPayables",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentLiabilitiesAbstract",
+      "target": "ifrs-full:CurrentLiabilities",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:LiabilitiesAbstract",
+      "target": "ifrs-full:Liabilities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAndLiabilitiesAbstract",
+      "target": "ifrs-full:EquityAndLiabilities",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementOfFinancialPosition_calculation",
+    "relationshipTypeName": "xbrl:summation-item",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:Assets",
+      "order": 1
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:EquityAndLiabilities",
+      "order": 2
+     },
+     {
+      "source": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+      "target": "ifrs-full:NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:NoncurrentAssets",
+      "target": "COR:InvestmentAccountedForUsingEquityMethodAndNonCurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentAssets",
+      "target": "ifrs-full:OtherCurrentReceivables",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:Assets",
+      "target": "ifrs-full:CurrentAssets",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:Equity",
+      "target": "ifrs-full:AdditionalPaidinCapital",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentLiabilities",
+      "target": "ifrs-full:ShorttermBorrowings",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:Liabilities",
+      "target": "ifrs-full:CurrentLiabilities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAndLiabilities",
+      "target": "ifrs-full:Liabilities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentAssets",
+      "target": "ifrs-full:CashAndCashEquivalents",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:Assets",
+      "target": "ifrs-full:NoncurrentAssets",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:Equity",
+      "target": "ifrs-full:RetainedEarnings",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CurrentLiabilities",
+      "target": "ifrs-full:OtherCurrentPayables",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:EquityAndLiabilities",
+      "target": "ifrs-full:Equity",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:ChangesinEquity_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:StatementOfChangesInEquityAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityAbstract",
+      "target": "ifrs-full:ComponentsOfEquityAxis",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:ComponentsOfEquityAxis",
+      "target": "ifrs-full:ComponentsOfEquityDomain",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:ComponentsOfEquityDomain",
+      "target": "ifrs-full:AdditionalPaidinCapitalMember",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:ComponentsOfEquityDomain",
+      "target": "ifrs-full:RetainedEarningsMember",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityAbstract",
+      "target": "ifrs-full:StatementOfChangesInEquityLineItems",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityLineItems",
+      "target": "ifrs-full:Equity",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodStartLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityLineItems",
+      "target": "ifrs-full:IncreaseDecreaseThroughOtherContributionsByOwners",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityLineItems",
+      "target": "ifrs-full:ProfitLoss",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfChangesInEquityLineItems",
+      "target": "ifrs-full:Equity",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:CashFlowStatement_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:StatementOfCashFlowsAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "order": 1
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:IncreaseDecreaseInWorkingCapital",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInOperations",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities",
+      "order": 6,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivitiesAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "order": 7,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInInvestingActivitiesAbstract",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInInvestingActivitiesAbstract",
+      "target": "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInInvestingActivitiesAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInFinancingActivitiesAbstract",
+      "order": 4
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInFinancingActivitiesAbstract",
+      "target": "ifrs-full:ProceedsFromCurrentBorrowings",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInFinancingActivitiesAbstract",
+      "target": "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInFinancingActivitiesAbstract",
+      "target": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:totalLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:CashAndCashEquivalents",
+      "order": 6,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodStartLabel"
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:StatementOfCashFlowsAbstract",
+      "target": "ifrs-full:CashAndCashEquivalents",
+      "order": 7,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:CashFlowStatement_calculation",
+    "relationshipTypeName": "xbrl:summation-item",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:CashFlowsFromUsedInOperations",
+      "order": 1
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+      "order": 2
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperations",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "target": "ifrs-full:ProfitLossFromOperatingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+      "target": "ifrs-full:PurchaseOfFinancialInstrumentsClassifiedAsInvestingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+      "target": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+      "target": "ifrs-full:ProceedsFromCurrentBorrowings",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+      "target": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperations",
+      "target": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "target": "COR:AdjustmentsForGainsLossesOnFinancialAssetsAtFairValueThroughProfitOrLoss",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+      "target": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+      "target": "COR:ProceedsFromOtherContributionsByOwnersClassifiedAsFinancingActivities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+      "target": "COR:CashFlowsFromUsedInOperatingAndInvestingActivities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperations",
+      "target": "ifrs-full:IncreaseDecreaseInWorkingCapital",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "target": "ifrs-full:IncreaseDecreaseInWorkingCapital",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "target": "ifrs-full:FinanceIncomeReceivedClassifiedAsOperatingActivities",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+      "target": "ifrs-full:FinanceCostsPaidClassifiedAsOperatingActivities",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": -1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:Notes_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "esef_cor:NotesAccountingPoliciesAndMandatoryTags",
+      "order": 1
+     },
+     {
+      "source": "esef_cor:NotesAccountingPoliciesAndMandatoryTags",
+      "target": "ifrs-full:NameOfReportingEntityOrOtherMeansOfIdentification",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "esef_cor:NotesAccountingPoliciesAndMandatoryTags",
+      "target": "ifrs-full:LegalFormOfEntity",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     },
+     {
+      "source": "esef_cor:NotesAccountingPoliciesAndMandatoryTags",
+      "target": "ifrs-full:AddressOfRegisteredOfficeOfEntity",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:label"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "forObject": "gr:StatementOfComprehensiveIncome",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00000] - Statement - Statement Of Comprehensive Income"
+   },
+   {
+    "forObject": "gr:StatementOfFinancialPosition",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00010] - Statement - Statement Of Financial Position"
+   },
+   {
+    "forObject": "gr:ChangesinEquity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00020] - Statement - Changes in Equity"
+   },
+   {
+    "forObject": "gr:ChangesinEquity_StatementOfChangesInEquityTable",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00020] - Statement - Changes in Equity"
+   },
+   {
+    "forObject": "gr:CashFlowStatement",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00030] - Statement - Cash Flow Statement"
+   },
+   {
+    "forObject": "gr:Notes",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[00040] - Statement - Notes"
+   },
+   {
+    "forObject": "gr:esef_role-999999",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[999999] Line items not dimensionally qualified"
+   },
+   {
+    "forObject": "gr:esef_role-999999_LineItemsNotDimensionallyQualified",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "[999999] Line items not dimensionally qualified"
+   },
+   {
+    "forObject": "gr:section_Statements",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statements"
+   },
+   {
+    "forObject": "gr:section_Notes",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Notes"
+   },
+   {
+    "forObject": "gr:section_Other",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Other"
+   }
+  ]
+ }
+}

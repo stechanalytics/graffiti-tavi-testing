@@ -1,0 +1,38 @@
+{
+ "module": [
+  {
+   "severity": "Warning",
+   "code": "oimtce:inconsistentCalculationUsingRounding",
+   "fact": "us-gaap:BusinessCombinationRecognizedIdentifiableAssetsAcquiredGoodwillAndLiabilitiesAssumedNet",
+   "valueName": "gr:c140853075_fv",
+   "value": "22145000.0",
+   "message": "Calculations 1.1 inconsistency: reported interval [22144500, 22145500] does not overlap calculated interval [8514000, 8522000]. 8 of 9 contributing items reported; the rest may be untagged."
+  },
+  {
+   "severity": "Warning",
+   "code": "oimtce:inconsistentCalculationUsingRounding",
+   "fact": "us-gaap:IncomeTaxesPaidNet",
+   "valueName": "gr:c140853019_fv",
+   "value": "9939000.0",
+   "message": "Calculations 1.1 inconsistency: reported interval [9938500, 9939500] does not overlap calculated interval [7461500, 7472500]. 2 of 3 contributing items reported; the rest may be untagged."
+  }
+ ],
+ "compiled": [
+  {
+   "severity": "Warning",
+   "code": "oimtce:inconsistentCalculationUsingRounding",
+   "fact": "us-gaap:BusinessCombinationRecognizedIdentifiableAssetsAcquiredGoodwillAndLiabilitiesAssumedNet",
+   "valueName": "gr:c140853075_fv",
+   "value": "22145000.0",
+   "message": "Calculations 1.1 inconsistency: reported interval [22144500, 22145500] does not overlap calculated interval [8514000, 8522000]. 8 of 9 contributing items reported; the rest may be untagged."
+  },
+  {
+   "severity": "Warning",
+   "code": "oimtce:inconsistentCalculationUsingRounding",
+   "fact": "us-gaap:IncomeTaxesPaidNet",
+   "valueName": "gr:c140853019_fv",
+   "value": "9939000.0",
+   "message": "Calculations 1.1 inconsistency: reported interval [9938500, 9939500] does not overlap calculated interval [7461500, 7472500]. 2 of 3 contributing items reported; the rest may be untagged."
+  }
+ ]
+}

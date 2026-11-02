@@ -1,0 +1,59 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "jfb-20251231.tavi.json",
+  "source": "jfb-20251231.htm",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 710,
+  "leftOut": 0,
+  "detailsMissing": 546,
+  "taviCannotExpress": 546,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:F_03ebe33d-927a-4d83-a838-0cdbf753303e",
+   "concept": "dei:EntityCentralIndexKey",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:F_a486cdf5-3674-49a9-b444-a36db56c8316",
+   "concept": "dei:AmendmentFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:F_5007e861-bbd6-4e68-8946-03e3bb714105",
+   "concept": "dei:DocumentFiscalPeriodFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:F_7bd20227-b539-4ed8-9159-01ad82b66d42",
+   "concept": "us-gaap:SegmentReportingCodmIndividualTitleAndPositionOrGroupOrCommitteeNameExtensibleEnumeration",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "count": 542,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 14,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

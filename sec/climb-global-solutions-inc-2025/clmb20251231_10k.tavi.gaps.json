@@ -1,0 +1,584 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "clmb20251231_10k.tavi.json",
+  "source": "clmb20251231_10k.htm",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 1103,
+  "leftOut": 0,
+  "detailsMissing": 972,
+  "taviCannotExpress": 972,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "fact": "gr:thunderdome-EntityCentralIndexKey",
+   "concept": "dei:EntityCentralIndexKey",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:thunderdome-EntityRegistrantName",
+   "concept": "dei:EntityRegistrantName",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:ixv-13099",
+   "concept": "dei:AmendmentFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:ixv-13100",
+   "concept": "dei:CurrentFiscalYearEndDate",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:ixv-13101",
+   "concept": "dei:DocumentFiscalPeriodFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:ixv-13102",
+   "concept": "dei:DocumentFiscalYearFocus",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854111",
+   "concept": "cyd:CybersecurityRiskManagementProcessesIntegratedFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854113",
+   "concept": "cyd:CybersecurityRiskProcessForInformingBoardCommitteeOrSubcommitteeResponsibleForOversightTextBlock",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854114",
+   "concept": "cyd:CybersecurityRiskRoleOfManagementTextBlock",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854115",
+   "concept": "cyd:CybersecurityRiskManagementPositionsOrCommitteesResponsibleTextBlock",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854116",
+   "concept": "cyd:CybersecurityRiskManagementExpertiseOfManagementResponsibleTextBlock",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854117",
+   "concept": "cyd:CybersecurityRiskProcessForInformingManagementOrCommitteesResponsibleTextBlock",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854118",
+   "concept": "cyd:CybersecurityRiskManagementPositionsOrCommitteesResponsibleFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854119",
+   "concept": "cyd:CybersecurityRiskManagementPositionsOrCommitteesResponsibleReportToBoardFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854120",
+   "concept": "cyd:CybersecurityRiskThirdPartyOversightAndIdentificationProcessesFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854121",
+   "concept": "cyd:CybersecurityRiskManagementThirdPartyEngagedFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853671",
+   "concept": "cyd:CybersecurityRiskMateriallyAffectedOrReasonablyLikelyToMateriallyAffectRegistrantFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853675",
+   "concept": "ecd:Rule10b51ArrTrmntdFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854123",
+   "concept": "ecd:Rule10b51ArrAdoptedFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854124",
+   "concept": "ecd:NonRule10b51ArrTrmntdFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854125",
+   "concept": "ecd:NonRule10b51ArrAdoptedFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853685",
+   "concept": "ecd:InsiderTrdPoliciesProcAdoptedFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853689",
+   "concept": "ecd:AwardTmgMnpiCnsdrdFlag",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853723",
+   "concept": "us-gaap:PropertyPlantAndEquipmentUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853724",
+   "concept": "us-gaap:PropertyPlantAndEquipmentUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853867",
+   "concept": "us-gaap:FiniteLivedIntangibleAssetUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853868",
+   "concept": "us-gaap:FiniteLivedIntangibleAssetUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853869",
+   "concept": "us-gaap:FiniteLivedIntangibleAssetUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853870",
+   "concept": "us-gaap:FiniteLivedIntangibleAssetUsefulLife",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853904",
+   "concept": "us-gaap:OpenTaxYear",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853906",
+   "concept": "us-gaap:OpenTaxYear",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853908",
+   "concept": "us-gaap:OpenTaxYear",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854147",
+   "concept": "us-gaap:FairValueRecurringBasisUnobservableInputReconciliationLiabilityGainLossStatementOfIncomeExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854148",
+   "concept": "us-gaap:FairValueRecurringBasisUnobservableInputReconciliationLiabilityGainLossStatementOfOtherComprehensiveIncomeExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854315",
+   "concept": "us-gaap:FairValueRecurringBasisUnobservableInputReconciliationLiabilityGainLossStatementOfIncomeExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854316",
+   "concept": "us-gaap:FairValueRecurringBasisUnobservableInputReconciliationLiabilityGainLossStatementOfOtherComprehensiveIncomeExtensibleList",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854074",
+   "concept": "us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854075",
+   "concept": "us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854149",
+   "concept": "us-gaap:CommitmentsAndContingencies",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854150",
+   "concept": "us-gaap:CommitmentsAndContingencies",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854076",
+   "concept": "us-gaap:CommonStockParOrStatedValuePerShare",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854077",
+   "concept": "us-gaap:CommonStockParOrStatedValuePerShare",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854078",
+   "concept": "us-gaap:CommonStockSharesAuthorized",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854079",
+   "concept": "us-gaap:CommonStockSharesAuthorized",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854080",
+   "concept": "us-gaap:CommonStockSharesIssued",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854081",
+   "concept": "us-gaap:CommonStockSharesIssued",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854082",
+   "concept": "us-gaap:CommonStockSharesOutstanding",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854083",
+   "concept": "us-gaap:CommonStockSharesOutstanding",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854084",
+   "concept": "us-gaap:TreasuryStockCommonShares",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854085",
+   "concept": "us-gaap:TreasuryStockCommonShares",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854093",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854101",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854109",
+   "concept": "us-gaap:CommonStockDividendsPerShareCashPaid",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853692",
+   "concept": "us-gaap:NumberOfReportableSegments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854126",
+   "concept": "us-gaap:CapitalizedComputerSoftwareGross",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853765",
+   "concept": "us-gaap:NumberOfReportableSegments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853850",
+   "concept": "us-gaap:BusinessCombinationConsiderationTransferred1",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853855",
+   "concept": "us-gaap:BusinessCombinationContingentConsiderationLiabilityCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853857",
+   "concept": "us-gaap:AccountsPayableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854127",
+   "concept": "us-gaap:AccountsPayableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853314",
+   "concept": "us-gaap:EffectiveIncomeTaxRateReconciliationNondeductibleExpenseShareBasedCompensationCost",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853322",
+   "concept": "clmb:EffectiveIncomeTaxRateReconciliationOtherAdjustmentsNetPercent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854136",
+   "concept": "us-gaap:UnrecognizedTaxBenefits",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854137",
+   "concept": "us-gaap:UnrecognizedTaxBenefits",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853945",
+   "concept": "us-gaap:AccountsPayableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854139",
+   "concept": "us-gaap:AccountsPayableCurrent",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853958",
+   "concept": "clmb:SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingInstallments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853959",
+   "concept": "clmb:SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingInstallments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853962",
+   "concept": "clmb:SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingInstallments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140853963",
+   "concept": "clmb:SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingInstallments",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854140",
+   "concept": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854141",
+   "concept": "us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854142",
+   "concept": "us-gaap:AllocatedShareBasedCompensationExpense",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854021",
+   "concept": "clmb:NumberOfMajorCustomers",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854026",
+   "concept": "clmb:NumberOfMajorVendors",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854027",
+   "concept": "clmb:NumberOfMajorCustomers",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854036",
+   "concept": "clmb:NumberOfMajorCustomers",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854041",
+   "concept": "clmb:NumberOfMajorVendors",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "fact": "gr:c140854068",
+   "concept": "us-gaap:BusinessCombinationConsiderationTransferred1",
+   "what": "its place in the filing",
+   "why": "the tag is in ix:hidden and no element shows its value, so there is nothing to point at"
+  },
+  {
+   "leftOut": false,
+   "count": 893,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 5,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

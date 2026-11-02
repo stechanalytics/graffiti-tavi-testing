@@ -1,0 +1,38 @@
+{
+ "documentInfo": {
+  "documentType": "https://stechanalytics.com/tavi/gaps",
+  "taviFile": "894500HY2CI6QZICGC33-2025-12-31-1-en.tavi.json",
+  "source": "894500HY2CI6QZICGC33-2025-12-31-1-en.xhtml",
+  "specification": "Tavi 1.0 PWD 2026-09-01"
+ },
+ "counts": {
+  "factsWritten": 107,
+  "leftOut": 48,
+  "detailsMissing": 104,
+  "taviCannotExpress": 152,
+  "notWrittenYet": 0
+ },
+ "taviCannotExpress": [
+  {
+   "leftOut": false,
+   "count": 104,
+   "what": "each number's display format, scale and sign as tagged",
+   "why": "the resolved value is written, and transformation and scale MUST NOT be given beside a value (8.4.1); the anchor still points at the printed figure"
+  },
+  {
+   "leftOut": true,
+   "count": 48,
+   "fact": "target DKGAAP",
+   "what": "48 tags of another target document",
+   "why": "each Inline XBRL target is its own report (Inline XBRL 1.1, 3.2) and a Tavi model is one; the default target is written"
+  }
+ ],
+ "notWrittenYet": [],
+ "carried": [
+  {
+   "count": 1,
+   "what": "text continued across elements (ix:continuation)",
+   "why": "the whole text is the value, and the fact is anchored to the tag and each continuation in order, one anchor each (8.8.1)"
+  }
+ ]
+}

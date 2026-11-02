@@ -1,0 +1,5531 @@
+{
+ "documentInfo": {
+  "documentType": "https://xbrl.org/PWD/2026-09-01/module",
+  "documentNamespacePrefix": "gr",
+  "description": "Facts of the Inline XBRL filing Prod224_2603_00753018_20250331.html, converted in Graffiti, importing the taxonomy at https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd.",
+  "namespaces": {
+   "aurep": "http://xbrl.frc.org.uk/reports/2025-01-01/aurep",
+   "bus": "http://xbrl.frc.org.uk/cd/2025-01-01/business",
+   "core": "http://xbrl.frc.org.uk/fr/2025-01-01/core",
+   "direp": "http://xbrl.frc.org.uk/reports/2025-01-01/direp",
+   "gr": "https://stechanalytics.com/tavi/Prod224_2603_00753018_20250331",
+   "iso4217": "http://www.xbrl.org/2003/iso4217",
+   "scheme": "http://www.companieshouse.gov.uk/",
+   "taxonomy": "https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd",
+   "xbrl": "https://xbrl.org/PWD/2026-09-01",
+   "xbrlm": "https://xbrl.org/PWD/2026-09-01/model"
+  },
+  "importMapping": {
+   "taxonomy:FRS-102-2025-01-01": "https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd"
+  },
+  "sourceMappings": [
+   {
+    "sourceName": "gr:html",
+    "url": "Prod224_2603_00753018_20250331.html"
+   }
+  ]
+ },
+ "xbrlModel": {
+  "name": "gr:Prod224_2603_00753018_20250331",
+  "importedTaxonomies": [
+   {
+    "xbrlModelName": "xbrlm:base"
+   },
+   {
+    "xbrlModelName": "taxonomy:FRS-102-2025-01-01",
+    "importObjects": [
+     "aurep:DateAuditorsReport",
+     "bus:AccountingStandardsApplied",
+     "bus:AccountsStatusAuditedOrUnaudited",
+     "bus:AccountsType",
+     "bus:ApplicableLegislation",
+     "bus:BalanceSheetDate",
+     "bus:CountryFormationOrIncorporation",
+     "bus:DescriptionPrincipalActivities",
+     "bus:EndDateForPeriodCoveredByReport",
+     "bus:EntityCurrentLegalOrRegisteredName",
+     "bus:EntityDormantTruefalse",
+     "bus:EntityTradingStatus",
+     "bus:LegalFormEntity",
+     "bus:NameEntityOfficer",
+     "bus:NameProductionSoftware",
+     "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+     "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "bus:ReportTitle",
+     "bus:ScopeAccounts",
+     "bus:StartDateForPeriodCoveredByReport",
+     "bus:UKCompaniesHouseRegisteredNumber",
+     "bus:VersionProductionSoftware",
+     "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+     "core:AverageNumberEmployeesDuringPeriod",
+     "core:BankBorrowings",
+     "core:BankBorrowingsOverdrafts",
+     "core:CashBankOnHand",
+     "core:CashCashEquivalents",
+     "core:Creditors",
+     "core:CurrentAssets",
+     "core:CurrentIncomeTaxPolicy",
+     "core:DateAuthorisationFinancialStatementsForIssue",
+     "core:Debtors",
+     "core:DeferredTaxPolicy",
+     "core:DefinedContributionPensionsPolicy",
+     "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+     "core:DescriptionMeasurementBasisForPropertyPlantEquipment",
+     "core:DirectorSigningFinancialStatements",
+     "core:EmployeeBenefitsPolicy",
+     "core:Equity",
+     "core:FinancialAssets",
+     "core:FinancialLiabilities",
+     "core:FixedAssets",
+     "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
+     "core:IncreaseDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "core:IncreaseDecreaseInPropertyPlantEquipment",
+     "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "core:IntangibleAssets",
+     "core:InventoriesPolicy",
+     "core:LeasesPolicy",
+     "core:LessorOperatingLeasePolicy",
+     "core:LessorPolicy",
+     "core:NetAssetsLiabilities",
+     "core:NetCurrentAssetsLiabilities",
+     "core:PropertyPlantEquipment",
+     "core:PropertyPlantEquipmentGrossCost",
+     "core:PropertyPlantEquipmentPolicy",
+     "core:RevenueRecognitionPolicy",
+     "core:StatementComplianceWithApplicableReportingFramework",
+     "core:TaxPolicy",
+     "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "core:TotalAssets",
+     "core:TotalAssetsLessCurrentLiabilities",
+     "core:TotalBorrowings",
+     "core:TotalLiabilities",
+     "direp:EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse",
+     "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+     "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+     "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+     "direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006",
+     "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+     "aurep:AuditReportHeading",
+     "bus:BusinessReport-specificDimensionsHeading",
+     "bus:DimensionsContentHeading",
+     "bus:Entity-specificDimensionsHeading",
+     "bus:EntityActivitiesHeading",
+     "bus:EntityIdentifyingCodesHeading",
+     "bus:EntityInformationHeading",
+     "bus:EntityLegalFormHeading",
+     "bus:EntityNamesHeading",
+     "bus:EntityOfficers-specificDimensionsHeading",
+     "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+     "bus:OperationalStatusEntityHeading",
+     "bus:ReportDatesPeriodsCoveredHeading",
+     "bus:ReportInformationHeading",
+     "bus:XBRLProductionSoftwareHeading",
+     "core:AdditionalIndustrySectorDataItemsHeading",
+     "core:AmendedRevisedReportHeading",
+     "core:ApprovalFinancialStatementsHeading",
+     "core:AverageNumberEmployeesByDepartmentHeading",
+     "core:BalanceSheetBankingFinanceSectorHeading",
+     "core:BalanceSheetFormat1Heading",
+     "core:BalanceSheetFormat2Heading",
+     "core:BalanceSheetStatementFinancialPositionHeading",
+     "core:BankingFinanceSectorItemsHeading",
+     "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+     "core:CreditorsHeading",
+     "core:DebtorsHeading",
+     "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+     "core:EmployeeInformationHeading",
+     "core:Equity-MovementAnalysisHeading",
+     "core:EquityClasses-specificDimensionsHeading",
+     "core:FinancialAssetsHeading",
+     "core:FinancialInstruments-specificDimensionsHeading",
+     "core:FinancialLiabilitiesHeading",
+     "core:GeneralAccountingPoliciesHeading",
+     "core:IncomePoliciesHeading",
+     "core:IntangibleAssetsHeading",
+     "core:MaterialAccountingPolicyInformationHeading",
+     "core:Non-financialAssetsLiabilitiesPoliciesHeading",
+     "core:NotesDetailedDisclosuresHeading",
+     "core:NotesOnAssetsLiabilitiesHeading",
+     "core:NotesOnEquityHeading",
+     "core:PropertyPlantEquipment-MovementAnalysisHeading",
+     "core:PropertyPlantEquipment-specificDimensionsHeading",
+     "core:PropertyPlantEquipmentDepreciationImpairmentHeading",
+     "core:PropertyPlantEquipmentTangibleFixedAssetsHeading",
+     "core:StatementChangesInEquityHeading",
+     "direp:DirectorsStrategicReportHeading",
+     "direp:EntityDirectorsStatementsHeading",
+     "direp:ListDirectorsHeading",
+     "bus:AccountingStandardsDimension",
+     "bus:AccountsStatusDimension",
+     "bus:AccountsTypeDimension",
+     "bus:ApplicableLegislationDimension",
+     "bus:EntityOfficersDimension",
+     "bus:LegalFormEntityDimension",
+     "core:EquityClassesDimension",
+     "core:FinancialInstrumentCurrentNon-currentDimension",
+     "core:PPEOwnershipDimension",
+     "core:PropertyPlantEquipmentClassesDimension",
+     "bus:AccountingStandardsHeading",
+     "bus:AccountsStatusHeading",
+     "bus:AccountsTypeHeading",
+     "bus:AllEntityOfficersEntityOfficersTotalDefault",
+     "bus:ApplicableLegislationHeading",
+     "bus:LegalFormEntityHeading",
+     "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+     "core:TotalEquityDefault",
+     "core:TotalOwnedLeasedPPEAssetsDefault",
+     "core:TotalPropertyPlantEquipmentDefault",
+     "bus:AuditExemptWithAccountantsReport",
+     "bus:CompanySecretary1",
+     "bus:Director1",
+     "bus:Director2",
+     "bus:FRS102",
+     "bus:FullAccounts",
+     "bus:PrivateLimitedCompanyLtd",
+     "bus:SmallCompaniesRegimeForAccounts",
+     "core:CapitalRedemptionReserve",
+     "core:CapitalReserve",
+     "core:CurrentFinancialInstruments",
+     "core:LandBuildings",
+     "core:MotorVehicles",
+     "core:Non-currentFinancialInstruments",
+     "core:OwnedOrFreeholdAssets",
+     "core:PlantMachinery",
+     "core:RetainedEarningsAccumulatedLosses",
+     "core:ShareCapital",
+     "core:Vehicles",
+     "core:VehiclesPlantMachinery"
+    ]
+   }
+  ],
+  "factSources": [
+   {
+    "name": "gr:html",
+    "factMapName": "gr:htmlMap"
+   }
+  ],
+  "factMaps": [
+   {
+    "name": "gr:htmlMap",
+    "factLocatorType": "xbrl:htmlElementLocatorType"
+   }
+  ],
+  "cubes": [
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Basic_BasicHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Countries_CountriesHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Countries_CountriesHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_concepts"
+     },
+     {
+      "dimension": "bus:LegalFormEntityDimension",
+      "domainNetwork": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_LegalFormEntityDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts"
+     },
+     {
+      "dimension": "bus:EntityOfficersDimension",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountingStandardsDimension",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube_concepts"
+     },
+     {
+      "dimension": "bus:ApplicableLegislationDimension",
+      "domainNetwork": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube_ApplicableLegislationDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsStatusDimension",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsTypeDimension",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE_PPEHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-PPE_PPEHypercube_concepts"
+     },
+     {
+      "dimension": "core:PropertyPlantEquipmentClassesDimension",
+      "domainNetwork": "gr:Hypercube-PPE_PPEHypercube_PropertyPlantEquipmentClassesDimension",
+      "optional": true
+     },
+     {
+      "dimension": "core:PPEOwnershipDimension",
+      "domainNetwork": "gr:Hypercube-PPE_PPEHypercube_PPEOwnershipDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "core:PropertyPlantEquipmentClassesDimension",
+      "domainNetwork": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PropertyPlantEquipmentClassesDimension",
+      "optional": true
+     },
+     {
+      "dimension": "core:PPEOwnershipDimension",
+      "domainNetwork": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PPEOwnershipDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Intangibles-Segments_Intangibles-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Intangibles-Segments_Intangibles-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Segments_FinancialAssets-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialAssets-Segments_FinancialAssets-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors_DebtorsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Debtors_DebtorsHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-Debtors_DebtorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors_CreditorsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Creditors_CreditorsHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-Creditors_CreditorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "domainNetwork": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_concepts"
+     },
+     {
+      "dimension": "core:EquityClassesDimension",
+      "domainNetwork": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_EquityClassesDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "core:EquityClassesDimension",
+      "domainNetwork": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube_EquityClassesDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BalanceSheet-Basic_BalanceSheet-BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-BalanceSheet-Basic_BalanceSheet-BasicHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Empty_EmptyHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "name": "gr:fact-6e90c10e8e28dce2",
+    "factDimensions": {
+     "xbrl:concept": "bus:CountryFormationOrIncorporation",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6e90c10e8e28dce2_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e8af25898bb1916d",
+    "factDimensions": {
+     "xbrl:concept": "bus:UKCompaniesHouseRegisteredNumber",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e8af25898bb1916d_fv",
+      "value": "00753018"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f9d933b3765a9937",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportTitle",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f9d933b3765a9937_fv",
+      "value": "UNAUDITED FINANCIAL STATEMENTS"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-3",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-3_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-5",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-5_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7d16588ab0dbca4e",
+    "factDimensions": {
+     "xbrl:concept": "bus:BalanceSheetDate",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7d16588ab0dbca4e_fv",
+      "value": "2025-03-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-7",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-7_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7d16588ab0dbca4e-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:BalanceSheetDate",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7d16588ab0dbca4e-2_fv",
+      "value": "2025-03-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cfe16f4baf155cd7",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cfe16f4baf155cd7_fv",
+      "value": "For the financial year ended 31 March 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFW_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-a90b155fe7544693",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-a90b155fe7544693_fv",
+      "value": "The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFX_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFX_1"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7690d67f6d831d13",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7690d67f6d831d13_fv",
+      "value": "The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4e4de4941ccce080",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4e4de4941ccce080_fv",
+      "value": "These financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-050831974dfbb363",
+    "factDimensions": {
+     "xbrl:concept": "direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-050831974dfbb363_fv",
+      "value": "In accordance with section 444 of the Companies Act 2006, allof the members of the company have consented to the preparation of abridged financial statements pursuant to paragraph 1A of Schedule 1 to the Small Companies and Groups (Accounts and Directors’ Report) Regulations (SI 2008/409)(b).",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFY_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFY_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFY_2"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-dd37d43f60460bc3",
+    "factDimensions": {
+     "xbrl:concept": "direp:EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-dd37d43f60460bc3_fv",
+      "value": "true"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9fd8181d4da7ea39",
+    "factDimensions": {
+     "xbrl:concept": "core:DateAuthorisationFinancialStatementsForIssue",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9fd8181d4da7ea39_fv",
+      "value": "2026-03-30"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ba1502e28c1999e6",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director2",
+     "xbrl:concept": "core:DirectorSigningFinancialStatements",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ba1502e28c1999e6_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6e90c10e8e28dce2-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:CountryFormationOrIncorporation",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6e90c10e8e28dce2-2_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e8af25898bb1916d-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:UKCompaniesHouseRegisteredNumber",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e8af25898bb1916d-2_fv",
+      "value": "00753018"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-2_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ff2d9d99c5274dbd",
+    "factDimensions": {
+     "xbrl:concept": "core:StatementComplianceWithApplicableReportingFramework",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ff2d9d99c5274dbd_fv",
+      "value": "These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies Act 2006 as applicable to companies subject to the small companies regime. The disclosure requirements of section 1A of FRS 102 have been applied other than where additional disclosure is required to show a true and fair view."
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-db585a1745a9967b",
+    "factDimensions": {
+     "xbrl:concept": "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-db585a1745a9967b_fv",
+      "value": "The financial statements have been prepared under the historical cost convention. The principal accounting policies adopted are set out below.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFZ_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AFZ_1"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6060f6714cc1b95d",
+    "factDimensions": {
+     "xbrl:concept": "core:RevenueRecognitionPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6060f6714cc1b95d_fv",
+      "value": "Turnover is measured at the fair value of the consideration received or receivable for goods supplied andservices rendered, net of discounts and Value Added Tax.Revenue from the sale of goods is recognised when the significant risks and rewards of ownership have transferred to the buyer (usually on despatch of the goods); the amount of revenue can be measured reliably; it is probable that the associated economic benefits will flow to the entity; and the costs incurred or to be incurred in respect of the transactions can be measured reliably.Revenue from a contract to provide services is recognised in the period in which the services are provided in accordance with the stage of completion of the contract.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGA_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGA_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGA_2"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ce4c0ad1761259fd",
+    "factDimensions": {
+     "xbrl:concept": "core:DescriptionMeasurementBasisForPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ce4c0ad1761259fd_fv",
+      "value": "Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of depreciation and any impairment losses.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGB_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-244d8f4e3b23d182",
+    "factDimensions": {
+     "xbrl:concept": "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-244d8f4e3b23d182_fv",
+      "value": "Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their useful lives on the following bases:"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e91ffe347d525b70",
+    "factDimensions": {
+     "xbrl:concept": "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+     "core:PPEOwnershipDimension": "core:OwnedOrFreeholdAssets",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e91ffe347d525b70_fv",
+      "value": "15% on cost"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3041179df09efd01",
+    "factDimensions": {
+     "xbrl:concept": "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3041179df09efd01_fv",
+      "value": "15% - 25% reducing balance"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5acb1a69f2241715",
+    "factDimensions": {
+     "xbrl:concept": "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5acb1a69f2241715_fv",
+      "value": "20% reducing balance"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-bbd248b6aa925e52",
+    "factDimensions": {
+     "xbrl:concept": "core:InventoriesPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-bbd248b6aa925e52_fv",
+      "value": "Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell.Costs include all costs of purchase, costs of conversion and other costs incurred in bringing stock to its present location and condition.Work in progress is valued on the basis of direct costs plus attributable overheads based on normal level of activity. Provision is made for any foreseeable losses where appropriate. An element of profit is included where the outcome of the project may reasonably be determined.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGC_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGC_1"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-4",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-4_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5b601ba578630279",
+    "factDimensions": {
+     "xbrl:concept": "core:TaxPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5b601ba578630279_fv",
+      "value": "Taxation for the year comprises current and deferred tax. Tax is recognised in the Statement ofIncomeand Retained Earnings, except to the extent that it relates to items recognised in other comprehensiveincome or directly in equity.Current or deferred taxation assets and liabilities are not discounted.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGD_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGD_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGD_2"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGD_3"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-0bb37604bb177318",
+    "factDimensions": {
+     "xbrl:concept": "core:CurrentIncomeTaxPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-0bb37604bb177318_fv",
+      "value": "Current tax is recognised at the amount of tax payable using the tax rates and laws that have beenenacted or substantively enacted by the statement of financial position date.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGE_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b63d9c9ed849aa02",
+    "factDimensions": {
+     "xbrl:concept": "core:DeferredTaxPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b63d9c9ed849aa02_fv",
+      "value": "Deferred tax is recognised in respect of all timing differences that have originated but not reversed at thestatement of financial position date.Timing differences arise from the inclusion of income and expenses in tax assessments in periodsdifferent from those in which they are recognised in financial statements. Deferred tax is measured usingtax rates and laws that have been enacted or substantively enacted by the year end and that are expectedto apply to the reversal of the timing difference.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGF_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGF_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGF_2"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGF_3"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGF_4"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-93b7c99ed3c28422",
+    "factDimensions": {
+     "xbrl:concept": "core:DefinedContributionPensionsPolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-93b7c99ed3c28422_fv",
+      "value": "The company operates a defined contribution pension scheme. Contributions payable to the company'spension scheme are charged to profit or loss in the period to which they relate.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGG_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-647c30a37c97a16f",
+    "factDimensions": {
+     "xbrl:concept": "core:LessorOperatingLeasePolicy",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-647c30a37c97a16f_fv",
+      "value": "Rentals paid under operating leases are charged to profit or loss on a straight line basis over the period ofthe lease.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AGH_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb99d882041b4826-6",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb99d882041b4826-6_fv",
+      "value": "ROSS HILLMAN LIMITED"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-140bf8e9225f2c85",
+    "factDimensions": {
+     "xbrl:concept": "bus:EndDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-140bf8e9225f2c85_fv",
+      "value": "2025-03-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-d67c9663d8df0ddf",
+    "factDimensions": {
+     "xbrl:concept": "bus:StartDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-d67c9663d8df0ddf_fv",
+      "value": "2024-04-01"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8e3cfe969ccbec72",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8e3cfe969ccbec72_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-1dc969ae8df96ee2",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-1dc969ae8df96ee2_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9d71a1dd27ea10a9",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityDormantTruefalse",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9d71a1dd27ea10a9_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-781cd92f839f33c3",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityTradingStatus",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-781cd92f839f33c3_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f2cddf4f915c3fd3",
+    "factDimensions": {
+     "xbrl:concept": "aurep:DateAuditorsReport",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f2cddf4f915c3fd3_fv",
+      "value": "2026-03-30"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-78d9af69799bc71d",
+    "factDimensions": {
+     "bus:LegalFormEntityDimension": "bus:PrivateLimitedCompanyLtd",
+     "xbrl:concept": "bus:LegalFormEntity",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-78d9af69799bc71d_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ff62218513084221",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameProductionSoftware",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ff62218513084221_fv",
+      "value": "CCH Software"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8de4328d76d11c81",
+    "factDimensions": {
+     "bus:ApplicableLegislationDimension": "bus:SmallCompaniesRegimeForAccounts",
+     "xbrl:concept": "bus:ApplicableLegislation",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8de4328d76d11c81_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b4a0530cb58d69c0",
+    "factDimensions": {
+     "xbrl:concept": "bus:VersionProductionSoftware",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b4a0530cb58d69c0_fv",
+      "value": "CCH Accounts Production 2025.300"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-07132a861ca037d2",
+    "factDimensions": {
+     "bus:AccountingStandardsDimension": "bus:FRS102",
+     "xbrl:concept": "bus:AccountingStandardsApplied",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-07132a861ca037d2_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e459bc5c05804538",
+    "factDimensions": {
+     "bus:AccountsStatusDimension": "bus:AuditExemptWithAccountantsReport",
+     "xbrl:concept": "bus:AccountsStatusAuditedOrUnaudited",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e459bc5c05804538_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-af75ffcf1ced432b",
+    "factDimensions": {
+     "xbrl:concept": "bus:DescriptionPrincipalActivities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-af75ffcf1ced432b_fv",
+      "value": "No description of principal activity"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-fd66eaa125733ebd",
+    "factDimensions": {
+     "xbrl:concept": "bus:ScopeAccounts",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-fd66eaa125733ebd_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c46e90ce59a17c6a",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c46e90ce59a17c6a_fv",
+      "value": "Mr M K Hillman"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6ffd9c96d9585f1a",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:Director2",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6ffd9c96d9585f1a_fv",
+      "value": "Mr S J Hillman"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-0ada4a7a7f97db6e",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:CompanySecretary1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-0ada4a7a7f97db6e_fv",
+      "value": "Mr S J Hillman"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-08f95cb0be68ea24",
+    "factDimensions": {
+     "bus:AccountsTypeDimension": "bus:FullAccounts",
+     "xbrl:concept": "bus:AccountsType",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-08f95cb0be68ea24_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-20279247232d813b",
+    "factDimensions": {
+     "xbrl:concept": "core:IntangibleAssets",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-20279247232d813b_fv",
+      "value": "0.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c635a0de18afacc2",
+    "factDimensions": {
+     "xbrl:concept": "core:IntangibleAssets",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c635a0de18afacc2_fv",
+      "value": "0.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8e31de401c8a4fcc",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8e31de401c8a4fcc_fv",
+      "value": "223167.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ebc2ccf4df154438",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ebc2ccf4df154438_fv",
+      "value": "189336.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-717b50a22598f39e",
+    "factDimensions": {
+     "xbrl:concept": "core:Debtors",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-717b50a22598f39e_fv",
+      "value": "137230.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-07b96ea7a38183fb",
+    "factDimensions": {
+     "xbrl:concept": "core:Debtors",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-07b96ea7a38183fb_fv",
+      "value": "197766.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-089e24e58b36f879",
+    "factDimensions": {
+     "xbrl:concept": "core:CashBankOnHand",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-089e24e58b36f879_fv",
+      "value": "155246.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d0087681a1d3494",
+    "factDimensions": {
+     "xbrl:concept": "core:CashBankOnHand",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d0087681a1d3494_fv",
+      "value": "206245.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3f7e1d0b1af6d8bf",
+    "factDimensions": {
+     "xbrl:concept": "core:CurrentAssets",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3f7e1d0b1af6d8bf_fv",
+      "value": "324476.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e3f48a3d68783161",
+    "factDimensions": {
+     "xbrl:concept": "core:CurrentAssets",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e3f48a3d68783161_fv",
+      "value": "436011.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-06ad57c5d28cbdb1",
+    "factDimensions": {
+     "xbrl:concept": "core:Creditors",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-06ad57c5d28cbdb1_fv",
+      "value": "316586.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-064c1c9b6f0bce7f",
+    "factDimensions": {
+     "xbrl:concept": "core:Creditors",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-064c1c9b6f0bce7f_fv",
+      "value": "303648.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-aca83135026642e9",
+    "factDimensions": {
+     "xbrl:concept": "core:NetCurrentAssetsLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-aca83135026642e9_fv",
+      "value": "7890.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f4996af43884d1e8",
+    "factDimensions": {
+     "xbrl:concept": "core:NetCurrentAssetsLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f4996af43884d1e8_fv",
+      "value": "132363.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5d6bdae7f280298b",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAssetsLessCurrentLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5d6bdae7f280298b_fv",
+      "value": "231057.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6789a8964fad1b22",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAssetsLessCurrentLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6789a8964fad1b22_fv",
+      "value": "321699.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-84a711b0156557f4",
+    "factDimensions": {
+     "xbrl:concept": "core:Creditors",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-84a711b0156557f4_fv",
+      "value": "45489.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-a81a3f7a81f420c6",
+    "factDimensions": {
+     "xbrl:concept": "core:Creditors",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-a81a3f7a81f420c6_fv",
+      "value": "70996.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-d7e9c14077adf18c",
+    "factDimensions": {
+     "xbrl:concept": "core:NetAssetsLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-d7e9c14077adf18c_fv",
+      "value": "149099.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c5df3fa359faded7",
+    "factDimensions": {
+     "xbrl:concept": "core:NetAssetsLiabilities",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c5df3fa359faded7_fv",
+      "value": "207711.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-45d5522d4ece2811",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:ShareCapital",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-45d5522d4ece2811_fv",
+      "value": "2580.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-2954413a873ffefe",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:ShareCapital",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-2954413a873ffefe_fv",
+      "value": "2580.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cc9edef2f557ec5e",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:CapitalRedemptionReserve",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cc9edef2f557ec5e_fv",
+      "value": "420.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-f006a86b64c482c7",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:CapitalRedemptionReserve",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-f006a86b64c482c7_fv",
+      "value": "420.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-bc9a081401eea238",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:RetainedEarningsAccumulatedLosses",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-bc9a081401eea238_fv",
+      "value": "146099.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-dc21996b9d4f60af",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "core:EquityClassesDimension": "core:RetainedEarningsAccumulatedLosses",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-dc21996b9d4f60af_fv",
+      "value": "204711.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb92fa1e3a3f8e0a",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb92fa1e3a3f8e0a_fv",
+      "value": "149099.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-1680c405e49a30d9",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-1680c405e49a30d9_fv",
+      "value": "207711.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-839ee53df1b295a1",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-839ee53df1b295a1_fv",
+      "value": "0.16",
+      "decimals": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b8b46984195fe8f0",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2023-04-01T00:00:00/2024-04-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b8b46984195fe8f0_fv",
+      "value": "0.17",
+      "decimals": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8a667a42029742de",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8a667a42029742de_fv",
+      "value": "756133.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-1da2be5cd19f2a48",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-1da2be5cd19f2a48_fv",
+      "value": "71726.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-2754f99d6161fef1",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-2754f99d6161fef1_fv",
+      "value": "827859.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-692727bd15f916f9",
+    "factDimensions": {
+     "xbrl:concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-692727bd15f916f9_fv",
+      "value": "566797.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7e4b5eb453d18708",
+    "factDimensions": {
+     "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7e4b5eb453d18708_fv",
+      "value": "37895.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c4b355a12900768d",
+    "factDimensions": {
+     "xbrl:concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c4b355a12900768d_fv",
+      "value": "604692.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8e31de401c8a4fcc-2",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8e31de401c8a4fcc-2_fv",
+      "value": "223167.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ebc2ccf4df154438-2",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipment",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ebc2ccf4df154438-2_fv",
+      "value": "189336.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b3bade271968b6d3",
+    "factDimensions": {
+     "xbrl:concept": "core:BankBorrowings",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b3bade271968b6d3_fv",
+      "value": "7917.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-eeea39c18881469d",
+    "factDimensions": {
+     "xbrl:concept": "core:BankBorrowings",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-eeea39c18881469d_fv",
+      "value": "11667.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-2554bd96692340f2",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalBorrowings",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-2554bd96692340f2_fv",
+      "value": "3750.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-1bdff087e075919b",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalBorrowings",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-1bdff087e075919b_fv",
+      "value": "5000.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4cd04fa3e25e04b7",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalBorrowings",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4cd04fa3e25e04b7_fv",
+      "value": "4167.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-55c9979bb7dad2a7",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalBorrowings",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments",
+     "xbrl:entity": "scheme:00753018",
+     "xbrl:period": "2024-04-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-55c9979bb7dad2a7_fv",
+      "value": "6667.0",
+      "decimals": 0
+     }
+    ]
+   }
+  ],
+  "domainNetworks": [
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:DateAuditorsReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityCurrentLegalOrRegisteredName"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:DescriptionPrincipalActivities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityDormantTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportTitle"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:BalanceSheetDate"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:StartDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EndDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportIncludesDetailedProfitLossStatementTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:StatementComplianceWithApplicableReportingFramework"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:LessorOperatingLeasePolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TaxPolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:CurrentIncomeTaxPolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DeferredTaxPolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DefinedContributionPensionsPolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:InventoriesPolicy"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:RevenueRecognitionPolicy"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Countries_CountriesHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:CountryFormationOrIncorporation"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:LegalFormEntity"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_LegalFormEntityDimension",
+    "root": "bus:LegalFormEntityHeading",
+    "relationships": [
+     {
+      "source": "bus:LegalFormEntityHeading",
+      "target": "bus:PrivateLimitedCompanyLtd"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityTradingStatus"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityOfficer"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DirectorSigningFinancialStatements"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+    "root": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "relationships": [
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:CompanySecretary1"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director1"
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director2"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ScopeAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountingStandardsApplied"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension",
+    "root": "bus:AccountingStandardsHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ApplicableLegislation"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube_ApplicableLegislationDimension",
+    "root": "bus:ApplicableLegislationHeading",
+    "relationships": [
+     {
+      "source": "bus:ApplicableLegislationHeading",
+      "target": "bus:SmallCompaniesRegimeForAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsStatusAuditedOrUnaudited"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension",
+    "root": "bus:AccountsStatusHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "bus:AuditExemptWithAccountantsReport"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsType"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension",
+    "root": "bus:AccountsTypeHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE_PPEHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DescriptionMeasurementBasisForPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DescriptionDepreciationMethodForPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE_PPEHypercube_PropertyPlantEquipmentClassesDimension",
+    "root": "core:TotalPropertyPlantEquipmentDefault",
+    "relationships": [
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:LandBuildings"
+     },
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:VehiclesPlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:PlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:Vehicles"
+     },
+     {
+      "source": "core:Vehicles",
+      "target": "core:MotorVehicles"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE_PPEHypercube_PPEOwnershipDimension",
+    "root": "core:TotalOwnedLeasedPPEAssetsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalOwnedLeasedPPEAssetsDefault",
+      "target": "core:OwnedOrFreeholdAssets"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:PropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:PropertyPlantEquipmentGrossCost"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PropertyPlantEquipmentClassesDimension",
+    "root": "core:TotalPropertyPlantEquipmentDefault",
+    "relationships": [
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:LandBuildings"
+     },
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:VehiclesPlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:PlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:Vehicles"
+     },
+     {
+      "source": "core:Vehicles",
+      "target": "core:MotorVehicles"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PPEOwnershipDimension",
+    "root": "core:TotalOwnedLeasedPPEAssetsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalOwnedLeasedPPEAssetsDefault",
+      "target": "core:OwnedOrFreeholdAssets"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Intangibles-Segments_Intangibles-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:IntangibleAssets"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:CashBankOnHand"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:CashBankOnHand"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Segments_FinancialAssets-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:CashBankOnHand"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalBorrowings"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:BankBorrowings"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalBorrowings"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:BankBorrowings"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalBorrowings"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:AverageNumberEmployeesDuringPeriod"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors_DebtorsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Debtors"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors_DebtorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Debtors"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors_CreditorsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Creditors"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors_CreditorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Creditors"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
+    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "relationships": [
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments"
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Equity"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_EquityClassesDimension",
+    "root": "core:TotalEquityDefault",
+    "relationships": [
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:ShareCapital"
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:CapitalReserve"
+     },
+     {
+      "source": "core:CapitalReserve",
+      "target": "core:CapitalRedemptionReserve"
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:RetainedEarningsAccumulatedLosses"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Equity"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube_EquityClassesDimension",
+    "root": "core:TotalEquityDefault",
+    "relationships": [
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:ShareCapital"
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:CapitalReserve"
+     },
+     {
+      "source": "core:CapitalReserve",
+      "target": "core:CapitalRedemptionReserve"
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:RetainedEarningsAccumulatedLosses"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-BalanceSheet-Basic_BalanceSheet-BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:CurrentAssets"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:NetCurrentAssetsLiabilities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalAssetsLessCurrentLiabilities"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:Creditors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:NetAssetsLiabilities"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:UKCompaniesHouseRegisteredNumber"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameProductionSoftware"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:VersionProductionSoftware"
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "name": "gr:Entity-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Entity-Information"
+   },
+   {
+    "name": "gr:Report-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Report-Information"
+   },
+   {
+    "name": "gr:DirectorsReport",
+    "groupURI": "http://xbrl.frc.org.uk/direp/roles/DirectorsReport"
+   },
+   {
+    "name": "gr:AuditReport",
+    "groupURI": "http://xbrl.frc.org.uk/aurep/roles/AuditReport"
+   },
+   {
+    "name": "gr:BalanceSheetFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/BalanceSheetFRS102"
+   },
+   {
+    "name": "gr:StatementChangesEquityFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/StatementChangesEquityFRS102"
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/NotesAndDetailedDisclosuresFRS102"
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/AdditionalIndustrySectorDataFRS102"
+   },
+   {
+    "name": "gr:Dimensions-Content",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Dimensions-Content"
+   },
+   {
+    "name": "gr:Hypercube-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Basic"
+   },
+   {
+    "name": "gr:Hypercube-Countries",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Countries"
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-LegalFormEntity"
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityTradingStatus"
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityOfficers"
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-ScopeAccounts"
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountingStandardsApplied"
+   },
+   {
+    "name": "gr:Hypercube-ApplicableLegislation",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-ApplicableLegislation"
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsStatus"
+   },
+   {
+    "name": "gr:Hypercube-AccountsType",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsType"
+   },
+   {
+    "name": "gr:Hypercube-PPE",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-PPE"
+   },
+   {
+    "name": "gr:Hypercube-PPE-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-PPE-Segments"
+   },
+   {
+    "name": "gr:Hypercube-Intangibles-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Intangibles-Segments"
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialAssets-Basic"
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Full",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialAssets-Full"
+   },
+   {
+    "name": "gr:Hypercube-FinancialAssets-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialAssets-Segments"
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialLiabilities-Basic"
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Full",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialLiabilities-Full"
+   },
+   {
+    "name": "gr:Hypercube-FinancialLiabilities-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-FinancialLiabilities-Segments"
+   },
+   {
+    "name": "gr:Hypercube-Income-Main",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Income-Main"
+   },
+   {
+    "name": "gr:Hypercube-Debtors",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Debtors"
+   },
+   {
+    "name": "gr:Hypercube-Debtors-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Debtors-Segments"
+   },
+   {
+    "name": "gr:Hypercube-Creditors",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Creditors"
+   },
+   {
+    "name": "gr:Hypercube-Creditors-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Creditors-Segments"
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-EquitySOCI"
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI-Segments",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-EquitySOCI-Segments"
+   },
+   {
+    "name": "gr:Hypercube-BalanceSheet-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-BalanceSheet-Basic"
+   },
+   {
+    "name": "gr:Hypercube-Empty",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Empty"
+   },
+   {
+    "name": "gr:section_Reportinformation"
+   },
+   {
+    "name": "gr:section_Statements"
+   },
+   {
+    "name": "gr:section_Notes"
+   },
+   {
+    "name": "gr:section_Other"
+   }
+  ],
+  "groupContents": [
+   {
+    "groupName": "gr:Entity-Information",
+    "forObject": "gr:Entity-Information_presentation"
+   },
+   {
+    "groupName": "gr:Report-Information",
+    "forObject": "gr:Report-Information_presentation"
+   },
+   {
+    "groupName": "gr:DirectorsReport",
+    "forObject": "gr:DirectorsReport_presentation"
+   },
+   {
+    "groupName": "gr:AuditReport",
+    "forObject": "gr:AuditReport_presentation"
+   },
+   {
+    "groupName": "gr:BalanceSheetFRS102",
+    "forObject": "gr:BalanceSheetFRS102_presentation"
+   },
+   {
+    "groupName": "gr:StatementChangesEquityFRS102",
+    "forObject": "gr:StatementChangesEquityFRS102_presentation"
+   },
+   {
+    "groupName": "gr:NotesAndDetailedDisclosuresFRS102",
+    "forObject": "gr:NotesAndDetailedDisclosuresFRS102_presentation"
+   },
+   {
+    "groupName": "gr:AdditionalIndustrySectorDataFRS102",
+    "forObject": "gr:AdditionalIndustrySectorDataFRS102_presentation"
+   },
+   {
+    "groupName": "gr:Dimensions-Content",
+    "forObject": "gr:Dimensions-Content_presentation"
+   },
+   {
+    "groupName": "gr:Hypercube-Basic",
+    "forObject": "gr:Hypercube-Basic_BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Countries",
+    "forObject": "gr:Hypercube-Countries_CountriesHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-LegalFormEntity",
+    "forObject": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityTradingStatus",
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityOfficers",
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-ScopeAccounts",
+    "forObject": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountingStandardsApplied",
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-ApplicableLegislation",
+    "forObject": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsStatus",
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsType",
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-PPE",
+    "forObject": "gr:Hypercube-PPE_PPEHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-PPE-Segments",
+    "forObject": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Intangibles-Segments",
+    "forObject": "gr:Hypercube-Intangibles-Segments_Intangibles-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialAssets-Basic",
+    "forObject": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialAssets-Full",
+    "forObject": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialAssets-Segments",
+    "forObject": "gr:Hypercube-FinancialAssets-Segments_FinancialAssets-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialLiabilities-Basic",
+    "forObject": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialLiabilities-Full",
+    "forObject": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-FinancialLiabilities-Segments",
+    "forObject": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Income-Main",
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Debtors",
+    "forObject": "gr:Hypercube-Debtors_DebtorsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Debtors-Segments",
+    "forObject": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Creditors",
+    "forObject": "gr:Hypercube-Creditors_CreditorsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Creditors-Segments",
+    "forObject": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EquitySOCI",
+    "forObject": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EquitySOCI-Segments",
+    "forObject": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-BalanceSheet-Basic",
+    "forObject": "gr:Hypercube-BalanceSheet-Basic_BalanceSheet-BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Empty",
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube"
+   }
+  ],
+  "groupTree": {
+   "name": "gr:groupTree",
+   "relationships": [
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Reportinformation",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Entity-Information",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Report-Information",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:DirectorsReport",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:AuditReport",
+     "order": 4
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Statements",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:BalanceSheetFRS102",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementChangesEquityFRS102",
+     "order": 2
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Notes",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Notes",
+     "target": "gr:NotesAndDetailedDisclosuresFRS102",
+     "order": 1
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Other",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:AdditionalIndustrySectorDataFRS102",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Dimensions-Content",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Basic",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Countries",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-LegalFormEntity",
+     "order": 5
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityTradingStatus",
+     "order": 6
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityOfficers",
+     "order": 7
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-ScopeAccounts",
+     "order": 8
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountingStandardsApplied",
+     "order": 9
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-ApplicableLegislation",
+     "order": 10
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsStatus",
+     "order": 11
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsType",
+     "order": 12
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-PPE",
+     "order": 13
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-PPE-Segments",
+     "order": 14
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Intangibles-Segments",
+     "order": 15
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialAssets-Basic",
+     "order": 16
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialAssets-Full",
+     "order": 17
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialAssets-Segments",
+     "order": 18
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialLiabilities-Basic",
+     "order": 19
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialLiabilities-Full",
+     "order": 20
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-FinancialLiabilities-Segments",
+     "order": 21
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Income-Main",
+     "order": 22
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Debtors",
+     "order": 23
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Debtors-Segments",
+     "order": 24
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Creditors",
+     "order": 25
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Creditors-Segments",
+     "order": 26
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EquitySOCI",
+     "order": 27
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EquitySOCI-Segments",
+     "order": 28
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-BalanceSheet-Basic",
+     "order": 29
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Empty",
+     "order": 30
+    }
+   ]
+  },
+  "networks": [
+   {
+    "name": "gr:Entity-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:EntityInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityNamesHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityNamesHeading",
+      "target": "bus:EntityCurrentLegalOrRegisteredName",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityIdentifyingCodesHeading",
+      "order": 2
+     },
+     {
+      "source": "bus:EntityIdentifyingCodesHeading",
+      "target": "bus:UKCompaniesHouseRegisteredNumber",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityActivitiesHeading",
+      "order": 3
+     },
+     {
+      "source": "bus:EntityActivitiesHeading",
+      "target": "bus:DescriptionPrincipalActivities",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityLegalFormHeading",
+      "order": 4
+     },
+     {
+      "source": "bus:EntityLegalFormHeading",
+      "target": "bus:LegalFormEntity",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityLegalFormHeading",
+      "target": "bus:CountryFormationOrIncorporation",
+      "order": 2
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:OperationalStatusEntityHeading",
+      "order": 6
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityDormantTruefalse",
+      "order": 1
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityTradingStatus",
+      "order": 3
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "order": 7
+     },
+     {
+      "source": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:Report-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:ReportInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportTitle",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ScopeAccounts",
+      "order": 2
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountingStandardsApplied",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ApplicableLegislation",
+      "order": 5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsStatusAuditedOrUnaudited",
+      "order": 6
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsType",
+      "order": 6.5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportDatesPeriodsCoveredHeading",
+      "order": 8
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:BalanceSheetDate",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:StartDateForPeriodCoveredByReport",
+      "order": 2
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:EndDateForPeriodCoveredByReport",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+      "order": 10.5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+      "order": 11
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:XBRLProductionSoftwareHeading",
+      "order": 19
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:NameProductionSoftware",
+      "order": 1
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:VersionProductionSoftware",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:DirectorsReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "direp:DirectorsStrategicReportHeading",
+      "order": 1
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "bus:DescriptionPrincipalActivities",
+      "order": 2
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:ListDirectorsHeading",
+      "order": 3
+     },
+     {
+      "source": "direp:ListDirectorsHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 4.85
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:EntityDirectorsStatementsHeading",
+      "order": 11
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct",
+      "order": 1
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
+      "order": 3
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse",
+      "order": 6
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies",
+      "order": 11
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit",
+      "order": 14
+     },
+     {
+      "source": "direp:EntityDirectorsStatementsHeading",
+      "target": "direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006",
+      "order": 15
+     }
+    ]
+   },
+   {
+    "name": "gr:AuditReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "aurep:AuditReportHeading",
+      "order": 1
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:DateAuditorsReport",
+      "order": 14
+     }
+    ]
+   },
+   {
+    "name": "gr:BalanceSheetFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:BalanceSheetStatementFinancialPositionHeading",
+      "order": 1
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:BalanceSheetFormat1Heading",
+      "order": 1
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:FixedAssets",
+      "order": 2
+     },
+     {
+      "source": "core:FixedAssets",
+      "target": "core:IntangibleAssets",
+      "order": 2
+     },
+     {
+      "source": "core:FixedAssets",
+      "target": "core:PropertyPlantEquipment",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:CurrentAssets",
+      "order": 3
+     },
+     {
+      "source": "core:CurrentAssets",
+      "target": "core:Debtors",
+      "order": 3
+     },
+     {
+      "source": "core:CurrentAssets",
+      "target": "core:CashBankOnHand",
+      "order": 5
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:NetCurrentAssetsLiabilities",
+      "order": 5
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:TotalAssetsLessCurrentLiabilities",
+      "order": 6
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:Creditors",
+      "order": 7
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:NetAssetsLiabilities",
+      "order": 10
+     },
+     {
+      "source": "core:BalanceSheetFormat1Heading",
+      "target": "core:Equity",
+      "order": 11,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:BalanceSheetFormat2Heading",
+      "order": 2
+     },
+     {
+      "source": "core:BalanceSheetFormat2Heading",
+      "target": "core:TotalAssets",
+      "order": 1
+     },
+     {
+      "source": "core:TotalAssets",
+      "target": "core:FixedAssets",
+      "order": 2
+     },
+     {
+      "source": "core:TotalAssets",
+      "target": "core:CurrentAssets",
+      "order": 3
+     },
+     {
+      "source": "core:BalanceSheetFormat2Heading",
+      "target": "core:TotalLiabilities",
+      "order": 2
+     },
+     {
+      "source": "core:TotalLiabilities",
+      "target": "core:Equity",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:TotalLiabilities",
+      "target": "core:Creditors",
+      "order": 3
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 5
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementChangesEquityFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:StatementChangesInEquityHeading",
+      "order": 1
+     },
+     {
+      "source": "core:StatementChangesInEquityHeading",
+      "target": "core:Equity-MovementAnalysisHeading",
+      "order": 3
+     },
+     {
+      "source": "core:Equity-MovementAnalysisHeading",
+      "target": "core:Equity",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:NotesDetailedDisclosuresHeading",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:StatementComplianceWithApplicableReportingFramework",
+      "order": 4
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
+      "order": 6
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:AmendedRevisedReportHeading",
+      "order": 12
+     },
+     {
+      "source": "core:AmendedRevisedReportHeading",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:MaterialAccountingPolicyInformationHeading",
+      "order": 4
+     },
+     {
+      "source": "core:MaterialAccountingPolicyInformationHeading",
+      "target": "core:GeneralAccountingPoliciesHeading",
+      "order": 2
+     },
+     {
+      "source": "core:GeneralAccountingPoliciesHeading",
+      "target": "core:LeasesPolicy",
+      "order": 9
+     },
+     {
+      "source": "core:LeasesPolicy",
+      "target": "core:LessorPolicy",
+      "order": 1
+     },
+     {
+      "source": "core:LessorPolicy",
+      "target": "core:LessorOperatingLeasePolicy",
+      "order": 2
+     },
+     {
+      "source": "core:GeneralAccountingPoliciesHeading",
+      "target": "core:TaxPolicy",
+      "order": 13
+     },
+     {
+      "source": "core:TaxPolicy",
+      "target": "core:CurrentIncomeTaxPolicy",
+      "order": 1
+     },
+     {
+      "source": "core:TaxPolicy",
+      "target": "core:DeferredTaxPolicy",
+      "order": 2
+     },
+     {
+      "source": "core:GeneralAccountingPoliciesHeading",
+      "target": "core:EmployeeBenefitsPolicy",
+      "order": 14
+     },
+     {
+      "source": "core:EmployeeBenefitsPolicy",
+      "target": "core:DefinedContributionPensionsPolicy",
+      "order": 1
+     },
+     {
+      "source": "core:MaterialAccountingPolicyInformationHeading",
+      "target": "core:Non-financialAssetsLiabilitiesPoliciesHeading",
+      "order": 3
+     },
+     {
+      "source": "core:Non-financialAssetsLiabilitiesPoliciesHeading",
+      "target": "core:PropertyPlantEquipmentPolicy",
+      "order": 2
+     },
+     {
+      "source": "core:PropertyPlantEquipmentPolicy",
+      "target": "core:DescriptionMeasurementBasisForPropertyPlantEquipment",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipmentPolicy",
+      "target": "core:DescriptionDepreciationMethodForPropertyPlantEquipment",
+      "order": 2
+     },
+     {
+      "source": "core:Non-financialAssetsLiabilitiesPoliciesHeading",
+      "target": "core:InventoriesPolicy",
+      "order": 12
+     },
+     {
+      "source": "core:MaterialAccountingPolicyInformationHeading",
+      "target": "core:IncomePoliciesHeading",
+      "order": 5
+     },
+     {
+      "source": "core:IncomePoliciesHeading",
+      "target": "core:RevenueRecognitionPolicy",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:NotesOnAssetsLiabilitiesHeading",
+      "order": 10
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:PropertyPlantEquipmentTangibleFixedAssetsHeading",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipmentTangibleFixedAssetsHeading",
+      "target": "core:PropertyPlantEquipment",
+      "order": 5
+     },
+     {
+      "source": "core:PropertyPlantEquipmentTangibleFixedAssetsHeading",
+      "target": "core:PropertyPlantEquipment-MovementAnalysisHeading",
+      "order": 6
+     },
+     {
+      "source": "core:PropertyPlantEquipment-MovementAnalysisHeading",
+      "target": "core:PropertyPlantEquipmentGrossCost",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipment-MovementAnalysisHeading",
+      "target": "core:IncreaseDecreaseInPropertyPlantEquipment",
+      "order": 2
+     },
+     {
+      "source": "core:IncreaseDecreaseInPropertyPlantEquipment",
+      "target": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipmentTangibleFixedAssetsHeading",
+      "target": "core:PropertyPlantEquipmentDepreciationImpairmentHeading",
+      "order": 7
+     },
+     {
+      "source": "core:PropertyPlantEquipmentDepreciationImpairmentHeading",
+      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipmentDepreciationImpairmentHeading",
+      "target": "core:IncreaseDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+      "order": 2
+     },
+     {
+      "source": "core:IncreaseDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+      "target": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "order": 1
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:IntangibleAssetsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:IntangibleAssetsHeading",
+      "target": "core:IntangibleAssets",
+      "order": 6
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:DebtorsHeading",
+      "order": 6
+     },
+     {
+      "source": "core:DebtorsHeading",
+      "target": "core:Debtors",
+      "order": 2
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:CreditorsHeading",
+      "order": 7
+     },
+     {
+      "source": "core:CreditorsHeading",
+      "target": "core:Creditors",
+      "order": 2
+     },
+     {
+      "source": "core:Creditors",
+      "target": "core:TotalBorrowings",
+      "order": 1
+     },
+     {
+      "source": "core:TotalBorrowings",
+      "target": "core:BankBorrowingsOverdrafts",
+      "order": 1
+     },
+     {
+      "source": "core:BankBorrowingsOverdrafts",
+      "target": "core:BankBorrowings",
+      "order": 1
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:FinancialAssetsHeading",
+      "order": 10
+     },
+     {
+      "source": "core:FinancialAssetsHeading",
+      "target": "core:FinancialAssets",
+      "order": 2
+     },
+     {
+      "source": "core:FinancialAssets",
+      "target": "core:CashCashEquivalents",
+      "order": 4
+     },
+     {
+      "source": "core:CashCashEquivalents",
+      "target": "core:CashBankOnHand",
+      "order": 1
+     },
+     {
+      "source": "core:NotesOnAssetsLiabilitiesHeading",
+      "target": "core:FinancialLiabilitiesHeading",
+      "order": 11
+     },
+     {
+      "source": "core:FinancialLiabilitiesHeading",
+      "target": "core:FinancialLiabilities",
+      "order": 2
+     },
+     {
+      "source": "core:FinancialLiabilities",
+      "target": "core:TotalBorrowings",
+      "order": 4
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:NotesOnEquityHeading",
+      "order": 11
+     },
+     {
+      "source": "core:NotesOnEquityHeading",
+      "target": "core:Equity",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "order": 13
+     },
+     {
+      "source": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "target": "core:EmployeeInformationHeading",
+      "order": 5
+     },
+     {
+      "source": "core:EmployeeInformationHeading",
+      "target": "core:AverageNumberEmployeesByDepartmentHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AverageNumberEmployeesByDepartmentHeading",
+      "target": "core:AverageNumberEmployeesDuringPeriod",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:AdditionalIndustrySectorDataItemsHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AdditionalIndustrySectorDataItemsHeading",
+      "target": "core:BankingFinanceSectorItemsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BankingFinanceSectorItemsHeading",
+      "target": "core:BalanceSheetBankingFinanceSectorHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BalanceSheetBankingFinanceSectorHeading",
+      "target": "core:TotalAssets",
+      "order": 1
+     },
+     {
+      "source": "core:TotalAssets",
+      "target": "core:IntangibleAssets",
+      "order": 10
+     },
+     {
+      "source": "core:TotalAssets",
+      "target": "core:PropertyPlantEquipment",
+      "order": 11,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:BalanceSheetBankingFinanceSectorHeading",
+      "target": "core:TotalLiabilities",
+      "order": 2
+     },
+     {
+      "source": "core:TotalLiabilities",
+      "target": "core:Equity",
+      "order": 9,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:verboseLabel"
+       }
+      ]
+     },
+     {
+      "source": "core:BalanceSheetBankingFinanceSectorHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 5
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:Dimensions-Content_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:DimensionsContentHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:Entity-specificDimensionsHeading",
+      "order": 2
+     },
+     {
+      "source": "bus:Entity-specificDimensionsHeading",
+      "target": "bus:LegalFormEntityDimension",
+      "order": 2
+     },
+     {
+      "source": "bus:LegalFormEntityDimension",
+      "target": "bus:LegalFormEntityHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:LegalFormEntityHeading",
+      "target": "bus:PrivateLimitedCompanyLtd",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:EntityOfficers-specificDimensionsHeading",
+      "order": 4
+     },
+     {
+      "source": "bus:EntityOfficers-specificDimensionsHeading",
+      "target": "bus:EntityOfficersDimension",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityOfficersDimension",
+      "target": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "order": 1
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:CompanySecretary1",
+      "order": 5
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director1",
+      "order": 10
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:Director2",
+      "order": 11
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:BusinessReport-specificDimensionsHeading",
+      "order": 7
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountingStandardsDimension",
+      "order": 2
+     },
+     {
+      "source": "bus:AccountingStandardsDimension",
+      "target": "bus:AccountingStandardsHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102",
+      "order": 3
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:ApplicableLegislationDimension",
+      "order": 4
+     },
+     {
+      "source": "bus:ApplicableLegislationDimension",
+      "target": "bus:ApplicableLegislationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:ApplicableLegislationHeading",
+      "target": "bus:SmallCompaniesRegimeForAccounts",
+      "order": 2
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsStatusDimension",
+      "order": 5
+     },
+     {
+      "source": "bus:AccountsStatusDimension",
+      "target": "bus:AccountsStatusHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "bus:AuditExemptWithAccountantsReport",
+      "order": 3
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsTypeDimension",
+      "order": 5.5
+     },
+     {
+      "source": "bus:AccountsTypeDimension",
+      "target": "bus:AccountsTypeHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "core:EquityClasses-specificDimensionsHeading",
+      "order": 8
+     },
+     {
+      "source": "core:EquityClasses-specificDimensionsHeading",
+      "target": "core:EquityClassesDimension",
+      "order": 1
+     },
+     {
+      "source": "core:EquityClassesDimension",
+      "target": "core:TotalEquityDefault",
+      "order": 1
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:ShareCapital",
+      "order": 1
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:CapitalReserve",
+      "order": 4
+     },
+     {
+      "source": "core:CapitalReserve",
+      "target": "core:CapitalRedemptionReserve",
+      "order": 2
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:RetainedEarningsAccumulatedLosses",
+      "order": 31
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "core:PropertyPlantEquipment-specificDimensionsHeading",
+      "order": 14
+     },
+     {
+      "source": "core:PropertyPlantEquipment-specificDimensionsHeading",
+      "target": "core:PropertyPlantEquipmentClassesDimension",
+      "order": 1
+     },
+     {
+      "source": "core:PropertyPlantEquipmentClassesDimension",
+      "target": "core:TotalPropertyPlantEquipmentDefault",
+      "order": 1
+     },
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:LandBuildings",
+      "order": 1
+     },
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:VehiclesPlantMachinery",
+      "order": 5
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:PlantMachinery",
+      "order": 1
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:Vehicles",
+      "order": 2
+     },
+     {
+      "source": "core:Vehicles",
+      "target": "core:MotorVehicles",
+      "order": 3
+     },
+     {
+      "source": "core:PropertyPlantEquipment-specificDimensionsHeading",
+      "target": "core:PPEOwnershipDimension",
+      "order": 2
+     },
+     {
+      "source": "core:PPEOwnershipDimension",
+      "target": "core:TotalOwnedLeasedPPEAssetsDefault",
+      "order": 1
+     },
+     {
+      "source": "core:TotalOwnedLeasedPPEAssetsDefault",
+      "target": "core:OwnedOrFreeholdAssets",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "core:FinancialInstruments-specificDimensionsHeading",
+      "order": 22
+     },
+     {
+      "source": "core:FinancialInstruments-specificDimensionsHeading",
+      "target": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "order": 9
+     },
+     {
+      "source": "core:FinancialInstrumentCurrentNon-currentDimension",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "order": 1
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:CurrentFinancialInstruments",
+      "order": 1
+     },
+     {
+      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+      "target": "core:Non-currentFinancialInstruments",
+      "order": 2
+     }
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "forObject": "gr:Entity-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "002 - Entity Information"
+   },
+   {
+    "forObject": "gr:Report-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "003 - Report Information"
+   },
+   {
+    "forObject": "gr:DirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "010 - Directors'/Strategic Report"
+   },
+   {
+    "forObject": "gr:AuditReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "015 - Audit Report"
+   },
+   {
+    "forObject": "gr:BalanceSheetFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "222 - Balance Sheet (FRS 102)"
+   },
+   {
+    "forObject": "gr:StatementChangesEquityFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "232 - Statement of Changes in Equity (FRS 102)"
+   },
+   {
+    "forObject": "gr:NotesAndDetailedDisclosuresFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "302 - Notes and Detailed Disclosures (FRS 102)"
+   },
+   {
+    "forObject": "gr:AdditionalIndustrySectorDataFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "402 - Additional Industry Sector Data (FRS 102)"
+   },
+   {
+    "forObject": "gr:Dimensions-Content",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "500 - Dimensions Content"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic_BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-Countries",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9001 - Hypercube - Countries"
+   },
+   {
+    "forObject": "gr:Hypercube-Countries_CountriesHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9001 - Hypercube - Countries"
+   },
+   {
+    "forObject": "gr:Hypercube-LegalFormEntity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9010 - Hypercube - Legal Form of Entity"
+   },
+   {
+    "forObject": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9010 - Hypercube - Legal Form of Entity"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-ScopeAccounts",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9020 - Hypercube - Scope of Accounts"
+   },
+   {
+    "forObject": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9020 - Hypercube - Scope of Accounts"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-ApplicableLegislation",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9023 - Hypercube - Applicable Legislation"
+   },
+   {
+    "forObject": "gr:Hypercube-ApplicableLegislation_ApplicableLegislationHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9023 - Hypercube - Applicable Legislation"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-PPE",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9030 - Hypercube - PPE"
+   },
+   {
+    "forObject": "gr:Hypercube-PPE_PPEHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9030 - Hypercube - PPE"
+   },
+   {
+    "forObject": "gr:Hypercube-PPE-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9032 - Hypercube - PPE - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9032 - Hypercube - PPE - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Intangibles-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9036 - Hypercube - Intangibles - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Intangibles-Segments_Intangibles-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9036 - Hypercube - Intangibles - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9052 - Hypercube - Financial Assets - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9052 - Hypercube - Financial Assets - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Full",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9053 - Hypercube - Financial Assets - Full"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9053 - Hypercube - Financial Assets - Full"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9054 - Hypercube - Financial Assets - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialAssets-Segments_FinancialAssets-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9054 - Hypercube - Financial Assets - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9069 - Hypercube - Financial Liabilities - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9069 - Hypercube - Financial Liabilities - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Full",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9070 - Hypercube - Financial Liabilities - Full"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9070 - Hypercube - Financial Liabilities - Full"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9071 - Hypercube - Financial Liabilities - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9071 - Hypercube - Financial Liabilities - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-Debtors",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9180 - Hypercube - Debtors"
+   },
+   {
+    "forObject": "gr:Hypercube-Debtors_DebtorsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9180 - Hypercube - Debtors"
+   },
+   {
+    "forObject": "gr:Hypercube-Debtors-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9181 - Hypercube - Debtors - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9181 - Hypercube - Debtors - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Creditors",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9190 - Hypercube - Creditors"
+   },
+   {
+    "forObject": "gr:Hypercube-Creditors_CreditorsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9190 - Hypercube - Creditors"
+   },
+   {
+    "forObject": "gr:Hypercube-Creditors-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9191 - Hypercube - Creditors - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9191 - Hypercube - Creditors - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9240 - Hypercube - Equity and SOCI"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9240 - Hypercube - Equity and SOCI"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI-Segments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9243 - Hypercube - Equity and SOCI - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI-Segments_EquitySOCI-SegmentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9243 - Hypercube - Equity and SOCI - Segments"
+   },
+   {
+    "forObject": "gr:Hypercube-BalanceSheet-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9260 - Hypercube - Balance Sheet - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-BalanceSheet-Basic_BalanceSheet-BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9260 - Hypercube - Balance Sheet - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:section_Reportinformation",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report information"
+   },
+   {
+    "forObject": "gr:section_Statements",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statements"
+   },
+   {
+    "forObject": "gr:section_Notes",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Notes"
+   },
+   {
+    "forObject": "gr:section_Other",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Other"
+   }
+  ]
+ }
+}

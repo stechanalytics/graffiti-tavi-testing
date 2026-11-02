@@ -1,0 +1,2315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:aurep="http://xbrl.frc.org.uk/reports/2023-01-01/aurep" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:direp="http://xbrl.frc.org.uk/reports/2023-01-01/direp" xmlns:accrep="http://xbrl.frc.org.uk/reports/2023-01-01/accrep" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:common="http://xbrl.frc.org.uk/general/2023-01-01/common" xmlns:core="http://xbrl.frc.org.uk/fr/2023-01-01/core" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:curr="http://xbrl.frc.org.uk/cd/2023-01-01/currencies" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:lang="http://xbrl.frc.org.uk/cd/2023-01-01/languages" xmlns:bus="http://xbrl.frc.org.uk/cd/2023-01-01/business" xmlns:types="http://xbrl.frc.org.uk/general/2023-01-01/types" xmlns:countries="http://xbrl.frc.org.uk/cd/2023-01-01/countries" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:uk-ref="http://xbrl.frc.org.uk/general/2023-01-01/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:ix="http://www.xbrl.org/2008/inlineXBRL" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldte="http://xbrl.org/2005/xbrldt/errors" xmlns:xbrldie="http://xbrl.org/2006/xbrldi/errors" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:frs-102="http://xbrl.frc.org.uk/FRS-102/2023-01-01" xmlns:dpl="http://xbrl.frc.org.uk/dpl/2023-01-01" xmlns:dpl-frc="http://xbrl.frc.org.uk/dpl/2023-01-01" xmlns:uk-countries="http://xbrl.frc.org.uk/cd/2023-01-01/countries" xmlns:char="http://xbrl.frc.org.uk/char/2023-01-01" xmlns:uk-char-ref="http://xbrl.frc.org.uk/char/2023-01-01/ref">
+  <head>
+    <title>CharityName - Accounts</title>
+    <meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type" />
+    <style type="text/css">                @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');                @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap');                @font-face {                    font-family: 'Roman New Times';                    font-style: normal;                    font-weight: 500;                    src: local('Roman New Times'), url('https://fonts.cdnfonts.com/s/60014/Roman_New_Times.woff') format('woff');                }                @font-face {                    font-family: 'TimesNewRomanCustom';                    src: url('/fonts/timesnewroman.ttf') format('truetype');                }                table {                    page-break-inside:auto;                    font-size: 14px;                    width: 100%;                }                body {                    font-family: 'TimesNewRomanCustom', 'Times New Roman', serif;        font-size: 14px;                    margin: 0;                    padding: 0;                    margin: 0;                    background: #fff;                    height: 100%;                    width: 100%;                }                thead {display: table-header-group; }                tbody{overflow: auto !important; }                tfoot { display: table-row-group; }                .row {                    display: -webkit-box;                    display: flex;                    justify-content: center;                }                .userName {                    height: 50px;                    width: 50px;                    display: inline-block;                    font-size: 30px;                    color: #fff;                    line-height: 50px;                    font-weight: 600;                    text-align: center;                    margin-right: 100px;                }                @page {                    margin: 0;                    size: A4;                }                .leftHead {                    width: 190px;                     display: inline-block;                     font-weight: bold;                     vertical-align: top;                }                pre {                    white-space: normal;                    word-wrap: break-word;                    overflow-wrap: break-word;                    max-width: 100%;                    word-break: break-word;                }                                .report-body {        font-size: 14px !important;                    color: #000000 !important;                    font-family: Arial, Helvetica, sans-serif;        }                .page-break {                    page-break-before: always;                }                .page800 {                    height: 842px;                }                .cmp-val {                    line-height: 20px;                }                 </style>
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+    <div style="display:none">
+      <ix:header>
+        <ix:hidden>
+          <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="companyA">2024-03-01</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="companyA">2025-02-28</ix:nonNumeric>
+          <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="company" />
+          <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="company">false</ix:nonNumeric>
+          <ix:nonNumeric name="bus:ApplicableLegislation" contextRef="acc_legislation" />
+          <ix:nonNumeric name="bus:AccountsType" contextRef="acc_type" />
+          <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="acc_audit_status" />
+          <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="acc_standard" />
+          <ix:nonNumeric contextRef="director2" name="core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+          <ix:nonNumeric contextRef="director4" name="core:DirectorSigningFinancialStatements"></ix:nonNumeric>
+          <ix:nonNumeric name="bus:NameProductionSoftware" contextRef="company">Capium Accounts Production</ix:nonNumeric>
+          <ix:nonNumeric name="bus:VersionProductionSoftware" contextRef="company">1.1</ix:nonNumeric>
+        </ix:hidden>
+        <ix:references>
+          <link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2023-01-01/FRS-102-2023-01-01.xsd" xlink:type="simple" />
+          <link:schemaRef xlink:href="https://xbrl.frc.org.uk/char/2023-01-01/char-2023-01-01.xsd" xlink:type="simple" />
+        </ix:references>
+        <ix:resources>
+          <xbrli:context id="current_Period">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_type">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FullAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_standard">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:FRS102</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_audit_status">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExemptWithAccountantsReport</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="acc_legislation">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:ApplicableLegislationDimension">bus:SmallCompaniesRegimeForAccounts</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="companyA">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="office">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityContactTypeDimension">bus:RegisteredOffice</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="company_prev">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="C">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="E">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="G">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director1B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director2">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director2B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director3">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director3B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director4">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director4</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:startDate>2024-03-01</xbrli:startDate>
+              <xbrli:endDate>2025-02-28</xbrli:endDate>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:context id="director4B">
+            <xbrli:entity>
+              <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">05368398</xbrli:identifier>
+              <xbrli:segment>
+                <xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director4</xbrldi:explicitMember>
+              </xbrli:segment>
+            </xbrli:entity>
+            <xbrli:period>
+              <xbrli:instant>2025-02-28</xbrli:instant>
+            </xbrli:period>
+          </xbrli:context>
+          <xbrli:unit id="GBP">
+            <xbrli:measure>iso4217:GBP</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Shares">
+            <xbrli:measure>xbrli:shares</xbrli:measure>
+          </xbrli:unit>
+          <xbrli:unit id="Pure">
+            <xbrli:measure>xbrli:pure</xbrli:measure>
+          </xbrli:unit>
+        </ix:resources>
+      </ix:header>
+    </div>
+    <div style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; min-height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;text-align: center;" cellpadding="10">
+        <tr valign="top" style="height: 30px;">
+          <td>
+            <table style="width:100%; margin: 0 auto;  border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:center;">
+              <tr valign="top">
+                <td style="text-align: right;">
+                  <h1 style="font-size: 14px;font-weight:normal; line-height: 0; visibility: hidden; text-indent: -999px">Charity Registration Number</h1>Charity Registration Number : <ix:nonNumeric contextRef="company" name="char:CharityRegistrationNumberEnglandWales"><span class="tagged" title="char:CharityRegistrationNumberEnglandWales(company)">1137913</span></ix:nonNumeric></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr valign="top" style="height: 30px;">
+          <td>
+            <table style="width:100%; margin: 0 auto;  border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:center;">
+              <tr valign="top">
+                <td style="text-align: right;">
+                  <h1 style="font-size: 14px;font-weight:normal;">Company Registration Number : 05368398 </h1>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr valign="middle" style="height: 842px; min-height: 842px;">
+          <td>
+            <table class="cmp-val" style="width:100%;  border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:center;">
+              <tr valign="middle">
+                <td style="width: 100%; text-align: center;">
+                  <h2>
+                    <ix:nonNumeric contextRef="company" name="bus:EntityCurrentLegalOrRegisteredName">
+                      <span class="tagged" title="bus:EntityCurrentLegalOrRegisteredName(company)">UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</span>
+                    </ix:nonNumeric>
+                  </h2>
+                </td>
+              </tr>
+              <tr valign="middle">
+                <td>A COMPANY LIMITED BY GUARANTEE</td>
+              </tr>
+              <tr valign="middle">
+                <td>TRUSTEES’ REPORT</td>
+              </tr>
+              <tr>
+                <td>AND</td>
+              </tr>
+              <tr valign="middle">
+                <td>FINANCIAL STATEMENTS</td>
+              </tr>
+              <tr valign="middle">
+                <td>FOR THE YEAR ENDED</td>
+              </tr>
+              <tr valign="middle">
+                <td>28 FEBRUARY 2025</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF;">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text">
+                      <b style="font-size: 18px;">LEGAL AND ADMINISTRATIVE INFORMATION</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px; font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Trustees</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">Marsha Lowe<br />Sarah Moltoni<br />Marcelo Santos</td>
+              </tr>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Charity Number</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">1137913<br /></td>
+              </tr>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Company Number</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">
+                  <ix:nonNumeric contextRef="company" name="bus:UKCompaniesHouseRegisteredNumber">05368398</ix:nonNumeric>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Registered Office</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">136 Streatham High Road<br />London<br />SW16 1BW</td>
+              </tr>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Secretary</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">Sarah Moltoni</td>
+              </tr>
+            </table>
+            <table class="cmp-val" border="0" style="width:100%; margin: 0 auto; margin-top: 10px; page-break-before: auto; page-break-inside: avoid;">
+              <tr>
+                <td style="font-weight: bold;vertical-align: top; padding-bottom: 5px; width: 50%;">Independent Examiner</td>
+                <td style="vertical-align: top; padding-bottom: 5px; width: 50%;">Microaccounts<br />16 Okemore Gardens<br />Orpington<br />Orpington<br />BR5 3PJ</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF;">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text">
+                      <b style="font-size: 18px;">CONTENTS</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px; font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width: 100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse; text-align: justify; margin-top: 10px">
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;">Trustees' Report</div>
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;">Independent Examiner's Report</div>
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;">Statement of Financial Activities</div>
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;">Balance Sheet</div>
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;">Notes to the Financial Statements</div>
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div id="trustees-report" style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:left; ">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text">
+                      <b style="font-size: 18px;">TRUSTEES' REPORT</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px; font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="cmp-val" style="width: 100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse; margin-top: 10px;">
+              <tr>
+                <td>
+                  <div style="margin-top: 20px; width: 100%;text-align: justify;">The trustees present their annual report and financial statements for the year ended 28 February 2025  .</div>
+                  <br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="word-wrap: break-word; text-align: justify;">
+                    <strong>Trustees' report and financial statements</strong>
+                    <div style="word-wrap: break-word; text-align: justify;"> The trustees who are also directors of the charity for the purposes of the Companies Act 2006, present their report with the financial statements of the charity for the year ended 28 February 2025. The trustees have adopted the provisions of Accounting and Reporting by Charities: Statement of Recommended Practice applicable to charities preparing their accounts in accordance with the Financial Reporting Standard applicable in the UK and Republic of Ireland (FRS 102) (effective 1 January 2019).  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: justify;">
+                  <p>
+                    <span>UINCAPTrusteesAnnualReportforyearended29thFebruary2025</span>
+                  </p>
+                  <p></p>
+                  <p>Reference and Administrative Details</p>
+                  <p>UINCAP International Union of Capoeira(UINCAP) Charity registration number: 1137913</p>
+                  <p>Company limitedby guarantee: 05368398 Registered/office address:</p>
+                  <p>2nd Floor, 136 Streatham High Road, London, SW16 1BW Trustees: Sarah Moltoni, MarceloDos Santos, MarshaLowe</p>
+                  <div>Structure,GovernanceandManagement</div>
+                  <p>UINCAP is acharitable company limited by guarantee. Itsgoverning document is the Memorandum and Articles of Association as adopted by theBoard of Trustees in August 2004. UINCAP’sactivities are managed by the Board of Trustees who are also the Directors ofthe company.</p>
+                  <p>New trustees withrelevant skills that can benefit the charity are recruited through personalcontact and by recommendation from amongst membership and those who work with andsupport the charity’s activities. Duringthe year-ended February 2025, trustee Janet Warburton sadly passed away. Wewill look to recruit an additional trustee during the next financial year.</p>
+                  <p></p>
+                  <div>ObjectivesandActivities</div>
+                  <p>UINCAP is a registered charityworking throughout Lambethand surrounding boroughssince 2004. We aim to improve the physical and emotional health andwell being of children, young people and adults.</p>
+                  <p></p>
+                  <p>This is achieved through the provision ofcapoeira (a Brazilian martial art,incorporating self-defence, dance, acrobatics, philosophy, instrumental playing and singing), a range of other martialarts, dance, music, visual arts and therapies and structured play.</p>
+                  <p>UINCAP runs the Streatham Capoeira Centre and the Kennington Park Centre.</p>
+                  <p></p>
+                  <p>Since 2017 wehave been part of Bright Futures, a consortium of other local providers thatwas established to provide joined up working across the borough. In 2021 we have developed this consortium model and formed the StreathamYouth Partnership with partners including Streatham Youth and Community Trust,Inspirational Youth, Streatham Space, South CentralYouth and St Michaels Fellowship. Inaddition to our ongoing work, being part of this consortium has meant we havealso delivered joint events such as open days, workshops and performancesalongside the other providers.</p>
+                  <p></p>
+                  <p>In October2022, we formed the Creative Consortium in partnership with Oxygen Arts, TheBoury Academy, Kinetika Bloco and the Kennington Park Community Trust. With a focus on creative skillswork, this consortium works across the north of the borough. We received a one-year seed-fund from Lambeth Youth and Play toimplement new creative and sporting initiatives and to develop partnershipworking.</p>
+                  <p>Streatham CapoeiraCentre Capoeira:</p>
+                  <p>We run 12 weeklyclasses for childrenfrom 3 years and above through to adult, and for beginners through toadvanced level.</p>
+                  <p>During schoolholidays we run the CapoeiraHoliday Courses, from 10am– 3pm Monday-Friday for children from 6-16 years. We also provide volunteering/training opportunities for youngpeople from 14-18 years.</p>
+                  <p></p>
+                  <p>Provision is offered as 12-week coursesduring term-time, intensiveholiday provision during school holidays and at special events such asgradings, championships, performances and workshops.</p>
+                  <p></p>
+                  <p>Additional Activities:</p>
+                  <p>The centreoffers ballet, lindi-hop/jazz dance, yoga, pilates, drum kit and Afro-Brazilian drummingclasses for childrenand adults run by our staff and external providers.</p>
+                  <p></p>
+                  <p>Kennington Park CentreAdventure Playground:</p>
+                  <p>Open every Monday,Tuesday and Wednesdayduring term-time from 3:30 – 6:30pm and Monday-Friday 10am – 4pmduring the school holidays from 6- 16 year-olds fromLambeth and surrounding boroughs.</p>
+                  <p>This freeopen-access service provides structured play, an adventure playground with climbing structures and zip-wire, sportsand arts activities, games and cooking, led by ahighly qualified team of playworkers.</p>
+                  <p>Stay &amp;amp; Play:</p>
+                  <p>Open throughout the year from Monday - Thursday from 10am – 1pm.</p>
+                  <p>This free serviceis open to children from 0 – 5 years with a parent or carer. It providesopen space for young childrento play, make friends and learn in asupportive environment, and for parents/carers to meet others and seek adviceand support from experienced workers.</p>
+                  <p>Additional Activities:</p>
+                  <p>3 weeklycapoeira, classes are offered during term-time (as at Streatham Capoeira Centre)for families (children from 5 yearsplus with a parent/carer),for 10 – 17 years-olds at the APG and for adults.</p>
+                  <p>We have expandedthe range of services to promote improved well-being, including acupuncture,yoga, pilates and fitness, as well as establishing a screen-printing workshopoffering both trainingand guided use of equipment.</p>
+                  <p>These activities are run by a combination of our staff and externalproviders.</p>
+                  <p></p>
+                  <p>Both centres are widely used by community groups for meetings,classes and family/communitygatherings, when not in use for regular provision.</p>
+                  <p></p>
+                  <div>
+                    <div>PublicBenefit</div>
+                  </div>
+                  <p>UINCAP’sTrustees have considered the Charity Commision’s guidance on public benefitand are satisfied that the charity has charitable purposeand delivers wide ranging and tangible public benefit.</p>
+                  <p></p>
+                  <p>Provision is accessible to users with and withoutadditional needs and from a variety of socio-economic backgrounds. Provision is low cost, with</p>
+                  <p>concessionary ratesfor low-income familiesand a bursary to cover up to thefull cost of provision for those unable to make any financial contribution.</p>
+                  <p></p>
+                  <p>The KPC AdventurePlayground and Stay &amp;amp; Play are free of charge.</p>
+                  <p></p>
+                  <p>Capoeiraimproves health on a physical and emotional level, improving fitness, strength,flexibility, coordination and reflex as well as creativity and improvisation, self-confidence,individuality, autonomy and team skills.</p>
+                  <p>Our provisionseeks to make stronger and healthier communities - physically andemotionally. We facilitate theparticipation of all members of a child’s family and the wider community, byrunning classes for all ages, subsidising provision up to the full cost whereneeded, putting on performances, open days, workshops and celebratory events.</p>
+                  <p></p>
+                  <p>Throughbringing people of all ages together, we give children and young peopleopportunities to be inspired and challenged by positive role models from a range of cultural, social and economicbackgrounds and for childrenthemselves to be positive role models for younger childrenand their peers.</p>
+                  <p></p>
+                  <p></p>
+                  <div>
+                    <div>Challenges</div>
+                  </div>
+                  <p>Thecost-of-living crisis has continues to have significant impact on both ourorganisation and the people we support. We have seen increased demand forfree and concessionary provision, with many families struggling to afford topay for services.</p>
+                  <p>Many youngpeople we work with are struggling with increased socialanxiety and school attendance. Wehave also noticed higher levels of anxiety and stress amongst both young peopleand adults and higher levels of financial concern amongst parents.</p>
+                  <p></p>
+                  <div>AchievementsandPerformance</div>
+                  <p>Outreach work in schoolshas continued to rebuild duringthis financial year and we have seen an uptake inattendance across most programmes.</p>
+                  <p></p>
+                  <p>In June, 93students took part in the annual Batizado grading ceremony. Taking part ingrading ceremonies, and being awarded certificates and belts both rewardsstudents and encourages further development.The benefits of practising capoeira come over time, therefore it is important that practitionersare encouraged to keep up withtraining (whether they carry onwith capoeira or use it as a stepping stone to dance or other martialarts).</p>
+                  <p></p>
+                  <p>With funding from Lambeth’s HolidayActivity Fund, we ran holidayprovision during the Easter, summer and Christmas holidays in bothStreatham and Kennington, with additional half-term projects also running inKennington.</p>
+                  <p></p>
+                  <p>In Streatham,we were open for 5 weeks in April, July and August. We ran capoeira, hula, dance, music and visual arts sessions and provided a free hot lunch for all the children. Over the 5 weeks, we worked with 152children, with an average of 35 places offered each day.</p>
+                  <p>At theKennington Park Centre, we were open for 10 weeks, with children attending daily and a total of 214 unique participants. We ran sports and arts</p>
+                  <p>activities,cooking sessions and free play on the zip wire and outside adventure playground structures. This summer we continued our partnership with the Kennington Park Community Centre,with the objectiveof mixing and connecting families from oppositesides of the park (from Brandon and Kennington Park estates), to promotecommunity cohesion and reduce fear and anxiety young people have of going totheir local Kennington Park.</p>
+                  <p>In August we ranour residential programme, taking 23 12-16 year olds on a 4-day campingtrip. Young people took part in a range of activities, including capoeira, dance, music,football, paddle-boarding, swimming and hiking.</p>
+                  <p>Each day we prepared and cooked meals together as a group. The benefitsof this programme were widely felt, especially post-pandemic and we haveseen increased uptake in ongoing provision.</p>
+                  <p></p>
+                  <p>The HAF fundingenabled us to reach new users and we have built up a large database of young people andfamilies who don’t necessarily access weekly provision but instead regularlyattend and rely on our provision during the school holidays.</p>
+                  <p>We ran ourKennington Community Days in July and December, with a range of stalls,activities, food and games for local families.These are very popularevents, bring together people from all generations across our local communities.</p>
+                  <p></p>
+                  <p>Our YoungCapoeira Leaders programme is going from strength to strength, with 15 youngpeople regularly taking part in performances, leading workshops, volunteeringon holiday and regular provision and learning to teach. In July, 12 young peoplefrom our Young Capoeira Leaderprogramme lead workshops and performances at the Lambeth Country Show. We also delivered a range of performancesand workshops at local schools, and our young performers were invited to hostan interactive performance at We Out Here festival in Dorset in August 2024.</p>
+                  <p></p>
+                  <p>Ongoing Projects:</p>
+                  <div>
+                    <p>Capoeira YouthEducation Project</p>
+                    <p>Capoeira YoungLeader Programme</p>
+                    <p>Kennington Park Centre Adventure Playground</p>
+                    <p>Kennington Park Centre Stay &amp;amp; Play</p>
+                    <p>Holiday schemes</p>
+                  </div>
+                  <p></p>
+                  <p>Capoeira Youth Education Project</p>
+                  <p>16 weekly classes at the Streatham Capoeira School</p>
+                  <p>3 weeklyclasses at the Kennington Park Centre includingFamily Capoeira sessions</p>
+                  <p>12 weekly outreachclasses in schools/community centres</p>
+                  <p></p>
+                  <p>We continueto work in partnership with schools, collegesand community- basedorganisations to enable young people to access provision, including referralsand access to subsidised and free places where required.</p>
+                  <p></p>
+                  <p>In the yearended February 2025, over 245 children and young people accessed regularongoing provision as part of the CapoeiraYouth Education Project.</p>
+                  <p>Throughout the project, childrenare taught the basic movements of capoeira, andlearn to create sequences of movements with which to play capoeira.</p>
+                  <p>Participantslearn to play a range of percussion instruments and the primary instrument the‘berimbau’. Participants also learn arange of songs that tell of the historyof capoeira, from slavery times until the modern day and about famous individuals that madesignificant contribution to the survival and</p>
+                  <p>development of capoeira. History is an important elementof the programme, and students learn about the origins of capoeira andhow it has developed up to the present day.</p>
+                  <p></p>
+                  <p>We currently have 5 on-goingoutreach sessions in local schools.</p>
+                  <p></p>
+                  <p>The principle aim of the Capoeira YouthProject is to promote physicalfitness and healthy lifestyles amongst children and young people throughthe facilitation of regular capoeira provision.</p>
+                  <p></p>
+                  <p>The outcomesof the Capoeira Youth Project:</p>
+                  <div>
+                    <p>Practising capoeira raisesgeneral fitness levels,improves strength,coordination, spatial awareness and increases flexibility.</p>
+                    <p>Through practising capoeira, children developconfidence and team skills. (Teachersof children practising capoeira have noted increased participation in class,improvements in music classes, through improved posture and breathing, and greater generalself-confidence.)</p>
+                    <p>As childhood obesity is increasing,with children and young people increasinglyless engaged in sport, this project seeks to find new ways of engaging children and youngpeople with physical activity.</p>
+                    <p>Capoeira combines dance, martialarts and music, and we have found that its cross-curricular naturehelps to engage those who would not normally be drawn to practise martial arts,or dance or music.</p>
+                  </div>
+                  <p>Through one element that appeals to practitioners, they are introduced to elements they may nototherwise seek to take part in.</p>
+                  <p>Through raising the awareness of capoeira and thebenefits of practising, we hope to increase the number of people practising thesport and encourage more schoolsand community groupsto establish after-schoolprogrammes.</p>
+                  <p></p>
+                  <p>Capoeira Young Leader Programme</p>
+                  <p></p>
+                  <p>Young peoplewho attend our provision regularly are invited to participate in regular performances, workshops, celebratory eventsand to plan and review current and new provision,including helping with grant applications and project evaluations.</p>
+                  <p></p>
+                  <p>We support young people who have been training with us for several years totake part in grading ceremonies, eventually working towards achieving theirJunior Instructor belt. This year 4young people have completed their apprenticeship of capoeira teacher training.</p>
+                  <p></p>
+                  <p>Kennington Park Centre AdevnturePlayground</p>
+                  <p></p>
+                  <p>The KPC Adventure Playground has had anothersuccessful year, with over200 children accessing provision during the holidays and weekly sessions.</p>
+                  <p>The adventure playground is free of charge,and we also provided trips andworkshops during the summer holidays.</p>
+                  <p></p>
+                  <div>
+                    <p>Kennington Park Centre Stay &amp;amp; Play</p>
+                  </div>
+                  <p></p>
+                  <p>Over 300 childrenand parents/carers accessedthe Stay &amp;amp; Play this year. We have added weekly music/singingsessions once per week which are very popular and the service is now offered 4days per week.</p>
+                  <p>Holiday Schemes</p>
+                  <p></p>
+                  <p>UINCAP’sholiday courses provide an excellent opportunity for children to experiencecapoeira and related dance and music for the first time, in a supportiveenvironment. As the project runs foraround 5 x 6-hour days, participants are given the time to learn a great dealabout the subject, and we have found progress to be of a very high standard – proof of which can be found in the end of course performance.</p>
+                  <p>The holidayprojects also give those childrenwith experience the opportunityto develop their skills further and to take part in specialised ‘masterclass-style’ sessions, such as instrumental playing, vocal work, acrobatics and so on.</p>
+                  <p></p>
+                  <p>We have a teamof highly experienced tutors and pastoral staff, who have experience ofdelivering holiday schemes and regular on-going provision in and out of school,as well as experience of working with children and youngpeople with additional needs.</p>
+                  <p>As a result of taking part in thesecourses (especially those who accessedfree places) we have seen an increased uptake of on-going provision –either at the capoeira school or at after-school capoeira clubs in localschools.</p>
+                  <p></p>
+                  <p></p>
+                  <div>ReservesPolicy</div>
+                  <p>UINCAP’s reservespolicy allows for £25,000 to be set aside, in order to meetany unexpected drop in income. Reservescover at least 1 month running costs and can be spent on core running costs inthe event that any regular funding is cut or to meet any unexpected emergencycosts, such as urgent repairs. Trusteesconsider it sufficient to hold only 1 months’ worth of costs in reserve as weare able to flex expenditure in accordance with any drop in income.</p>
+                  <p></p>
+                  <p>Current Situation</p>
+                  <p>Funding from Lambeth EIPS for work in Streatham wards was extendedto March 2026 and we are about to start the process of applying tosecure future 3-year funding over the next few months.</p>
+                  <p></p>
+                  <p>The LambethHoliday Activity Fund has been confirmed by the Mayor'sFund for London for the next 3 years.We are expecting to receive funding to deliver over the Christmas period and anticipate this funding being awardedfor subsequent holiday periods throughout the academic year.</p>
+                  <p>We were awarded a grantfrom the Go London Foundation for a 1-year core and project grant of £40,000.We have so far receivedjust the first quarterpayment, with £30,416 remaining this year.</p>
+                  <p>In order todiversify income streams, we have applied for 2 capital grants. The AsdaFoundation was awarded in September 2025, with payment expected imminently. The outcome of the Better Youth Spaces grant will bebetween November and December.</p>
+                  <p></p>
+                  <p>We have applied for 2 additional core funding grants,with decisions expected in the new year.</p>
+                  <p></p>
+                  <p>We have workedin our local communities since 2004, buildingup long-lasting relationships with users, familiesand the wider community. Collectively, with staff, volunteer and user support we were able to adapt andcontinue our provision during and post-pandemic, and we have maintained astrong connection with our users and community, including continuing withonline provision even after we were able to reopen face-to-face services.</p>
+                  <p></p>
+                  <p>We have continued to prioritise small hirers, so that revenuefrom venue hire is less at risk of unexpected dropsand we have seen an increase in one-off</p>
+                  <p>bookings for children’s partiesand community events.</p>
+                  <p></p>
+                  <p>We have put morefocus on securing smaller hires so that revenue from venue hire is less at risk of unexpected drops, such as children’s partieson the weekends.</p>
+                  <p>The trusteesare therefore satisfiedthat the charityremains a going concern.</p>
+                  <p></p>
+                  <p></p>
+                  <div>
+                    <div>StatementofResponsibilitiesoftheTrustees</div>
+                  </div>
+                  <p>Trustees are required to prepare financial statements for each financial year, which give a true and fair view ofthe state of affairs of the charitable company and the incoming resources andapplication of resources, including the net income or expenditure, of thecharitable company for the year. In preparing those financial statements thetrustees are required to:</p>
+                  <p></p>
+                  <p>Select suitable accounting policies and then apply them consistently;</p>
+                  <p>Observe the methodsand principles in the applicable Charities SORP;</p>
+                  <p>Make judgements and estimates that are reasonable and prudent;</p>
+                  <p>State whether applicable accounting standards andstatements of recommended practice havebeen followed, subject to any material departures disclosed and explained in the financialstatements; and</p>
+                  <p>Prepare the financialstatements on the going concernbasis unless it isinappropriate to presume that the charity will continue in operation.</p>
+                  <p></p>
+                  <p>The trustees are responsible for keepingproper accounting records which disclose with reasonable accuracy at any timethe financial position of the charity and whichenable them to ensure that the financialstatements comply with theCompanies Act 2006.</p>
+                  <p>The trustees arealso responsible for safeguarding the assets of the charity and hence fortaking reasonable steps for the prevention and detection of fraud and otherirregularities. The trustees confirm that to the best of their knowledge there is no information relevantto the audit of which the auditorsare unaware.</p>
+                  <p>The trusteesalso confirm that they have taken all necessary steps to ensure that they themselves are aware of all relevantaudit information and that this information has been communicated tothe auditors.</p>
+                  <p>Members of the charityguarantee to contribute an amount not exceeding £5 to the assets of the charity in theevent of winding up. The total number of such guarantees at 28/2/2025 was 3.</p>
+                  <p></p>
+                  <p>The trustees are members of the charitybut this entitlesthem only to votingrights. The trustees have no beneficial interest in the charity.</p>
+                  <p></p>
+                  <p></p>
+                  <p>Approved by the trustees on 30th October2025 and signed on their behalf by</p>
+                  <p>Sarah Moltoni</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="word-wrap: break-word; margin-top: 10px">
+                    <strong>Trustees</strong>
+                    <div style="word-wrap: break-word; text-align: justify;"> The trustees, who are also the directors for the purpose of company law, and who served during the year and up to the date of signature of the financial statements were:<br />Sarah Moltoni<br /></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="word-wrap: break-word; text-align: justify; margin-top: 10px">
+                    <strong>Trustees' responsibilities statement</strong>
+                    <div style="word-wrap: break-word; text-align: justify;">
+                      <table class="cmp-val" style="text-align: justify;">
+                        <tr>
+                          <td>
+                            <p>The trustees, who are also the directors of Charity For Uincap International Union Of Capoeira (Uincap) for the purpose of company law, are responsible for preparing the Trustees' Report and the financial statements in accordance with applicable law and United Kingdom Accounting Standards (United Kingdom Generally Accepted Accounting Practice).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Company Law requires the trustees to prepare financial statements for each financial year which give a true and fair view of the state of affairs of the charity and of the incoming resources and application of resources, including the income and expenditure, of the charitable company for that year.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>In preparing these financial statements, the trustees are required to:</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <ul style="padding-left: 15px;">
+                              <li>select suitable accounting policies and then apply them consistently;</li>
+                              <li>observe the methods and principles in the Charities SORP;</li>
+                              <li>make judgements and estimates that are reasonable and prudent;</li>
+                              <li>state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and explained in the financial statements; and </li>
+                              <li>prepare the financial statements on the going concern basis unless it is inappropriate to presume that the charity will continue in operation.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>The trustees are responsible for keeping adequate accounting records that disclose with reasonable accuracy at any time the financial position of the charity and enable them to ensure that the financial statements comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the charity and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px; page-break-inside: avoid; break-inside: avoid; page-break-before: auto;">
+              <tr style="page-break-inside: avoid; break-inside: avoid;">
+                <td style="page-break-inside: avoid; break-inside: avoid;">
+                  <div class="cmp-val" style="width: 100%; margin-top: 20px; page-break-inside: avoid; break-inside: avoid;">
+                    <p>This report was approved by the trustees and signed on its behalf by:</p>
+                    <br />
+                    <br />
+                    <p style="margin: 0;">------------------------------------------------------------------------</p>
+                    <p style="font-weight:bold;margin: 0;">Sarah Moltoni</p>
+                    <p style="font-weight:bold;margin: 0;">Mrs</p>
+                    <div style="margin-top: 15px;">Date : <b><ix:nonNumeric contextRef="companyA" name="direp:DateSigningDirectorsReport" format="ixt:datedaymonthyearen"><span class="tagged" title="direp:DateSigningDirectorsReport(companyA)">28 November 2025</span></ix:nonNumeric></b></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div id="independent-examiner-report" style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; min-height: 842px; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:left; ">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text">
+                      <b style="font-size: 18px;">INDEPENDENT EXAMINER'S REPORT</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px; font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="cmp-val" style="width: 100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse; text-align: justify; margin-top: 10px">
+              <tr>
+                <td>
+                  <div>
+                    <p>
+                      <span>I report in respect of my examination of the charitable company’s accounts carried out under section 145 of the Charities Act 2011. In carrying out my examination, I have followed the Directions given by the Charity Commission under section 145(5)(b) of the Act.</span>
+                    </p>
+                    <div>Independent Examiner’s Statement</div>
+                    <p>I am qualified to undertake the examination by being a member of the Association of Accounting Technicians (AAT).</p>
+                    <p>I have completed my examination. I confirm that no matters have come to my attention in connection with the examination which give me cause to believe that, in any material respect:</p>
+                    <ul>
+                      <li>accounting records have not been kept in accordance with section 386 of the Companies Act 2006; or</li>
+                      <li>the accounts do not accord with those accounting records; or</li>
+                      <li>the accounts do not comply with the accounting requirements of section 396 of the Companies Act 2006, other than any requirement that the accounts give a “true and fair view” which is outside the scope of an independent examination.</li>
+                    </ul>
+                    <p>I have no concerns and have come across no other matters in connection with the examination to which attention should be drawn in this report to enable a proper understanding of the accounts to be reached.</p>
+                    <p>Signed:<br />Dorota Das<br />AAT Licensed Accountant (Licence No. 20036858)<br />16 Okemore Gardens<br />Orpington<br />BR5 3PJ</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 60px;">
+                    <p>Name: <b>Dorota Das</b><br />for and on behalf of <b>Microaccounts</b></p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 15px;">Date: <b>28 November 2025</b></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div id="statement-of-activities" style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table class="page-break-before" style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:left;">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text" style="margin-bottom:10px">
+                      <b style="font-size: 18px;">STATEMENT OF FINANCIAL ACTIVITIES</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px;font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="cmp-val" cellspacing="10" style="width: 100%; margin-top: 10px; border-collapse: separate;">
+              <tr>
+                <th style="width:23%;" align="left">Recommended categories by activity</th>
+                <th style="width:10%;" align="center">Notes</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Unrestricted funds <br />£</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Restricted income funds <br />£</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Total Funds 2025 <br />£</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Total Funds 2024 <br />£</th>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Income and endowments from:</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Donations and legacies</td>
+                <td style="font-weight:normal" align="center">2</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">91,014.06</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">91,014.06</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">143,139.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Charitable activities</td>
+                <td style="font-weight:normal" align="center">3</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">72,003.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">72,003.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">74,508.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Other trading activities</td>
+                <td style="font-weight:normal" align="center">4</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,910.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,910.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,500.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Investments</td>
+                <td style="font-weight:normal" align="center">5</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">91.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">73,913.00</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">91,014.06</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">164,927.06</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">219,238.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Expenditure on:</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Charitable activities</td>
+                <td style="font-weight:normal" align="center">6</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">70,403.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">86,279.56</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">156,682.56</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">203,611.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Other</td>
+                <td style="font-weight:normal" align="center">8</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">2,145.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">4,734.50</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">6,879.50</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">10,874.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">72,548.00</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">91,014.06</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">163,562.06</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">214,485.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Net income</td>
+                <td style="font-weight:normal" align="center"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,365.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,365.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">4,753.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Net movement in funds</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,365.00</td>
+                <td align="right" style="border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">1,365.00</td>
+                <td align="right" style="border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">4,753.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left"></td>
+                <td style="font-weight:normal" align="center"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Reconciliation of funds:</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Total funds brought forward</td>
+                <td style="font-weight:normal" align="center"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(11,058.00)</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(11,058.00)</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(15,811.00)</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total funds carried forward</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(9,693.00)</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">-</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(9,693.00)</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0; text-align: right;border-left: none;border-right: none; outline: none;">(11,058.00)</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div id="balance-sheet" style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:left; ">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin-top: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text" style="margin-bottom:10px">
+                      <b style="font-size: 18px;">BALANCE SHEET</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px; font-weight: normal;">FOR THE YEAR ENDED <ix:nonNumeric contextRef="companyA" name="bus:BalanceSheetDate" format="ixt:datedaymonthyearen"><span class="tagged" title="bus:BalanceSheetDate(companyA)">28 FEBRUARY 2025</span></ix:nonNumeric></p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table cellspacing="10" style="width: 100%; margin-top: 10px; border-collapse: separate;">
+              <tr>
+                <th style="width:23%;" align="left">Recommended categories by activity</th>
+                <th style="width:10%;" align="center">Notes</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Total Funds 2025 <br />£</th>
+                <th style="width:16%; vertical-align: bottom;" align="right">Total Funds 2024 <br />£</th>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Current assets</td>
+                <td style="font-weight:normal" align="center"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Debtors</td>
+                <td style="font-weight:normal" align="center">9</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">11,080.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">13,228.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Cash at bank and in hand</td>
+                <td style="font-weight:normal" align="center">10</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">6,905.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">20,174.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total current assets</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">17,985.00</td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">33,402.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Creditors: amounts falling due within one year</td>
+                <td style="font-weight:normal" align="center">11</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">21,971.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">30,496.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Net current assets/(liabilities)</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(3,986.00)</td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">2,906.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total assets less current liabilities</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(3,986.00)</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">2,906.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Creditors: amounts falling due after one year</td>
+                <td style="font-weight:normal" align="center">12</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">5,706.00</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">13,964.00</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Total net liabilities</td>
+                <td style="font-weight:normal" align="center"></td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(9,692.00)</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(11,058.00)</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Funds of the Charity</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;"></td>
+                <td align="right" style="font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;"></td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Unrestricted funds</td>
+                <td style="font-weight:normal" align="center">13</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(9,693.00)</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(11,058.00)</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Restricted income funds</td>
+                <td style="font-weight:normal" align="center">13</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">-</td>
+              </tr>
+              <tr>
+                <td style="font-weight:normal" align="left">Endowment funds</td>
+                <td style="font-weight:normal" align="center">13</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">-</td>
+                <td align="right" style="font-weight:normal; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">-</td>
+              </tr>
+              <tr>
+                <td style="font-weight:bold" align="left">Total funds</td>
+                <td style="font-weight:bold" align="center"></td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(9,693.00)</td>
+                <td align="right" style="border-bottom: 1px solid black; border-top: 1px solid black; font-weight:bold; white-space: nowrap; width: 90px; padding: 5px 0;  text-align: right; border-left: none; border-right: none;">(11,058.00)</td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: 100%; margin: 20px auto; ">
+              <tr>
+                <td>
+                  <div style="margin-top: 10px; width: 100%;text-align: justify;">
+                    <p style="margin:0">
+                      <ix:nonNumeric contextRef="company" name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">
+                        <p>For the year ended 28 February 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</p>
+                      </ix:nonNumeric>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 10px; width: 100%;text-align: justify;">
+                    <p style="margin:0">
+                      <ix:nonNumeric contextRef="company" name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">
+                        <p>The members have not required the company to obtain an audit of its accounts for the year in question in accordance with section 476.</p>
+                      </ix:nonNumeric>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 10px; width: 100%;text-align: justify;">
+                    <p style="margin:0">
+                      <ix:nonNumeric contextRef="company" name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">
+                        <p>The trustees acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.</p>
+                      </ix:nonNumeric>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top: 10px; width: 100%;text-align: justify;">
+                    <p style="margin:0">
+                      <ix:nonNumeric contextRef="company" name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">
+                        <p>These accounts have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.</p>
+                      </ix:nonNumeric>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="width: 100%;">
+                    <p>The financial statements were approved by the trustees on <ix:nonNumeric contextRef="companyA" name="core:DateAuthorisationFinancialStatementsForIssue" format="ixt:datedaymonthyearen"><span class="tagged" title="core:DateAuthorisationFinancialStatementsForIssue(companyA)">28 November 2025</span></ix:nonNumeric> and signed on its behalf by:</p>
+                    <p style="font-weight:bold;margin: 0; margin-top: 40px;">Sarah Moltoni</p>
+                    <p style="font-weight:bold;margin: 0;">Mrs</p>
+                    <div style=" margin-top: 15px;">Date : <b>28 November 2025</b></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--PAGE_BREAK-->
+    <div id="notes-to-financial-statements" style="page-break-before: always; break-before: page; min-height: 842px; margin: 0 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+      <table style="height: 842px; width: 100%; margin-bottom: 10px; border-spacing: 0; padding: 0; border-collapse: collapse;  background: #fff;" cellpadding="10">
+        <tr valign="top">
+          <td style="padding:10px 60px">
+            <table class="page-break-before" style="width:100%; margin: 0 auto; border-spacing: 0; padding: 0; border-collapse: collapse;background-color : #FFFFFF; text-align:left;">
+              <tbody>
+                <tr valign="middle">
+                  <td style="border-spacing: 0; border-collapse: collapse;">
+                    <h4 style="font-size: 18px;margin: 0;">
+                      <b>UINCAP INTERNATIONAL UNION OF CAPOEIRA (UINCAP)</b>
+                    </h4>
+                    <p class="heading_text" style="margin-bottom:10px">
+                      <b style="font-size: 18px;">NOTES TO THE FINANCIAL STATEMENTS</b>
+                    </p>
+                    <div>
+                      <p style="font-size: 18px;margin:0px;font-weight: normal;">FOR THE YEAR ENDED 28 FEBRUARY 2025</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="cmp-val" style="width: 100%; margin: 0 auto; text-align: justify; margin-top: 10px;">
+              <tr>
+                <td>
+                  <h2>
+                    <b style="font-size: 18px">1. Accounting Policies</b>
+                  </h2>
+                </td>
+              </tr>
+              <tr>
+                <td>The principal accounting policies adopted by the Charity, which is a public benefit entity, in the preparation of the accounts are as follows.</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.1 Basis of preparation</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">These accounts have been prepared under the historical cost convention, as modified by the inclusion of charitable properties and fixed asset investments and investment properties at valuation.<br /><br />These accounts have been prepared in accordance with “Accounting and Reporting by Charities: Statement of Recommended Practice applicable to charities preparing their accounts in accordance with the Financial Reporting Standard applicable in the UK and Republic of Ireland (FRS 102)” (effective 1 January 2019) - (Charities SORP (FRS 102)), the Financial Reporting Standard applicable in the UK and Republic of Ireland (FRS 102) and the Charities Act 2011.<br /><br />These accounts are presented in pounds sterling and rounded to the nearest pound.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.2 Going concern</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">The Trustees have prepared financial projections, taking into consideration the current economic conditions and have, at the time of approving these accounts, a reasonable expectation that the charity has adequate resources to continue in operational existence for the foreseeable future. Thus they continue to adopt the going concern basis of accounting in preparing the accounts.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.3 Change of accounting policy</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">These accounts have been prepared to give a ‘true and fair’ view</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid; margin: 0;">
+                    <h3 style="margin: 0 0 5px 0;">1.4 Income from donations or grants</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Income from donations and grants is recognised when the charity is entitled to the funds, the receipt is probable and the amount can be measured reliably. For donations, this is usually on receipt. For grants, this is usually when a formal o'er is made in writing. If a donation or grant contains terms and conditions outside of the charity’s control which must be met before the charity is entitled to the funds, or if the donor specifies that the funds must be used in future time periods, then the income is deferred.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.5 Government grants</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">The charity has received government grants in the reporting period</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.6 Tax reclaims on donations and gifts</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Gift Aid receivable is included in income when there is a valid declaration from the donor. Any Gift Aid amount recovered on a donation is considered to be part of that gift and is treated as an addition to the same fund as the initial donation unless the donor or the terms of the appeal have specified otherwise.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.7 Income from charitable activities</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Income from charitable activities is recognised over the period to which the income relates. Concert fees are recognised at the date of the event. Membership fees are recognised over the period of the membership. Rent is recognised over the period to which it relates. Any amounts relating to future periods are deferred.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.8 Investment income</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Dividends are included in the Statement of Financial Activities when they are declared at an amount which includes the tax credit recoverable from HM Revenue and Customs.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.9 Income from membership subscriptions</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Membership subscriptions received in the nature of a gift are recognised in Donations and Legacies. Membership subscriptions which give a member the right to buy services or other benefits are recognised as income earned from the provision of goods and services as income from charitable activities.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.10 Other trading income</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Other trading income from non-charitable sources is recognised over the period to which it relates, Any relating to future periods is deferred.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.11 Expenditure</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Expenditure is recognised when a present legal or constructive obligation exists at the balance sheet date as a result of a past event, it is probable that a transfer of economic benefits will be required to settle the obligation, and the amount can be estimated reliably. It is inclusive of VAT which cannot be recovered.<br /><br />Direct costs are those costs which directly attribute to its activities. Wages and salaries are allocated to direct costs based on an estimate of time spent on charitable activities by staff members.<br /><br /> Support costs include staff costs and are those which do not produce a direct output. Staff costs relate to specific activities and this is reflected in the allocation of payroll costs based on the percentage of time spent.<br /><br />All costs, including governance costs, are allocated between the expenditure categories of the charity on a basis designed to reflect the use of the resource. Costs relating to a particular activity are charged directly; others are apportioned on an appropriate basis.<br /><br />Support costs and overheads have been calculated by allocating staff time to the level of involvement in the various activities of the Charity.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.12 Pensions</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">The Charity makes contributions to defined contribution pension schemes through auto enrolment. These contributions are charged to the income and expenditure account in the year in which they become payable.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.13 Taxation</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">The organisation is a registered charity and has no liability to income tax or corporation tax on its charitable activities during the year.<br /><br />Value added tax is accounted for on an accruals basis.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.14 Creditors</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">The charity has creditors which are measured at settlement amounts less any trade discounts.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.15 Provisions for liabilities</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">A liability is measured on recognition at its historical cost and then subsequently measured at the best estimate of the amount required to settle the obligation at the reporting date.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.16 Fund accounting</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Unrestricted funds are those funds which are available for use at the discretion of the Trustees in furtherance of the general objectives of the charity and which have not been designated for other purposes.<br /><br />Restricted funds are funds which are to be used in accordance with specific restrictions imposed by donors or which have been raised by the charity for particular purposes.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.17 Critical accounting estimates and judgements</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">In the application of the charity’s accounting policies, the Trustees are required to make judgements, estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent from other sources. The estimates and associated assumptions are based on historical experience and other factors that are considered to be relevant. Actual results may differ from these estimates.<br /><br />The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting estimates are recognised in the period in which the estimate is revised, if the revision affects only that period, or in the period of the revision and future periods if the revision affects both current and future periods.<br /><br />There are no estimates and assumptions which have a significant risk of causing a material adjustment to the carrying amount of assets and liabilities.</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px; white-space: normal;">
+                  <div style="page-break-inside: avoid; margin: 0;">
+                    <h3 style="margin: 0 0 5px 0;">1.18 Tangible fixed assets</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">
+                      <p>Tangible fixed assets, such as land and buildings, plant, vehicles and equipment, are held to provide an on-going economic benefit to a charity through their contribution, directly or indirectly, to the provision of goods or services by the charity.</p>
+                      <p>
+                        <span>Items  of equipment are capitalised where the purchase price exceeds £500.</span>
+                        <br />
+                        <br />Tangible fixed assets, other than freehold land, are stated at cost or valuation less depreciation and any provision for impairment. Depreciation is provided at rates calculated to write off the cost or valuation of fixed assets, less their estimated residual value, over their expected useful lives on the following basis:</p>
+                      <table class="table table-bordered e-rte-table" style="width: 100%;">
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;">
+                              <b>Name</b>
+                            </td>
+                            <td style="text-align: center;">
+                              <b>Rate (%)</b>
+                            </td>
+                            <td style="text-align: center;">
+                              <b>Year</b>
+                            </td>
+                            <td style="text-align: center;">
+                              <b>Method</b>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span>Computing  equipment</span>
+                              <br />
+                            </td>
+                            <td>33</td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>straight line</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span>Berimbaus</span>
+                              <br />
+                            </td>
+                            <td>20</td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>straight line</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span>Other  instruments</span>
+                              <br />
+                            </td>
+                            <td>33</td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>straight line</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span>Fixtures  and fittings</span>
+                              <br />
+                            </td>
+                            <td>20</td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>straight line</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <br />
+                            </td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>
+                              <br />
+                            </td>
+                            <td>
+                              <br />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px;white-space: normal;">
+                  <div style="page-break-inside: avoid;">
+                    <h3>1.19 Debtors</h3>
+                    <div style="word-wrap: break-word; text-align: justify;">Debtors (including trade debtors and loans receivable) are measured on initial recognition at settlement amount after any trade discounts or amount advanced by the charity. Subsequently, they are measured at the cash or other consideration expected to be received.</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">2. Income from Donations and Legacies</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;">
+                      <th style="text-align: left;"> Analysis </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;"> Restricted income funds</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2025</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">General grants provided by Government/other charities</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">91,014.06</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">91,014.06</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">143,139.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">91,014.06</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">91,014.06</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">143,139.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">3. Income from Charitable Activities</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;">
+                      <th style="text-align: left;"> Analysis </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;"> Unrestricted funds </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2025</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Let-out of non-investment property</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">72,003.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">72,003.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">74,508.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">72,003.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">72,003.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">74,508.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">4. Income from Other Trading Activities</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;">
+                      <th style="text-align: left;"> Analysis </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;"> Unrestricted funds </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2025</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Events</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">1,910.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">1,910.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">1,500.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">1,910.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">1,910.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">1,500.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">5. Income from Investments</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;">
+                      <th style="text-align: left;"> Analysis </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Other</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">91.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">91.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">6. Expenditure on Charitable Activities</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;">
+                      <th style="text-align: left;"> Analysis </th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right; text-align: right;">Unrestricted funds</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right; text-align: right;">Restricted income funds</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right; text-align: right;">Total funds 2025</th>
+                      <td style="width:10px;"></td>
+                      <th style="width:170px;text-align: right; text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:85px; text-align: right;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Interest payable</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">365.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">365.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">669.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Charity running cost</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">1,399.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">2,903.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">4,302.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">3,630.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Cost of services</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">6,515.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">31,749.09</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">38,264.09</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">80,416.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Advertising and marketing</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">301.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">301.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">299.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Legal/professional fees</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">13.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">13.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">13.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Wages and salaries</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">58,041.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">51,627.47</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">109,668.47</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">117,974.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">
+                        <strong>Total</strong>
+                      </td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">
+                        <strong>66,634.00</strong>
+                      </td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">
+                        <strong>86,279.56</strong>
+                      </td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">
+                        <strong>152,913.56</strong>
+                      </td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">
+                        <strong>203,001.00</strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Support Costs</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">3,769.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">3,769.00</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px; text-align: right;">610.00</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">70,403.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">86,279.56</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">156,682.56</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">203,611.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">7. Support Costs</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th rowspan="2" style="vertical-align: bottom; text-align: left;">Analysis</th>
+                      <th style="width:170px;text-align: right;">Total funds 2025</th>
+                      <th style="width:170px;text-align: right; ">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td style="width:170px;">£</td>
+                      <td style="width:170px;">£</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Support Costs</b>
+                      </td>
+                      <td style="width:170px;"></td>
+                      <td style="width:170px;"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Governance Costs</b>
+                      </td>
+                      <td style="width:170px;"></td>
+                      <td style="width:170px;"></td>
+                    </tr>
+                    <tr>
+                      <td>Accountants fees</td>
+                      <td style="width:170px; text-align: right;">3,769.00</td>
+                      <td style="width:170px; text-align: right;">610.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">3,769.00</td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">610.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">8. Other Expenditure</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: left;">
+                      <th rowspan="2" style="text-align: left;">Analysis</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px;text-align: right; ">Unrestricted funds</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px;text-align: right; ">Restricted income funds</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px;text-align: right; ">Total funds 2025</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px;text-align: right; ">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td style="width:10px;"></td>
+                      <td style="width:170px;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px;">£</td>
+                      <td style="width:10px;"></td>
+                      <td style="width:170px;">£</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Depreciation Charge for the Year - Fixtures &amp; Fittings</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">-</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">2,081.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Other Expenditure</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">2,145.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">4,734.50</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">6,879.50</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="width:170px; text-align: right;">8,793.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">2,145.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">4,734.50</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">6,879.50</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">10,874.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">9. Debtors: Amounts falling due within one year</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th style="padding: 5px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2025</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Trade debtors</td>
+                      <td align="right" style="text-align: right;width:170px;">11,080.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="text-align: right;width:170px;">13,228.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">11,080.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">13,228.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">10. Cash at bank and in hand</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th style="padding: 5px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2025</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Cash at bank and in hand</td>
+                      <td align="right" style="text-align: right;width:170px;">6,905.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="text-align: right;width:170px;">20,174.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">6,905.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">20,174.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">11. Creditors: Amounts falling due within one year</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th style="padding: 5px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2025</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Other creditors</td>
+                      <td align="right" style="text-align: right;width:170px;">21,971.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="text-align: right;width:170px;">30,496.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">21,971.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">30,496.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse: collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table class="cmp-val" style="width: 100%;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">12. Creditors: Amounts falling due after one year</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width: 100%;" cellpadding="2">
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th style="padding: 5px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2025</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">Total funds 2024</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: center;">
+                      <th></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                      <th style="width:10px;"></th>
+                      <th style="width:170px; text-align: right;">£</th>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; ">Other creditors</td>
+                      <td align="right" style="text-align: right;width:170px;">5,706.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="text-align: right;width:170px;">13,964.00</td>
+                    </tr>
+                    <tr>
+                      <td style="border-collapse: collapse; font-weight: 700;">Total</td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">5,706.00</td>
+                      <td style="width:10px;"></td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;padding: 5px 0; text-align: right;border-left: none;border-right: none;">13,964.00</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">13. Charity funds</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>13.1 Details of material funds held and movements during the CURRENT reporting period</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width:100%;">
+                    <tr style="font-weight: 700;">
+                      <th rowspan="2" style="width: 15%;text-align: left;">Fund names</th>
+                      <th style="text-align: right;">Fund balances brought forward</th>
+                      <th style="text-align: right;">Income</th>
+                      <th style="text-align: right;">Expenditure</th>
+                      <th style="text-align: right;">Transfers</th>
+                      <th style="text-align: right;">Gains and losses</th>
+                      <th style="text-align: right;">Fund balances carried forward</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Unrestricted funds</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%;"></td>
+                      <td align="right" style="text-align: right;">(11,058.00)                        </td>
+                      <td align="right" style="text-align: right;">73,913.00                        </td>
+                      <td align="right" style="text-align: right;">72,548.00                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">(9,693.00)                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Restricted income funds</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%;"></td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">91,014.06                        </td>
+                      <td align="right" style="text-align: right;">91,014.06                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                    </tr>
+                    <tr>
+                      <td style="margin-top: 10px;"></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%; border-collapse: collapse; font-weight: 700;">
+                        <b>Total</b>
+                      </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">(11,058.00)                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">164,927.06                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">163,562.06                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">-                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">-                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">(9,693.00)                </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3 style="padding: 15px 0;width: 100%; margin: 0 auto;">13.2 Details of material funds held and movements during the PREVIOUS reporting period</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table style="width:100%;">
+                    <tr style="font-weight: 700;">
+                      <th rowspan="2" style="width: 15%;text-align: left;">Fund names</th>
+                      <th style="text-align: right;">Fund balances brought forward</th>
+                      <th style="text-align: right;">Income</th>
+                      <th style="text-align: right;">Expenditure</th>
+                      <th style="text-align: right;">Transfers</th>
+                      <th style="text-align: right;">Gains and losses</th>
+                      <th style="text-align: right;">Fund balances carried forward</th>
+                    </tr>
+                    <tr style="font-weight: 700;text-align: right;">
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                      <td>£</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Unrestricted funds</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%;"></td>
+                      <td align="right" style="text-align: right;">(15,811.00)                        </td>
+                      <td align="right" style="text-align: right;">76,099.00                        </td>
+                      <td align="right" style="text-align: right;">71,346.00                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">(11,058.00)                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Restricted income funds</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%;"></td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">143,139.00                        </td>
+                      <td align="right" style="text-align: right;">143,139.00                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                      <td align="right" style="text-align: right;">-                        </td>
+                    </tr>
+                    <tr>
+                      <td style="margin-top: 10px;"></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 15%; border-collapse: collapse; font-weight: 700;">
+                        <b>Total</b>
+                      </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">(15,811.00)                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">219,238.00                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">214,485.00                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">-                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">-                </td>
+                      <td align="right" style="border-bottom: 1px solid black;border-top: 1px solid black;font-weight:bold; white-space: nowrap;width: 90px;text-align: right;border-left: none;border-right: none;">(11,058.00)                </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="cmp-val" style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto; margin-top: 10px; page-break-inside: avoid;">
+              <tr>
+                <td>
+                  <table style="width: -webkit-fill-available; border-collapse:collapse;width: 100%; margin: 0 auto;">
+                    <tr>
+                      <td>
+                        <h2>
+                          <b style="font-size: 18px">14. Average Number of Employees</b>
+                        </h2>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="text-align: justify; margin-top: 10px;">
+                    <table style="border-spacing: 10px 0; width: -webkit-fill-available; width: 100%; margin: 0 auto;" class="e-rte-table" cellpadding="5">
+                      <tbody>
+                        <tr style="height: 20.122%;">
+                          <td>
+                            <br />
+                          </td>
+                          <td style="text-align: center;">
+                            <b>This year<br />£</b>
+                          </td>
+                          <td style="text-align: center;">
+                            <b>Last year<br />£</b>
+                          </td>
+                        </tr>
+                        <tr style="height: 15.2439%;">
+                          <td>Jolene Campbell<br /></td>
+                          <td style="text-align: center;">40000</td>
+                          <td style="text-align: center;">40000</td>
+                        </tr>
+                        <tr style="height: 15.2439%;">
+                          <td>Anna Caneva<br /></td>
+                          <td style="text-align: center;">16000</td>
+                          <td style="text-align: center;">16000</td>
+                        </tr>
+                        <tr style="height: 15.2439%;">
+                          <td>
+                            <br />
+                          </td>
+                          <td style="text-align: center;">
+                            <br />
+                          </td>
+                          <td style="text-align: center;">
+                            <br />
+                          </td>
+                        </tr>
+                        <tr style="height: 15.2439%;">
+                          <td>
+                            <br />
+                          </td>
+                          <td style="text-align: center;">
+                            <br />
+                          </td>
+                          <td style="text-align: center;">
+                            <br />
+                          </td>
+                        </tr>
+                        <tr style="height: 18.9024%;">
+                          <td>
+                            <b>Total</b>
+                          </td>
+                          <td style="text-align:center;padding: 5px;border-top: 0.5px solid black; font-weight:bold; border-bottom: 1px double black; border-collapse: collapse; width:100px;" class="ThisYear">56000</td>
+                          <td style="text-align:center;padding: 5px;border-top: 0.5px solid black; font-weight:bold; border-bottom: 1px double black; border-collapse: collapse; width:100px;" class="LastYear">56000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+                    <tr>
+                      <td>
+                        <div style="padding:5px; margin: 10px auto;">Average number of employees during this year : <ix:nonFraction contextRef="company" decimals="0" scale="0" name="core:AverageNumberEmployeesDuringPeriod" unitRef="Pure" format="ixt:numdotdecimal">56000</ix:nonFraction> and last year : 56000</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3148 @@
+{
+ "documentInfo": {
+  "documentType": "https://xbrl.org/PWD/2026-09-01/module",
+  "documentNamespacePrefix": "gr",
+  "description": "Facts of the Inline XBRL filing Prod224_2601_OC321469_20221231.html, converted in Graffiti, importing the taxonomy at https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd.",
+  "namespaces": {
+   "aurep": "http://xbrl.frc.org.uk/reports/2025-01-01/aurep",
+   "bus": "http://xbrl.frc.org.uk/cd/2025-01-01/business",
+   "core": "http://xbrl.frc.org.uk/fr/2025-01-01/core",
+   "direp": "http://xbrl.frc.org.uk/reports/2025-01-01/direp",
+   "dpl": "http://xbrl.frc.org.uk/dpl/2025-01-01",
+   "gr": "https://stechanalytics.com/tavi/Prod224_2601_OC321469_20221231",
+   "iso4217": "http://www.xbrl.org/2003/iso4217",
+   "scheme": "http://www.companieshouse.gov.uk/",
+   "taxonomy": "https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd",
+   "xbrl": "https://xbrl.org/PWD/2026-09-01",
+   "xbrlm": "https://xbrl.org/PWD/2026-09-01/model"
+  },
+  "importMapping": {
+   "taxonomy:FRS-102-2025-01-01": "https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd"
+  },
+  "sourceMappings": [
+   {
+    "sourceName": "gr:html",
+    "url": "Prod224_2601_OC321469_20221231.html"
+   }
+  ]
+ },
+ "xbrlModel": {
+  "name": "gr:Prod224_2601_OC321469_20221231",
+  "importedTaxonomies": [
+   {
+    "xbrlModelName": "xbrlm:base"
+   },
+   {
+    "xbrlModelName": "taxonomy:FRS-102-2025-01-01",
+    "importObjects": [
+     "aurep:BasisForOpinionAuditorsOnEntity",
+     "aurep:DateAuditorsReport",
+     "aurep:NameIndividualAuditor",
+     "aurep:OpinionAuditorsOnEntity",
+     "aurep:StatementAuditorsResponsibilitiesRelatingToOtherInformation",
+     "aurep:StatementOnMattersOnWhichAuditorReportsByException",
+     "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors",
+     "bus:AccountingStandardsApplied",
+     "bus:AccountsStatusAuditedOrUnaudited",
+     "bus:AccountsType",
+     "bus:BalanceSheetDate",
+     "bus:EndDateForPeriodCoveredByReport",
+     "bus:EntityCurrentLegalOrRegisteredName",
+     "bus:EntityDormantTruefalse",
+     "bus:EntityTradingStatus",
+     "bus:LegalFormEntity",
+     "bus:NameEntityAuditors",
+     "bus:NameEntityOfficer",
+     "bus:NameProductionSoftware",
+     "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+     "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "bus:ScopeAccounts",
+     "bus:StartDateForPeriodCoveredByReport",
+     "bus:UKCompaniesHouseRegisteredNumber",
+     "bus:VersionProductionSoftware",
+     "core:AverageNumberEmployeesDuringPeriod",
+     "core:ComprehensiveIncomeExpense",
+     "core:DateAuthorisationFinancialStatementsForIssue",
+     "core:DirectorSigningFinancialStatements",
+     "core:ProfitLoss",
+     "core:TotalIncreaseDecreaseInEquity",
+     "direp:DateSigningDirectorsReport",
+     "aurep:AuditReportHeading",
+     "aurep:AuditorInformationHeading",
+     "bus:BusinessReport-specificDimensionsHeading",
+     "bus:DimensionsContentHeading",
+     "bus:Entity-specificDimensionsHeading",
+     "bus:EntityIdentifyingCodesHeading",
+     "bus:EntityInformationHeading",
+     "bus:EntityLegalFormHeading",
+     "bus:EntityNamesHeading",
+     "bus:EntityOfficers-specificDimensionsHeading",
+     "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+     "bus:OperationalStatusEntityHeading",
+     "bus:ReportDatesPeriodsCoveredHeading",
+     "bus:ReportInformationHeading",
+     "bus:ThirdPartyAgentsHeading",
+     "bus:XBRLProductionSoftwareHeading",
+     "core:AdditionalIndustrySectorDataItemsHeading",
+     "core:AmendedRevisedReportHeading",
+     "core:ApprovalFinancialStatementsHeading",
+     "core:AverageNumberEmployeesByDepartmentHeading",
+     "core:BalanceSheetBankingFinanceSectorHeading",
+     "core:BalanceSheetStatementFinancialPositionHeading",
+     "core:BankingFinanceSectorItemsHeading",
+     "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+     "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+     "core:EmployeeInformationHeading",
+     "core:Equity-MovementAnalysisHeading",
+     "core:IncomeStatementHeading",
+     "core:NotesDetailedDisclosuresHeading",
+     "core:StatementChangesInEquityHeading",
+     "core:StatementComprehensiveIncomeHeading",
+     "direp:DirectorsStrategicReportHeading",
+     "direp:ListDirectorsHeading",
+     "dpl:DetailedProfitLossHeading",
+     "dpl:ProfitTaxTotalsHeading",
+     "bus:AccountingStandardsDimension",
+     "bus:AccountsStatusDimension",
+     "bus:AccountsTypeDimension",
+     "bus:EntityOfficersDimension",
+     "bus:LegalFormEntityDimension",
+     "bus:AccountingStandardsHeading",
+     "bus:AccountsStatusHeading",
+     "bus:AccountsTypeHeading",
+     "bus:AllEntityOfficersEntityOfficersTotalDefault",
+     "bus:LegalFormEntityHeading",
+     "bus:Audited",
+     "bus:FRS102",
+     "bus:FullAccounts",
+     "bus:LimitedLiabilityPartnershipLLP",
+     "bus:PartnerLLP1",
+     "bus:PartnerLLP2",
+     "bus:PartnersLimitedLiabilityPartnershipHeading"
+    ]
+   }
+  ],
+  "factSources": [
+   {
+    "name": "gr:html",
+    "factMapName": "gr:htmlMap"
+   }
+  ],
+  "factMaps": [
+   {
+    "name": "gr:htmlMap",
+    "factLocatorType": "xbrl:htmlElementLocatorType"
+   }
+  ],
+  "cubes": [
+   {
+    "name": "gr:Hypercube-DetailedProfitLoss_DetailedProfitLossHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-DetailedProfitLoss_DetailedProfitLossHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Basic_BasicHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_concepts"
+     },
+     {
+      "dimension": "bus:LegalFormEntityDimension",
+      "domainNetwork": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_LegalFormEntityDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts"
+     },
+     {
+      "dimension": "bus:EntityOfficersDimension",
+      "domainNetwork": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountingStandardsDimension",
+      "domainNetwork": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsStatusDimension",
+      "domainNetwork": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts"
+     },
+     {
+      "dimension": "bus:AccountsTypeDimension",
+      "domainNetwork": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube",
+    "cubeType": "xbrl:reportCube",
+    "cubeDimensions": [
+     {
+      "dimension": "xbrl:concept",
+      "domainNetwork": "gr:Hypercube-Empty_EmptyHypercube_concepts"
+     },
+     {
+      "dimension": "xbrl:period",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:entity",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:unit",
+      "optional": true
+     },
+     {
+      "dimension": "xbrl:language",
+      "optional": true
+     }
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "name": "gr:fact-c196610b3997b44f",
+    "factDimensions": {
+     "xbrl:concept": "bus:UKCompaniesHouseRegisteredNumber",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c196610b3997b44f_fv",
+      "value": "OC321469"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-4",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-4_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-58561296f8fd1ef2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-58561296f8fd1ef2_fv",
+      "value": "Karpowership UK Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b4b28744c321b6e8",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP2",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b4b28744c321b6e8_fv",
+      "value": "Karadeniz Powership Zeynep Sultan Co. Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-6",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-6_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-10",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-10_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-58561296f8fd1ef2-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP1",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-58561296f8fd1ef2-2_fv",
+      "value": "Karpowership UK Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b4b28744c321b6e8-2",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP2",
+     "xbrl:concept": "bus:NameEntityOfficer",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b4b28744c321b6e8-2_fv",
+      "value": "Karadeniz Powership Zeynep Sultan Co. Limited"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-af7846ca7e574cae",
+    "factDimensions": {
+     "xbrl:concept": "direp:DateSigningDirectorsReport",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-af7846ca7e574cae_fv",
+      "value": "2026-01-26"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-2_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-3",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-3_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-61ca13fc94e8dd98",
+    "factDimensions": {
+     "xbrl:concept": "aurep:OpinionAuditorsOnEntity",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-61ca13fc94e8dd98_fv",
+      "value": "In our opinion the financial statements:give a true and fair view of the state of the limited liability partnership's affairs as at 31 December 2022 and of its profit for the year then ended;have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; andhave been prepared in accordance with the requirements of the Companies Act 2006 as applied to limited liability partnerships by the Limited Liability Partnerships (Accounts and Audit) (Application of Companies Act 2006) Regulations 2008.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AE_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AE_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AE_2"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-ef84dfc0538f2934",
+    "factDimensions": {
+     "xbrl:concept": "aurep:BasisForOpinionAuditorsOnEntity",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-ef84dfc0538f2934_fv",
+      "value": "We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law. Our responsibilities under those standards are further described in theAuditor's responsibilities for the audit of the financial statements section of our report. We are independent of the limited liability partnership in accordance with the ethical requirements that are relevant to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_2"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_3"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_4"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_5"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_6"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_7"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AF_8"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5914f978b55c3a5c",
+    "factDimensions": {
+     "xbrl:concept": "aurep:StatementAuditorsResponsibilitiesRelatingToOtherInformation",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5914f978b55c3a5c_fv",
+      "value": "The other information comprises the information included in the annual report other than the financial statements and our auditor's report thereon. The members are responsible for the other information contained within the annual report. Our opinion on the financial statements does not cover the other information and, except to the extent otherwise explicitly stated in our report, we do not express any form of assurance conclusion thereon. Our responsibility is to read the other information and, in doing so, consider whether the other information is materially inconsistent with the financial statements or our knowledge obtained in the course of the audit, or otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we are required to determine whether this gives rise to a material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that there is a material misstatement of this other information, we are required to report that fact.We have nothing to report in this regard.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AG_0"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-5",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-5_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-aff66f367bfdc19a",
+    "factDimensions": {
+     "xbrl:concept": "aurep:StatementOnMattersOnWhichAuditorReportsByException",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-aff66f367bfdc19a_fv",
+      "value": "We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 as applied to limited liability partnerships requires us to report to you if, in our opinion:adequate accounting records have not been kept, or returns adequate for our audit have not been received from branches not visited by us; orthe financial statements are not in agreement with the accounting records and returns; orwe have not received all the information and explanations we require for our audit.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AH_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AH_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AH_2"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5b6a00f094583f4c",
+    "factDimensions": {
+     "xbrl:concept": "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5b6a00f094583f4c_fv",
+      "value": "As explained more fully in the members' responsibilities statement, the members are responsible for the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such internal control as the membersdetermine is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error. In preparing the financial statements, the members are responsible for assessing the limited liability partnership's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of accounting unless the members either intend to liquidate the limited liability partnership or to cease operations, or have no realistic alternative but to do so.Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of these financial statements.",
+      "reportSource": "gr:html",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_0"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_1"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_2"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_3"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_4"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_5"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_6"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_7"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_8"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_9"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_10"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_11"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_12"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_13"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_14"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_15"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_16"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_17"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_18"
+          ]
+         }
+        ]
+       },
+       {
+        "properties": [
+         {
+          "property": "xbrl:htmlElementId",
+          "value": [
+           "C_AI_19"
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-7",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-7_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-8",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-8_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6589076841f1f2ac",
+    "factDimensions": {
+     "xbrl:concept": "aurep:DateAuditorsReport",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6589076841f1f2ac_fv",
+      "value": "2026-01-26"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-7e66d541895d46ad",
+    "factDimensions": {
+     "xbrl:concept": "aurep:NameIndividualAuditor",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-7e66d541895d46ad_fv",
+      "value": "Leaman Mattei"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e46edf9959b402a5",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameEntityAuditors",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e46edf9959b402a5_fv",
+      "value": "Leaman Mattei"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-9",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-9_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-11",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-11_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-12",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-12_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-02f1485b7980576f",
+    "factDimensions": {
+     "xbrl:concept": "bus:BalanceSheetDate",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-02f1485b7980576f_fv",
+      "value": "2022-12-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-4329844ea9abea0a",
+    "factDimensions": {
+     "xbrl:concept": "core:DateAuthorisationFinancialStatementsForIssue",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-4329844ea9abea0a_fv",
+      "value": "2026-01-26"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-df64124a93eaac5e",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP1",
+     "xbrl:concept": "core:DirectorSigningFinancialStatements",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-df64124a93eaac5e_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-a131a2bf943cf003",
+    "factDimensions": {
+     "bus:EntityOfficersDimension": "bus:PartnerLLP2",
+     "xbrl:concept": "core:DirectorSigningFinancialStatements",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-a131a2bf943cf003_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-c196610b3997b44f-2",
+    "factDimensions": {
+     "xbrl:concept": "bus:UKCompaniesHouseRegisteredNumber",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-c196610b3997b44f-2_fv",
+      "value": "OC321469"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-13",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-13_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-14",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-14_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-15",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-15_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-16",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-16_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-17",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-17_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-18",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-18_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-19",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-19_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-20",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-20_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-21",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-21_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-22",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-22_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3d03fb3368d1a827-23",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityCurrentLegalOrRegisteredName",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3d03fb3368d1a827-23_fv",
+      "value": "EMEA ENERGY VENTURES LLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-3edb09b896fc5334",
+    "factDimensions": {
+     "xbrl:concept": "bus:EndDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-3edb09b896fc5334_fv",
+      "value": "2022-12-31"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-210865c6c447162a",
+    "factDimensions": {
+     "xbrl:concept": "bus:StartDateForPeriodCoveredByReport",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-210865c6c447162a_fv",
+      "value": "2022-01-01"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8850279385bda847",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8850279385bda847_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-a6044bb0ec886154",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityDormantTruefalse",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-a6044bb0ec886154_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-83b3ce7c30f572e8",
+    "factDimensions": {
+     "xbrl:concept": "bus:EntityTradingStatus",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-83b3ce7c30f572e8_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-5f189d4122a1b365",
+    "factDimensions": {
+     "bus:LegalFormEntityDimension": "bus:LimitedLiabilityPartnershipLLP",
+     "xbrl:concept": "bus:LegalFormEntity",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-5f189d4122a1b365_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-25456b6a69b7486e",
+    "factDimensions": {
+     "xbrl:concept": "bus:NameProductionSoftware",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-25456b6a69b7486e_fv",
+      "value": "CCH Software"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-a4c96f5fe2f5286b",
+    "factDimensions": {
+     "xbrl:concept": "bus:VersionProductionSoftware",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-a4c96f5fe2f5286b_fv",
+      "value": "CCH Accounts Production 2025.300"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b3b797f151b0a925",
+    "factDimensions": {
+     "bus:AccountingStandardsDimension": "bus:FRS102",
+     "xbrl:concept": "bus:AccountingStandardsApplied",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b3b797f151b0a925_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-9b47f64a5a914bbe",
+    "factDimensions": {
+     "bus:AccountsStatusDimension": "bus:Audited",
+     "xbrl:concept": "bus:AccountsStatusAuditedOrUnaudited",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-9b47f64a5a914bbe_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-87ccf812279474b6",
+    "factDimensions": {
+     "xbrl:concept": "bus:ScopeAccounts",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-87ccf812279474b6_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-fd0b563b9150a1f7",
+    "factDimensions": {
+     "xbrl:concept": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-fd0b563b9150a1f7_fv",
+      "value": "false"
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-b219bdafb1726a5b",
+    "factDimensions": {
+     "bus:AccountsTypeDimension": "bus:FullAccounts",
+     "xbrl:concept": "bus:AccountsType",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-b219bdafb1726a5b_fv",
+      "value": ""
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-8708265459ee6e30",
+    "factDimensions": {
+     "xbrl:concept": "core:ProfitLoss",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-8708265459ee6e30_fv",
+      "value": "1330015.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-e2c9cbadb6781761",
+    "factDimensions": {
+     "xbrl:concept": "core:ProfitLoss",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2021-01-01T00:00:00/2022-01-01T00:00:00",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-e2c9cbadb6781761_fv",
+      "value": "0.0",
+      "decimals": 0
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-6ef83559ef638e85",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2022-01-01T00:00:00/2023-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-6ef83559ef638e85_fv",
+      "value": "0.53",
+      "decimals": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:fact-cb7e11973362b193",
+    "factDimensions": {
+     "xbrl:concept": "core:AverageNumberEmployeesDuringPeriod",
+     "xbrl:entity": "scheme:OC321469",
+     "xbrl:period": "2021-01-01T00:00:00/2022-01-01T00:00:00"
+    },
+    "factValues": [
+     {
+      "name": "gr:fact-cb7e11973362b193_fv",
+      "value": "0.0",
+      "decimals": 2
+     }
+    ]
+   }
+  ],
+  "domainNetworks": [
+   {
+    "name": "gr:Hypercube-DetailedProfitLoss_DetailedProfitLossHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:ProfitLoss"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Basic_BasicHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:OpinionAuditorsOnEntity"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:BasisForOpinionAuditorsOnEntity"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:StatementOnMattersOnWhichAuditorReportsByException"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:StatementAuditorsResponsibilitiesRelatingToOtherInformation"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:DateAuditorsReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityCurrentLegalOrRegisteredName"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityDormantTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:BalanceSheetDate"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:StartDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EndDateForPeriodCoveredByReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ReportIncludesDetailedProfitLossStatementTruefalse"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:DateSigningDirectorsReport"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:LegalFormEntity"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube_LegalFormEntityDimension",
+    "root": "bus:LegalFormEntityHeading",
+    "relationships": [
+     {
+      "source": "bus:LegalFormEntityHeading",
+      "target": "bus:LimitedLiabilityPartnershipLLP"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:EntityTradingStatus"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityOfficer"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DirectorSigningFinancialStatements"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
+    "root": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+    "relationships": [
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:PartnersLimitedLiabilityPartnershipHeading"
+     },
+     {
+      "source": "bus:PartnersLimitedLiabilityPartnershipHeading",
+      "target": "bus:PartnerLLP1"
+     },
+     {
+      "source": "bus:PartnersLimitedLiabilityPartnershipHeading",
+      "target": "bus:PartnerLLP2"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameEntityAuditors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "aurep:NameIndividualAuditor"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:ScopeAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountingStandardsApplied"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube_AccountingStandardsDimension",
+    "root": "bus:AccountingStandardsHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsStatusAuditedOrUnaudited"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube_AccountsStatusDimension",
+    "root": "bus:AccountsStatusHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "bus:Audited"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:AccountsType"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-AccountsType_AccountsTypeHypercube_AccountsTypeDimension",
+    "root": "bus:AccountsTypeHeading",
+    "relationships": [
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Income-Main_Income-MainHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:AverageNumberEmployeesDuringPeriod"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:ProfitLoss"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:ProfitLoss"
+     }
+    ]
+   },
+   {
+    "name": "gr:Hypercube-Empty_EmptyHypercube_concepts",
+    "root": "xbrl:conceptDomain",
+    "relationships": [
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:UKCompaniesHouseRegisteredNumber"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:NameProductionSoftware"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "bus:VersionProductionSoftware"
+     }
+    ]
+   }
+  ],
+  "groups": [
+   {
+    "name": "gr:Entity-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Entity-Information"
+   },
+   {
+    "name": "gr:Report-Information",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Report-Information"
+   },
+   {
+    "name": "gr:DirectorsReport",
+    "groupURI": "http://xbrl.frc.org.uk/direp/roles/DirectorsReport"
+   },
+   {
+    "name": "gr:AuditReport",
+    "groupURI": "http://xbrl.frc.org.uk/aurep/roles/AuditReport"
+   },
+   {
+    "name": "gr:FullDetailedProfitLoss",
+    "groupURI": "http://xbrl.frc.org.uk/dpl/roles/FullDetailedProfitLoss"
+   },
+   {
+    "name": "gr:IncomeStatementFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/IncomeStatementFRS102"
+   },
+   {
+    "name": "gr:StatementComprehensiveIncomeFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/StatementComprehensiveIncomeFRS102"
+   },
+   {
+    "name": "gr:BalanceSheetFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/BalanceSheetFRS102"
+   },
+   {
+    "name": "gr:StatementChangesEquityFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/StatementChangesEquityFRS102"
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/NotesAndDetailedDisclosuresFRS102"
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataFRS102",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/AdditionalIndustrySectorDataFRS102"
+   },
+   {
+    "name": "gr:Dimensions-Content",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Dimensions-Content"
+   },
+   {
+    "name": "gr:Hypercube-DetailedProfitLoss",
+    "groupURI": "http://xbrl.frc.org.uk/dpl/roles/Hypercube-DetailedProfitLoss"
+   },
+   {
+    "name": "gr:Hypercube-Basic",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Basic"
+   },
+   {
+    "name": "gr:Hypercube-LegalFormEntity",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-LegalFormEntity"
+   },
+   {
+    "name": "gr:Hypercube-EntityTradingStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityTradingStatus"
+   },
+   {
+    "name": "gr:Hypercube-EntityOfficers",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-EntityOfficers"
+   },
+   {
+    "name": "gr:Hypercube-ThirdPartyAgents",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-ThirdPartyAgents"
+   },
+   {
+    "name": "gr:Hypercube-ScopeAccounts",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-ScopeAccounts"
+   },
+   {
+    "name": "gr:Hypercube-AccountingStandardsApplied",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountingStandardsApplied"
+   },
+   {
+    "name": "gr:Hypercube-AccountsStatus",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsStatus"
+   },
+   {
+    "name": "gr:Hypercube-AccountsType",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-AccountsType"
+   },
+   {
+    "name": "gr:Hypercube-Income-Main",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-Income-Main"
+   },
+   {
+    "name": "gr:Hypercube-EquitySOCI",
+    "groupURI": "http://xbrl.frc.org.uk/fr/core/roles/Hypercube-EquitySOCI"
+   },
+   {
+    "name": "gr:Hypercube-Empty",
+    "groupURI": "http://xbrl.frc.org.uk/cd/roles/Hypercube-Empty"
+   },
+   {
+    "name": "gr:section_Reportinformation"
+   },
+   {
+    "name": "gr:section_Statements"
+   },
+   {
+    "name": "gr:section_Notes"
+   },
+   {
+    "name": "gr:section_Other"
+   }
+  ],
+  "groupContents": [
+   {
+    "groupName": "gr:Entity-Information",
+    "forObject": "gr:Entity-Information_presentation"
+   },
+   {
+    "groupName": "gr:Report-Information",
+    "forObject": "gr:Report-Information_presentation"
+   },
+   {
+    "groupName": "gr:DirectorsReport",
+    "forObject": "gr:DirectorsReport_presentation"
+   },
+   {
+    "groupName": "gr:AuditReport",
+    "forObject": "gr:AuditReport_presentation"
+   },
+   {
+    "groupName": "gr:FullDetailedProfitLoss",
+    "forObject": "gr:FullDetailedProfitLoss_presentation"
+   },
+   {
+    "groupName": "gr:IncomeStatementFRS102",
+    "forObject": "gr:IncomeStatementFRS102_presentation"
+   },
+   {
+    "groupName": "gr:StatementComprehensiveIncomeFRS102",
+    "forObject": "gr:StatementComprehensiveIncomeFRS102_presentation"
+   },
+   {
+    "groupName": "gr:BalanceSheetFRS102",
+    "forObject": "gr:BalanceSheetFRS102_presentation"
+   },
+   {
+    "groupName": "gr:StatementChangesEquityFRS102",
+    "forObject": "gr:StatementChangesEquityFRS102_presentation"
+   },
+   {
+    "groupName": "gr:NotesAndDetailedDisclosuresFRS102",
+    "forObject": "gr:NotesAndDetailedDisclosuresFRS102_presentation"
+   },
+   {
+    "groupName": "gr:AdditionalIndustrySectorDataFRS102",
+    "forObject": "gr:AdditionalIndustrySectorDataFRS102_presentation"
+   },
+   {
+    "groupName": "gr:Dimensions-Content",
+    "forObject": "gr:Dimensions-Content_presentation"
+   },
+   {
+    "groupName": "gr:Hypercube-DetailedProfitLoss",
+    "forObject": "gr:Hypercube-DetailedProfitLoss_DetailedProfitLossHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Basic",
+    "forObject": "gr:Hypercube-Basic_BasicHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-LegalFormEntity",
+    "forObject": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityTradingStatus",
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EntityOfficers",
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-ThirdPartyAgents",
+    "forObject": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-ScopeAccounts",
+    "forObject": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountingStandardsApplied",
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsStatus",
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-AccountsType",
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Income-Main",
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-EquitySOCI",
+    "forObject": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube"
+   },
+   {
+    "groupName": "gr:Hypercube-Empty",
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube"
+   }
+  ],
+  "groupTree": {
+   "name": "gr:groupTree",
+   "relationships": [
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Reportinformation",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Entity-Information",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:Report-Information",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:DirectorsReport",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:AuditReport",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Reportinformation",
+     "target": "gr:FullDetailedProfitLoss",
+     "order": 5
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Statements",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:IncomeStatementFRS102",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementComprehensiveIncomeFRS102",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:BalanceSheetFRS102",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Statements",
+     "target": "gr:StatementChangesEquityFRS102",
+     "order": 4
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Notes",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Notes",
+     "target": "gr:NotesAndDetailedDisclosuresFRS102",
+     "order": 1
+    },
+    {
+     "source": "xbrl:rootSource",
+     "target": "gr:section_Other",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:AdditionalIndustrySectorDataFRS102",
+     "order": 1
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Dimensions-Content",
+     "order": 2
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-DetailedProfitLoss",
+     "order": 3
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Basic",
+     "order": 4
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-LegalFormEntity",
+     "order": 5
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityTradingStatus",
+     "order": 6
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EntityOfficers",
+     "order": 7
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-ThirdPartyAgents",
+     "order": 8
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-ScopeAccounts",
+     "order": 9
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountingStandardsApplied",
+     "order": 10
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsStatus",
+     "order": 11
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-AccountsType",
+     "order": 12
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Income-Main",
+     "order": 13
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-EquitySOCI",
+     "order": 14
+    },
+    {
+     "source": "gr:section_Other",
+     "target": "gr:Hypercube-Empty",
+     "order": 15
+    }
+   ]
+  },
+  "networks": [
+   {
+    "name": "gr:Entity-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:EntityInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityNamesHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityNamesHeading",
+      "target": "bus:EntityCurrentLegalOrRegisteredName",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityIdentifyingCodesHeading",
+      "order": 2
+     },
+     {
+      "source": "bus:EntityIdentifyingCodesHeading",
+      "target": "bus:UKCompaniesHouseRegisteredNumber",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityLegalFormHeading",
+      "order": 4
+     },
+     {
+      "source": "bus:EntityLegalFormHeading",
+      "target": "bus:LegalFormEntity",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:OperationalStatusEntityHeading",
+      "order": 6
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityDormantTruefalse",
+      "order": 1
+     },
+     {
+      "source": "bus:OperationalStatusEntityHeading",
+      "target": "bus:EntityTradingStatus",
+      "order": 3
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "order": 7
+     },
+     {
+      "source": "bus:EntityOfficersIncludingDirectorsPartnersHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityInformationHeading",
+      "target": "bus:ThirdPartyAgentsHeading",
+      "order": 9
+     },
+     {
+      "source": "bus:ThirdPartyAgentsHeading",
+      "target": "bus:NameEntityAuditors",
+      "order": 3
+     }
+    ]
+   },
+   {
+    "name": "gr:Report-Information_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:ReportInformationHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ScopeAccounts",
+      "order": 2
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountingStandardsApplied",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsStatusAuditedOrUnaudited",
+      "order": 6
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:AccountsType",
+      "order": 6.5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportDatesPeriodsCoveredHeading",
+      "order": 8
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:BalanceSheetDate",
+      "order": 1
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:StartDateForPeriodCoveredByReport",
+      "order": 2
+     },
+     {
+      "source": "bus:ReportDatesPeriodsCoveredHeading",
+      "target": "bus:EndDateForPeriodCoveredByReport",
+      "order": 3
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportIncludesDetailedProfitLossStatementTruefalse",
+      "order": 10.5
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+      "order": 11
+     },
+     {
+      "source": "bus:ReportInformationHeading",
+      "target": "bus:XBRLProductionSoftwareHeading",
+      "order": 19
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:NameProductionSoftware",
+      "order": 1
+     },
+     {
+      "source": "bus:XBRLProductionSoftwareHeading",
+      "target": "bus:VersionProductionSoftware",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:DirectorsReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "direp:DirectorsStrategicReportHeading",
+      "order": 1
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:ListDirectorsHeading",
+      "order": 3
+     },
+     {
+      "source": "direp:ListDirectorsHeading",
+      "target": "bus:NameEntityOfficer",
+      "order": 4.85
+     },
+     {
+      "source": "direp:DirectorsStrategicReportHeading",
+      "target": "direp:DateSigningDirectorsReport",
+      "order": 17
+     }
+    ]
+   },
+   {
+    "name": "gr:AuditReport_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "aurep:AuditReportHeading",
+      "order": 1
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "aurep:AuditorInformationHeading",
+      "order": 2
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors",
+      "order": 1
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:OpinionAuditorsOnEntity",
+      "order": 2
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:BasisForOpinionAuditorsOnEntity",
+      "order": 2.5
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:StatementOnMattersOnWhichAuditorReportsByException",
+      "order": 8
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:StatementAuditorsResponsibilitiesRelatingToOtherInformation",
+      "order": 8.8
+     },
+     {
+      "source": "aurep:AuditReportHeading",
+      "target": "aurep:DateAuditorsReport",
+      "order": 14
+     },
+     {
+      "source": "aurep:AuditorInformationHeading",
+      "target": "bus:NameEntityAuditors",
+      "order": 1
+     },
+     {
+      "source": "aurep:AuditorInformationHeading",
+      "target": "aurep:NameIndividualAuditor",
+      "order": 3
+     }
+    ]
+   },
+   {
+    "name": "gr:FullDetailedProfitLoss_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "dpl:DetailedProfitLossHeading",
+      "order": 1
+     },
+     {
+      "source": "dpl:DetailedProfitLossHeading",
+      "target": "dpl:ProfitTaxTotalsHeading",
+      "order": 8
+     },
+     {
+      "source": "dpl:ProfitTaxTotalsHeading",
+      "target": "core:ProfitLoss",
+      "order": 5
+     }
+    ]
+   },
+   {
+    "name": "gr:IncomeStatementFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:IncomeStatementHeading",
+      "order": 1
+     },
+     {
+      "source": "core:IncomeStatementHeading",
+      "target": "core:ProfitLoss",
+      "order": 14
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementComprehensiveIncomeFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:StatementComprehensiveIncomeHeading",
+      "order": 1
+     },
+     {
+      "source": "core:StatementComprehensiveIncomeHeading",
+      "target": "core:ProfitLoss",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:BalanceSheetFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:BalanceSheetStatementFinancialPositionHeading",
+      "order": 1
+     },
+     {
+      "source": "core:BalanceSheetStatementFinancialPositionHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 5
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:StatementChangesEquityFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:StatementChangesInEquityHeading",
+      "order": 1
+     },
+     {
+      "source": "core:StatementChangesInEquityHeading",
+      "target": "core:Equity-MovementAnalysisHeading",
+      "order": 3
+     },
+     {
+      "source": "core:Equity-MovementAnalysisHeading",
+      "target": "core:TotalIncreaseDecreaseInEquity",
+      "order": 2
+     },
+     {
+      "source": "core:TotalIncreaseDecreaseInEquity",
+      "target": "core:ComprehensiveIncomeExpense",
+      "order": 1
+     },
+     {
+      "source": "core:ComprehensiveIncomeExpense",
+      "target": "core:ProfitLoss",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:NotesAndDetailedDisclosuresFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:NotesDetailedDisclosuresHeading",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     },
+     {
+      "source": "core:BasisPreparationGeneralInformationOnFinancialStatementsHeading",
+      "target": "core:AmendedRevisedReportHeading",
+      "order": 12
+     },
+     {
+      "source": "core:AmendedRevisedReportHeading",
+      "target": "bus:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+      "order": 1
+     },
+     {
+      "source": "core:NotesDetailedDisclosuresHeading",
+      "target": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "order": 13
+     },
+     {
+      "source": "core:EmployeeBenefitsOtherEmployeeInformationHeading",
+      "target": "core:EmployeeInformationHeading",
+      "order": 5
+     },
+     {
+      "source": "core:EmployeeInformationHeading",
+      "target": "core:AverageNumberEmployeesByDepartmentHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AverageNumberEmployeesByDepartmentHeading",
+      "target": "core:AverageNumberEmployeesDuringPeriod",
+      "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:AdditionalIndustrySectorDataFRS102_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:AdditionalIndustrySectorDataItemsHeading",
+      "order": 1
+     },
+     {
+      "source": "core:AdditionalIndustrySectorDataItemsHeading",
+      "target": "core:BankingFinanceSectorItemsHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BankingFinanceSectorItemsHeading",
+      "target": "core:BalanceSheetBankingFinanceSectorHeading",
+      "order": 2
+     },
+     {
+      "source": "core:BalanceSheetBankingFinanceSectorHeading",
+      "target": "core:ApprovalFinancialStatementsHeading",
+      "order": 5
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DirectorSigningFinancialStatements",
+      "order": 1
+     },
+     {
+      "source": "core:ApprovalFinancialStatementsHeading",
+      "target": "core:DateAuthorisationFinancialStatementsForIssue",
+      "order": 2
+     }
+    ]
+   },
+   {
+    "name": "gr:Dimensions-Content_presentation",
+    "relationshipTypeName": "xbrl:parent-child",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "bus:DimensionsContentHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:Entity-specificDimensionsHeading",
+      "order": 2
+     },
+     {
+      "source": "bus:Entity-specificDimensionsHeading",
+      "target": "bus:LegalFormEntityDimension",
+      "order": 2
+     },
+     {
+      "source": "bus:LegalFormEntityDimension",
+      "target": "bus:LegalFormEntityHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:LegalFormEntityHeading",
+      "target": "bus:LimitedLiabilityPartnershipLLP",
+      "order": 6
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:EntityOfficers-specificDimensionsHeading",
+      "order": 4
+     },
+     {
+      "source": "bus:EntityOfficers-specificDimensionsHeading",
+      "target": "bus:EntityOfficersDimension",
+      "order": 1
+     },
+     {
+      "source": "bus:EntityOfficersDimension",
+      "target": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "order": 1
+     },
+     {
+      "source": "bus:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "bus:PartnersLimitedLiabilityPartnershipHeading",
+      "order": 50
+     },
+     {
+      "source": "bus:PartnersLimitedLiabilityPartnershipHeading",
+      "target": "bus:PartnerLLP1",
+      "order": 1
+     },
+     {
+      "source": "bus:PartnersLimitedLiabilityPartnershipHeading",
+      "target": "bus:PartnerLLP2",
+      "order": 2
+     },
+     {
+      "source": "bus:DimensionsContentHeading",
+      "target": "bus:BusinessReport-specificDimensionsHeading",
+      "order": 7
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountingStandardsDimension",
+      "order": 2
+     },
+     {
+      "source": "bus:AccountingStandardsDimension",
+      "target": "bus:AccountingStandardsHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountingStandardsHeading",
+      "target": "bus:FRS102",
+      "order": 3
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsStatusDimension",
+      "order": 5
+     },
+     {
+      "source": "bus:AccountsStatusDimension",
+      "target": "bus:AccountsStatusHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsStatusHeading",
+      "target": "bus:Audited",
+      "order": 1
+     },
+     {
+      "source": "bus:BusinessReport-specificDimensionsHeading",
+      "target": "bus:AccountsTypeDimension",
+      "order": 5.5
+     },
+     {
+      "source": "bus:AccountsTypeDimension",
+      "target": "bus:AccountsTypeHeading",
+      "order": 1
+     },
+     {
+      "source": "bus:AccountsTypeHeading",
+      "target": "bus:FullAccounts",
+      "order": 1
+     }
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "forObject": "gr:Entity-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "002 - Entity Information"
+   },
+   {
+    "forObject": "gr:Report-Information",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "003 - Report Information"
+   },
+   {
+    "forObject": "gr:DirectorsReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "010 - Directors'/Strategic Report"
+   },
+   {
+    "forObject": "gr:AuditReport",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "015 - Audit Report"
+   },
+   {
+    "forObject": "gr:FullDetailedProfitLoss",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "031 - Full Detailed Profit and Loss (UK)"
+   },
+   {
+    "forObject": "gr:IncomeStatementFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "202 - Income Statement (FRS 102)"
+   },
+   {
+    "forObject": "gr:StatementComprehensiveIncomeFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "212 - Statement of Comprehensive Income (FRS 102)"
+   },
+   {
+    "forObject": "gr:BalanceSheetFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "222 - Balance Sheet (FRS 102)"
+   },
+   {
+    "forObject": "gr:StatementChangesEquityFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "232 - Statement of Changes in Equity (FRS 102)"
+   },
+   {
+    "forObject": "gr:NotesAndDetailedDisclosuresFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "302 - Notes and Detailed Disclosures (FRS 102)"
+   },
+   {
+    "forObject": "gr:AdditionalIndustrySectorDataFRS102",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "402 - Additional Industry Sector Data (FRS 102)"
+   },
+   {
+    "forObject": "gr:Dimensions-Content",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "500 - Dimensions Content"
+   },
+   {
+    "forObject": "gr:Hypercube-DetailedProfitLoss",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "850 - Hypercube - Detailed Profit and Loss"
+   },
+   {
+    "forObject": "gr:Hypercube-DetailedProfitLoss_DetailedProfitLossHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "850 - Hypercube - Detailed Profit and Loss"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-Basic_BasicHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9000 - Hypercube - Basic"
+   },
+   {
+    "forObject": "gr:Hypercube-LegalFormEntity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9010 - Hypercube - Legal Form of Entity"
+   },
+   {
+    "forObject": "gr:Hypercube-LegalFormEntity_LegalFormEntityHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9010 - Hypercube - Legal Form of Entity"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityTradingStatus_EntityTradingStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9012 - Hypercube - Entity Trading Status"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9014 - Hypercube - Entity Officers"
+   },
+   {
+    "forObject": "gr:Hypercube-ThirdPartyAgents",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9016 - Hypercube - Third Party Agents"
+   },
+   {
+    "forObject": "gr:Hypercube-ThirdPartyAgents_ThirdPartyAgentsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9016 - Hypercube - Third Party Agents"
+   },
+   {
+    "forObject": "gr:Hypercube-ScopeAccounts",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9020 - Hypercube - Scope of Accounts"
+   },
+   {
+    "forObject": "gr:Hypercube-ScopeAccounts_ScopeAccountsHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9020 - Hypercube - Scope of Accounts"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountingStandardsApplied_AccountingStandardsAppliedHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9021 - Hypercube - Accounting Standards Applied"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsStatus_AccountsStatusHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9024 - Hypercube - Accounts Status"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-AccountsType_AccountsTypeHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9025 - Hypercube - Accounts Type"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9080 - Hypercube - Income - Main"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9240 - Hypercube - Equity and SOCI"
+   },
+   {
+    "forObject": "gr:Hypercube-EquitySOCI_EquitySOCIHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9240 - Hypercube - Equity and SOCI"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:Hypercube-Empty_EmptyHypercube",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "9990 - Hypercube - Empty"
+   },
+   {
+    "forObject": "gr:section_Reportinformation",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Report information"
+   },
+   {
+    "forObject": "gr:section_Statements",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Statements"
+   },
+   {
+    "forObject": "gr:section_Notes",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Notes"
+   },
+   {
+    "forObject": "gr:section_Other",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Other"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+      xmlns:ix="http://www.xbrl.org/2008/inlineXBRL"
+      xmlns:link="http://www.xbrl.org/2003/linkbase"
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:ixt2="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+      xmlns:uk-bus="http://xbrl.frc.org.uk/cd/2025-01-01/business"
+      xmlns:uk-core="http://xbrl.frc.org.uk/fr/2025-01-01/core"
+      xmlns:accrep="http://xbrl.frc.org.uk/reports/2025-01-01/accrep"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:uk-direp="http://xbrl.frc.org.uk/reports/2025-01-01/direp"
+      xmlns:frs-102="http://xbrl.frc.org.uk/FRS-102/2025-01-01"
+      xmlns:countries="http://xbrl.frc.org.uk/cd/2025-01-01/countries"
+      xmlns:curr="http://xbrl.frc.org.uk/cd/2025-01-01/currencies"
+      xmlns:lang="http://xbrl.frc.org.uk/cd/2025-01-01/languages"
+      xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+      xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+      xmlns:types="http://xbrl.frc.org.uk/general/2025-01-01/types"
+      xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+      xmlns:ref="http://www.xbrl.org/2006/ref"
+      xmlns:uk-ref="http://xbrl.frc.org.uk/general/2025-01-01/ref"
+      xmlns:common="http://xbrl.frc.org.uk/general/2025-01-01/common"
+      xmlns:aurep="http://xbrl.frc.org.uk/reports/2025-01-01/aurep">
+
+
+<head>
+    <style type="text/css">
+    tr.rowHighlight:hover {
+        backgRound: lightBlue !important;
+    }
+
+    .rowHighlight:hover td {
+        backgRound: transparent;
+    }
+
+    /*.divFinalAccount td {
+        font: 11pt 'Open Sans', sans-serif !important;
+        /*text-align: right;
+        font-style: normal;
+        font-size: 11pt;
+        font-family: 'Open Sans', sans-serif !important;
+        padding-right: 1.1mm;
+        font-weight: normal;
+    }*/
+
+    .renderhtml td {
+        text-align: left !important;
+        font-style: normal;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important;
+        padding-right: 1.1mm;
+        font-weight: normal;
+    }
+
+    .divFinalAccount td.u {
+        text-decoration: underline;
+    }
+
+    .divFinalAccount td.t {
+        text-align: left;
+    }
+
+    divFinalAccount td.bullet {
+        text-align: left;
+    }
+
+    .divFinalAccount td.tu {
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    .divFinalAccount td.b {
+        font-weight: bold !important;
+    }
+
+    .divFinalAccount td.bu {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.bt {
+        text-align: left;
+        font-weight: bold !important;
+    }
+
+    .divFinalAccount td.big {
+        text-align: left;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .hoverElement {
+        cursor: pointer;
+    }
+
+
+
+    .divFinalAccount td.bc {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.i {
+        font-style: normal;
+    }
+
+    .divFinalAccount td.bi {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.comp {
+        font-style: normal;
+    }
+
+    .divFinalAccount td.grey {
+        backgRound-color: #e0e0e0;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.greyt {
+        backgRound-color: #e0e0e0;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.j {
+        text-align: left;
+    }
+
+    .divFinalAccount td.notes {
+        text-align: left;
+    }
+
+    .divFinalAccount td.#333 {
+        backgRound-color: #333;
+        text-align: left;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.white {
+        text-align: left;
+        color: white;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.bcu {
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .divFinalAccount td.c {
+        text-align: center;
+    }
+
+    .divFinalAccount td.control {
+        text-align: left;
+        font-style: normal;
+        color: red;
+    }
+
+    .divFinalAccount td.clientinput {
+        border-left-style: solid;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-top-style: solid;
+        text-align: left;
+        border-color: grey;
+        border-width: 1px;
+    }
+
+    .divFinalAccount td.sign {
+        text-align: left;
+        font-style: normal;
+        vertical-align: bottom;
+        font-weight: normal;
+    }
+
+    .divFinalAccount TR.h1 {
+        height: 3mm;
+    }
+
+    .divFinalAccount TR.h2 {
+        height: 2mm;
+    }
+
+    .divFinalAccount td.legalst {
+        padding-bottom: 2mm;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important;
+        padding-top: 7mm;
+        page-break-after: never;
+        font-weight: bold;
+    }
+
+    .addNote {
+        font-weight: bold !important;
+    }
+
+    .divFinalAccount td.legal {
+        text-align: left;
+        font-style: normal;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: normal;
+    }
+
+    .divFinalAccount td.legalstA {
+        padding-bottom: 2mm;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important;
+        padding-top: 7mm;
+        page-break-after: avoid;
+        font-weight: normal;
+    }
+
+    .divFinalAccount td.legalA {
+        text-align: left;
+        font-style: normal;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: normal;
+    }
+
+    .divFinalAccount div.address {
+        position: absolute;
+        left: 10mm;
+        top: 42mm;
+    }
+
+    .divFinalAccount table.body {
+        position: absolute;
+        top: 70mm;
+    }
+
+    .divFinalAccount hr.1 {
+        width: 100%;
+        height: 5px;
+        text-align: center;
+        color: #333;
+    }
+
+    .divFinalAccount hr.2 {
+        width: 100%;
+        height: 5px;
+        text-align: center;
+        color: #333;
+    }
+
+    .divFinalAccount hr.3 {
+        width: 100%;
+        height: 1px;
+        text-align: center;
+        color: #333;
+    }
+
+    .divFinalAccount hr.4 {
+        width: 100%;
+        height: 2px;
+        text-align: center;
+        color: #333;
+    }
+
+    .divFinalAccount input.readonly {
+        backgRound-color: #e0e0e0;
+    }
+
+    .divFinalAccount input.q {
+        height: 30px;
+        border-style: solid;
+        border-color: navy;
+        border-width: thin;
+    }
+
+    .divFinalAccount div.title {
+        font-weight: bold;
+    }
+
+    .divFinalAccount #center {
+        text-align: center;
+    }
+
+    .divFinalAccount p {
+        text-align: left;
+    }
+
+    .divFinalAccount p {
+        font: normal 15px 'Open Sans', sans-serif !important;
+    }
+
+    .divFinalAccount li {
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    .divFinalAccount #top {
+        border-top-style: solid;
+        border-color: #333;
+        border-width: 1px;
+    }
+
+    .divFinalAccount #bottom {
+        border-bottom-style: solid;
+        border-color: #333;
+        border-width: 1px;
+    }
+
+    .divFinalAccount #both {
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-color: #333;
+        border-width: 1px;
+    }
+
+    .divFinalAccount #doublebottom {
+        border-bottom-style: double;
+        border-color: #333;
+    }
+
+    .divFinalAccount #doublebottom2 {
+        border-bottom-style: double;
+        border-top-style: solid;
+        border-color: #333;
+    }
+
+    .divFinalAccount #total {
+        border-bottom-style: double;
+        border-top-style: solid;
+        border-color: #333;
+        border-top-width: 1px;
+    }
+
+    .divFinalAccount tr.orange {
+        backgRound-color: orange;
+    }
+
+    .divFinalAccount tr.red {
+        backgRound-color: red;
+    }
+
+    .divFinalAccount .pagebefore {
+        page-break-before: always;
+    }
+
+    .divFinalAccount .pageafter {
+        page-break-after: always;
+    }
+
+    .pageafter {
+        page-break-after: always;
+    }
+
+
+    .divFinalAccount .pagenever {
+        page-break-after: avoid;
+    }
+
+    .divFinalAccount .pageboth {
+        page-break-after: always;
+        page-break-before: always;
+    }
+
+    .divFinalAccount #clientbutton {
+        border-top: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        backgRound-color: navy;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana;
+        padding: 4px;
+        border-left: 1px;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    .divFinalAccount #clienttable {
+        text-decoration: none;
+        width: 70%;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .divFinalAccount #clientheading {
+        border-top: none;
+        border-right: none;
+        text-align: left;
+        font-size: 15px;
+        font-family: Verdana;
+        border-style: solid;
+        padding: 4px;
+        border-left: none;
+        border-color: navy;
+        font-weight: bold;
+        border-width: 1px;
+    }
+
+    .divFinalAccount A {
+        text-decoration: none;
+    }
+
+    @media screen {
+        .divFinalAccount tr.odd {
+            backgRound-color: #ddffdd;
+        }
+
+        .divFinalAccount A {
+            font-weight: normal !important;
+        }
+
+        .divFinalAccount .footer {
+            display: none;
+        }
+
+        .divFinalAccount .lastfooter {
+            display: none;
+        }
+    }
+
+    @media print {
+        .divFinalAccount A {
+            color: #333;
+        }
+
+        .divFinalAccount table.footer {
+            position: relative;
+            top: -11mm;
+        }
+
+        .divFinalAccount .noprint {
+            display: none;
+        }
+
+        .divFinalAccount table.header {
+            position: relative;
+            top: -11mm;
+        }
+
+        .divFinalAccount table.firstheader {
+            margin-bottom: 11mm;
+        }
+
+        .divFinalAccount table.secondheader {
+            position: relative;
+            top: -11mm;
+        }
+
+
+        table.secondheader {
+            position: relative;
+            top: -11mm;
+        }
+
+        table.firstheader {
+            margin-bottom: 11mm;
+        }
+    }
+
+    /*Shanks Edits*/
+    td {
+        font: normal 15px 'Open Sans', sans-serif !important;
+    }
+
+    tr.spaceUnder > td {
+        padding-bottom: 20em;
+    }
+      tr.spaceUnder1 > td {
+        padding-bottom: 10em;
+    }
+    .custom_boldGrey {
+        font: bold 15px 'Open Sans', sans-serif !important;
+        color: #7d7d7d;
+        display: block;
+        min-width: 185px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    table.table td {
+        font: 'Open Sans', sans-serif !important;
+        color: #333;
+    }
+
+    tr.CompanyInfoTbl td.Order1 {
+        width: 48%;
+        text-align: left;
+        font: bold 15px 'Open Sans', sans-serif !important;
+        padding-left: 15%;
+    }
+
+    tr.CompanyInfoTbl td.Order2 {
+        width: 2%;
+        text-align: center;
+        font: bold 15px 'Open Sans', sans-serif !important;
+    }
+
+    tr.CompanyInfoTbl td.Order11 {
+        width: 24%;
+        text-align: left;
+        font: bold 15px 'Open Sans', sans-serif !important;
+        /*padding-left: 5%;*/
+    }
+
+    tr.CompanyInfoTbl td.Order22 {
+        width: 2%;
+        text-align: left;
+        font: bold 15px 'Open Sans', sans-serif !important;
+    }
+
+    tr.CompanyInfoTbl td.Order3 {
+        width: 48%;
+        text-align: left;
+        font: normal 15px 'Open Sans', sans-serif !important;
+        padding-left: 2%;
+        /*padding-left: 55%;*/
+    }
+
+    tr.textReport p {
+        line-height: 20px !important;
+        font: normal 15px 'Open Sans', sans-serif !important;
+        color: #333;
+        font-size: 15px !important;
+    }
+
+    td.FullTotal {
+        font-weight: bold !important;
+        border-top: 1px solid #333 !important;
+        border-bottom: 3px solid #333 !important;
+        text-align: right !important;
+    }
+
+    td.FullTotalNumeric {
+        font-weight: bold !important;
+        border-top: 1px solid #333 !important;
+        border-bottom: 3px solid #333 !important;
+        text-align: right !important;
+    }
+
+    td.CategoryTotal {
+        border-top: 1px solid #333 !important;
+        text-align: right !important;
+    }
+
+
+    td.CategoryTotalNumeric {
+        border-top: 1px solid #333 !important;
+        text-align: right !important;
+    }
+
+    ul.bulletlist li {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 0%;
+        padding-left: 2%;
+        line-height: 20px !important;
+        font: normal 15px 'Open Sans', sans-serif !important;
+        color:black !important;
+        font-size: 15px !important;
+    }
+
+    ul.bulletlist1 li {
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 0%;
+        padding-left: 0% !important;
+        line-height: 20px;
+    }
+
+    ul.in-para li {
+        margin-left: 20px;
+        padding-left: 5px;
+    }
+
+    table.tb_dbhandled {
+        border-collapse: collapse;
+        table-layout: auto;
+        width: 100%;
+    }
+
+        table.tb_dbhandled td {
+            /*border: solid 1px #fab;*/
+            word-wrap: break-word;
+            padding: 1px 1px 1px 5px; /*T-R-B-L*/
+            /*width: 100%;*/
+        }
+
+    td.numeric {
+        text-align: right !important;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    td.date {
+        text-align: center !important;
+    }
+
+    .renderhtml td, .renderhtml {
+        text-align: left;
+        font-family: 'Open Sans', sans-serif !important;
+        /*padding: 0px 0px 0px 10px;*/
+        margin: 0px 0px 0px 10px;
+    }
+
+    /* Report Outline - Generic Components */
+    .statutoryinfo {
+        font: bold 15px 'Open Sans', sans-serif !important;
+        text-align: right;
+        color:#333;
+    }
+
+    .report_title {
+        text-align: center;
+        font: bold 20px 'Open Sans', sans-serif !important;
+        color: #333;
+    }
+
+    .tableDashboard p {
+        color: #333;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .report_subtitle {
+        text-align: center;
+        font: bold 18px 'Open Sans', sans-serif !important;
+        color: #333 !important;
+    }
+
+    .page_header {
+        text-align: left;
+        font: bold 15px 'Open Sans', sans-serif !important;
+    }
+
+    td.page_header span.span_left {
+        display: inline-block;
+        text-align: left;
+        width: 70%;
+        font: bold 15px 'Open Sans', sans-serif !important;
+    }
+
+    td.page_header span.span_right {
+        display: inline-block;
+        text-align: right;
+        width: 28%;
+    }
+
+    .table_of_content_title {
+        text-align: center;
+        font: bold 22px 'Open Sans', sans-serif !important;
+        color: #333 !important;
+    }
+
+    .table_of_content_title_left_frs05 {
+        text-align: left;
+        font: bold 18px 'Open Sans', sans-serif !important;
+        color: #333 !important;
+    }
+
+    .table_of_content_title_right_frs05 {
+        text-align: left;
+        font: bold 18px 'Open Sans', sans-serif !important;
+        color: #333 !important;
+        padding-right: 10%;
+    }
+
+    .page_title {
+        text-align: center;
+        font: bold 20px 'Open Sans', sans-serif !important;
+        color: #333;
+    }
+    .page_title_plm {
+        text-align: center;
+        font: bold 20px 'Open Sans', sans-serif !important;
+        color: #333;
+    }
+
+     .page_subtitle {
+        text-align: center;
+        line-height: 3;
+        font: bold 18px 'Open Sans', sans-serif !important;
+    }
+
+    .page_subtitle_p {
+        text-align: center;
+        line-height: 3;
+        font: bold 18px 'Open Sans', sans-serif !important;
+    }
+
+        .page_subtitle_p p {
+            font-weight: bold;
+        }
+
+    .page_leftfootnote {
+        text-align: left;
+        font: normal 15px 'Open Sans', sans-serif !important;
+        color:#000 !important;
+    }
+
+    .page_rightfootnote {
+        text-align: right;
+        width: 100%;
+        font: normal 15px 'Open Sans', sans-serif !important;
+    }
+
+    .page_centrefootnote {
+        text-align:center ;
+        width: 100%;
+        font: normal 15px 'Open Sans', sans-serif !important;
+    }
+
+    td.center, .center {
+        text-align: center;
+    }
+
+    .dbText {
+        font: bold 15px 'Open Sans', sans-serif !important;
+        color: red;
+    }
+
+    /*divider*/
+    margin_TopBottom8px {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    td.list_items li.list_heading,
+    tr.list_items li.list_heading {
+        font-weight: bold;
+    }
+
+    td.list_items li.list_desc,
+    tr.list_items li.list_desc {
+        font-weight: normal;
+        margin: 2px 0px 20px 0px;
+        /*padding: 0px 0px 0px 10px;*/
+    }
+
+    .b {
+        font-weight: bold !important;
+    }
+
+    .table_of_content_table td {
+        cursor: default !important;
+    }
+
+    .page_content_Director {
+        text-align: left;
+        font: bold 15px 'Open Sans', sans-serif !important;
+    }
+
+    .page_notetofinac_title {
+        text-align: center;
+        font: bold 22px 'Open Sans', sans-serif !important;
+        color: #333;
+    }
+
+    .page_notetofinac_subtitle {
+        text-align: center;
+        line-height: 3;
+        font: bold 18px 'Open Sans', sans-serif !important;
+    }
+
+    .table_of_content_td_left {
+        padding-left: 10%;
+        font: 15px 'Open Sans', sans-serif !important;
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .table_of_content_td_right {
+        padding-right: 10%;
+        font: 15px 'Open Sans', sans-serif !important;
+        padding-top: 20px;
+    }
+
+
+
+    tr td.list_desc, tr td.b, .h1 td, .rowHighlight td, .bulletlist li span, .bulletlist li {
+        text-align: left;
+    }
+
+    tr td.list_desc1 {
+            text-align: left;
+        }
+
+    .headerLine {
+        border-top: 2px solid #333;
+        /*width: 100%;*/
+        margin: 10px -26px 10px;
+    }
+
+    .pageBreakLine {
+        /*border: 0.5px solid #333;*/
+        border: none;
+        height: 20px;
+        /*width: 100%;*/
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 1px solid #7d7d7d;
+        box-shadow: 0 20px 20px -20px #333;
+        margin: -10px -36px 10px;
+    }
+
+    .page_title_pl {
+        text-align: center;
+        font: bold 20px 'Open Sans', sans-serif !important;
+        color: #333;
+        padding: 22px 25px;
+    }
+    .border-btm-dotted {
+        border-bottom: 1px dotted #484949;
+    }
+    /*ak*/
+    hr.headerLine {
+        border-top: 2px solid black !important;
+    }
+
+    hr.headerLine {
+        border-bottom: 0 !important;
+    }
+    .page_title h2 {
+        color: #ff00aa;
+        text-align: left;
+    }
+
+    #ctl00_divSubContent {
+        background-color: #f7f7f7;
+    }
+
+    .listgp {
+        position: fixed;
+        top: 140px;
+        right: 35px;
+        border: 1px solid #b80071;
+    }
+
+    .list-group-item {
+        border: 1px dashed #ddd;
+        font-size: 15px !important;
+    }
+
+    a.list-group-item:hover {
+        background-color: #b80071 !important;
+        color: #fff;
+    }
+
+    .lgActive {
+        background-color: #b80071;
+        color: #fff;
+        border: 1px dashed #b80071;
+        font-size: 15px !important;
+    }
+
+    .list-group-item:first-child {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .panel-body {
+        padding-top: 40px;
+        font-size: 15px !important;
+        color:#333 !important;
+    }
+    @media only screen and (max-width: 1920px) and (min-width: 480px) {
+        .tableft12 a, td, th {
+            font-size: 15px !important;
+        }
+        .tp-fot {
+            font-size: 15px !important;
+            color: #333 !important;
+        }
+    }
+    @media only screen and (max-width: 2560px) and (min-width: 480px) {
+        .tableft12 a, td, th {
+            font-size: 15px !important;
+        }
+        .tp-fot {
+            font-size: 15px !important;
+            color: #333 !important;
+        }
+    }
+    @media print {
+        .Absolutefooter {
+            position: relative;
+            top: 200px;
+            bottom: 0;
+        }
+
+        .Absolutefooter1 {
+            position: relative;
+            bottom: -30px;
+        }
+    }
+</style>
+    <title>Accounts</title>
+
+</head>
+
+
+<body xml:lang="en">
+    <div class="divFinalAccount" style="margin-left:auto;margin-right:auto;">
+        <div style="display:none">
+            <ix:header>
+                <ix:hidden>
+                    <ix:nonNumeric contextRef="FY1_start" name="uk-bus:StartDateForPeriodCoveredByReport">2022-08-01</ix:nonNumeric>
+                    <ix:nonNumeric contextRef="FY1_end" name="uk-bus:EndDateForPeriodCoveredByReport">2023-07-31</ix:nonNumeric>
+                    <ix:nonNumeric contextRef="FY1_period" name="uk-bus:UKCompaniesHouseRegisteredNumber">10272674</ix:nonNumeric>
+                    <ix:nonNumeric contextRef="FY1_period" name="uk-bus:EntityCurrentLegalOrRegisteredName">Iskander Trans Ltd</ix:nonNumeric>
+                    <ix:nonNumeric contextRef="FY1_period" name="uk-bus:EntityDormantTruefalse" format="ixt2:booleanfalse">false</ix:nonNumeric>
+
+
+
+                    
+                    
+                    
+                </ix:hidden>
+                <ix:references>
+                    <!-- FRC taxonomy entry points, same entry point will be used for FRS 105 as well -->
+                    <!-- FRS102 -->
+                    <link:schemaRef xmlns:uk-bus="http://xbrl.frc.org.uk/cd/2025-01-01/business"
+                                    xlink:href="https://xbrl.frc.org.uk/FRS-102/2025-01-01/FRS-102-2025-01-01.xsd" xlink:type="simple" />
+
+
+                </ix:references>
+                <ix:resources>
+                    <xbrli:context id="FY1_period">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="FY1_period_director1">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                            <xbrli:segment>
+                                <xbrldi:explicitMember dimension="uk-bus:EntityOfficersDimension">uk-bus:Director1</xbrldi:explicitMember>
+                            </xbrli:segment>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+
+                    <xbrli:context id="FY1_period_accounting_status">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                            <xbrli:segment>
+                                <xbrldi:explicitMember dimension="uk-bus:AccountsStatusDimension">
+                                    uk-bus:AuditExempt-NoAccountantsReport
+                                </xbrldi:explicitMember>
+                            </xbrli:segment>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+
+                    <xbrli:context id="FY1_period_accounting_standards">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                            <xbrli:segment>
+                                <xbrldi:explicitMember dimension="uk-bus:AccountingStandardsDimension">uk-bus:Micro-entities</xbrldi:explicitMember>
+                            </xbrli:segment>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="FY1_period_accounts_type">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                            <xbrli:segment>
+                                <xbrldi:explicitMember dimension="uk-bus:AccountsTypeDimension">uk-bus:FullAccounts</xbrldi:explicitMember>
+                            </xbrli:segment>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="FY1_period_legal_entity">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                            <xbrli:segment>
+                                <xbrldi:explicitMember dimension="uk-bus:LegalFormEntityDimension">uk-bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+                            </xbrli:segment>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2022-08-01</xbrli:startDate>
+                            <xbrli:endDate>2023-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="FY1_start">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:instant>2022-08-01</xbrli:instant>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="FY1_end">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:instant>2023-07-31</xbrli:instant>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:context id="eFY0" xmlns="http://www.xbrl.org/2003/instance">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:instant>2022-07-31</xbrli:instant>
+                        </xbrli:period>
+                    </xbrli:context>
+                    <xbrli:unit id="Pure">
+                        <xbrli:measure>xbrli:pure</xbrli:measure>
+                    </xbrli:unit>
+                    <xbrli:unit id="GBP">
+                        <xbrli:measure>iso4217:GBP</xbrli:measure>
+                    </xbrli:unit>
+                    <xbrli:context id="Pre_FY1_period">
+                        <xbrli:entity>
+                            <xbrli:identifier scheme="http://www.companieshouse.gov.uk/">10272674</xbrli:identifier>
+                        </xbrli:entity>
+                        <xbrli:period>
+                            <xbrli:startDate>2021-08-01</xbrli:startDate>
+                            <xbrli:endDate>2022-07-31</xbrli:endDate>
+                        </xbrli:period>
+                    </xbrli:context>
+                </ix:resources>
+            </ix:header>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+
+
+<table style="width:100%">
+    <tr>
+        <td class="statutoryinfo">Company Registration Number: 10272674 (England and Wales)</td>
+    </tr>
+    <!-- #region Submission Data - Do not modify or delete this section as it is required in submission-->
+    <tr style="display:none;">
+        <td>
+            <table>
+                <tr class="h2">
+                    <td class="t"> <ix:nonNumeric contextRef="FY1_period" name="uk-bus:UKCompaniesHouseRegisteredNumber">10272674</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period_legal_entity" name="uk-bus:LegalFormEntity" format="ixt2:nocontent">This company is a private limited company</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period" name="uk-bus:DescriptionPrincipalActivities">This company sells stuff to other companies</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period" name="uk-bus:EntityTradingStatus" format="ixt2:nocontent">The company was trading for the entire period</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period_accounts_type" name="uk-bus:AccountsType" format="ixt2:nocontent">Full Accounts</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_end" name="uk-bus:EndDateForPeriodCoveredByReport">2023-07-31</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period" name="uk-bus:EntityDormantTruefalse">false</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period" name="uk-bus:EntityCurrentLegalOrRegisteredName">Iskander Trans Ltd</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period_accounting_standards" name="uk-bus:AccountingStandardsApplied" format="ixt2:nocontent">The accounts were prepared in accordance with FRS102</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_period_accounting_status" name="uk-bus:AccountsStatusAuditedOrUnaudited" format="ixt2:nocontent">The accounts have been audited</ix:nonNumeric></td>
+                </tr>
+                <tr class="h2">
+                    <td class="t">
+                        <ix:nonNumeric contextRef="FY1_period_director1" name="uk-core:DirectorSigningFinancialStatements" />
+                        <ix:nonNumeric contextRef="FY1_period_director1" name="uk-direp:DirectorSigningDirectorsReport" />
+                        <ix:nonNumeric contextRef="FY1_period_director1" name="uk-bus:NameEntityOfficer">Catalin-Alexandru Radu</ix:nonNumeric>
+                    </td>
+                </tr>
+                <tr class="h2">
+                    <td class="t"><ix:nonNumeric contextRef="FY1_start" name="uk-bus:StartDateForPeriodCoveredByReport">2022-08-01</ix:nonNumeric></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr class="spaceUnder">
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="breadcrumb0 center" style="margin-top:-200px;">
+            <div class="report_title">
+
+                Iskander Trans Ltd   <div style="padding-bottom:0.5em;"></div>
+
+                
+                Unaudited Filleted Financial Statement
+            </div>
+            <div style="padding-bottom:1em;"></div>
+            <span class="report_title">
+                
+ For
+
+
+ the year ended 
+31 July 2023
+
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td class="breadcrumb0 center"><div style="padding-bottom:1em;"></div></td>
+    </tr>
+
+    <tr class="spaceUnder">
+        <td></td>
+    </tr>
+            <tr>
+                <td class="breadcrumb0 center" style="padding-bottom: 1em;"></td>
+            </tr>
+            <tr class="breadcrumb0 center" style="text-align: center; font-size: small; ">
+                <td>
+                        <div style="font-size:x-small">
+
+                                <div style="text-align:center">
+                                    FM Accounting Ltd
+                                </div>
+
+                                <div style="padding-bottom:0.2em;">
+                                    Accountant
+                                </div>
+
+                                <div style="padding-bottom:0.2em;">1 Blenheim Court, Suite 22</div>
+
+                                <div style="padding-bottom:0.2em;">Peterborough</div>
+                            
+                                <span>PE1 2DU</span>
+                                <div style="padding-bottom:0.2em;"></div>
+
+                        </div>
+                </td>
+            </tr>
+</table>
+
+
+                </div>
+            </div>
+            <div class="pageafter"></div>
+                    <div class="panel panel-default">
+                <div class="panel-body">
+                    
+
+<table class="accounts" width="100%">
+    <tr>
+        <td class="page_title" colspan="11" style="font-weight:bold;">
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Iskander Trans Ltd
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Contents
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                
+ For
+
+
+ the year ended 
+31 July 2023
+
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <hr class="headerLine" />
+        </td>
+    </tr>
+</table>
+
+
+
+
+<table class="table table_of_content_table" style="width:100%;">
+    <tr>
+        <td colspan="2" style="padding-bottom:5em;"></td>
+    </tr>
+    <tr>
+        <td class="table_of_content_td_left">
+            <b>CONTENTS</b>
+        </td>
+        <td class="table_of_content_td_right">
+            <b>PAGE</b>
+        </td>
+    </tr>
+    <tr>
+        <td class="table_of_content_td_left">
+             Company Information 
+        </td>
+        <td class="table_of_content_td_right">
+            3
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="table_of_content_td_left">
+              Statement of Financial Position
+        </td>
+        <td class="table_of_content_td_right">
+            4
+        </td>
+    </tr>
+</table>
+                </div>
+            </div>
+                    <div class="pageafter"></div>
+            
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+
+
+<table class="accounts" width="100%">
+    <tr>
+        <td class="page_title" colspan="11" style="font-weight:bold;">
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Iskander Trans Ltd
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Company Information
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                
+ For
+
+
+ the year ended 
+31 July 2023
+
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <hr class="headerLine" />
+        </td>
+    </tr>
+</table>
+
+<table class="accounts" width="100%">
+
+    <tr class="CompanyInfoTbl">
+        <td class="Order11">
+            <span>Director</span>
+        </td>
+        <td class="Order22"></td>
+                        <td class="Order3">Catalin-Alexandru Radu</td>
+    </tr>
+    <tr>
+        <td style="padding-bottom:1em;"></td>
+    </tr>
+
+
+
+        <tr class="CompanyInfoTbl">
+            <td class="Order11">Company number</td>
+            <td class="Order22"></td>
+            <td class="Order3">10272674</td>
+        </tr>
+
+        <tr>
+            <td style="padding-bottom: 1em;"></td>
+        </tr>
+        <tr class="CompanyInfoTbl">
+            <td class="Order11"><span>Registered office</span></td>
+            <td class="Order22"></td>
+                <td class="Order3">23 Loxford Avenue</td>
+        </tr>
+                <tr class="CompanyInfoTbl">
+            <td class="Order11"></td>
+            <td class="Order22"></td>
+            <td class="Order3">London</td>
+        </tr>
+            <tr class="CompanyInfoTbl">
+            <td class="Order11"></td>
+            <td class="Order22"></td>
+            <td class="Order3">England</td>
+        </tr>
+            <tr class="CompanyInfoTbl">
+            <td class="Order11"></td>
+            <td class="Order22"></td>
+            <td class="Order3">E6 3BZ</td>
+        </tr>
+        
+
+
+        <tr>
+            <td style="padding-bottom: 1em;"></td>
+        </tr>
+        <tr class="CompanyInfoTbl">
+            <td class="Order11" valign="top">Accountant</td>
+            <td class="Order22"></td>
+            <td class="Order3">
+                    <table>
+                        <tr>
+                            <td>
+
+                                
+                                
+                                    <div style="padding-bottom:0.2em;">
+                                        FM Accounting Ltd
+                                    </div>
+
+                                    <div style="padding-bottom:0.2em;">
+                                        Accountant
+                                    </div>
+
+                                    <div style="padding-bottom:0.2em;">1 Blenheim Court, Suite 22 </div>
+
+                                    <div style="padding-bottom:0.2em;">Peterborough </div>
+                                
+                                    <span>PE1 2DU</span>
+                                    <div style="padding-bottom:0.2em;"></div>
+
+                            </td>
+                        </tr>
+                    </table>
+            </td>
+        </tr>
+
+
+    <tr>
+        <td style="padding-bottom: 1em;"></td>
+    </tr>
+
+
+
+
+</table>
+
+
+                </div>
+            </div>
+                        
+            <div class="pageafter"></div>
+        
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+
+
+
+
+<table class="accounts" width="100%">
+    <tr>
+        <td class="page_title" colspan="11" style="font-weight:bold;">
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Iskander Trans Ltd
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                Statement of Financial Position
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <span style="text-align:center; font-size:18px;width:100%;">
+                
+ For
+
+
+ the year ended 
+31 July 2023
+
+            </span>
+            <div style="padding-bottom:0.2em;width:100%;"></div>
+            <hr class="headerLine" />
+        </td>
+    </tr>
+</table>    <table style="width:100%;">
+        <tr>
+            <td>
+                <span style="display:none">
+                    <ix:nonNumeric contextRef="FY1_end" name="uk-bus:BalanceSheetDate">2023-07-31</ix:nonNumeric>
+                </span>
+            </td>
+        </tr>
+
+        <tr class="h1">
+            <td style="width:70%"></td>
+                <td style="width:5%"></td>
+                <td class="b numeric" style="width:10%">2023</td>
+
+                <td style="width:5%"></td>
+                <td class="b numeric" style="width:10%">2022</td>
+        </tr>
+        <tr class="h1">
+            <td class="bt"><!--Notes--></td>
+                <td></td>
+                <td class="b numeric"><span>&#163;</span> </td>
+
+                <td></td>
+                <td class="b numeric"><span>&#163;</span> </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom:1em;"></td>
+        </tr>
+                    <tr class="h1 rowHighlight">
+                <td class="t">Fixed assets</td>
+                    <td></td>
+                    <td class="hoverElement numeric">
+                             <ix:nonFraction contextRef="FY1_end" decimals="2" name="uk-core:FixedAssets" unitRef="GBP">351</ix:nonFraction>
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                             <ix:nonFraction contextRef="eFY0" decimals="2" name="uk-core:FixedAssets" unitRef="GBP">468</ix:nonFraction>
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+
+            <tr class="h1 rowHighlight">
+                <td class="t">Current assets</td>
+
+                    <td></td>
+                    <td class="lhoverElement numeric">
+                            57,708
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                            66,544
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+                    <tr style="display:none;" class="h1 rowHighlight">
+                <td class="t">Cash in hand/bank</td>
+
+                    <td></td>
+                    <td class="lhoverElement numeric">
+                            1,332
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                            8,489
+                    </td>
+            </tr>
+
+
+
+            <tr class="h1 rowHighlight">
+                <td class="t">Creditors: Amounts falling due within one year</td>
+                    <td></td>
+                    <td class="lhoverElement numeric">
+                             (29,784)
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                             (28,012)
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+
+            <tr class="h1 rowHighlight">
+                <td class="t">Net current assets/(liabilities)</td>
+                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                        
+                        
+27,924                        
+                    </td>
+
+                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                        
+38,532                        
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+
+
+            <tr class="h1 rowHighlight">
+                <td class="t">Total assets less current liabilities</td>
+                    <td></td>
+                    <td class="hoverElement numeric">
+                            28,275
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                            39,000
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+                    <tr class="h1 rowHighlight">
+                <td class="t">Creditors: Amounts falling due more than one year</td>
+                    <td></td>
+                    <td class="lhoverElement numeric">
+                             (30,000)
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement numeric">
+                             (37,949)
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom:1em;"></td>
+            </tr>
+
+
+
+
+            <tr class="h1 rowHighlight">
+
+                <td style="text-align: justify;font-weight:bold;" class="bt">Net assets/(liabilities)</td>
+                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                        
+
+(<ix:nonFraction contextRef="FY1_end" format="ixt2:numdotdecimal" decimals="0" name="uk-core:NetAssetsLiabilities" sign="-" unitRef="GBP">1,725</ix:nonFraction>)                        
+                    </td>
+
+                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                        
+
+<ix:nonFraction contextRef="eFY0" format="ixt2:numdotdecimal" decimals="0" name="uk-core:NetAssetsLiabilities" unitRef="GBP">1,051</ix:nonFraction>                        
+                    </td>
+            </tr>
+
+        <tr>
+            <td style="padding-bottom:2em;"></td>
+        </tr>
+
+            <tr class="h1 rowHighlight">
+                <td style="text-align: justify;font-weight:bold;" class="bt">Capital and reserves</td>
+                    <td></td>
+                    <td class="hoverElement FullTotal numeric">
+                        
+(1,725)                        
+                    </td>
+
+                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                        
+1,051                        
+                    </td>
+            </tr>
+                <tr style="display:none;" class="h1 rowHighlight">
+                    <td class="t">Called up share capital</td>
+                        <td></td>
+                        <td class="hoverElement numeric">
+                                1
+                        </td>
+                                            <td></td>
+                        <td class="comp hoverElement numeric">
+                                1
+                        </td>
+                </tr>
+                <tr style="display:none;" class="h1 rowHighlight">
+                    <td class="t">Profit and loss account</td>
+                        <td></td>
+                        <td class="hoverElement numeric">
+                                
+                                    (1,726)
+                                
+                        </td>
+                                            <td></td>
+                        <td class="comp hoverElement numeric">
+                            
+                                1,050
+                            
+                        </td>
+                </tr>
+            <tr style="display:none;" class="h1 rowHighlight">
+                <td class="bt">Shareholder's fund</td>
+                    <td></td>
+                    <td class="hoverElement FullTotal numeric">
+                            
+                                (1,725)
+                            
+                    </td>
+                                    <td></td>
+                    <td class="comp hoverElement FullTotal numeric">
+                            
+                                1,051
+                            
+                    </td>
+            </tr>
+
+
+        <tr>
+            <td style="padding-bottom:3em;"></td>
+        </tr>
+
+        <tr class="h1" style="page-break-before: auto">
+            <td colspan="7">
+
+
+
+                    <table style="width:100%; text-align: left;">
+                            <tr class="h1">
+                                <td class="bt" style="padding-left:2px;">
+                                    (1) General information
+                                </td>
+                            </tr>
+                            <tr class="h2">
+                                <td style="padding-left:12px;">
+                                    <div class="renderhtml" style="width:99%;margin-left: 15px;">
+                                        <table class="tb_dbhandled"><tbody><tr><td colspan="11">The company is a private company limited by shares and is registered in England and Wales. The address of the registered office is 23 Loxford Avenue,  London,  England,  E6 3BZ.</td></tr></tbody></table>
+
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <br />
+                                    </td>
+                                </tr>
+                            <tr class="h1">
+                                <td class="bt" style="padding-left:2px;">
+                                    (2) Directors advances, credit and guarantees
+                                </td>
+                            </tr>
+                            <tr class="h2">
+                                <td style="padding-left:12px;">
+                                    <div class="renderhtml" style="width:99%;margin-left: 15px;">
+                                        <table class="tb_dbhandled"><tbody><tr><td colspan="11">During the year the company has made an advance of &#163;56,374.41 to the director of the company. The balance was fully repaid within 9 months after the year end.</td></tr></tbody></table>
+
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <br />
+                                    </td>
+                                </tr>
+                            <tr class="h1">
+                                <td class="bt" style="padding-left:2px;">
+                                    (3) Average number of employees
+                                </td>
+                            </tr>
+                            <tr class="h2">
+                                <td style="padding-left:12px;">
+                                    <div class="renderhtml" style="width:99%;margin-left: 15px;">
+                                        <table class="tb_dbhandled"><tbody><tr><td colspan="11">During the year, the average number of employees including director was  <ix:nonFraction contextRef="FY1_period" decimals="0" name="uk-core:AverageNumberEmployeesDuringPeriod" unitRef="Pure">0</ix:nonFraction> (2022:<ix:nonFraction contextRef="Pre_FY1_period" decimals="0" name="uk-core:AverageNumberEmployeesDuringPeriod" unitRef="Pure">0</ix:nonFraction>).</td></tr></tbody></table>
+
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                    </table>
+                <div style="padding-bottom:1em;"></div>
+            </td>
+        </tr>
+
+        <tr class="h1" style="page-break-before: auto">
+            <td colspan="7" style="text-align: left;padding-left:12px;">
+                <span style="display:none">
+                    <ix:nonNumeric contextRef="FY1_period" name="uk-direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies">
+                        For the  year ending  31/07/2023 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+                    </ix:nonNumeric>
+                </span>
+                <ul class="bulletlist">
+                    <li>
+
+                        For the  year ending  31 July 2023 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+
+                    </li>
+                    <li>
+                        <ix:nonNumeric contextRef="FY1_period" name="uk-direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit">
+                            The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+                        </ix:nonNumeric>
+                    </li>
+                    <li>
+                        The director acknowledges their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+
+                        <span style="display:none;">
+                            <ix:nonNumeric contextRef="FY1_period" name="uk-direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct">
+                                The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+                            </ix:nonNumeric>
+                        </span>
+                    </li>
+                    <li>
+                        <ix:nonNumeric contextRef="FY1_period" name="uk-direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime">
+These accounts have been prepared in accordance with the micro-entity provisions of the Companies Act 2006 and FRS 105, The Financial Reporting Standard applicable to the micro-entities regime. The accounts have been delivered in accordance with the provisions applicable to companies subject to the small companies regime.The profit and loss account has not been delivered to the Registrar of Companies.
+                        </ix:nonNumeric>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-bottom:3em;"></td>
+        </tr>
+
+        <tr>
+            
+            <td colspan="11">
+
+Approved by the board of directors on 02 February 2026 and signed on behalf of the board by:                
+                <span style="display:none">
+                    <ix:nonNumeric contextRef="FY1_end" name="uk-core:DateAuthorisationFinancialStatementsForIssue">2026-02-02</ix:nonNumeric>
+                </span>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-bottom:2em;"></td>
+        </tr>
+
+        <tr class="h1">
+            <td class="t" colspan="11">.............................</td>
+        </tr>
+
+            <tr>
+                <td class="page_leftfootnote" colspan="11">
+                    Catalin-Alexandru Radu (Director)
+                    <div style="padding-bottom:0.5em;"></div>
+                </td>
+            </tr>
+
+        
+        <tr>
+            <td class="page_leftfootnote" colspan="11">Company registration number. 10272674</td>
+        </tr>
+    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
+
