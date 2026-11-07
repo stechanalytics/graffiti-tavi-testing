@@ -4,7 +4,7 @@ The filings in this repository are public records, published by the bodies below
 gaps, validation and index files were made from them by S-Tech Analytics with Graffiti. Nothing here is endorsed by
 any of those bodies or by the companies whose filings these are.
 
-## `uk/`: Companies House
+## `uk/` and `uk-pdf-tagging/`: Companies House
 
 The company accounts are from Companies House's Free Accounts Data Product
 (https://download.companieshouse.gov.uk/en_accountsdata.html).

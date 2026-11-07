@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2010-04-20" xmlns:ixt2015="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:direp="http://xbrl.frc.org.uk/reports/2024-01-01/direp" xmlns:core="http://xbrl.frc.org.uk/fr/2024-01-01/core" xmlns:bus="http://xbrl.frc.org.uk/cd/2024-01-01/business" xmlns:common="http://xbrl.frc.org.uk/general/2024-01-01/common" xmlns:dpl="http://xbrl.frc.org.uk/dpl/2024-01-01" xmlns:comp="http://www.hmrc.gov.uk/schemas/ct/comp/2024-01-01" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="application/xhtml+xml; charset=UTF-8" />
+        <title>Packman Trading Limited</title>
+        <style type="text/css">
+    body {
+        font-size: 16px;
+        line-height: 1.25;
+        color: #000A1E;
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    table {
+        border: 0;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .cover-heading {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0 0 12px 0;
+    }
+
+    h1 {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 0 12px 0;
+    }
+
+    h2 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 12px 0;
+    }
+
+    h3 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h1 {
+        display: block;
+        color: #003C64;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h2 {
+        display:block;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 0 12px 0;
+    }
+
+    .pseudo-h3 {
+        display: block;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 12px 0;
+    }
+
+
+    .margin-top-2xlarge {
+        margin-top: 32px;
+    }
+
+    .margin-top-5xlarge {
+        margin-top: 64px;
+    }
+
+    .margin-top-large {
+        margin-top: 20px;
+    }
+
+    .margin-top {
+        margin-top: 16px;
+    }
+
+    .margin-top-xsmall {
+        margin-top: 8px;
+    }
+
+    .margin-bottom {
+        margin-bottom: 16px;
+    }
+
+    .figure-cell {
+        text-align: right;
+        padding: 0 4px;
+        vertical-align: bottom;
+        height: 1px; 
+    }
+
+    .figure-row-four-column .figure-cell {
+        width: 88px;
+    }
+
+    .figure-row-two-column .figure-cell {
+        width: 184px;
+    }
+
+    .figure {
+        text-align: right;
+        border-collapse: separate;
+        border-spacing: 2px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .figure td {
+        padding: 0;
+    }
+
+    .figure.no-brackets td {
+        padding-right: 5px;
+    }
+
+    .strong {
+        font-weight: bold;
+    }
+
+    .subtotal {
+        font-weight: bold;
+    }
+
+    .subtotal.figure {
+        border-top: 1px solid;
+    }
+
+    .summation-line.figure {
+        border-top: 1px solid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grand-total {
+        font-weight: bold;
+    }
+
+    .grand-total.figure {
+        border-top: 1px solid;
+        border-bottom: 3px double;
+    }
+
+    .grand-total.single-bottom-border.figure {
+        border-bottom: 1px solid;
+        margin-bottom: 1px;
+    }
+    
+    .highlight {
+        background: #F3F3F4;
+    }
+
+    /* Numbers are right-aligned, so padding would reduce available space for no reason on those cells */
+    .label.figure-indent td {
+        padding-left: 16px;
+    }
+
+    .note-reference {
+        text-align: center;
+        width: 64px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .label-cell {
+        padding: 0;
+        vertical-align: bottom;
+        min-width: 184px;
+    }
+
+    .label {
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 2px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+
+    .table-row .figure-cell:not(:first-child) {
+        width: 140px;
+    }
+
+    .table-row.four-or-less-columns .figure-cell:not(:first-child) {
+        width: 170px;
+    }
+
+
+    .disclosure-spacing {
+        margin-bottom: 16px;
+    }
+
+    .disclosure-spacing:last-child {
+        margin-bottom: 0;
+    }
+
+    .disclosure-indent {
+        padding-left: 24px;
+    }
+
+    .disclosure-indent-table {
+        width: 100%;
+        max-width: 97%;
+    }
+
+    .inline-note p{
+        display: inline;
+    }
+
+
+    .signature-column {
+        width: 50%;
+        padding-right: 16px;
+    }
+
+    .signature-written:not(.no-data-placeholder) {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+
+    .two-column-table tr td:first-child {
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .separator {
+        height: 16px;
+    }
+
+    .no-data-placeholder {
+        display: block;
+        background: #F2F8FC;
+        border: 1px dashed #0078C8;
+        border-radius: 3px;
+        padding: 8px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        color: #737883;
+    }
+
+    @media screen {
+        .horizontal-line {
+            width: 100%;
+            height: 1px;
+            background-color: #CCCED2;
+            margin: 24px 0;
+        }
+
+        .table-of-contents {
+            display: none;
+        }
+
+        header {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+
+        .content-locator {
+            display: none;
+        }
+
+        .active-area {
+            border: 3px solid transparent;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .active-area:hover {
+            border: 3px solid #0078C8;
+            cursor: pointer;
+            background-color: #F6F7F7;
+        }
+
+        .active-area:hover::after {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background-color: #FFF;
+            border: 1px solid #CCCED2;
+            border-radius: 4px;
+            color: #0078C8;
+            font-weight: bold;
+            padding: 8px 12px;
+            content: "Edit section";
+            font-size: 12px;
+        }
+
+        .active-area.accounts-locked:hover::after {
+            content: "View section";
+        }
+    }
+</style>
+        <style type="text/css">
+    .rich-text-bold {
+        font-weight: bold;
+    }
+
+    .rich-text-italic {
+        font-style: italic;
+    }
+
+    .rich-text-underline {
+        text-decoration: underline;
+    }
+
+    .rich-text-paragraph,
+    .rich-text-ol,
+    .rich-text-ul {
+        margin: 0;
+    }
+
+        .rich-text-paragraph:first-of-type {
+            margin-top: 8px;
+        }
+
+    .rich-text-table {
+        width: fit-content;
+        margin-bottom: 8px;
+    }
+
+    .rich-text-table-cell {
+        border: 1px solid #CCCED2;
+        padding: 6px 8px;
+        min-width: 75px;
+        text-align: start;
+        vertical-align: top;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .rich-text-table-cell-header {
+        background-color: #E6E7E9;
+        font-weight: normal;
+    }
+</style>
+        <style type="text/css">@page {
+        size: A4;
+        margin: 64px;
+        mso-header-margin: 32px;
+        mso-footer-margin: 32px;
+    }
+
+    @media print {
+        body {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+
+        h3 {
+            font-size: 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h1 {
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h2 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+
+        .pseudo-h3 {
+            font-size: 12px;
+            margin: 0 0 8px 0;
+        }
+
+        .cover-heading {
+            font-size: 32px;
+            margin: 0 0 8px 0;
+        }
+
+        header {
+            color: #003C64;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 0 8px 0;
+        }
+
+        .cover {
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 225px;
+        }
+
+        .figure {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .page-count {
+            text-align: right;
+        }
+
+        .grand-total.figure {
+            border-bottom: 1.5px double;
+        }
+
+        .page-break-avoid * {
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        .page-break-after {
+            page-break-after: always;
+        }
+
+        .no-data-placeholder {
+            margin-top: 16px;
+            margin-right: 20px;
+            border: none;
+            border-bottom: 1px solid #000;
+            background: none;
+            padding: 0;
+            visibility: hidden;
+        }
+
+        
+        .disclosure-spacing > h3 {
+            margin-top: 12px;
+            page-break-after: avoid;
+        }
+
+        .disclosure-spacing > table {
+            page-break-before: avoid;
+        }
+
+        .disclosure-spacing table tr.table-row:first-of-type {
+            page-break-after: avoid;
+        }
+
+        .disclosure-spacing table tr.table-row:nth-of-type(2) {
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+
+        .table-row .figure-cell:not(:first-child) {
+            width: 85px;
+        }
+
+        .table-row.four-or-less-columns .figure-cell:not(:first-child) {
+            width: 120px;
+        }
+
+        .figure.no-brackets td {
+            padding-right: 4px;
+        }
+    }
+</style>
+        
+</head>
+    <body>
+        <div style="display:none"><ix:header><ix:hidden>
+        <ix:nonNumeric name="bus:StartDateForPeriodCoveredByReport" contextRef="FY_START_20250401">2025-04-01</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="FY_END_20260331">2026-03-31</ix:nonNumeric>
+        <ix:nonNumeric name="bus:BalanceSheetDate" contextRef="FY_END_20260331">2026-03-31</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityTradingStatus" contextRef="FY_20260331"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityDormantTruefalse" contextRef="FY_20260331">false</ix:nonNumeric>
+        <ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="FY_20260331">06611764</ix:nonNumeric>
+        <ix:nonNumeric name="bus:EntityCurrentLegalOrRegisteredName" contextRef="FY_20260331">Packman Trading Limited</ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="FY_ACCOUNTING_STANDARD"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="FY_ACCOUNTS_STATUS"></ix:nonNumeric>
+        <ix:nonNumeric name="bus:AccountsType" contextRef="FY_ACCOUNTS_TYPE"></ix:nonNumeric><ix:nonNumeric name="bus:SICCodeRecordedUKCompaniesHouse1" contextRef="FY_20260331">47599</ix:nonNumeric><ix:nonNumeric name="bus:DescriptionPrincipalActivities" contextRef="FY_20260331">Retail of furniture, lighting, and similar (not musical instruments or scores) in specialised store</ix:nonNumeric>
+        <ix:nonNumeric name="bus:LegalFormEntity" contextRef="FY_LEGALFORM"></ix:nonNumeric></ix:hidden>
+
+        <ix:references><link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2024-01-01/FRS-102-2024-01-01.xsd" xlink:type="simple"></link:schemaRef></ix:references>
+
+        <ix:resources><xbrli:unit id="GBP"><xbrli:measure>iso4217:GBP</xbrli:measure></xbrli:unit>
+            <xbrli:unit id="pure"><xbrli:measure>xbrli:pure</xbrli:measure></xbrli:unit>
+            <xbrli:context id="FY_START_20250401"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2025-04-01</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTING_STANDARD"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:SmallEntities</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTS_STATUS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:AuditExempt-NoAccountantsReport</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_ACCOUNTS_TYPE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:AbridgedAccounts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_LANDBUILDINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LandBuildings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_FURNITUREFITTINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OFFICEEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OfficeEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_VEHICLES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_PLANTMACHINERY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OTHERPROPERTYPLANTEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OtherPropertyPlantEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_LANDBUILDINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LandBuildings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_PLANTMACHINERY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_VEHICLES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_FURNITUREFITTINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OFFICEEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OfficeEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OTHERPROPERTYPLANTEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OtherPropertyPlantEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_PPEOWNERSHIPDIMENSION_CORE_RIGHTOFUSEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:Right-of-useAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_PPEOWNERSHIPDIMENSION_CORE_RIGHTOFUSEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:Right-of-useAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_GOODWILL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:Goodwill</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_PATENTSTRADEMARKSLICENCESCONCESSIONSSIMILAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:PatentsTrademarksLicencesConcessionsSimilar</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_DEVELOPMENTCOSTSCAPITALISEDDEVELOPMENTEXPENDITURE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:DevelopmentCostsCapitalisedDevelopmentExpenditure</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_OTHERRESIDUALINTANGIBLEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_GOODWILL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:Goodwill</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_DEVELOPMENTCOSTSCAPITALISEDDEVELOPMENTEXPENDITURE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:DevelopmentCostsCapitalisedDevelopmentExpenditure</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_PATENTSTRADEMARKSLICENCESCONCESSIONSSIMILAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:PatentsTrademarksLicencesConcessionsSimilar</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_END_20260331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_OTHERRESIDUALINTANGIBLEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_DPL_EXPENSETYPEDIMENSION_DPL_COSTSALES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:CostSales</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_DPL_EXPENSETYPEDIMENSION_DPL_ADMINISTRATIVEEXPENSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:AdministrativeExpenses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+<xbrli:context id="FY_20260331_DPL_EXPENSETYPEDIMENSION_DPL_DISTRIBUTIONCOSTS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:DistributionCosts</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherReservesSubtotal</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITALPREFERENCESHARES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalPreferenceShares</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_CAPITALREDEMPTIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:CapitalRedemptionReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERCAPITALRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherCapitalReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherReservesSubtotal</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20260331_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20260331_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20260331_DESCRIPTION_EVENT_AFTER_REPORTING"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:typedMember dimension="core:X-EventAfterReportingDateGroupingDimension"><core:XEventAfterReportingDateGroupingDimension.domain>1</core:XEventAfterReportingDateGroupingDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_START_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_OPENINGBALANCE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_ADDITIONS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:AdditionsToInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_REVALUATIONS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:RevaluationsIncreaseDecreaseInInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_DISPOSALS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:DisposalsDecreaseInInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_TRANSFERS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:TransfersIntoOrOutInvestmentsIncreaseDecreaseInInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_CLOSINGBALANCE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_START_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENT_OPENINGBALANCE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:ProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_CHARGEFORYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:ProvidedReleasedInPeriodProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENTDISPOSALS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:DisposalsDecreaseInProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENTREVALUATIONS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:ImpairmentLossReversalProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:FurtherSpecificIncreaseDecreaseInProvisionsForImpairmentInvestments1ComponentCorrespondingTotal</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENTOTHERCHARGES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:OtherIncreaseDecreaseInProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_IMPAIRMENT_CLOSINGBALANCE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember><xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:ProvisionsForImpairmentInvestments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_NETBOOKVALUE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2026-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_PREV_END_CORE_FINANCIALINSTRUMENTCURRENTNON-CURRENTDIMENSION_CORE_NETBOOKVALUE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_START_20240401"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2024-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:AfterOneYear</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_AFTERONEYEAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_LANDBUILDINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LandBuildings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_PLANTMACHINERY"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_VEHICLES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Vehicles</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_FURNITUREFITTINGS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OFFICEEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OfficeEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PROPERTYPLANTEQUIPMENTCLASSESDIMENSION_CORE_OTHERPROPERTYPLANTEQUIPMENT"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:OtherPropertyPlantEquipment</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_PPEOWNERSHIPDIMENSION_CORE_RIGHTOFUSEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:Right-of-useAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_GOODWILL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:Goodwill</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_DEVELOPMENTCOSTSCAPITALISEDDEVELOPMENTEXPENDITURE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:DevelopmentCostsCapitalisedDevelopmentExpenditure</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_PATENTSTRADEMARKSLICENCESCONCESSIONSSIMILAR"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:PatentsTrademarksLicencesConcessionsSimilar</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_INTANGIBLEASSETCLASSESDIMENSION_CORE_OTHERRESIDUALINTANGIBLEASSETS"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_DPL_EXPENSETYPEDIMENSION_DPL_ADMINISTRATIVEEXPENSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="dpl:ExpenseTypeDimension">dpl:AdministrativeExpenses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherReservesSubtotal</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITALPREFERENCESHARES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalPreferenceShares</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_CAPITALREDEMPTIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:CapitalRedemptionReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERCAPITALRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherCapitalReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2025-03-31</xbrli:instant></xbrli:period></xbrli:context><xbrli:context id="FY_START_20240401_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_START_20240401_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_START_20240401_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_START_20240401_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:instant>2024-04-01</xbrli:instant></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:OtherReservesSubtotal</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20250331_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHARECAPITAL_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapital</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_SHAREPREMIUM_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:SharePremium</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_REVALUATIONRESERVE_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RevaluationReserve</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES_XAnalysisDimension_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context>
+    <xbrli:context id="FY_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES_XAnalysisDimension_2"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember><xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2024-04-01</xbrli:startDate>
+            <xbrli:endDate>2025-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_DIRECTORS_1"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context><xbrli:context id="FY_LEGALFORM"><xbrli:entity><xbrli:identifier scheme="http://www.companieshouse.gov.uk/">06611764</xbrli:identifier><xbrli:segment><xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember></xbrli:segment></xbrli:entity><xbrli:period><xbrli:startDate>2025-04-01</xbrli:startDate>
+            <xbrli:endDate>2026-03-31</xbrli:endDate></xbrli:period></xbrli:context></ix:resources></ix:header></div>
+        <div><div class="section cover page-break-after"><div  ><div><div class="cover-heading">Packman Trading Limited</div>
+        <div class="pseudo-h2">Unaudited Financial Statements<br />
+            for the year ended 31 March 2026</div><div><div>
+                    Company registration number <ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="FY_20260331">06611764</ix:nonNumeric></div><div class="country-of-registration">(England and Wales)</div></div></div></div></div><div class="horizontal-line"></div><div class="section page-break-before"><div  ><h1>Company Information</h1><div class="pseudo-h2">For the year ended 31 March 2026</div><table class="two-column-table"><tr><td>Director</td>
+            <td><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_1">Packman, Daniel Thomas</ix:nonNumeric></td></tr></table>
+    
+    <br class="top-margin" />
+<table class="two-column-table"><tr><td>Registered office</td>
+        <td><ix:nonNumeric name="bus:AddressLine1" contextRef="FY_20260331">Crossways Park Homes</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:AddressLine2" contextRef="FY_20260331">Lee Cross</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:PrincipalLocation-CityOrTown" contextRef="FY_20260331">Kingsbridge</ix:nonNumeric></td></tr><tr><td></td>
+                <td><ix:nonNumeric name="bus:PostalCodeZip" contextRef="FY_20260331">TQ7 4AF</ix:nonNumeric></td></tr></table>
+    <br class="top-margin" />
+    <table class="two-column-table"><tr><td>
+                Registered number
+            </td>
+            <td>06611764</td></tr></table>
+    <br class="top-margin" />
+    <table class="two-column-table"><tr><td>Accountant</td>
+            <td>J E Godfrey FTCA</td></tr><tr><td></td>
+                <td>127B Larkham Lane</td></tr><tr><td></td>
+                <td>Plympton</td></tr><tr><td></td>
+                <td>Plymouth</td></tr><tr><td></td>
+                <td>England</td></tr><tr><td></td>
+                <td>PL7 4PR</td></tr></table></div></div><div class="horizontal-line"></div><div class="section page-break-before"><div  ><h1>Statement of Financial Position</h1><div class="pseudo-h2">As at 31 March 2026</div><div class="tabular-report"><table><tr class="figure-row-four-column"><th></th>
+            <td class="note-reference strong">Notes</td>
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td></td></tr></table></th>
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>2026</td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td></td></tr></table></th>
+                <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>2025</td></tr></table></th></tr>
+        <tr class="figure-row-four-column"><th></th><th></th><th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th>
+            <th class="figure-cell highlight"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th>
+                <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th></tr>
+                <tr><td class="label-cell"><table class="label strong"><tr><td>Fixed assets</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                    <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Tangible assets</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:PropertyPlantEquipment" unitRef="GBP" format="ixt:numcommadot" decimals="0">14,471</ix:nonFraction></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:PropertyPlantEquipment" unitRef="GBP" format="ixt:numcommadot" decimals="0">18,796</ix:nonFraction></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td></td></tr></table></td>
+    <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:FixedAssets" unitRef="GBP" format="ixt:numcommadot" decimals="0">14,471</ix:nonFraction></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:FixedAssets" unitRef="GBP" format="ixt:numcommadot" decimals="0">18,796</ix:nonFraction></td></tr></table></td></tr><tr><td class="label-cell"><table class="label strong"><tr><td>Current assets</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                    <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Debtors</td></tr></table></td>
+        <td class="note-reference">4</td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:Debtors" unitRef="GBP" format="ixt:numcommadot" decimals="0">539</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:Debtors" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Cash at bank and in hand</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:CashBankOnHand" unitRef="GBP" format="ixt:numcommadot" decimals="0">2,418</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:CashBankOnHand" unitRef="GBP" format="ixt:numcommadot" decimals="0">1,668</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td></td></tr></table></td>
+    <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:CurrentAssets" unitRef="GBP" format="ixt:numcommadot" decimals="0">2,957</ix:nonFraction></td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:CurrentAssets" unitRef="GBP" format="ixt:numcommadot" decimals="0">1,668</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr><td class="label-cell"><table class="label strong"><tr><td>Creditors</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                    <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Amounts falling due within one year</td></tr></table></td>
+        <td class="note-reference">5</td><td class="figure-cell highlight"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">34,185</ix:nonFraction>)</td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">21,733</ix:nonFraction>)</td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td></td></tr></table></td>
+    <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">34,185</ix:nonFraction>)</td></tr></table></td>
+        <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">21,733</ix:nonFraction>)</td></tr></table></td>
+            <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td>Net current assets (liabilities)</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331" name="core:NetCurrentAssetsLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">31,228</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331" name="core:NetCurrentAssetsLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">20,065</ix:nonFraction>)</td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label subtotal"><tr><td>Total assets less current liabilities</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">16,757</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure subtotal"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331" name="core:TotalAssetsLessCurrentLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">1,269</ix:nonFraction>)</td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label strong"><tr><td>Provisions for liabilities</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure strong"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331" name="core:ProvisionsForLiabilitiesBalanceSheetSubtotal" unitRef="GBP" format="ixt:numcommadot" decimals="0">1,528</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure strong"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331" name="core:ProvisionsForLiabilitiesBalanceSheetSubtotal" unitRef="GBP" format="ixt:numcommadot" decimals="0">2,445</ix:nonFraction>)</td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label grand-total"><tr><td>Net assets (liabilities)</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure grand-total"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331" name="core:NetAssetsLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">18,285</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure grand-total"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331" name="core:NetAssetsLiabilities" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">3,714</ix:nonFraction>)</td></tr></table></td></tr><tr><td class="label-cell"><table class="label strong"><tr><td>Capital and reserves</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                    <td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Other reserves</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL" name="core:Equity" unitRef="GBP" format="ixt:numcommadot" decimals="0">100</ix:nonFraction></td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_OTHERRESERVESSUBTOTAL" name="core:Equity" unitRef="GBP" format="ixt:numcommadot" decimals="0">100</ix:nonFraction></td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent"><tr><td>Profit and loss account</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES" name="core:Equity" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">18,385</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331_CORE_EQUITYCLASSESDIMENSION_CORE_RETAINEDEARNINGSACCUMULATEDLOSSES" name="core:Equity" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">3,814</ix:nonFraction>)</td></tr></table></td></tr><tr class="figure-row-four-column"><td class="label-cell"><table class="label figure-indent grand-total"><tr><td>Total equity</td></tr></table></td>
+        <td class="note-reference"></td><td class="figure-cell highlight"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+            <td class="figure-cell highlight"><table class="figure grand-total"><tr><td>(<ix:nonFraction contextRef="FY_END_20260331" name="core:Equity" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">18,285</ix:nonFraction>)</td></tr></table></td><td class="figure-cell"><table class="figure no-brackets"><tr><td></td></tr></table></td>
+                <td class="figure-cell"><table class="figure grand-total"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331" name="core:Equity" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">3,714</ix:nonFraction>)</td></tr></table></td></tr></table></div></div></div>
+        <br class="top-margin" />
+        
+        <div class="section"><div ><div class="page-break-avoid">
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies" contextRef="FY_20260331">The company is a private company limited by shares and registered in England and Wales. It was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit" contextRef="FY_20260331">The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.</ix:nonNumeric></div>
+
+
+    
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct" contextRef="FY_20260331">The director acknowledges their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of financial statements.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime" contextRef="FY_20260331">The financial statements have been prepared in accordance with the special provisions applicable to companies subject to the small companies regime.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006" contextRef="FY_20260331">The directors have chosen to not file a copy of the company&#x27;s profit and loss account under section 444 (5A) of the Companies Act 2006.</ix:nonNumeric></div>
+
+<div class="disclosure-spacing"><ix:nonNumeric name="direp:StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006" contextRef="FY_20260331">The members have agreed to the preparation of abridged accounts for this accounting period in accordance with section 444 (2A) of the Companies Act 2006.</ix:nonNumeric></div>
+</div></div></div>
+        <div class="section margin-top-2xlarge page-break-avoid"><div  ><p>
+        The financial statements were approved and authorised for issue by the director on <ix:nonNumeric name="core:DateAuthorisationFinancialStatementsForIssue" contextRef="FY_END_20260331" format="ixt2015:datedaymonthyearen">7 October 2026</ix:nonNumeric> and are signed on its behalf by:
+    </p>
+    <table><tbody><tr><td class="signature-column"><div><div class="signature-written margin-top-xsmall">Packman, Daniel Thomas</div>
+    <div class="margin-top-xsmall"><div><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="FY_DIRECTORS_1">Packman, Daniel Thomas</ix:nonNumeric>
+            <ix:nonNumeric name="core:DirectorSigningFinancialStatements" contextRef="FY_DIRECTORS_1"></ix:nonNumeric></div>
+        <div>Director</div></div></div></td>
+                <td class="signature-column"></td></tr></tbody></table><p class="margin-top strong">
+            Company registration number
+06611764</p></div></div>
+        
+<div class="horizontal-line"></div><div class="section margin-bottom page-break-before"><div  ><h1>Notes to the Financial Statements</h1><div class="pseudo-h2">For the year ended 31 March 2026</div>
+<div class="disclosure-spacing"><h3>1. Statutory information</h3>
+            <div class="disclosure-spacing"><p class="rich-text-paragraph">The company is a <span>private company limited by shares</span> and registered in <span>England and Wales</span>. The company's registered number and registered office address can be found on the Company Information page.</p></div>
+            
+            <div class="disclosure-spacing"><ix:nonNumeric name="core:FunctionalPresentationCurrencyPolicy" contextRef="FY_20260331"><p class="rich-text-paragraph">The financial statements are presented in sterling and this is the functional currency of the company.</p></ix:nonNumeric></div>
+            </div>
+
+
+<div class="disclosure-spacing"><h3>2. Accounting policies</h3>
+<div class="disclosure-spacing disclosure-indent"><h3>2.1. Basis of preparation</h3>
+            <div class="disclosure-spacing"><ix:nonNumeric name="core:StatementComplianceWithApplicableReportingFramework" contextRef="FY_20260331"><p class="rich-text-paragraph">The financial statements have been prepared in accordance with FRS 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland including Section 1A Small Entities.</p></ix:nonNumeric></div>
+            
+            <div class="disclosure-spacing"><ix:nonNumeric name="core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements" contextRef="FY_20260331"><p class="rich-text-paragraph">The financial statements have been prepared under the historical cost convention in accordance with the Companies Act 2006.</p></ix:nonNumeric></div>
+            </div>
+
+<div class="disclosure-spacing disclosure-indent"><h3>2.2. Turnover</h3><ix:nonNumeric name="core:RevenueRecognitionCriticalEstimatesJudgements" contextRef="FY_20260331"><p class="rich-text-paragraph">Turnover is measured at the fair value of the consideration received or receivable, net of discounts and value added taxes. Turnover includes revenue earned from the sale of goods and from the rendering of services.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Revenue from the sale of goods is recognised when the company has transferred to the buyer the significant risks and rewards of ownership of the goods, usually when goods are delivered and legal title has passed. Providing the amount of revenue can be measured reliably, it is probable that the economic benefits associated with the transaction will flow to the company and the costs incurred or to be incurred in respect of the transaction can be measured reliably.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Revenue from the rendering of services is recognised by reference to the stage of completion of the contract. The stage of completion of a contract is measured by comparing the costs incurred for work performed to date to the total estimated contract costs. Turnover is only recognised to the extent of recoverable expenses when the outcome of a contract cannot be estimated reliably.</p></ix:nonNumeric></div>
+
+<div class="disclosure-spacing disclosure-indent"><h3>2.3. Financial instruments</h3>
+            <div class="disclosure-spacing"><h3>Election and recognition</h3><ix:nonNumeric name="core:FinancialInstrumentsRecognitionMeasurementPolicy" contextRef="FY_20260331"><p class="rich-text-paragraph">The company has elected to apply the provisions of Section 11 'Basic Financial Instruments' and Section 12 'Other Financial Instruments Issues' of FRS 102 to all of its financial instruments.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Financial instruments are recognised in the company's balance sheet when the company becomes party to the contractual provisions of the instrument. Financial assets and liabilities are offset with the net amounts presented in the financial statements, when there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net basis or to realise the asset and settle the liability simultaneously.</p></ix:nonNumeric></div>
+            
+            <div class="disclosure-spacing"><h3>Basic financial assets</h3><p class="rich-text-paragraph">Basic financial assets, which include debtors and cash and bank balances, are initially measured at transaction price including transaction costs and are subsequently carried at amortised cost using the effective interest method unless the arrangement constitutes a financing transaction, where the transaction is measured at the present value of the future receipts discounted at a market rate of interest. Financial assets classified as receivable within one year are not amortised.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Other financial assets</h3><p class="rich-text-paragraph">Other financial assets, including investments in equity instruments which are not subsidiaries, associates or joint ventures, are initially measured at fair value, which is normally the transaction price. Such assets are subsequently carried at fair value and the changes in fair value are recognised in profit or loss, except that investments in equity instruments that are not publicly traded and whose fair values cannot be measured reliably are measured at cost less impairment.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Impairment of financial assets</h3><ix:nonNumeric name="core:ImpairmentFinancialAssetsPolicy" contextRef="FY_20260331"><p class="rich-text-paragraph">Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of impairment at each reporting end date.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Financial assets are impaired where there is objective evidence that, as a result of one or more events that occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected. If an asset is impaired, the impairment loss is the difference between the carrying amount and the present value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss is recognised in profit or loss.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">If there is a decrease in the impairment loss arising from an event occurring after the impairment was recognised, the impairment is reversed. The reversal is such that the current carrying amount does not exceed what the carrying amount would have been, had the impairment not previously been recognised. The impairment reversal is recognised in profit or loss.</p></ix:nonNumeric></div>
+            
+            <div class="disclosure-spacing"><h3>Derecognition of financial assets</h3><p class="rich-text-paragraph">Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or are settled, or when the company transfers the financial asset and substantially all the risks and rewards of ownership to another entity, or if some significant risks and rewards of ownership are retained but control of the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Classification of financial liabilities</h3><p class="rich-text-paragraph">Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of the company after deducting all of its liabilities.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Basic financial liabilities</h3><p class="rich-text-paragraph">Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference shares that are classified as debt, are initially recognised at transaction price unless the arrangement constitutes a financing transaction, where the debt instrument is measured at the present value of the future payments discounted at a market rate of interest. Financial liabilities classified as payable within one year are not amortised.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at transaction price and subsequently measured at amortised cost using the effective interest method.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Other financial liabilities</h3><p class="rich-text-paragraph">Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into and are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised in profit or loss in finance costs or finance income as appropriate, unless hedge accounting is applied and the hedge is a cash flow hedge.</p><p class="rich-text-paragraph"><br /></p><p class="rich-text-paragraph">Debt instruments that do not meet the conditions in FRS 102 paragraph 11.9 are subsequently measured at fair value through profit or loss. Debt instruments may be designated as being measured at fair value through profit or loss to eliminate or reduce an accounting mismatch or if the instruments are measured and their performance evaluated on a fair value basis in accordance with a documented risk management or investment strategy.</p></div>
+            
+            <div class="disclosure-spacing"><h3>Derecognition of financial liabilities</h3><p class="rich-text-paragraph">Financial liabilities are derecognised when the company's contractual obligations expire or are discharged or cancelled.</p></div>
+            </div>
+
+<div class="disclosure-spacing disclosure-indent"><h3>2.4. Trade and other debtors</h3><ix:nonNumeric name="core:TradeReceivablesPolicy" contextRef="FY_20260331"><p class="rich-text-paragraph">Short term debtors are measured at transaction price (which is usually the invoice price), less any impairment losses for bad and doubtful debts. Loans and other financial assets are initially recognised at transaction price including any transaction costs and subsequently measured at amortised cost determined using the effective interest method, less any impairment losses for bad and doubtful debts.</p></ix:nonNumeric></div>
+
+<div class="disclosure-spacing disclosure-indent"><h3>2.5. Trade and other creditors</h3><ix:nonNumeric name="core:TradePayablesPolicy" contextRef="FY_20260331"><p class="rich-text-paragraph">Short term creditors are measured at transaction price (which is usually the invoice price). Loans and other financial liabilities are initially recognised at transaction price net of any transaction costs and subsequently measured at amortised cost determined using the effective interest method.</p></ix:nonNumeric></div>
+</div>
+</div></div>
+<div class="section"><div  >
+<div class="disclosure-spacing"><h3>3. Employees</h3>The average number of employees during the year was
+<ix:nonFraction contextRef="FY_20260331" name="core:AverageNumberEmployeesDuringPeriod" unitRef="pure" format="ixt:numcommadot" decimals="0">2</ix:nonFraction><span>
+        (2025: <ix:nonFraction contextRef="FY_20250331" name="core:AverageNumberEmployeesDuringPeriod" unitRef="pure" format="ixt:numcommadot" decimals="0">2</ix:nonFraction>).
+    </span></div>
+
+<div class="disclosure-spacing"><h3>4. Debtors</h3><table><tr class="table-row four-or-less-columns"><th class="figure-cell"><table class="figure strong no-brackets"><tr><td></td></tr></table></th>
+            <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>2026</td></tr></table></th>
+            <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>2025</td></tr></table></th></tr>
+        <tr class="table-row four-or-less-columns"><th class="figure-cell"><table class="figure strong no-brackets"><tr><td></td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label"><tr><td>Trade debtors</td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TradeDebtorsTradeReceivables" unitRef="GBP" format="ixt:numcommadot" decimals="0">539</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TradeDebtorsTradeReceivables" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label subtotal"><tr><td>Total due within one year</td></tr></table></td>
+            <td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Debtors" unitRef="GBP" format="ixt:numcommadot" decimals="0">539</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Debtors" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label subtotal"><tr><td>Total due after one year</td></tr></table></td>
+            <td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR" name="core:Debtors" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell"><table class="figure subtotal no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_AFTERONEYEAR" name="core:Debtors" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td></tr>
+
+        <tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label grand-total"><tr><td>Total</td></tr></table></td>
+            <td class="figure-cell"><table class="figure grand-total no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331" name="core:Debtors" unitRef="GBP" format="ixt:numcommadot" decimals="0">539</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell"><table class="figure grand-total no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331" name="core:Debtors" unitRef="GBP" format="ixt:numdash" decimals="0">-</ix:nonFraction></td></tr></table></td></tr></table>
+</div>
+
+<div class="disclosure-spacing"><h3>5. Creditors due within one year</h3><table><tr class="table-row four-or-less-columns"><th class="figure-cell"><table class="figure strong no-brackets"><tr><td></td></tr></table></th>
+            <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>2026</td></tr></table></th>
+            <th class="figure-cell"><table class="figure strong no-brackets"><tr><td>2025</td></tr></table></th></tr>
+        <tr class="table-row four-or-less-columns"><th class="figure-cell"><table class="figure strong no-brackets"><tr><td></td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th><th class="figure-cell"><table class="figure strong no-brackets"><tr><td>£</td></tr></table></th></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label"><tr><td>Trade creditors</td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TradeCreditorsTradePayables" unitRef="GBP" format="ixt:numcommadot" decimals="0">504</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TradeCreditorsTradePayables" unitRef="GBP" format="ixt:numcommadot" decimals="0">225</ix:nonFraction></td></tr></table></td></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label"><tr><td>Other creditors</td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:OtherCreditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">32,466</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:OtherCreditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">21,569</ix:nonFraction></td></tr></table></td></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label"><tr><td>Taxation and social security</td></tr></table></td>
+                <td class="figure-cell"><table class="figure no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TaxationSocialSecurityPayable" unitRef="GBP" format="ixt:numcommadot" decimals="0">1,215</ix:nonFraction></td></tr></table></td>
+                <td class="figure-cell"><table class="figure"><tr><td>(<ix:nonFraction contextRef="FY_END_20250331_FINANCIALINSTRUMENTDIMENSION_CORE_WITHINONEYEAR" name="core:TaxationSocialSecurityPayable" unitRef="GBP" sign="-" format="ixt:numcommadot" decimals="0">61</ix:nonFraction>)</td></tr></table></td></tr><tr class="table-row four-or-less-columns"><td class="label-cell"><table class="label grand-total"><tr><td>Total</td></tr></table></td>
+            <td class="figure-cell"><table class="figure grand-total no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20260331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">34,185</ix:nonFraction></td></tr></table></td>
+            <td class="figure-cell"><table class="figure grand-total no-brackets"><tr><td><ix:nonFraction contextRef="FY_END_20250331_CORE_MATURITIESOREXPIRATIONPERIODSDIMENSION_CORE_WITHINONEYEAR" name="core:Creditors" unitRef="GBP" format="ixt:numcommadot" decimals="0">21,733</ix:nonFraction></td></tr></table></td></tr></table>
+</div>
+</div></div>
+</div>
+        </body>
+</html>

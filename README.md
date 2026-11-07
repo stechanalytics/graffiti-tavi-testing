@@ -20,8 +20,9 @@ download one, so these are what a Graffiti user gets.
 | [`herm/`](herm/COMPARISON.md) | The five filings of Herm Fischer's Tavi demonstration (Apple and Microsoft 10-Ks, Chevron's Form SD, L'Oréal, Wickes) and Apple's 10-K on Apple's tagged PDF, compared with his output | 6 |
 | `sec/` | SEC 10-Ks, one per SIC division (two from Manufacturing), from small to large | 10 |
 | `esef/` | ESEF annual reports, one from each of ten countries | 10 |
+| [`uk-pdf-tagging/`](uk-pdf-tagging/README.md) | 50 Companies House accounts printed to PDF and tagged blind by Graffiti, with every tag compared with the filed ones (no Tavi files: the tags and the comparison as CSV) | 50 |
 
-`index.csv` lists every filing in every part; each part has its own `index.csv` with its files and source.
+`index.csv` lists every filing in the Tavi parts (`uk-pdf-tagging/` has its own CSVs); each part has its own `index.csv` with its files and source.
 
 ## What is in each filing's folder
 
