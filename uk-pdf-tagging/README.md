@@ -33,8 +33,11 @@ On dimensions, the largest miss is current against within one year, which filers
 | `graffiti-text.csv` | Every text fact Graffiti tagged on the PDFs |
 | `comparison.csv` | Every numeric fact the companies filed, with the Graffiti figure paired with it (if any) and which fields agree |
 
-The Tavi files are what a Graffiti user downloads, taken from the same tagging the CSVs record. One filing
-(`SC177933`) has no compiled file: its compiled download did not finish, a Graffiti bug we are fixing.
+The Tavi files are what a Graffiti user downloads, taken from the same tagging the CSVs record. They were made on
+Graffiti as it was on 7 November, before two fixes: one filing (`SC177933`) has no compiled file, as its compiled
+download did not finish, and two compiled files (`01212214`, `12386792`) fail Arelle's loader with
+`oimte:networkCyclic`. Graffiti now saves all three, and they load in Arelle without findings; this set will be
+remade on the fixed version.
 
 `comparison.csv` columns: the filing, row label and value; the filed and Graffiti concept, period, dimensions and sign
 side by side; `found` (Graffiti tagged the figure at all); `concept_same`, `period_same`, `dimensions_same`,
