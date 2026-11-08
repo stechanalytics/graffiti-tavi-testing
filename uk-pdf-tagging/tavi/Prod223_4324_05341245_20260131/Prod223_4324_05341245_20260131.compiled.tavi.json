@@ -1817,12 +1817,6 @@
     ]
    },
    {
-    "name": "core:ComputerEquipment",
-    "domainClasses": [
-     "core:TotalPropertyPlantEquipmentDefault"
-    ]
-   },
-   {
     "name": "core:ContinuingDiscontinuedOperationsTotalDefault",
     "domainClasses": [
      "core:ContinuingDiscontinuedOperationsDimensionDomainClass"
@@ -1860,12 +1854,6 @@
    },
    {
     "name": "core:FurnitureFittingsToolsEquipment",
-    "domainClasses": [
-     "core:TotalPropertyPlantEquipmentDefault"
-    ]
-   },
-   {
-    "name": "core:OfficeEquipment",
     "domainClasses": [
      "core:TotalPropertyPlantEquipmentDefault"
     ]
@@ -4793,18 +4781,6 @@
     "value": "Gwerth cario ymlaen [diofyn]"
    },
    {
-    "forObject": "core:ComputerEquipment",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Computer equipment"
-   },
-   {
-    "forObject": "core:ComputerEquipment",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Cyfarpar cyfrifiadurol"
-   },
-   {
     "forObject": "core:ContinuingDiscontinuedOperationsTotalDefault",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4887,18 +4863,6 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Dodrefn, ffitiadau, cyfarpar ac offer"
-   },
-   {
-    "forObject": "core:OfficeEquipment",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Office equipment"
-   },
-   {
-    "forObject": "core:OfficeEquipment",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Cyfarpar swyddfa"
    },
    {
     "forObject": "core:PlantMachinery",
@@ -5233,6 +5197,12 @@
    {
     "forObject": "core:PropertyPlantEquipment",
     "labelType": "gr:printed2Label",
+    "language": "en",
+    "value": "As at 31 January 2026"
+   },
+   {
+    "forObject": "core:PropertyPlantEquipment",
+    "labelType": "gr:printed3Label",
     "language": "en",
     "value": "As at 1 February 2025"
    },
@@ -8827,8 +8797,7 @@
      "xbrl:concept": "core:PropertyPlantEquipment",
      "xbrl:period": "2026-02-01T00:00:00",
      "xbrl:entity": "ch:05341245",
-     "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -10808,6 +10777,13 @@
     ]
    },
    {
+    "name": "gr:printed3Label",
+    "formatType": "text",
+    "allowedObjects": [
+     "xbrl:conceptObject"
+    ]
+   },
+   {
     "name": "xbrl:documentation",
     "uri": "http://www.xbrl.org/2003/role/documentation",
     "formatType": "text"
@@ -11164,6 +11140,17 @@
        {
         "property": "xbrl:preferredLabel",
         "value": "gr:printed2Label"
+       }
+      ]
+     },
+     {
+      "source": "gr:NetBookValueHeading",
+      "target": "core:PropertyPlantEquipment",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printed3Label"
        }
       ]
      }
@@ -12655,14 +12642,6 @@
      {
       "source": "core:FurnitureFittingsToolsEquipment",
       "target": "core:FurnitureFittings"
-     },
-     {
-      "source": "core:FurnitureFittingsToolsEquipment",
-      "target": "core:OfficeEquipment"
-     },
-     {
-      "source": "core:OfficeEquipment",
-      "target": "core:ComputerEquipment"
      }
     ]
    },
@@ -12753,14 +12732,6 @@
      {
       "source": "core:FurnitureFittingsToolsEquipment",
       "target": "core:FurnitureFittings"
-     },
-     {
-      "source": "core:FurnitureFittingsToolsEquipment",
-      "target": "core:OfficeEquipment"
-     },
-     {
-      "source": "core:OfficeEquipment",
-      "target": "core:ComputerEquipment"
      }
     ]
    },

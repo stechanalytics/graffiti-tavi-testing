@@ -81,7 +81,6 @@
      "core:StatementComplianceWithApplicableReportingFramework",
      "core:TaxationSocialSecurityPayable",
      "core:TotalAssetsLessCurrentLiabilities",
-     "core:TotalBorrowings",
      "core:TradeCreditorsTradePayables",
      "core:TradeDebtorsTradeReceivables",
      "core:TradePayablesPolicy",
@@ -132,7 +131,6 @@
      "core:FinancialInstrumentsClassesCategoriesDimension",
      "core:FinancialInstrumentsHeldForSaleDimension",
      "core:FinancialLiabilitiesClassesCategoriesDimension",
-     "core:FinancialLiabilitiesReclassificationDimension",
      "core:GeographicSegmentsDimension",
      "core:GoodsServicesTransfersTimingDimension",
      "core:IndustryConcentrationRiskDimension",
@@ -213,7 +211,6 @@
      "core:PositionTypeHeading",
      "core:ProductsServicesHeading",
      "core:ReclassifiedAssetsTotal",
-     "core:ReclassifiedLiabilitiesTotal",
      "core:RegionCountryIssuerRiskHeading",
      "core:ReportableOperatingSegmentsHeading",
      "core:RestatementsFirstTimeAdoptionHeading",
@@ -249,7 +246,6 @@
      "core:CurrentlyStatedAmountDefault",
      "core:OtherReservesSubtotal",
      "core:RetainedEarningsAccumulatedLosses",
-     "core:Secured",
      "core:TotalGeographicSegmentsIncludingAnyUnallocatedAmount",
      "core:WithinOneYear",
      "countries:EnglandWales",
@@ -1112,213 +1108,6 @@
      {
       "dimension": "core:RestatementsFirstTimeAdoptionDimension",
       "domainNetwork": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_RestatementsFirstTimeAdoptionDimension",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:period",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:entity",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:unit",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:language",
-      "optional": true
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube",
-    "cubeType": "xbrl:reportCube",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_concepts"
-     },
-     {
-      "dimension": "core:FinancialInstrumentValueTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentValueTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:FinancialInstrumentCurrentNon-currentDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:PositionTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_PositionTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:SecuredStatusDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_SecuredStatusDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:MaturitiesOrExpirationPeriodsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MaturitiesOrExpirationPeriodsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:InterestRateTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_InterestRateTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:LiquidityFeaturesDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_LiquidityFeaturesDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:FairValueMovementDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FairValueMovementDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:FairValueMeasurementTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FairValueMeasurementTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:FinancialLiabilitiesReclassificationDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialLiabilitiesReclassificationDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:IndustryConcentrationRiskDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_IndustryConcentrationRiskDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:RegionCountryIssuerRiskDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_RegionCountryIssuerRiskDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:CurrencyDenominationFinancialInstrumentsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_CurrencyDenominationFinancialInstrumentsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:MarketRiskTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MarketRiskTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:MovementAnalysisInsurance-NetInsuranceDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MovementAnalysisInsurance-NetInsuranceDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:NetReinsuranceContractsHeldAnalysisDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_NetReinsuranceContractsHeldAnalysisDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:OnerousNon-onerousInsuranceContractsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_OnerousNon-onerousInsuranceContractsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:AcquiredIssuedInsuranceContractsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_AcquiredIssuedInsuranceContractsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:InsuranceContractsIssuedReinsuranceContractsHeldDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_InsuranceContractsIssuedReinsuranceContractsHeldDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:ContractTypeInsuranceSpecificDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_ContractTypeInsuranceSpecificDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:ContractualServiceMarginInsuranceRevenueDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_ContractualServiceMarginInsuranceRevenueDimension",
-      "optional": true
-     },
-     {
-      "dimension": "business:GroupCompanyDataDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_GroupCompanyDataDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:RestatementsFirstTimeAdoptionDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_RestatementsFirstTimeAdoptionDimension",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:period",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:entity",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:unit",
-      "optional": true
-     },
-     {
-      "dimension": "xbrl:language",
-      "optional": true
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube",
-    "cubeType": "xbrl:reportCube",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_concepts"
-     },
-     {
-      "dimension": "core:FinancialInstrumentValueTypeDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_FinancialInstrumentValueTypeDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:GeographicSegmentsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_GeographicSegmentsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:OperatingSegmentsDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_OperatingSegmentsDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:ProductsServicesDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_ProductsServicesDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:MajorCustomersDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_MajorCustomersDimension",
-      "optional": true
-     },
-     {
-      "dimension": "business:GroupCompanyDataDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_GroupCompanyDataDimension",
-      "optional": true
-     },
-     {
-      "dimension": "core:RestatementsFirstTimeAdoptionDimension",
-      "domainNetwork": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_RestatementsFirstTimeAdoptionDimension",
       "optional": true
      },
      {
@@ -2836,13 +2625,43 @@
     ]
    },
    {
+    "name": "gr:f206",
+    "factDimensions": {
+     "xbrl:concept": "core:Debtors",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:entity": "ch:06611764",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f206_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 8
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "536 677.5 540 690.3"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f208",
     "factDimensions": {
-     "xbrl:concept": "core:TotalBorrowings",
+     "xbrl:concept": "core:Debtors",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:06611764",
-     "xbrl:unit": "iso4217:GBP",
-     "core:SecuredStatusDimension": "core:Secured"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -2870,11 +2689,10 @@
    {
     "name": "gr:f209",
     "factDimensions": {
-     "xbrl:concept": "core:TotalBorrowings",
+     "xbrl:concept": "core:Debtors",
      "xbrl:period": "2025-04-01T00:00:00",
      "xbrl:entity": "ch:06611764",
-     "xbrl:unit": "iso4217:GBP",
-     "core:SecuredStatusDimension": "core:Secured"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -4562,9 +4380,6 @@
    },
    {
     "name": "gr:CapitalAndReservesHeading"
-   },
-   {
-    "name": "gr:TotalDueAfterOneYearHeading"
    }
   ],
   "labelTypes": [
@@ -4577,6 +4392,20 @@
    },
    {
     "name": "gr:printed2Label",
+    "formatType": "text",
+    "allowedObjects": [
+     "xbrl:conceptObject"
+    ]
+   },
+   {
+    "name": "gr:printed3Label",
+    "formatType": "text",
+    "allowedObjects": [
+     "xbrl:conceptObject"
+    ]
+   },
+   {
+    "name": "gr:printed4Label",
     "formatType": "text",
     "allowedObjects": [
      "xbrl:conceptObject"
@@ -4846,17 +4675,23 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "gr:TotalDueAfterOneYearHeading",
-      "order": 3
-     },
-     {
-      "source": "gr:TotalDueAfterOneYearHeading",
-      "target": "core:TotalBorrowings",
-      "order": 1,
+      "target": "core:Debtors",
+      "order": 3,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
-        "value": "gr:printedLabel"
+        "value": "gr:printed3Label"
+       }
+      ]
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:Debtors",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printed4Label"
        }
       ]
      }
@@ -5246,18 +5081,8 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:FinancialLiabilitiesReclassificationDimension",
-      "order": 36
-     },
-     {
-      "source": "core:FinancialLiabilitiesReclassificationDimension",
-      "target": "common:NotApplicableDefault",
-      "order": 1
-     },
-     {
-      "source": "xbrl:rootSource",
       "target": "core:GeographicSegmentsDimension",
-      "order": 37
+      "order": 36
      },
      {
       "source": "core:GeographicSegmentsDimension",
@@ -5267,7 +5092,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:GoodsServicesTransfersTimingDimension",
-      "order": 38
+      "order": 37
      },
      {
       "source": "core:GoodsServicesTransfersTimingDimension",
@@ -5277,7 +5102,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:IndustryConcentrationRiskDimension",
-      "order": 39
+      "order": 38
      },
      {
       "source": "core:IndustryConcentrationRiskDimension",
@@ -5287,7 +5112,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisDimension",
-      "order": 40
+      "order": 39
      },
      {
       "source": "core:Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisDimension",
@@ -5297,7 +5122,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:InsuranceContractsIssuedReinsuranceContractsHeldDimension",
-      "order": 41
+      "order": 40
      },
      {
       "source": "core:InsuranceContractsIssuedReinsuranceContractsHeldDimension",
@@ -5307,7 +5132,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:InterestRateTypeDimension",
-      "order": 42
+      "order": 41
      },
      {
       "source": "core:InterestRateTypeDimension",
@@ -5317,7 +5142,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:LiquidityFeaturesDimension",
-      "order": 43
+      "order": 42
      },
      {
       "source": "core:LiquidityFeaturesDimension",
@@ -5327,7 +5152,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:Listed-unlistedDimension",
-      "order": 44
+      "order": 43
      },
      {
       "source": "core:Listed-unlistedDimension",
@@ -5337,7 +5162,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:LoansAdvancesProductGroupingDimension",
-      "order": 45
+      "order": 44
      },
      {
       "source": "core:LoansAdvancesProductGroupingDimension",
@@ -5347,7 +5172,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:MajorCustomersDimension",
-      "order": 46
+      "order": 45
      },
      {
       "source": "core:MajorCustomersDimension",
@@ -5357,7 +5182,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:MajorCustomerTypeDimension",
-      "order": 47
+      "order": 46
      },
      {
       "source": "core:MajorCustomerTypeDimension",
@@ -5367,7 +5192,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:MarketRiskTypeDimension",
-      "order": 48
+      "order": 47
      },
      {
       "source": "core:MarketRiskTypeDimension",
@@ -5377,7 +5202,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:MaturitiesOrExpirationPeriodsDimension",
-      "order": 49
+      "order": 48
      },
      {
       "source": "core:MaturitiesOrExpirationPeriodsDimension",
@@ -5387,7 +5212,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:MovementAnalysisInsurance-NetInsuranceDimension",
-      "order": 50
+      "order": 49
      },
      {
       "source": "core:MovementAnalysisInsurance-NetInsuranceDimension",
@@ -5397,7 +5222,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:NaturePromiseDimension",
-      "order": 51
+      "order": 50
      },
      {
       "source": "core:NaturePromiseDimension",
@@ -5407,7 +5232,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:NetReinsuranceContractsHeldAnalysisDimension",
-      "order": 52
+      "order": 51
      },
      {
       "source": "core:NetReinsuranceContractsHeldAnalysisDimension",
@@ -5417,7 +5242,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:OnerousNon-onerousInsuranceContractsDimension",
-      "order": 53
+      "order": 52
      },
      {
       "source": "core:OnerousNon-onerousInsuranceContractsDimension",
@@ -5427,7 +5252,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:OperatingSegmentsDimension",
-      "order": 54
+      "order": 53
      },
      {
       "source": "core:OperatingSegmentsDimension",
@@ -5437,7 +5262,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:PositionTypeDimension",
-      "order": 55
+      "order": 54
      },
      {
       "source": "core:PositionTypeDimension",
@@ -5447,7 +5272,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:PPEOwnershipDimension",
-      "order": 56
+      "order": 55
      },
      {
       "source": "core:PPEOwnershipDimension",
@@ -5457,7 +5282,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:ProductsServicesDimension",
-      "order": 57
+      "order": 56
      },
      {
       "source": "core:ProductsServicesDimension",
@@ -5467,7 +5292,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:PropertyPlantEquipmentClassesDimension",
-      "order": 58
+      "order": 57
      },
      {
       "source": "core:PropertyPlantEquipmentClassesDimension",
@@ -5477,7 +5302,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:RegionCountryIssuerRiskDimension",
-      "order": 59
+      "order": 58
      },
      {
       "source": "core:RegionCountryIssuerRiskDimension",
@@ -5487,7 +5312,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:RestatementsFirstTimeAdoptionDimension",
-      "order": 60
+      "order": 59
      },
      {
       "source": "core:RestatementsFirstTimeAdoptionDimension",
@@ -5497,7 +5322,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:SalesChannelDimension",
-      "order": 61
+      "order": 60
      },
      {
       "source": "core:SalesChannelDimension",
@@ -5507,7 +5332,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:SecuredStatusDimension",
-      "order": 62
+      "order": 61
      },
      {
       "source": "core:SecuredStatusDimension",
@@ -5517,7 +5342,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:SegmentReconciliationDimension",
-      "order": 63
+      "order": 62
      },
      {
       "source": "core:SegmentReconciliationDimension",
@@ -5527,7 +5352,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "countries:CountriesRegionsDimension",
-      "order": 64
+      "order": 63
      },
      {
       "source": "countries:CountriesRegionsDimension",
@@ -5537,7 +5362,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "lang:LanguagesDimension",
-      "order": 65
+      "order": 64
      },
      {
       "source": "lang:LanguagesDimension",
@@ -5589,12 +5414,6 @@
     "labelType": "xbrl:label",
     "language": "en",
     "value": "4. Debtors"
-   },
-   {
-    "forObject": "gr:TotalDueAfterOneYearHeading",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Total due after one year - -"
    },
    {
     "forObject": "gr:Note5CreditorsDueWithinOneYear",
@@ -5657,8 +5476,14 @@
     "value": "Total due within one year"
    },
    {
-    "forObject": "core:TotalBorrowings",
-    "labelType": "gr:printedLabel",
+    "forObject": "core:Debtors",
+    "labelType": "gr:printed3Label",
+    "language": "en",
+    "value": "Total due after one year"
+   },
+   {
+    "forObject": "core:Debtors",
+    "labelType": "gr:printed4Label",
     "language": "en",
     "value": "Total"
    },
@@ -5769,18 +5594,6 @@
     "labelType": "xbrl:label",
     "language": "en",
     "value": "9069 - Hypercube - Financial Liabilities - Basic"
-   },
-   {
-    "forObject": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "9070 - Hypercube - Financial Liabilities - Full"
-   },
-   {
-    "forObject": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "9071 - Hypercube - Financial Liabilities - Segments"
    },
    {
     "forObject": "gr:Hypercube-Income-Main_Income-MainHypercube",
@@ -6420,7 +6233,7 @@
     "relationships": [
      {
       "source": "core:SecuredStatusHeading",
-      "target": "core:Secured"
+      "target": "common:NotApplicableDefault"
      }
     ]
    },
@@ -6530,7 +6343,7 @@
     "relationships": [
      {
       "source": "core:SecuredStatusHeading",
-      "target": "core:Secured"
+      "target": "common:NotApplicableDefault"
      }
     ]
    },
@@ -6942,10 +6755,6 @@
     "relationships": [
      {
       "source": "xbrl:conceptDomain",
-      "target": "core:TotalBorrowings"
-     },
-     {
-      "source": "xbrl:conceptDomain",
       "target": "core:FinancialInstrumentsRecognitionMeasurementPolicy"
      }
     ]
@@ -6986,7 +6795,7 @@
     "relationships": [
      {
       "source": "core:SecuredStatusHeading",
-      "target": "core:Secured"
+      "target": "common:NotApplicableDefault"
      }
     ]
    },
@@ -7032,348 +6841,6 @@
    },
    {
     "name": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_RestatementsFirstTimeAdoptionDimension",
-    "root": "core:RestatementsFirstTimeAdoptionHeading",
-    "relationships": [
-     {
-      "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:CurrentlyStatedAmountDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_concepts",
-    "root": "xbrl:conceptDomain",
-    "relationships": [
-     {
-      "source": "xbrl:conceptDomain",
-      "target": "core:TotalBorrowings"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentValueTypeDimension",
-    "root": "core:ValueTypeHeading",
-    "relationships": [
-     {
-      "source": "core:ValueTypeHeading",
-      "target": "core:CarryingValueDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-    "relationships": [
-     {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_PositionTypeDimension",
-    "root": "core:PositionTypeHeading",
-    "relationships": [
-     {
-      "source": "core:PositionTypeHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_SecuredStatusDimension",
-    "root": "core:SecuredStatusHeading",
-    "relationships": [
-     {
-      "source": "core:SecuredStatusHeading",
-      "target": "core:Secured"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MaturitiesOrExpirationPeriodsDimension",
-    "root": "core:AllPeriods",
-    "relationships": [
-     {
-      "source": "core:AllPeriods",
-      "target": "core:WithinOneYear"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_InterestRateTypeDimension",
-    "root": "core:InterestRateTypeFinancialInstrumentHeading",
-    "relationships": [
-     {
-      "source": "core:InterestRateTypeFinancialInstrumentHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_LiquidityFeaturesDimension",
-    "root": "core:LiquidityFeaturesHeading",
-    "relationships": [
-     {
-      "source": "core:LiquidityFeaturesHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FairValueMovementDimension",
-    "root": "core:FairValueMovementsHeading",
-    "relationships": [
-     {
-      "source": "core:FairValueMovementsHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FairValueMeasurementTypeDimension",
-    "root": "core:FairValueMeasurementTypeHeading",
-    "relationships": [
-     {
-      "source": "core:FairValueMeasurementTypeHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_FinancialLiabilitiesReclassificationDimension",
-    "root": "core:ReclassifiedLiabilitiesTotal",
-    "relationships": [
-     {
-      "source": "core:ReclassifiedLiabilitiesTotal",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_IndustryConcentrationRiskDimension",
-    "root": "core:TypesIndustryConcentrationRiskHeading",
-    "relationships": [
-     {
-      "source": "core:TypesIndustryConcentrationRiskHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_RegionCountryIssuerRiskDimension",
-    "root": "core:RegionCountryIssuerRiskHeading",
-    "relationships": [
-     {
-      "source": "core:RegionCountryIssuerRiskHeading",
-      "target": "countries:HomeCountriesHeading"
-     },
-     {
-      "source": "countries:HomeCountriesHeading",
-      "target": "countries:EnglandWales"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_CurrencyDenominationFinancialInstrumentsDimension",
-    "root": "core:CurrencyDenominationFinancialInstrumentsHeading",
-    "relationships": [
-     {
-      "source": "core:CurrencyDenominationFinancialInstrumentsHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MarketRiskTypeDimension",
-    "root": "core:MarketRisk",
-    "relationships": [
-     {
-      "source": "core:MarketRisk",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisDimension",
-    "root": "core:Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisHeading",
-    "relationships": [
-     {
-      "source": "core:Insurance-NetInsuranceContractAssetsLiabilitiesAnalysisHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_MovementAnalysisInsurance-NetInsuranceDimension",
-    "root": "core:MovementAnalysisInsurance-NetInsuranceHeading",
-    "relationships": [
-     {
-      "source": "core:MovementAnalysisInsurance-NetInsuranceHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_NetReinsuranceContractsHeldAnalysisDimension",
-    "root": "core:NetReinsuranceContractsHeldAnalysisHeading",
-    "relationships": [
-     {
-      "source": "core:NetReinsuranceContractsHeldAnalysisHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_OnerousNon-onerousInsuranceContractsDimension",
-    "root": "core:OnerousNon-onerousInsuranceContractsHeading",
-    "relationships": [
-     {
-      "source": "core:OnerousNon-onerousInsuranceContractsHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_AcquiredIssuedInsuranceContractsDimension",
-    "root": "core:AcquiredIssuedInsuranceContractsHeading",
-    "relationships": [
-     {
-      "source": "core:AcquiredIssuedInsuranceContractsHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_InsuranceContractsIssuedReinsuranceContractsHeldDimension",
-    "root": "core:InsuranceContractsIssuedReinsuranceContractsHeldHeading",
-    "relationships": [
-     {
-      "source": "core:InsuranceContractsIssuedReinsuranceContractsHeldHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_ContractTypeInsuranceSpecificDimension",
-    "root": "core:ContractTypeInsuranceSpecificHeading",
-    "relationships": [
-     {
-      "source": "core:ContractTypeInsuranceSpecificHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_ContractualServiceMarginInsuranceRevenueDimension",
-    "root": "core:ContractualServiceMarginInsuranceRevenueHeading",
-    "relationships": [
-     {
-      "source": "core:ContractualServiceMarginInsuranceRevenueHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_GroupCompanyDataDimension",
-    "root": "business:Consolidated",
-    "relationships": [
-     {
-      "source": "business:Consolidated",
-      "target": "business:CompanyDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Full_FinancialLiabilities-FullHypercube_RestatementsFirstTimeAdoptionDimension",
-    "root": "core:RestatementsFirstTimeAdoptionHeading",
-    "relationships": [
-     {
-      "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:CurrentlyStatedAmountDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_concepts",
-    "root": "xbrl:conceptDomain",
-    "relationships": [
-     {
-      "source": "xbrl:conceptDomain",
-      "target": "core:TotalBorrowings"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_FinancialInstrumentValueTypeDimension",
-    "root": "core:ValueTypeHeading",
-    "relationships": [
-     {
-      "source": "core:ValueTypeHeading",
-      "target": "core:CarryingValueDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_GeographicSegmentsDimension",
-    "root": "core:GeographicSegmentsHeading",
-    "relationships": [
-     {
-      "source": "core:GeographicSegmentsHeading",
-      "target": "core:TotalGeographicSegmentsIncludingAnyUnallocatedAmount"
-     },
-     {
-      "source": "core:TotalGeographicSegmentsIncludingAnyUnallocatedAmount",
-      "target": "countries:HomeCountriesHeading"
-     },
-     {
-      "source": "countries:HomeCountriesHeading",
-      "target": "countries:EnglandWales"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_OperatingSegmentsDimension",
-    "root": "core:ReportableOperatingSegmentsHeading",
-    "relationships": [
-     {
-      "source": "core:ReportableOperatingSegmentsHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_ProductsServicesDimension",
-    "root": "core:ProductsServicesHeading",
-    "relationships": [
-     {
-      "source": "core:ProductsServicesHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_MajorCustomersDimension",
-    "root": "core:MajorCustomersHeading",
-    "relationships": [
-     {
-      "source": "core:MajorCustomersHeading",
-      "target": "common:NotApplicableDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_GroupCompanyDataDimension",
-    "root": "business:Consolidated",
-    "relationships": [
-     {
-      "source": "business:Consolidated",
-      "target": "business:CompanyDefault"
-     }
-    ]
-   },
-   {
-    "name": "gr:Hypercube-FinancialLiabilities-Segments_FinancialLiabilities-SegmentsHypercube_RestatementsFirstTimeAdoptionDimension",
     "root": "core:RestatementsFirstTimeAdoptionHeading",
     "relationships": [
      {

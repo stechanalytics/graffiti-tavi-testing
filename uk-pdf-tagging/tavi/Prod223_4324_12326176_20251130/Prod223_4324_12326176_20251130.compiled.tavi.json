@@ -1763,12 +1763,6 @@
     ]
    },
    {
-    "name": "core:ComputerEquipment",
-    "domainClasses": [
-     "core:TotalPropertyPlantEquipmentDefault"
-    ]
-   },
-   {
     "name": "core:ContinuingDiscontinuedOperationsTotalDefault",
     "domainClasses": [
      "core:ContinuingDiscontinuedOperationsDimensionDomainClass"
@@ -4719,18 +4713,6 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Gwerth cario ymlaen [diofyn]"
-   },
-   {
-    "forObject": "core:ComputerEquipment",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Computer equipment"
-   },
-   {
-    "forObject": "core:ComputerEquipment",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Cyfarpar cyfrifiadurol"
    },
    {
     "forObject": "core:ContinuingDiscontinuedOperationsTotalDefault",
@@ -8098,7 +8080,7 @@
      "xbrl:period": "2024-12-01T00:00:00/2025-12-01T00:00:00",
      "xbrl:entity": "ch:12326176",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+     "core:PropertyPlantEquipmentClassesDimension": "core:OfficeEquipment"
     },
     "factValues": [
      {
@@ -12632,10 +12614,6 @@
      {
       "source": "core:FurnitureFittingsToolsEquipment",
       "target": "core:OfficeEquipment"
-     },
-     {
-      "source": "core:OfficeEquipment",
-      "target": "core:ComputerEquipment"
      }
     ]
    },
@@ -12726,10 +12704,6 @@
      {
       "source": "core:FurnitureFittingsToolsEquipment",
       "target": "core:OfficeEquipment"
-     },
-     {
-      "source": "core:OfficeEquipment",
-      "target": "core:ComputerEquipment"
      }
     ]
    },

@@ -251,7 +251,6 @@
      "core:CarryingValueDefault",
      "core:CurrentlyStatedAmountDefault",
      "core:MotorVehicles",
-     "core:OtherPropertyPlantEquipment",
      "core:PlantMachinery",
      "core:RetainedEarningsAccumulatedLosses",
      "core:ShareCapital",
@@ -2616,7 +2615,7 @@
      "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
      "xbrl:entity": "ch:10099385",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:OtherPropertyPlantEquipment"
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
     },
     "factValues": [
      {
@@ -7518,10 +7517,6 @@
      {
       "source": "core:Vehicles",
       "target": "core:MotorVehicles"
-     },
-     {
-      "source": "core:TotalPropertyPlantEquipmentDefault",
-      "target": "core:OtherPropertyPlantEquipment"
      }
     ]
    },
@@ -7582,10 +7577,6 @@
      {
       "source": "core:Vehicles",
       "target": "core:MotorVehicles"
-     },
-     {
-      "source": "core:TotalPropertyPlantEquipmentDefault",
-      "target": "core:OtherPropertyPlantEquipment"
      }
     ]
    },

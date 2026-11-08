@@ -9441,7 +9441,8 @@
      "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
      "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
      "xbrl:entity": "ch:03160248",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -9504,8 +9505,7 @@
      "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
      "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
      "xbrl:entity": "ch:03160248",
-     "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -9587,6 +9587,38 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "353.8 373.7 385.5 382.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f211",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
+     "xbrl:entity": "ch:03160248",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:FurnitureFittings"
+    },
+    "factValues": [
+     {
+      "name": "gr:f211_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "445.4 373.7 449 382.7"
          }
         ]
        }

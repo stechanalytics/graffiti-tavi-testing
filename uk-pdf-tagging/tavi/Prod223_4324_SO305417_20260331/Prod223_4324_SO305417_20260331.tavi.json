@@ -75,6 +75,7 @@
      "core:ImpairmentFinancialAssetsPolicy",
      "core:ImpairmentNon-financialAssetsPolicy",
      "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "core:NetAssetsLiabilities",
      "core:NetCurrentAssetsLiabilities",
      "core:OtherCreditors",
      "core:OtherDebtors",
@@ -2012,6 +2013,68 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "455.3 573.7 474.2 582"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f47",
+    "factDimensions": {
+     "xbrl:concept": "core:NetAssetsLiabilities",
+     "xbrl:period": "2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SO305417",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f47_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 3
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "358.4 544.5 360.9 552.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f48",
+    "factDimensions": {
+     "xbrl:concept": "core:NetAssetsLiabilities",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:entity": "ch:SO305417",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f48_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 3
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "471.5 544.5 474 552.7"
          }
         ]
        }
@@ -4368,6 +4431,17 @@
       ]
      },
      {
+      "source": "xbrl:rootSource",
+      "target": "core:NetAssetsLiabilities",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
       "source": "gr:FixedAssetsHeading",
       "target": "core:PropertyPlantEquipment",
       "order": 1,
@@ -5382,6 +5456,12 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Net current liabilities"
+   },
+   {
+    "forObject": "core:NetAssetsLiabilities",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "attributable to members"
    },
    {
     "forObject": "core:AverageNumberEmployeesDuringPeriod",
@@ -7410,6 +7490,10 @@
      {
       "source": "xbrl:conceptDomain",
       "target": "core:Creditors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:NetAssetsLiabilities"
      }
     ]
    },

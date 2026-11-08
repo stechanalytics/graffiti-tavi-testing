@@ -45,7 +45,6 @@
      "aurep:OpinionAuditorsOnEntity",
      "aurep:StatementAuditorsResponsibilitiesRelatingToOtherInformation",
      "aurep:StatementOnMattersOnWhichAuditorReportsByException",
-     "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors",
      "business:AccountingStandardsApplied",
      "business:AccountsStatusAuditedOrUnaudited",
      "business:AccountsType",
@@ -3489,37 +3488,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
-   },
-   {
-    "name": "gr:textCube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     }
-    ]
    }
   ],
   "facts": [
@@ -4268,6 +4236,39 @@
     ]
    },
    {
+    "name": "gr:f349",
+    "factDimensions": {
+     "xbrl:concept": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "1",
+     "core:EquityClassesDimension": "core:RevaluationReserve"
+    },
+    "factValues": [
+     {
+      "name": "gr:f349_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 11
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "334 514.7 337.3 525.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f353",
     "factDimensions": {
      "xbrl:concept": "core:IncomeTaxExpenseCreditOnComponentsOtherComprehensiveIncome",
@@ -4384,68 +4385,6 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "430.8 468.9 474.1 480.2"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name": "gr:f361",
-    "factDimensions": {
-     "xbrl:concept": "core:ComprehensiveIncomeExpense",
-     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
-    },
-    "factValues": [
-     {
-      "name": "gr:f361_fv",
-      "value": "782032",
-      "decimals": 0,
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 11
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "305.6 445.7 340.8 456.9"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name": "gr:f362",
-    "factDimensions": {
-     "xbrl:concept": "core:ComprehensiveIncomeExpense",
-     "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
-    },
-    "factValues": [
-     {
-      "name": "gr:f362_fv",
-      "value": "2234940",
-      "decimals": 0,
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 11
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "430.8 445.7 474.1 456.9"
          }
         ]
        }
@@ -6998,7 +6937,8 @@
      "xbrl:concept": "core:FurtherItemInterestExpenseComponentTotalInterestExpense",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "2"
     },
     "factValues": [
      {
@@ -7029,7 +6969,8 @@
      "xbrl:concept": "core:FurtherItemInterestExpenseComponentTotalInterestExpense",
      "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "3"
     },
     "factValues": [
      {
@@ -7374,7 +7315,8 @@
      "xbrl:concept": "core:FurtherItemDeferredExpenseCreditComponentTotalDeferredTaxExpense",
      "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "4"
     },
     "factValues": [
      {
@@ -7901,7 +7843,8 @@
      "xbrl:concept": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "5"
     },
     "factValues": [
      {
@@ -7932,7 +7875,8 @@
      "xbrl:concept": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "6"
     },
     "factValues": [
      {
@@ -7963,7 +7907,8 @@
      "xbrl:concept": "core:FurtherItemTaxIncreaseDecreaseComponentAdjustingItems",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "7"
     },
     "factValues": [
      {
@@ -7994,7 +7939,8 @@
      "xbrl:concept": "core:FurtherItemTaxIncreaseDecreaseComponentAdjustingItems",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "8"
     },
     "factValues": [
      {
@@ -8244,17 +8190,17 @@
     ]
    },
    {
-    "name": "gr:f882",
+    "name": "gr:f884",
     "factDimensions": {
-     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:FurnitureFittingsToolsEquipment"
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
     },
     "factValues": [
      {
-      "name": "gr:f882_fv",
+      "name": "gr:f884_fv",
       "value": "0",
       "decimals": 0,
       "reportSource": "gr:pdf",
@@ -8267,7 +8213,71 @@
          },
          {
           "property": "xbrl:pdfBBox",
-          "value": "466.5 697.7 469.8 708.9"
+          "value": "334 686.4 337.3 697.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f885",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f885_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "400.3 686.4 403.6 697.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f886",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:FurnitureFittings"
+    },
+    "factValues": [
+     {
+      "name": "gr:f886_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 686.4 469.8 697.7"
          }
         ]
        }
@@ -8564,6 +8574,102 @@
     ]
    },
    {
+    "name": "gr:f901",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
+    },
+    "factValues": [
+     {
+      "name": "gr:f901_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "334 628.7 337.3 639.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f902",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f902_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "400.3 628.7 403.6 639.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f903",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:FurnitureFittings"
+    },
+    "factValues": [
+     {
+      "name": "gr:f903_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 628.7 469.8 639.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f905",
     "factDimensions": {
      "xbrl:concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
@@ -8820,6 +8926,38 @@
     ]
    },
    {
+    "name": "gr:f927",
+    "factDimensions": {
+     "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
+    },
+    "factValues": [
+     {
+      "name": "gr:f927_fv",
+      "value": "247323",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 20
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "305.6 510.9 340.8 522.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f928",
     "factDimensions": {
      "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
@@ -8889,7 +9027,7 @@
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:Vehicles"
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -8984,7 +9122,7 @@
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:Vehicles"
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -9333,7 +9471,7 @@
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:Vehicles"
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -9831,38 +9969,6 @@
     ]
    },
    {
-    "name": "gr:f1046",
-    "factDimensions": {
-     "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
-     "xbrl:period": "2025-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933",
-     "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
-    },
-    "factValues": [
-     {
-      "name": "gr:f1046_fv",
-      "value": "204909",
-      "decimals": 0,
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 22
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "438.1 686.4 473.4 697.7"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
     "name": "gr:f1051",
     "factDimensions": {
      "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
@@ -10014,6 +10120,37 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "464.9 500.4 470.3 511.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f1071",
+    "factDimensions": {
+     "xbrl:concept": "core:InvestmentsInGroupUndertakings",
+     "xbrl:period": "2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f1071_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 22
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 488.4 469.8 499.7"
          }
         ]
        }
@@ -14152,90 +14289,13 @@
    {
     "name": "gr:t47",
     "factDimensions": {
-     "xbrl:concept": "aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors",
-     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933"
-    },
-    "factValues": [
-     {
-      "name": "gr:t47_fv",
-      "value": "Responsibilities of director As explained more fully in the Statement of Director's Responsibilities set out on page three, the director is responsible for the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such internal control as the director determines necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.",
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 8
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "0 652.7 111.5 663.9"
-         }
-        ]
-       },
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 8
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "0 641.4 482.3 652.7"
-         }
-        ]
-       },
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 8
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "0 630.2 482.3 641.4"
-         }
-        ]
-       },
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 8
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "0 618.9 482.3 630.2"
-         }
-        ]
-       },
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 8
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "0 607.7 171.3 618.9"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name": "gr:t48",
-    "factDimensions": {
      "xbrl:concept": "core:FunctionalPresentationCurrencyPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
     "factValues": [
      {
-      "name": "gr:t48_fv",
+      "name": "gr:t47_fv",
       "value": "The presentation currency of the financial statements is the Pound Sterling (£).",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14256,7 +14316,7 @@
     ]
    },
    {
-    "name": "gr:t49",
+    "name": "gr:t48",
     "factDimensions": {
      "xbrl:concept": "core:StatementComplianceWithApplicableReportingFramework",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14264,7 +14324,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t49_fv",
+      "name": "gr:t48_fv",
       "value": "These financial statements have been prepared in accordance with Financial Reporting Standard 102 \"The Financial Reporting Standard applicable in the UK and Republic of Ireland\" and the Companies Act 2006. There were no material departures from the standard.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14309,7 +14369,7 @@
     ]
    },
    {
-    "name": "gr:t50",
+    "name": "gr:t49",
     "factDimensions": {
      "xbrl:concept": "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14317,7 +14377,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t50_fv",
+      "name": "gr:t49_fv",
       "value": "Basis of preparing the financial statements The financial statements have been prepared under the historical cost convention as modified by the revaluation of certain assets. The financial statements have been prepared on a going concern basis.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14374,7 +14434,7 @@
     ]
    },
    {
-    "name": "gr:t51",
+    "name": "gr:t50",
     "factDimensions": {
      "xbrl:concept": "core:DescriptionReasonWhyEntityHasNotPreparedConsolidatedFinancialStatements",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14382,7 +14442,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t51_fv",
+      "name": "gr:t50_fv",
       "value": "Preparation of consolidated financial statements The financial statements contain information about Applecross Nursing Home Limited as an individual company and do not contain consolidated financial information as the parent of a group. The company is exempt under Section 400 of the Companies Act 2006 from the requirements to prepare consolidated financial statements as it and its subsidiary undertaking are included by full consolidation in the consolidated financial statements of its parent, Applecross Investments Ltd, c/o Applecross Nursing Home, Levernholm by Hurlet, Glasgow Road, Glasgow, G53 7TG.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14475,7 +14535,7 @@
     ]
    },
    {
-    "name": "gr:t52",
+    "name": "gr:t51",
     "factDimensions": {
      "xbrl:concept": "core:GeneralDescriptionCriticalEstimatesJudgements",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14483,7 +14543,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t52_fv",
+      "name": "gr:t51_fv",
       "value": "Significant judgements and estimates In the application of the company's accounting policies, management is required to make judgements, estimates and assumptions about the carrying values of assets and liabilities that are not readily apparent from other sources. The estimates and underlying assumptions are based on historical experience and other factors that are considered to be relevant. Actual results may differ from these estimates. The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting estimates are recognised in the period in which the estimate is revised if the revision affects only that period, or in the period of the revision and future periods if the revision affects both current and future periods.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14588,7 +14648,7 @@
     ]
    },
    {
-    "name": "gr:t53",
+    "name": "gr:t52",
     "factDimensions": {
      "xbrl:concept": "core:PropertyPlantEquipmentPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14596,7 +14656,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t53_fv",
+      "name": "gr:t52_fv",
       "value": "Tangible fixed assets Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful life or, if held under a finance lease, over the lease term, whichever is the shorter. Freehold property - 2% on cost Plant and machinery - 15% on cost Fixtures and fittings - 15% on cost Motor vehicles - 20% on cost",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14689,7 +14749,7 @@
     ]
    },
    {
-    "name": "gr:t54",
+    "name": "gr:t53",
     "factDimensions": {
      "xbrl:concept": "core:ImpairmentNon-financialAssetsPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14697,7 +14757,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t54_fv",
+      "name": "gr:t53_fv",
       "value": "At each balance sheet date, the company reviews the carrying amounts of its tangible fixed assets to determine whether there is any indication that any items have suffered an impairment loss. If any such indication exists, the recoverable amount of an asset is estimated in order to determine the extent of the impairment loss. Where it is not possible to estimate the recoverable amount of the asset, the company estimates the recoverable amount of the cash-generating unit to which the asset belongs.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14766,7 +14826,7 @@
     ]
    },
    {
-    "name": "gr:t55",
+    "name": "gr:t54",
     "factDimensions": {
      "xbrl:concept": "core:DescriptionMethodsUsedToAccountForInvestmentsInSubsidiariesInSeparateFinancialStatements",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14774,7 +14834,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t55_fv",
+      "name": "gr:t54_fv",
       "value": "Investments in subsidiaries Investments in subsidiary undertakings are recognised at cost.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14807,7 +14867,7 @@
     ]
    },
    {
-    "name": "gr:t56",
+    "name": "gr:t55",
     "factDimensions": {
      "xbrl:concept": "core:FinancialInstrumentsRecognitionMeasurementPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14815,7 +14875,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t56_fv",
+      "name": "gr:t55_fv",
       "value": "Basic financial assets Basic financial assets, which include debtors and cash and bank balances, are initially measured at transaction price including transaction costs and are subsequently carried at amortised cost using the effective interest method unless the arrangement constitutes a financing transaction, where the transaction is measured at the present value of the future receipts discounted at a market rate of interest. Financial assets classified as receivable within one year are not amortised.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -14896,7 +14956,7 @@
     ]
    },
    {
-    "name": "gr:t57",
+    "name": "gr:t56",
     "factDimensions": {
      "xbrl:concept": "core:ImpairmentFinancialAssetsPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -14904,7 +14964,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t57_fv",
+      "name": "gr:t56_fv",
       "value": "Impairment of financial assets Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of impairment at each reporting end date. Financial assets are impaired where there is objective evidence that, as a result of one or more events that occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected. If an asset is impaired, the impairment loss is the difference between the carrying amount and the present value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss is recognised in profit or loss. If there is a decrease in the impairment loss arising from an event occurring after the impairment was recognised, the impairment is reversed. The reversal is such that the current carrying amount does not exceed what the carrying amount would have been, had the impairment not previously been recognised. The impairment reversal is recognised in profit or loss.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15057,7 +15117,7 @@
     ]
    },
    {
-    "name": "gr:t58",
+    "name": "gr:t57",
     "factDimensions": {
      "xbrl:concept": "core:FinancialInstrumentsClassificationPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15065,7 +15125,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t58_fv",
+      "name": "gr:t57_fv",
       "value": "Classification of financial liabilities Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of the company after deducting all of its liabilities.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15122,7 +15182,7 @@
     ]
    },
    {
-    "name": "gr:t59",
+    "name": "gr:t58",
     "factDimensions": {
      "xbrl:concept": "core:ContentOtherSpecificAccountingPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15131,7 +15191,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t59_fv",
+      "name": "gr:t58_fv",
       "value": "Basic financial liabilities Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference shares that are classified as debt, are initially recognised at transaction price unless the arrangement constitutes a financing transaction, where the debt instrument is measured at the present value of the future payments discounted at a market rate of interest. Financial liabilities classified as payable within one year are not amortised.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15200,7 +15260,7 @@
     ]
    },
    {
-    "name": "gr:t60",
+    "name": "gr:t59",
     "factDimensions": {
      "xbrl:concept": "core:CurrentIncomeTaxPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15208,7 +15268,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t60_fv",
+      "name": "gr:t59_fv",
       "value": "Current tax is recognised at the amount of tax payable using the tax rates and laws that have been enacted or substantively enacted by the balance sheet date.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15241,7 +15301,7 @@
     ]
    },
    {
-    "name": "gr:t61",
+    "name": "gr:t60",
     "factDimensions": {
      "xbrl:concept": "core:DeferredTaxPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15249,7 +15309,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t61_fv",
+      "name": "gr:t60_fv",
       "value": "Deferred tax Deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance sheet date. Timing differences arise from the inclusion of income and expenses in tax assessments in periods different from those in which they are recognised in financial statements. Deferred tax is measured using tax rates and laws that have been enacted or substantively enacted by the year end and that are expected to apply to the reversal of the timing difference. Unrelieved tax losses and other deferred tax assets are recognised only to the extent that it is probable that they will be recovered against the reversal of deferred tax liabilities or other future taxable profits.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15366,7 +15426,7 @@
     ]
    },
    {
-    "name": "gr:t62",
+    "name": "gr:t61",
     "factDimensions": {
      "xbrl:concept": "core:LeasesPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15374,7 +15434,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t62_fv",
+      "name": "gr:t61_fv",
       "value": "Rentals paid under operating leases are charged to profit or loss on a straight line basis over the period of the lease.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15395,7 +15455,7 @@
     ]
    },
    {
-    "name": "gr:t63",
+    "name": "gr:t62",
     "factDimensions": {
      "xbrl:concept": "core:DefinedContributionPensionsPolicy",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15403,7 +15463,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t63_fv",
+      "name": "gr:t62_fv",
       "value": "Pension costs and other post-retirement benefits The company operates a defined contribution pension scheme. Contributions payable to the company's pension scheme are charged to profit or loss in the period to which they relate.",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15448,7 +15508,7 @@
     ]
    },
    {
-    "name": "gr:t64",
+    "name": "gr:t63",
     "factDimensions": {
      "xbrl:concept": "core:PropertyPlantEquipmentFree-textComment",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
@@ -15456,7 +15516,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t64_fv",
+      "name": "gr:t63_fv",
       "value": "COST OR VALUATION At 1 April 2025 and 31 March 2026 204,909 DEPRECIATION At 1 April 2025 6,248 Charge for year 25,250 At 31 March 2026 31,498 NET BOOK VALUE At 31 March 2026 173,411 At 31 March 2025 198,661",
       "reportSource": "gr:pdf",
       "valueAnchors": [
@@ -15585,7 +15645,7 @@
     ]
    },
    {
-    "name": "gr:t65",
+    "name": "gr:t64",
     "factDimensions": {
      "xbrl:concept": "business:StartDateForPeriodCoveredByReport",
      "xbrl:period": "2026-04-01T00:00:00",
@@ -15593,14 +15653,14 @@
     },
     "factValues": [
      {
-      "name": "gr:t65_fv",
+      "name": "gr:t64_fv",
       "value": "2025-04-01",
       "reportSource": "gr:pdf"
      }
     ]
    },
    {
-    "name": "gr:t66",
+    "name": "gr:t65",
     "factDimensions": {
      "xbrl:concept": "business:EndDateForPeriodCoveredByReport",
      "xbrl:period": "2026-04-01T00:00:00",
@@ -15608,8 +15668,23 @@
     },
     "factValues": [
      {
-      "name": "gr:t66_fv",
+      "name": "gr:t65_fv",
       "value": "2026-03-31",
+      "reportSource": "gr:pdf"
+     }
+    ]
+   },
+   {
+    "name": "gr:t66",
+    "factDimensions": {
+     "xbrl:concept": "business:EntityDormantTruefalse",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:SC177933"
+    },
+    "factValues": [
+     {
+      "name": "gr:t66_fv",
+      "value": "false",
       "reportSource": "gr:pdf"
      }
     ]
@@ -15617,7 +15692,7 @@
    {
     "name": "gr:t67",
     "factDimensions": {
-     "xbrl:concept": "business:EntityDormantTruefalse",
+     "xbrl:concept": "business:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
@@ -15632,7 +15707,7 @@
    {
     "name": "gr:t68",
     "factDimensions": {
-     "xbrl:concept": "business:ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse",
+     "xbrl:concept": "business:ReportIncludesDetailedProfitLossStatementTruefalse",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
@@ -15647,14 +15722,14 @@
    {
     "name": "gr:t69",
     "factDimensions": {
-     "xbrl:concept": "business:ReportIncludesDetailedProfitLossStatementTruefalse",
+     "xbrl:concept": "business:NameProductionSoftware",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
     "factValues": [
      {
       "name": "gr:t69_fv",
-      "value": "false",
+      "value": "Graffiti",
       "reportSource": "gr:pdf"
      }
     ]
@@ -15662,14 +15737,14 @@
    {
     "name": "gr:t70",
     "factDimensions": {
-     "xbrl:concept": "business:NameProductionSoftware",
+     "xbrl:concept": "business:VersionProductionSoftware",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
     "factValues": [
      {
       "name": "gr:t70_fv",
-      "value": "Graffiti",
+      "value": "2.0.87",
       "reportSource": "gr:pdf"
      }
     ]
@@ -15677,14 +15752,14 @@
    {
     "name": "gr:t71",
     "factDimensions": {
-     "xbrl:concept": "business:VersionProductionSoftware",
+     "xbrl:concept": "business:EntityTradingStatus",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933"
     },
     "factValues": [
      {
       "name": "gr:t71_fv",
-      "value": "2.0.87",
+      "value": "",
       "reportSource": "gr:pdf"
      }
     ]
@@ -15692,9 +15767,10 @@
    {
     "name": "gr:t72",
     "factDimensions": {
-     "xbrl:concept": "business:EntityTradingStatus",
+     "xbrl:concept": "business:LegalFormEntity",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933"
+     "xbrl:entity": "ch:SC177933",
+     "business:LegalFormEntityDimension": "business:LimitedLiabilityPartnershipLLP"
     },
     "factValues": [
      {
@@ -15707,10 +15783,10 @@
    {
     "name": "gr:t73",
     "factDimensions": {
-     "xbrl:concept": "business:LegalFormEntity",
+     "xbrl:concept": "business:AccountingStandardsApplied",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "business:LegalFormEntityDimension": "business:LimitedLiabilityPartnershipLLP"
+     "business:AccountingStandardsDimension": "business:FRS102"
     },
     "factValues": [
      {
@@ -15723,10 +15799,10 @@
    {
     "name": "gr:t74",
     "factDimensions": {
-     "xbrl:concept": "business:AccountingStandardsApplied",
+     "xbrl:concept": "business:AccountsStatusAuditedOrUnaudited",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "business:AccountingStandardsDimension": "business:FRS102"
+     "business:AccountsStatusDimension": "business:Audited"
     },
     "factValues": [
      {
@@ -15739,10 +15815,10 @@
    {
     "name": "gr:t75",
     "factDimensions": {
-     "xbrl:concept": "business:AccountsStatusAuditedOrUnaudited",
+     "xbrl:concept": "business:AccountsType",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "business:AccountsStatusDimension": "business:Audited"
+     "business:AccountsTypeDimension": "business:FullAccounts"
     },
     "factValues": [
      {
@@ -15755,10 +15831,10 @@
    {
     "name": "gr:t76",
     "factDimensions": {
-     "xbrl:concept": "business:AccountsType",
+     "xbrl:concept": "business:ApplicableLegislation",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "business:AccountsTypeDimension": "business:FullAccounts"
+     "business:ApplicableLegislationDimension": "business:SmallCompaniesRegimeForAccounts"
     },
     "factValues": [
      {
@@ -15771,10 +15847,10 @@
    {
     "name": "gr:t77",
     "factDimensions": {
-     "xbrl:concept": "business:ApplicableLegislation",
+     "xbrl:concept": "business:ScopeAccounts",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
-     "business:ApplicableLegislationDimension": "business:SmallCompaniesRegimeForAccounts"
+     "business:ScopeAccountsDimension": "business:ConsolidatedGroupCompanyAccounts"
     },
     "factValues": [
      {
@@ -15787,22 +15863,6 @@
    {
     "name": "gr:t78",
     "factDimensions": {
-     "xbrl:concept": "business:ScopeAccounts",
-     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
-     "xbrl:entity": "ch:SC177933",
-     "business:ScopeAccountsDimension": "business:ConsolidatedGroupCompanyAccounts"
-    },
-    "factValues": [
-     {
-      "name": "gr:t78_fv",
-      "value": "",
-      "reportSource": "gr:pdf"
-     }
-    ]
-   },
-   {
-    "name": "gr:t79",
-    "factDimensions": {
      "xbrl:concept": "business:CountryFormationOrIncorporation",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:SC177933",
@@ -15810,7 +15870,7 @@
     },
     "factValues": [
      {
-      "name": "gr:t79_fv",
+      "name": "gr:t78_fv",
       "value": "",
       "reportSource": "gr:pdf"
      }
@@ -16382,7 +16442,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:IncomeTaxExpenseCreditOnComponentsOtherComprehensiveIncome",
+      "target": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
       "order": 11,
       "properties": [
        {
@@ -16393,7 +16453,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:OtherComprehensiveIncomeExpenseNetTax",
+      "target": "core:IncomeTaxExpenseCreditOnComponentsOtherComprehensiveIncome",
       "order": 12,
       "properties": [
        {
@@ -16404,7 +16464,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:OtherComprehensiveIncomeExpenseBeforeTax",
+      "target": "core:OtherComprehensiveIncomeExpenseNetTax",
       "order": 13,
       "properties": [
        {
@@ -16415,7 +16475,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:ComprehensiveIncomeExpense",
+      "target": "core:OtherComprehensiveIncomeExpenseBeforeTax",
       "order": 14,
       "properties": [
        {
@@ -16685,7 +16745,7 @@
       "properties": [
        {
         "property": "xbrl:preferredLabel",
-        "value": "gr:printed2Label"
+        "value": "gr:printedLabel"
        }
       ]
      },
@@ -17096,55 +17156,33 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:PropertyPlantEquipmentGrossCost",
-      "order": 2,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "xbrl:periodEndLabel"
-       }
-      ]
-     },
-     {
-      "source": "xbrl:rootSource",
       "target": "gr:DepreciationHeading",
-      "order": 3
-     },
-     {
-      "source": "xbrl:rootSource",
-      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
-      "order": 4,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "xbrl:periodEndLabel"
-       }
-      ]
+      "order": 2
      },
      {
       "source": "xbrl:rootSource",
       "target": "gr:NetBookValueHeading",
-      "order": 5
+      "order": 3
      },
      {
       "source": "xbrl:rootSource",
       "target": "gr:TangibleFixedAssetsContinuedHeading",
-      "order": 6
+      "order": 4
      },
      {
       "source": "xbrl:rootSource",
       "target": "gr:PropertyMachineryFittingsHeading",
-      "order": 7
+      "order": 5
      },
      {
       "source": "xbrl:rootSource",
       "target": "gr:VehiclesEquipmentTotalsHeading",
-      "order": 8
+      "order": 6
      },
      {
       "source": "xbrl:rootSource",
       "target": "core:FinishedGoodsGoodsForResale",
-      "order": 9,
+      "order": 7,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -17175,6 +17213,28 @@
       ]
      },
      {
+      "source": "gr:CostOrValuationHeading",
+      "target": "core:DisposalsPropertyPlantEquipment",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:CostOrValuationHeading",
+      "target": "core:PropertyPlantEquipmentGrossCost",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
+       }
+      ]
+     },
+     {
       "source": "gr:DepreciationHeading",
       "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
       "order": 1,
@@ -17197,6 +17257,28 @@
       ]
      },
      {
+      "source": "gr:DepreciationHeading",
+      "target": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:DepreciationHeading",
+      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
+       }
+      ]
+     },
+     {
       "source": "gr:NetBookValueHeading",
       "target": "core:PropertyPlantEquipment",
       "order": 1,
@@ -17215,28 +17297,6 @@
        {
         "property": "xbrl:preferredLabel",
         "value": "xbrl:periodStartLabel"
-       }
-      ]
-     },
-     {
-      "source": "gr:CostOrValuationHeading",
-      "target": "core:DisposalsPropertyPlantEquipment",
-      "order": 3,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "gr:printedLabel"
-       }
-      ]
-     },
-     {
-      "source": "gr:DepreciationHeading",
-      "target": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
-      "order": 3,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "gr:printedLabel"
        }
       ]
      },
@@ -17274,20 +17334,9 @@
       ]
      },
      {
-      "source": "gr:CostOrValuationHeading",
-      "target": "core:PropertyPlantEquipmentGrossCost",
-      "order": 4,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "gr:printedLabel"
-       }
-      ]
-     },
-     {
       "source": "gr:DepreciationHeading",
       "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
-      "order": 4,
+      "order": 5,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -17315,6 +17364,17 @@
       "source": "gr:CostHeading",
       "target": "core:DisposalsPropertyPlantEquipment",
       "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:CostHeading",
+      "target": "core:InvestmentsInGroupUndertakings",
+      "order": 2,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -17815,17 +17875,6 @@
       ]
      },
      {
-      "source": "xbrl:rootSource",
-      "target": "core:Equity",
-      "order": 3,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "gr:printed5Label"
-       }
-      ]
-     },
-     {
       "source": "gr:EarningsReserveTotalsHeading",
       "target": "core:Equity",
       "order": 1,
@@ -17844,6 +17893,17 @@
        {
         "property": "xbrl:preferredLabel",
         "value": "gr:printed3Label"
+       }
+      ]
+     },
+     {
+      "source": "gr:EarningsReserveTotalsHeading",
+      "target": "core:Equity",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printed5Label"
        }
       ]
      }
@@ -19088,6 +19148,12 @@
     "value": "PROFIT FOR THE FINANCIAL YEAR"
    },
    {
+    "forObject": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Revaluation release"
+   },
+   {
     "forObject": "core:IncomeTaxExpenseCreditOnComponentsOtherComprehensiveIncome",
     "labelType": "gr:printedLabel",
     "language": "en",
@@ -19104,12 +19170,6 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "OTHER COMPREHENSIVE INCOME FOR THE YEAR, NET OF INCOME TAX"
-   },
-   {
-    "forObject": "core:ComprehensiveIncomeExpense",
-    "labelType": "gr:printedLabel",
-    "language": "en",
-    "value": "TOTAL COMPREHENSIVE INCOME FOR THE YEAR"
    },
    {
     "forObject": "core:PropertyPlantEquipment",
@@ -19173,7 +19233,7 @@
    },
    {
     "forObject": "core:ComprehensiveIncomeExpense",
-    "labelType": "gr:printed2Label",
+    "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Total comprehensive income"
    },
@@ -19322,12 +19382,6 @@
     "value": "Total tax charge"
    },
    {
-    "forObject": "core:FurtherItemGainLossInOtherComprehensiveIncomeBeforeTaxComponentTotalOtherComprehensiveIncomeBeforeTax",
-    "labelType": "gr:printedLabel",
-    "language": "en",
-    "value": "Revaluation release"
-   },
-   {
     "forObject": "core:FurtherItemTaxIncreaseDecreaseComponentAdjustingItems",
     "labelType": "gr:printedLabel",
     "language": "en",
@@ -19358,6 +19412,12 @@
     "value": "Additions"
    },
    {
+    "forObject": "core:DisposalsPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Disposals"
+   },
+   {
     "forObject": "core:PropertyPlantEquipmentGrossCost",
     "labelType": "xbrl:periodEndLabel",
     "language": "en",
@@ -19374,6 +19434,12 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Charge for year"
+   },
+   {
+    "forObject": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Eliminated on disposal"
    },
    {
     "forObject": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
@@ -19394,18 +19460,6 @@
     "value": "At 31 March 2025"
    },
    {
-    "forObject": "core:DisposalsPropertyPlantEquipment",
-    "labelType": "gr:printedLabel",
-    "language": "en",
-    "value": "Disposals"
-   },
-   {
-    "forObject": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
-    "labelType": "gr:printedLabel",
-    "language": "en",
-    "value": "Eliminated on disposal"
-   },
-   {
     "forObject": "core:PropertyPlantEquipment",
     "labelType": "xbrl:periodEndLabel",
     "language": "en",
@@ -19422,12 +19476,6 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Value of land in freehold land and buildings"
-   },
-   {
-    "forObject": "core:PropertyPlantEquipmentGrossCost",
-    "labelType": "gr:printedLabel",
-    "language": "en",
-    "value": "At 1 April 2025 and 31 March 2026"
    },
    {
     "forObject": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",

@@ -7378,23 +7378,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -8767,7 +8750,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
      "xbrl:period": "2024-10-01T00:00:00/2025-10-01T00:00:00",
      "xbrl:entity": "ch:11899979",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "1"
     },
     "factValues": [
      {

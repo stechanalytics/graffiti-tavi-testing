@@ -319,6 +319,18 @@
     ]
    },
    {
+    "name": "core:NetCurrentAssetsLiabilities",
+    "dataType": "xbrlr:monetary",
+    "periodType": "instant",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "debit"
+     }
+    ]
+   },
+   {
     "name": "core:OtherCreditors",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
@@ -2367,6 +2379,18 @@
     "value": "Buddsoddiadau, asedau sefydlog"
    },
    {
+    "forObject": "core:NetCurrentAssetsLiabilities",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Net current assets (liabilities)"
+   },
+   {
+    "forObject": "core:NetCurrentAssetsLiabilities",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Asedau (rhwymedigaethau) cyfredol net"
+   },
+   {
     "forObject": "core:OtherCreditors",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4207,6 +4231,12 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Amounts falling due within one year"
+   },
+   {
+    "forObject": "core:NetCurrentAssetsLiabilities",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "NET CURRENT LIABILITIES"
    },
    {
     "forObject": "core:PropertyPlantEquipmentGrossCost",
@@ -6107,6 +6137,68 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "402.7 677.6 417.7 688.1"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f69",
+    "factDimensions": {
+     "xbrl:concept": "core:NetCurrentAssetsLiabilities",
+     "xbrl:period": "2026-07-01T00:00:00",
+     "xbrl:entity": "ch:14910953",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f69_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 4
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "346.2 666.3 349.2 676.8"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f70",
+    "factDimensions": {
+     "xbrl:concept": "core:NetCurrentAssetsLiabilities",
+     "xbrl:period": "2025-07-01T00:00:00",
+     "xbrl:entity": "ch:14910953",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f70_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 4
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "483.3 666.3 486.3 676.8"
          }
         ]
        }
@@ -8600,6 +8692,11 @@
     "order": 1
    },
    {
+    "groupName": "gr:BalanceSheet",
+    "forObject": "gr:BalanceSheet_calculation",
+    "order": 2
+   },
+   {
     "groupName": "gr:Note4FixedAssetInvestments",
     "forObject": "gr:Note4FixedAssetInvestments_presentation",
     "order": 1
@@ -8708,9 +8805,53 @@
       ]
      },
      {
+      "source": "gr:CreditorsHeading",
+      "target": "core:NetCurrentAssetsLiabilities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
       "source": "gr:CapitalAndReservesHeading",
       "target": "core:Equity",
       "order": 1
+     }
+    ]
+   },
+   {
+    "name": "gr:BalanceSheet_calculation",
+    "relationshipTypeName": "xbrl:summation-item",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:TotalAssetsLessCurrentLiabilities",
+      "order": 1
+     },
+     {
+      "source": "core:TotalAssetsLessCurrentLiabilities",
+      "target": "core:InvestmentsFixedAssets",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "core:TotalAssetsLessCurrentLiabilities",
+      "target": "core:NetCurrentAssetsLiabilities",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
      }
     ]
    },
@@ -11489,6 +11630,10 @@
      {
       "source": "xbrl:conceptDomain",
       "target": "core:InvestmentsFixedAssets"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:NetCurrentAssetsLiabilities"
      },
      {
       "source": "xbrl:conceptDomain",

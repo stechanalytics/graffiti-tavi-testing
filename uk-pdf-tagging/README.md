@@ -7,13 +7,12 @@ score another tool on the same PDFs, is here.
 
 ## What we found
 
-- Graffiti found **95%** of the figures the companies tagged and printed (3,049 of 3,204).
-- Of the 3,126 filed facts paired with a Graffiti figure, **96%** had the same concept as the company chose, and
+- Graffiti found **96%** of the figures the companies tagged and printed (3,063 of 3,204).
+- Of the 3,140 filed facts paired with a Graffiti figure, **96%** had the same concept as the company chose, and
   **74%** matched every part of the tag: concept, period, dimensions, sign and scale.
 - For text (company name and number, the required statements, accounting policies), it found **84%** of what the
   companies tagged (1,498 of 1,791).
-- Of the 155 misses, 66 are in fixed-asset notes (in one filing a table continued on a new page without its column
-  headings, and most of its class figures were missed), 52 have no row label (mostly totals at the foot of a note) and 25
+- Of the 141 misses, 60 are in fixed-asset notes, 49 have no row label (mostly totals at the foot of a note) and 11
   are dashes printed for nil.
 
 Many concept disagreements are not plain errors: in some, both tags fit and one is more specific (VAT payable against
@@ -33,17 +32,14 @@ On dimensions, the largest miss is current against within one year, which filers
 | `graffiti-text.csv` | Every text fact Graffiti tagged on the PDFs |
 | `comparison.csv` | Every numeric fact the companies filed, with the Graffiti figure paired with it (if any) and which fields agree |
 
-The Tavi files are what a Graffiti user downloads, taken from the same tagging the CSVs record. They were made on
-Graffiti as it was on 7 November, before two fixes: one filing (`SC177933`) has no compiled file, as its compiled
-download did not finish, and two compiled files (`01212214`, `12386792`) fail Arelle's loader with
-`oimte:networkCyclic`. Graffiti now saves all three, and they load in Arelle without findings; this set will be
-remade on the fixed version.
+The Tavi files are what a Graffiti user downloads, taken from the same tagging the CSVs record. All 50 compiled files
+load in Arelle without findings, and Graffiti's own Tavi checks find nothing in them or in the module files.
 
 `comparison.csv` columns: the filing, row label and value; the filed and Graffiti concept, period, dimensions and sign
 side by side; `found` (Graffiti tagged the figure at all); `concept_same`, `period_same`, `dimensions_same`,
 `sign_same`, `scale_same` and `all_same`; `paired_by` (`label` when the row labels agreed, `value` when only the value
-did); and `hidden_in_filing` for facts the filing tags but does not print. The 95% counts the printed ones only; the
-3,126 paired facts include 77 hidden ones whose value is also printed.
+did); and `hidden_in_filing` for facts the filing tags but does not print. The 96% counts the printed ones only; the
+3,140 paired facts include 77 hidden ones whose value is also printed.
 
 ## How it was done
 
@@ -51,7 +47,7 @@ did); and `hidden_in_filing` for facts the filing tags but does not print. The 9
   positioned text, each with 30 or more tagged figures. Some of the companies are also in the model's training data,
   from a year earlier.
 - **The PDFs.** Each filing printed by Chromium. These prints have a clean text layer; scanned PDFs will do worse.
-- **The tagging.** Each PDF opened in Graffiti 2.0.87 (commit `136bb9180`, run on 7 November 2026), which tagged it with
+- **The tagging.** Each PDF opened in Graffiti 2.0.87 (commit `c264c8dee`, run on 8 November 2026), which tagged it with
   no access to the filing, then saved its Tavi files from the Data tab. The figures are read in the browser; only the
   rows of labels and figures go to Graffiti's model.
 - **The scoring.** Each Graffiti figure was paired, one to one, with a filed fact of the same printed value,

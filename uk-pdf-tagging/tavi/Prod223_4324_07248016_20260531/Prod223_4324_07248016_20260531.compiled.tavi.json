@@ -41,13 +41,7 @@
     "name": "gr:MachineryHeading"
    },
    {
-    "name": "gr:DisposalsHeading"
-   },
-   {
     "name": "gr:DepreciationHeading"
-   },
-   {
-    "name": "gr:OnDisposalsHeading"
    },
    {
     "name": "gr:NetBookValuesHeading"
@@ -277,6 +271,30 @@
     "nillable": true
    },
    {
+    "name": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "debit"
+     }
+    ]
+   },
+   {
+    "name": "core:DisposalsPropertyPlantEquipment",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
+   },
+   {
     "name": "core:Equity",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
@@ -305,6 +323,18 @@
     "dataType": "xs:string",
     "periodType": "duration",
     "nillable": true
+   },
+   {
+    "name": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
    },
    {
     "name": "core:NetAssetsLiabilities",
@@ -377,6 +407,18 @@
     "dataType": "xs:string",
     "periodType": "duration",
     "nillable": true
+   },
+   {
+    "name": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "debit"
+     }
+    ]
    },
    {
     "name": "core:TotalAssetsLessCurrentLiabilities",
@@ -2575,6 +2617,30 @@
     "value": "Disgrifiad o ddull dibrisio ar gyfer eiddo, offer a chyfarpar"
    },
    {
+    "forObject": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Disposals, decrease in depreciation and impairment, property, plant and equipment"
+   },
+   {
+    "forObject": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwarediad, gostyngiad mewn dibrisiad ac amhariad, eiddo, peiriannau a chyfarpar"
+   },
+   {
+    "forObject": "core:DisposalsPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Disposals, property, plant and equipment"
+   },
+   {
+    "forObject": "core:DisposalsPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwarediadau, eiddo, peiriannau a chyfarpar"
+   },
+   {
     "forObject": "core:Equity",
     "labelType": "xbrl:documentation",
     "language": "en",
@@ -2633,6 +2699,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Disgrifiad cyffredinol o sail y mesuriad a ddefnyddiwyd wrth baratoi datganiad ariannol"
+   },
+   {
+    "forObject": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Increase from depreciation charge for the year, property, plant and equipment"
+   },
+   {
+    "forObject": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cynnydd o gost dibrisiad ar gyfer y flwyddyn, eiddo, offer a chyfarpar"
    },
    {
     "forObject": "core:NetAssetsLiabilities",
@@ -2753,6 +2831,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Polisi treth"
+   },
+   {
+    "forObject": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Total additions including from business combinations, property, plant and equipment"
+   },
+   {
+    "forObject": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfanswm yr Ychwanegiadau yn cynnwys o gyfuniadau busnes, eiddo, offer a chyfarpar"
    },
    {
     "forObject": "core:TotalAssetsLessCurrentLiabilities",
@@ -4933,22 +5023,10 @@
     "value": "Machinery"
    },
    {
-    "forObject": "gr:DisposalsHeading",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Disposals - - - -"
-   },
-   {
     "forObject": "gr:DepreciationHeading",
     "labelType": "xbrl:label",
     "language": "en",
     "value": "Depreciation"
-   },
-   {
-    "forObject": "gr:OnDisposalsHeading",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "On disposals - - - -"
    },
    {
     "forObject": "gr:NetBookValuesHeading",
@@ -5000,25 +5078,49 @@
    },
    {
     "forObject": "core:PropertyPlantEquipmentGrossCost",
-    "labelType": "gr:printedLabel",
+    "labelType": "xbrl:periodStartLabel",
     "language": "en",
     "value": "At 01 June 2025"
    },
    {
+    "forObject": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Additions"
+   },
+   {
+    "forObject": "core:DisposalsPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Disposals"
+   },
+   {
     "forObject": "core:PropertyPlantEquipmentGrossCost",
-    "labelType": "gr:printed2Label",
+    "labelType": "xbrl:periodEndLabel",
     "language": "en",
     "value": "At 31 May 2026"
    },
    {
     "forObject": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
-    "labelType": "gr:printedLabel",
+    "labelType": "xbrl:periodStartLabel",
     "language": "en",
     "value": "At 01 June 2025"
    },
    {
+    "forObject": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Charge for year"
+   },
+   {
+    "forObject": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "On disposals"
+   },
+   {
     "forObject": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
-    "labelType": "gr:printed2Label",
+    "labelType": "xbrl:periodEndLabel",
     "language": "en",
     "value": "At 31 May 2026"
    },
@@ -7875,6 +7977,260 @@
     ]
    },
    {
+    "name": "gr:f145",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f145_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "347.1 638.4 351.6 653.4"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f146",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
+    },
+    "factValues": [
+     {
+      "name": "gr:f146_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "423.6 638.4 428.1 653.4"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f147",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+    },
+    "factValues": [
+     {
+      "name": "gr:f147_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "501 638.4 505.5 653.4"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f148",
+    "factDimensions": {
+     "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f148_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "577.5 638.4 582 653.4"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f150",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f150_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "347.1 618.2 351.6 633.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f151",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
+    },
+    "factValues": [
+     {
+      "name": "gr:f151_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "423.6 618.2 428.1 633.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f152",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+    },
+    "factValues": [
+     {
+      "name": "gr:f152_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "501 618.2 505.5 633.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f153",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f153_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "577.5 618.2 582 633.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f155",
     "factDimensions": {
      "xbrl:concept": "core:PropertyPlantEquipmentGrossCost",
@@ -8129,6 +8485,260 @@
     ]
    },
    {
+    "name": "gr:f166",
+    "factDimensions": {
+     "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f166_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "347.1 537.2 351.6 552.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f167",
+    "factDimensions": {
+     "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
+    },
+    "factValues": [
+     {
+      "name": "gr:f167_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "423.6 537.2 428.1 552.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f168",
+    "factDimensions": {
+     "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+    },
+    "factValues": [
+     {
+      "name": "gr:f168_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "501 537.2 505.5 552.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f169",
+    "factDimensions": {
+     "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f169_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "577.5 537.2 582 552.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f171",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
+    },
+    "factValues": [
+     {
+      "name": "gr:f171_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "347.1 516.9 351.6 531.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f172",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:Vehicles"
+    },
+    "factValues": [
+     {
+      "name": "gr:f172_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "423.6 516.9 428.1 531.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f173",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:ComputerEquipment"
+    },
+    "factValues": [
+     {
+      "name": "gr:f173_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "501 516.9 505.5 531.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f174",
+    "factDimensions": {
+     "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+     "xbrl:period": "2025-06-01T00:00:00/2026-06-01T00:00:00",
+     "xbrl:entity": "ch:07248016",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f174_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "577.5 516.9 582 531.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f176",
     "factDimensions": {
      "xbrl:concept": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
@@ -8167,7 +8777,7 @@
      "xbrl:period": "2026-06-01T00:00:00",
      "xbrl:entity": "ch:07248016",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:MotorCars"
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -9964,6 +10574,16 @@
     "formatType": "text"
    },
    {
+    "name": "xbrl:periodEndLabel",
+    "uri": "http://www.xbrl.org/2003/role/periodEndLabel",
+    "formatType": "text"
+   },
+   {
+    "name": "xbrl:periodStartLabel",
+    "uri": "http://www.xbrl.org/2003/role/periodStartLabel",
+    "formatType": "text"
+   },
+   {
     "name": "xbrl:verboseLabel",
     "uri": "http://www.xbrl.org/2003/role/verboseLabel",
     "formatType": "text"
@@ -10182,23 +10802,13 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "gr:DisposalsHeading",
+      "target": "gr:DepreciationHeading",
       "order": 2
      },
      {
       "source": "xbrl:rootSource",
-      "target": "gr:DepreciationHeading",
-      "order": 3
-     },
-     {
-      "source": "xbrl:rootSource",
-      "target": "gr:OnDisposalsHeading",
-      "order": 4
-     },
-     {
-      "source": "xbrl:rootSource",
       "target": "gr:NetBookValuesHeading",
-      "order": 5
+      "order": 3
      },
      {
       "source": "gr:MachineryHeading",
@@ -10207,18 +10817,40 @@
       "properties": [
        {
         "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodStartLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:MachineryHeading",
+      "target": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
         "value": "gr:printedLabel"
        }
       ]
      },
      {
-      "source": "gr:DisposalsHeading",
-      "target": "core:PropertyPlantEquipmentGrossCost",
-      "order": 1,
+      "source": "gr:MachineryHeading",
+      "target": "core:DisposalsPropertyPlantEquipment",
+      "order": 3,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
-        "value": "gr:printed2Label"
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:MachineryHeading",
+      "target": "core:PropertyPlantEquipmentGrossCost",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
        }
       ]
      },
@@ -10229,18 +10861,40 @@
       "properties": [
        {
         "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodStartLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:DepreciationHeading",
+      "target": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
         "value": "gr:printedLabel"
        }
       ]
      },
      {
-      "source": "gr:OnDisposalsHeading",
-      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
-      "order": 1,
+      "source": "gr:DepreciationHeading",
+      "target": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
+      "order": 3,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
-        "value": "gr:printed2Label"
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:DepreciationHeading",
+      "target": "core:AccumulatedDepreciationImpairmentPropertyPlantEquipment",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "xbrl:periodEndLabel"
        }
       ]
      },
@@ -11577,6 +12231,22 @@
      {
       "source": "xbrl:conceptDomain",
       "target": "core:DescriptionDepreciationMethodForPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DisposalsPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment"
      }
     ]
    },

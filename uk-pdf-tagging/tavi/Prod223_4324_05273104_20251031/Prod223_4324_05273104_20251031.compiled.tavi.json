@@ -8537,23 +8537,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -9568,7 +9551,9 @@
      "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PPEOwnershipDimension": "core:OwnedOrFreeholdAssets",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
     },
     "factValues": [
      {
@@ -9631,7 +9616,8 @@
      "xbrl:concept": "core:TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -9757,7 +9743,8 @@
      "xbrl:concept": "core:DisposalsPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -10078,7 +10065,9 @@
      "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PPEOwnershipDimension": "core:OwnedOrFreeholdAssets",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
     },
     "factValues": [
      {
@@ -10141,7 +10130,8 @@
      "xbrl:concept": "core:IncreaseFromDepreciationChargeForYearPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -10204,7 +10194,9 @@
      "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PPEOwnershipDimension": "core:OwnedOrFreeholdAssets",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
     },
     "factValues": [
      {
@@ -10267,7 +10259,8 @@
      "xbrl:concept": "core:DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment",
      "xbrl:period": "2024-11-01T00:00:00/2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
     },
     "factValues": [
      {
@@ -10460,7 +10453,8 @@
      "xbrl:period": "2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
      "xbrl:unit": "iso4217:GBP",
-     "core:PropertyPlantEquipmentClassesDimension": "core:MotorVehicles"
+     "core:PPEOwnershipDimension": "core:OwnedOrFreeholdAssets",
+     "core:PropertyPlantEquipmentClassesDimension": "core:LandBuildings"
     },
     "factValues": [
      {
@@ -10582,37 +10576,6 @@
     ]
    },
    {
-    "name": "gr:f211",
-    "factDimensions": {
-     "xbrl:concept": "core:IntangibleAssets",
-     "xbrl:period": "2024-11-01T00:00:00",
-     "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
-    },
-    "factValues": [
-     {
-      "name": "gr:f211_fv",
-      "value": "0",
-      "decimals": 0,
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 6
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "378.7 428.5 382.4 437.5"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
     "name": "gr:f212",
     "factDimensions": {
      "xbrl:concept": "core:IntangibleAssets",
@@ -10637,37 +10600,6 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "424.6 428.5 449.1 437.5"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "name": "gr:f213",
-    "factDimensions": {
-     "xbrl:concept": "core:IntangibleAssets",
-     "xbrl:period": "2024-11-01T00:00:00",
-     "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
-    },
-    "factValues": [
-     {
-      "name": "gr:f213_fv",
-      "value": "0",
-      "decimals": 0,
-      "reportSource": "gr:pdf",
-      "valueAnchors": [
-       {
-        "properties": [
-         {
-          "property": "xbrl:pdfPage",
-          "value": 6
-         },
-         {
-          "property": "xbrl:pdfBBox",
-          "value": "512.2 428.5 515.9 437.5"
          }
         ]
        }
@@ -11885,7 +11817,9 @@
      "xbrl:concept": "core:FurtherItemCreditorsComponentTotalCreditors",
      "xbrl:period": "2025-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "1",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments"
     },
     "factValues": [
      {
@@ -11916,7 +11850,9 @@
      "xbrl:concept": "core:FurtherItemCreditorsComponentTotalCreditors",
      "xbrl:period": "2024-11-01T00:00:00",
      "xbrl:entity": "ch:05273104",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "common:X-AnalysisDimension": "2",
+     "core:FinancialInstrumentCurrentNon-currentDimension": "core:Non-currentFinancialInstruments"
     },
     "factValues": [
      {

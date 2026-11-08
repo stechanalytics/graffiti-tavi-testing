@@ -220,6 +220,18 @@
     "nillable": true
    },
    {
+    "name": "core:DisposalsInvestmentPropertyFairValueModel",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
+   },
+   {
     "name": "core:Equity",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
@@ -307,18 +319,6 @@
     "name": "core:OtherCreditors",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
-    "nillable": true,
-    "properties": [
-     {
-      "property": "xbrla:balance",
-      "value": "credit"
-     }
-    ]
-   },
-   {
-    "name": "core:OtherDisposalsInvestmentPropertyFairValueModel",
-    "dataType": "xbrlr:monetary",
-    "periodType": "duration",
     "nillable": true,
     "properties": [
      {
@@ -1101,7 +1101,7 @@
    },
    {
     "name": "core:PropertyPlantEquipmentClassesDimension",
-    "domainClass": "core:PropertyPlantEquipmentClassesDimensionDomainClass",
+    "domainClass": "core:TotalPropertyPlantEquipmentDefault",
     "properties": [
      {
       "property": "gr:defaultMember",
@@ -1454,7 +1454,7 @@
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
-    "name": "core:PropertyPlantEquipmentClassesDimensionDomainClass",
+    "name": "core:TotalPropertyPlantEquipmentDefault",
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
@@ -1691,6 +1691,12 @@
     ]
    },
    {
+    "name": "core:PlantMachinery",
+    "domainClasses": [
+     "core:TotalPropertyPlantEquipmentDefault"
+    ]
+   },
+   {
     "name": "core:RetainedEarningsAccumulatedLosses",
     "domainClasses": [
      "core:TotalEquityDefault"
@@ -1745,15 +1751,15 @@
     ]
    },
    {
-    "name": "core:TotalPropertyPlantEquipmentDefault",
-    "domainClasses": [
-     "core:PropertyPlantEquipmentClassesDimensionDomainClass"
-    ]
-   },
-   {
     "name": "core:TotalReportedDefault",
     "domainClasses": [
      "core:ExceptionalsDimensionDomainClass"
+    ]
+   },
+   {
+    "name": "core:VehiclesPlantMachinery",
+    "domainClasses": [
+     "core:TotalPropertyPlantEquipmentDefault"
     ]
    },
    {
@@ -2375,6 +2381,18 @@
     "value": "Cyfarwyddwr sydd yn llofnodi datganiad ariannol"
    },
    {
+    "forObject": "core:DisposalsInvestmentPropertyFairValueModel",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Disposals, investment property, fair value model"
+   },
+   {
+    "forObject": "core:DisposalsInvestmentPropertyFairValueModel",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Gwarediadau, eiddo buddsoddi, model gwerth teg"
+   },
+   {
     "forObject": "core:Equity",
     "labelType": "xbrl:documentation",
     "language": "en",
@@ -2517,18 +2535,6 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Credydwyr eraill"
-   },
-   {
-    "forObject": "core:OtherDisposalsInvestmentPropertyFairValueModel",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Other disposals, investment property, fair value model"
-   },
-   {
-    "forObject": "core:OtherDisposalsInvestmentPropertyFairValueModel",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Gwarediadau eraill, eiddo buddsoddi, model gwerth teg"
    },
    {
     "forObject": "core:PropertyPlantEquipment",
@@ -3995,6 +4001,18 @@
     "value": "Dosbarthiadau eiddo, offer a chyfarpar [Dimensiwn]"
    },
    {
+    "forObject": "core:TotalPropertyPlantEquipmentDefault",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Total property, plant and equipment [default]"
+   },
+   {
+    "forObject": "core:TotalPropertyPlantEquipmentDefault",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfanswm eiddo, offer a chyfarpar [diofyn]"
+   },
+   {
     "forObject": "core:RegionCountryIssuerRiskDimension",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4451,6 +4469,18 @@
     "value": "Offerynnau ariannol, ac eithrio rhai a ddelir i'w gwerthu [diofyn]"
    },
    {
+    "forObject": "core:PlantMachinery",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Plant and machinery"
+   },
+   {
+    "forObject": "core:PlantMachinery",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarpar a pheirianwaith"
+   },
+   {
     "forObject": "core:RetainedEarningsAccumulatedLosses",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4559,18 +4589,6 @@
     "value": "Cyfanswm asedau PPE a berchnogir ac ar brydles [diofyn]"
    },
    {
-    "forObject": "core:TotalPropertyPlantEquipmentDefault",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Total property, plant and equipment [default]"
-   },
-   {
-    "forObject": "core:TotalPropertyPlantEquipmentDefault",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Cyfanswm eiddo, offer a chyfarpar [diofyn]"
-   },
-   {
     "forObject": "core:TotalReportedDefault",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4581,6 +4599,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Cyfanswm yr adroddwyd arnynt [diofyn]"
+   },
+   {
+    "forObject": "core:VehiclesPlantMachinery",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Vehicles, plant and machinery"
+   },
+   {
+    "forObject": "core:VehiclesPlantMachinery",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cerbydau, offer a pheiriannau"
    },
    {
     "forObject": "core:WithinOneYear",
@@ -4703,7 +4733,7 @@
     "value": "Fair value at 1 May 2025"
    },
    {
-    "forObject": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+    "forObject": "core:DisposalsInvestmentPropertyFairValueModel",
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Disposals"
@@ -7165,7 +7195,7 @@
    {
     "name": "gr:f130",
     "factDimensions": {
-     "xbrl:concept": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+     "xbrl:concept": "core:DisposalsInvestmentPropertyFairValueModel",
      "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
      "xbrl:entity": "ch:15651172",
      "xbrl:unit": "iso4217:GBP"
@@ -7199,7 +7229,8 @@
      "xbrl:concept": "core:PropertyPlantEquipment",
      "xbrl:period": "2026-05-01T00:00:00",
      "xbrl:entity": "ch:15651172",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
     },
     "factValues": [
      {
@@ -8603,7 +8634,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+      "target": "core:DisposalsInvestmentPropertyFairValueModel",
       "order": 2,
       "properties": [
        {
@@ -9921,11 +9952,15 @@
    },
    {
     "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PropertyPlantEquipmentClassesDimension",
-    "root": "core:PropertyPlantEquipmentClassesDimensionDomainClass",
+    "root": "core:TotalPropertyPlantEquipmentDefault",
     "relationships": [
      {
-      "source": "core:PropertyPlantEquipmentClassesDimensionDomainClass",
-      "target": "core:TotalPropertyPlantEquipmentDefault"
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:VehiclesPlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:PlantMachinery"
      }
     ]
    },
@@ -10043,7 +10078,7 @@
     "relationships": [
      {
       "source": "xbrl:conceptDomain",
-      "target": "core:OtherDisposalsInvestmentPropertyFairValueModel"
+      "target": "core:DisposalsInvestmentPropertyFairValueModel"
      }
     ]
    },

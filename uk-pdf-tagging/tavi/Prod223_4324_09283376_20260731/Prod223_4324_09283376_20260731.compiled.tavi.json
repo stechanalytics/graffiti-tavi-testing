@@ -51,7 +51,7 @@
     "name": "gr:NetBookValueHeading"
    },
    {
-    "name": "gr:BalanceOutstandingAtStartOfPeriodHeading"
+    "name": "gr:JSutheranAndJSutheranHeading"
    }
   ],
   "concepts": [
@@ -374,6 +374,18 @@
     ]
    },
    {
+    "name": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
+   },
+   {
     "name": "core:NetAssetsLiabilities",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
@@ -456,6 +468,12 @@
       "value": "debit"
      }
     ]
+   },
+   {
+    "name": "direp:AmountSpecificAdvanceOrCreditDirectors",
+    "dataType": "xbrlr:monetary",
+    "periodType": "instant",
+    "nillable": true
    },
    {
     "name": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
@@ -724,7 +742,7 @@
    },
    {
     "name": "business:EntityOfficersDimension",
-    "domainClass": "business:EntityOfficersDimensionDomainClass",
+    "domainClass": "business:AllEntityOfficersEntityOfficersTotalDefault",
     "properties": [
      {
       "property": "gr:defaultMember",
@@ -1401,7 +1419,7 @@
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
-    "name": "business:EntityOfficersDimensionDomainClass",
+    "name": "business:AllEntityOfficersEntityOfficersTotalDefault",
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
@@ -1691,12 +1709,6 @@
     ]
    },
    {
-    "name": "business:AllEntityOfficersEntityOfficersTotalDefault",
-    "domainClasses": [
-     "business:EntityOfficersDimensionDomainClass"
-    ]
-   },
-   {
     "name": "business:AuditExemptWithAccountantsReport",
     "domainClasses": [
      "business:AccountsStatusHeading"
@@ -1718,6 +1730,12 @@
     "name": "business:CurrentlyStatedDefault",
     "domainClasses": [
      "business:OriginalRevisedDataDimensionDomainClass"
+    ]
+   },
+   {
+    "name": "business:Director1",
+    "domainClasses": [
+     "business:AllEntityOfficersEntityOfficersTotalDefault"
     ]
    },
    {
@@ -1865,6 +1883,12 @@
     "name": "core:FurnitureFittingsToolsEquipment",
     "domainClasses": [
      "core:TotalPropertyPlantEquipmentDefault"
+    ]
+   },
+   {
+    "name": "core:FurtherSpecificReserve3ComponentTotalEquity",
+    "domainClasses": [
+     "core:TotalEquityDefault"
     ]
    },
    {
@@ -2780,6 +2804,18 @@
     "value": "Cynnydd o gost dibrisiad ar gyfer y flwyddyn, eiddo, offer a chyfarpar"
    },
    {
+    "forObject": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Investment income, net of amounts written off (back to) investments"
+   },
+   {
+    "forObject": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Incwm buddsoddi, net o symiau buddsoddiadau a ddilëwyd (dychwelyd)"
+   },
+   {
     "forObject": "core:NetAssetsLiabilities",
     "labelType": "xbrl:label",
     "language": "en",
@@ -2910,6 +2946,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Cyfanswm yr asedau llai'r rhwymedigaethau cyfredol"
+   },
+   {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditDirectors",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Amount of specific advance or credit, directors"
+   },
+   {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditDirectors",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Swm blaenswm neu gredyd penodol, cyfarwyddwyr"
    },
    {
     "forObject": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
@@ -3198,6 +3246,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Swyddogion yr endid [Dimensiwn]"
+   },
+   {
+    "forObject": "business:AllEntityOfficersEntityOfficersTotalDefault",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "All entity officers / Entity officers total [default]"
+   },
+   {
+    "forObject": "business:AllEntityOfficersEntityOfficersTotalDefault",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Pob swyddog endid / cyfanswm swyddogion endid [diofyn]"
    },
    {
     "forObject": "business:EntityTradingStatusDimension",
@@ -4568,18 +4628,6 @@
     "value": "Pob math o swyddog endid [diofyn]"
    },
    {
-    "forObject": "business:AllEntityOfficersEntityOfficersTotalDefault",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "All entity officers / Entity officers total [default]"
-   },
-   {
-    "forObject": "business:AllEntityOfficersEntityOfficersTotalDefault",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Pob swyddog endid / cyfanswm swyddogion endid [diofyn]"
-   },
-   {
     "forObject": "business:AuditExemptWithAccountantsReport",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4626,6 +4674,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Wedi'i nodi ar hyn o bryd [diofyn]"
+   },
+   {
+    "forObject": "business:Director1",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Director 1"
+   },
+   {
+    "forObject": "business:Director1",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfarwyddwr 1"
    },
    {
     "forObject": "business:EntityTradingDefault",
@@ -4856,6 +4916,18 @@
     "value": "Dodrefn, ffitiadau, cyfarpar ac offer"
    },
    {
+    "forObject": "core:FurtherSpecificReserve3ComponentTotalEquity",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Further specific reserve 3 [component of total equity]"
+   },
+   {
+    "forObject": "core:FurtherSpecificReserve3ComponentTotalEquity",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cronfa wrth gefn benodol arall 3 [rhan o gyfanswm ecwiti]"
+   },
+   {
     "forObject": "core:OfficeEquipment",
     "labelType": "xbrl:label",
     "language": "en",
@@ -5078,10 +5150,10 @@
     "value": "5. DIRECTORS' ADVANCES, CREDITS AND GUARANTEES"
    },
    {
-    "forObject": "gr:BalanceOutstandingAtStartOfPeriodHeading",
+    "forObject": "gr:JSutheranAndJSutheranHeading",
     "labelType": "xbrl:label",
     "language": "en",
-    "value": "Balance outstanding at start of period - -"
+    "value": "J Sutheran and J Sutheran"
    },
    {
     "forObject": "core:PropertyPlantEquipment",
@@ -5180,6 +5252,12 @@
     "value": "At 30 April 2025"
    },
    {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditDirectors",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Balance outstanding at start of period"
+   },
+   {
     "forObject": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
     "labelType": "gr:printedLabel",
     "language": "en",
@@ -5190,6 +5268,18 @@
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Amounts repaid"
+   },
+   {
+    "forObject": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Amounts written off"
+   },
+   {
+    "forObject": "core:Equity",
+    "labelType": "gr:printed2Label",
+    "language": "en",
+    "value": "Amounts waived"
    },
    {
     "forObject": "gr:Hypercube-Basic_BasicHypercube",
@@ -7199,23 +7289,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -8249,12 +8322,80 @@
     ]
    },
    {
+    "name": "gr:f204",
+    "factDimensions": {
+     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
+     "xbrl:period": "2026-08-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "1"
+    },
+    "factValues": [
+     {
+      "name": "gr:f204_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "400.3 499.7 403.6 510.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f205",
+    "factDimensions": {
+     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
+     "xbrl:period": "2025-05-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "2"
+    },
+    "factValues": [
+     {
+      "name": "gr:f205_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 499.7 469.8 510.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f207",
     "factDimensions": {
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
      "xbrl:period": "2025-05-01T00:00:00/2026-08-01T00:00:00",
      "xbrl:entity": "ch:09283376",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "3"
     },
     "factValues": [
      {
@@ -8285,7 +8426,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
      "xbrl:period": "2024-05-01T00:00:00/2025-05-01T00:00:00",
      "xbrl:entity": "ch:09283376",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "4"
     },
     "factValues": [
      {
@@ -8316,7 +8459,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
      "xbrl:period": "2025-05-01T00:00:00/2026-08-01T00:00:00",
      "xbrl:entity": "ch:09283376",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "5"
     },
     "factValues": [
      {
@@ -8347,7 +8492,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
      "xbrl:period": "2024-05-01T00:00:00/2025-05-01T00:00:00",
      "xbrl:entity": "ch:09283376",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "6"
     },
     "factValues": [
      {
@@ -8365,6 +8512,166 @@
          {
           "property": "xbrl:pdfBBox",
           "value": "447.9 477.2 472.3 488.4"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f213",
+    "factDimensions": {
+     "xbrl:concept": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+     "xbrl:period": "2025-05-01T00:00:00/2026-08-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f213_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "400.3 465.9 403.6 477.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f214",
+    "factDimensions": {
+     "xbrl:concept": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+     "xbrl:period": "2024-05-01T00:00:00/2025-05-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f214_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 465.9 469.8 477.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f217",
+    "factDimensions": {
+     "xbrl:concept": "core:Equity",
+     "xbrl:period": "2025-05-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP",
+     "core:EquityClassesDimension": "core:FurtherSpecificReserve3ComponentTotalEquity"
+    },
+    "factValues": [
+     {
+      "name": "gr:f217_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 454.7 469.8 465.9"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f219",
+    "factDimensions": {
+     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
+     "xbrl:period": "2026-08-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "7"
+    },
+    "factValues": [
+     {
+      "name": "gr:f219_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "400.3 443.4 403.6 454.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f220",
+    "factDimensions": {
+     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
+     "xbrl:period": "2025-05-01T00:00:00",
+     "xbrl:entity": "ch:09283376",
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "8"
+    },
+    "factValues": [
+     {
+      "name": "gr:f220_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 7
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "466.5 443.4 469.8 454.7"
          }
         ]
        }
@@ -10421,12 +10728,12 @@
     "relationships": [
      {
       "source": "xbrl:rootSource",
-      "target": "gr:BalanceOutstandingAtStartOfPeriodHeading",
+      "target": "gr:JSutheranAndJSutheranHeading",
       "order": 1
      },
      {
-      "source": "gr:BalanceOutstandingAtStartOfPeriodHeading",
-      "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+      "source": "gr:JSutheranAndJSutheranHeading",
+      "target": "direp:AmountSpecificAdvanceOrCreditDirectors",
       "order": 1,
       "properties": [
        {
@@ -10436,13 +10743,46 @@
       ]
      },
      {
-      "source": "gr:BalanceOutstandingAtStartOfPeriodHeading",
-      "target": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
+      "source": "gr:JSutheranAndJSutheranHeading",
+      "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
       "order": 2,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
         "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:JSutheranAndJSutheranHeading",
+      "target": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
+      "order": 3,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:JSutheranAndJSutheranHeading",
+      "target": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments",
+      "order": 4,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:JSutheranAndJSutheranHeading",
+      "target": "core:Equity",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printed2Label"
        }
       ]
      }
@@ -11394,11 +11734,11 @@
    },
    {
     "name": "gr:Hypercube-EntityOfficers_EntityOfficersHypercube_EntityOfficersDimension",
-    "root": "business:EntityOfficersDimensionDomainClass",
+    "root": "business:AllEntityOfficersEntityOfficersTotalDefault",
     "relationships": [
      {
-      "source": "business:EntityOfficersDimensionDomainClass",
-      "target": "business:AllEntityOfficersEntityOfficersTotalDefault"
+      "source": "business:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "business:Director1"
      }
     ]
    },
@@ -12683,6 +13023,10 @@
      {
       "source": "xbrl:conceptDomain",
       "target": "core:EmployeeInformationFree-textComment"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "core:InvestmentIncomeNetAmountsWrittenOffBackToInvestments"
      }
     ]
    },
@@ -13604,6 +13948,10 @@
      },
      {
       "source": "core:TotalEquityDefault",
+      "target": "core:FurtherSpecificReserve3ComponentTotalEquity"
+     },
+     {
+      "source": "core:TotalEquityDefault",
       "target": "core:RetainedEarningsAccumulatedLosses"
      }
     ]
@@ -13665,6 +14013,10 @@
      {
       "source": "core:TotalEquityDefault",
       "target": "core:ShareCapital"
+     },
+     {
+      "source": "core:TotalEquityDefault",
+      "target": "core:FurtherSpecificReserve3ComponentTotalEquity"
      },
      {
       "source": "core:TotalEquityDefault",
@@ -13918,6 +14270,10 @@
     "relationships": [
      {
       "source": "xbrl:conceptDomain",
+      "target": "direp:AmountSpecificAdvanceOrCreditDirectors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
       "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors"
      },
      {
@@ -13928,11 +14284,11 @@
    },
    {
     "name": "gr:Hypercube-EntityOfficersGrouping1_EntityOfficersHypercube_EntityOfficersDimension",
-    "root": "business:EntityOfficersDimensionDomainClass",
+    "root": "business:AllEntityOfficersEntityOfficersTotalDefault",
     "relationships": [
      {
-      "source": "business:EntityOfficersDimensionDomainClass",
-      "target": "business:AllEntityOfficersEntityOfficersTotalDefault"
+      "source": "business:AllEntityOfficersEntityOfficersTotalDefault",
+      "target": "business:Director1"
      }
     ]
    },

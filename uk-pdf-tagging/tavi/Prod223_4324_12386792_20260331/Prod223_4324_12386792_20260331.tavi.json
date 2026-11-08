@@ -240,7 +240,6 @@
      "core:LandBuildings",
      "core:Non-currentFinancialInstruments",
      "core:OwnedOrFreeholdAssets",
-     "core:PreviouslyStatedAmount",
      "core:RetainedEarningsAccumulatedLosses",
      "core:RevaluationInvestmentPropertyDeferredTax",
      "core:ShareCapital",
@@ -1697,23 +1696,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -2880,14 +2862,108 @@
     ]
    },
    {
+    "name": "gr:f153",
+    "factDimensions": {
+     "xbrl:concept": "core:ComprehensiveIncomeExpense",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:12386792",
+     "xbrl:unit": "iso4217:GBP",
+     "core:EquityClassesDimension": "core:ShareCapital"
+    },
+    "factValues": [
+     {
+      "name": "gr:f153_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "441.1 600.4 444.4 611.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f154",
+    "factDimensions": {
+     "xbrl:concept": "core:ComprehensiveIncomeExpense",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:12386792",
+     "xbrl:unit": "iso4217:GBP",
+     "core:EquityClassesDimension": "core:RetainedEarningsAccumulatedLosses"
+    },
+    "factValues": [
+     {
+      "name": "gr:f154_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "515.4 600.4 518.7 611.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f155",
+    "factDimensions": {
+     "xbrl:concept": "core:ComprehensiveIncomeExpense",
+     "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
+     "xbrl:entity": "ch:12386792",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f155_fv",
+      "value": "0",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 6
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "585.3 600.4 588.7 611.7"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f160",
     "factDimensions": {
      "xbrl:concept": "core:Equity",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:12386792",
      "xbrl:unit": "iso4217:GBP",
-     "core:EquityClassesDimension": "core:ShareCapital",
-     "core:RestatementsFirstTimeAdoptionDimension": "core:PreviouslyStatedAmount"
+     "core:EquityClassesDimension": "core:ShareCapital"
     },
     "factValues": [
      {
@@ -3708,7 +3784,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:12386792",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "1"
     },
     "factValues": [
      {
@@ -5902,17 +5980,6 @@
       "order": 1
      },
      {
-      "source": "xbrl:rootSource",
-      "target": "core:Equity",
-      "order": 2,
-      "properties": [
-       {
-        "property": "xbrl:preferredLabel",
-        "value": "gr:printed2Label"
-       }
-      ]
-     },
-     {
       "source": "gr:ShareCapitalHeading",
       "target": "core:Equity",
       "order": 1,
@@ -5953,6 +6020,17 @@
        {
         "property": "xbrl:preferredLabel",
         "value": "xbrl:periodEndLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:ShareCapitalHeading",
+      "target": "core:Equity",
+      "order": 5,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printed2Label"
        }
       ]
      }
@@ -7192,7 +7270,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7306,7 +7384,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7350,7 +7428,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7470,7 +7548,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7754,7 +7832,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7860,7 +7938,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7890,7 +7968,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -7934,7 +8012,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8026,7 +8104,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8056,7 +8134,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8204,7 +8282,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8296,7 +8374,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8408,7 +8486,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8564,7 +8642,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8660,7 +8738,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8800,7 +8878,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8852,7 +8930,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -8948,7 +9026,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -9046,7 +9124,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    },
@@ -9108,7 +9186,7 @@
     "relationships": [
      {
       "source": "core:RestatementsFirstTimeAdoptionHeading",
-      "target": "core:PreviouslyStatedAmount"
+      "target": "core:CurrentlyStatedAmountDefault"
      }
     ]
    }

@@ -641,6 +641,18 @@
     ]
    },
    {
+    "name": "core:OtherTaxationPayable",
+    "dataType": "xbrlr:monetary",
+    "periodType": "instant",
+    "nillable": true,
+    "properties": [
+     {
+      "property": "xbrla:balance",
+      "value": "credit"
+     }
+    ]
+   },
+   {
     "name": "core:OtherTaxationSocialSecurityPayable",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
@@ -812,6 +824,12 @@
     "name": "direp:AmountSpecificAdvanceOrCreditDirectors",
     "dataType": "xbrlr:monetary",
     "periodType": "instant",
+    "nillable": true
+   },
+   {
+    "name": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+    "dataType": "xbrlr:monetary",
+    "periodType": "duration",
     "nillable": true
    },
    {
@@ -4034,6 +4052,18 @@
     "value": "Buddsoddiadau eraill ac eithrio benthyciadau"
    },
    {
+    "forObject": "core:OtherTaxationPayable",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Other taxation payable"
+   },
+   {
+    "forObject": "core:OtherTaxationPayable",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Trethi eraill taladwy"
+   },
+   {
     "forObject": "core:OtherTaxationSocialSecurityPayable",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4356,6 +4386,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Swm blaenswm neu gredyd penodol, cyfarwyddwyr"
+   },
+   {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Amount of specific advance or credit made in period, directors"
+   },
+   {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Swm blaenswm neu gredyd penodol a roddwyd yn ystod y cyfnod, cyfarwyddwyr"
    },
    {
     "forObject": "direp:StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime",
@@ -7370,6 +7412,12 @@
     "value": "Other taxation and social security"
    },
    {
+    "forObject": "core:OtherTaxationPayable",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Other taxation and social security"
+   },
+   {
     "forObject": "core:AccruedLiabilitiesDeferredIncome",
     "labelType": "gr:printedLabel",
     "language": "en",
@@ -7419,6 +7467,12 @@
    },
    {
     "forObject": "direp:AmountSpecificAdvanceOrCreditDirectors",
+    "labelType": "gr:printedLabel",
+    "language": "en",
+    "value": "Temporary Advances"
+   },
+   {
+    "forObject": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Temporary Advances"
@@ -10438,23 +10492,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -13367,7 +13404,7 @@
    {
     "name": "gr:f437",
     "factDimensions": {
-     "xbrl:concept": "core:OtherTaxationSocialSecurityPayable",
+     "xbrl:concept": "core:OtherTaxationPayable",
      "xbrl:period": "2024-10-01T00:00:00",
      "xbrl:entity": "ch:11594415",
      "xbrl:unit": "iso4217:GBP",
@@ -13914,7 +13951,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
      "xbrl:period": "2025-10-01T00:00:00",
      "xbrl:entity": "ch:11594415",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "1"
     },
     "factValues": [
      {
@@ -13942,10 +13981,12 @@
    {
     "name": "gr:f513",
     "factDimensions": {
-     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
-     "xbrl:period": "2024-10-01T00:00:00",
+     "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+     "xbrl:period": "2023-10-01T00:00:00/2024-10-01T00:00:00",
      "xbrl:entity": "ch:11594415",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "2"
     },
     "factValues": [
      {
@@ -17485,13 +17526,24 @@
      },
      {
       "source": "xbrl:rootSource",
+      "target": "core:OtherTaxationPayable",
+      "order": 6,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "xbrl:rootSource",
       "target": "core:OtherCreditors",
-      "order": 6
+      "order": 7
      },
      {
       "source": "xbrl:rootSource",
       "target": "core:AccruedLiabilitiesDeferredIncome",
-      "order": 7,
+      "order": 8,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -17502,7 +17554,7 @@
      {
       "source": "xbrl:rootSource",
       "target": "core:Creditors",
-      "order": 8,
+      "order": 9,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -17635,6 +17687,17 @@
       "source": "gr:AdvancedHeading",
       "target": "direp:AmountSpecificAdvanceOrCreditDirectors",
       "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:preferredLabel",
+        "value": "gr:printedLabel"
+       }
+      ]
+     },
+     {
+      "source": "gr:AdvancedHeading",
+      "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
+      "order": 2,
       "properties": [
        {
         "property": "xbrl:preferredLabel",
@@ -22086,6 +22149,10 @@
      },
      {
       "source": "xbrl:conceptDomain",
+      "target": "core:OtherTaxationPayable"
+     },
+     {
+      "source": "xbrl:conceptDomain",
       "target": "core:OtherCreditors"
      }
     ]
@@ -22955,6 +23022,10 @@
      {
       "source": "xbrl:conceptDomain",
       "target": "direp:AmountSpecificAdvanceOrCreditDirectors"
+     },
+     {
+      "source": "xbrl:conceptDomain",
+      "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors"
      }
     ]
    },

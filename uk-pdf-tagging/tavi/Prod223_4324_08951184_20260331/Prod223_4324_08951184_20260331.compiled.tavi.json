@@ -55,9 +55,6 @@
    },
    {
     "name": "gr:JHeatonHeading"
-   },
-   {
-    "name": "gr:AmountsWaivedHeading"
    }
   ],
   "concepts": [
@@ -5600,12 +5597,6 @@
     "value": "J Heaton"
    },
    {
-    "forObject": "gr:AmountsWaivedHeading",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Amounts waived - -"
-   },
-   {
     "forObject": "core:IntangibleAssets",
     "labelType": "gr:printedLabel",
     "language": "en",
@@ -8090,23 +8081,6 @@
       "optional": true
      }
     ]
-   },
-   {
-    "name": "gr:cube1",
-    "cubeDimensions": [
-     {
-      "dimension": "xbrl:concept"
-     },
-     {
-      "dimension": "xbrl:period"
-     },
-     {
-      "dimension": "xbrl:entity"
-     },
-     {
-      "dimension": "xbrl:unit"
-     }
-    ]
    }
   ],
   "facts": [
@@ -9362,7 +9336,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "1"
     },
     "factValues": [
      {
@@ -9393,7 +9369,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
      "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "2"
     },
     "factValues": [
      {
@@ -9424,7 +9402,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
      "xbrl:period": "2025-04-01T00:00:00/2026-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "3"
     },
     "factValues": [
      {
@@ -9455,7 +9435,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditRepaidInPeriodDirectors",
      "xbrl:period": "2024-04-01T00:00:00/2025-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "4"
     },
     "factValues": [
      {
@@ -9486,7 +9468,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "5"
     },
     "factValues": [
      {
@@ -9517,7 +9501,9 @@
      "xbrl:concept": "direp:AmountSpecificAdvanceOrCreditDirectors",
      "xbrl:period": "2025-04-01T00:00:00",
      "xbrl:entity": "ch:08951184",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "business:EntityOfficersDimension": "business:Director1",
+     "direp:X-SpecificAdvanceOrCreditDirectorsGroupingDimension": "6"
     },
     "factValues": [
      {
@@ -11934,11 +11920,6 @@
       "order": 1
      },
      {
-      "source": "xbrl:rootSource",
-      "target": "gr:AmountsWaivedHeading",
-      "order": 2
-     },
-     {
       "source": "gr:JHeatonHeading",
       "target": "direp:AmountSpecificAdvanceOrCreditMadeInPeriodDirectors",
       "order": 1,
@@ -11961,9 +11942,9 @@
       ]
      },
      {
-      "source": "gr:AmountsWaivedHeading",
+      "source": "gr:JHeatonHeading",
       "target": "direp:AmountSpecificAdvanceOrCreditDirectors",
-      "order": 1,
+      "order": 3,
       "properties": [
        {
         "property": "xbrl:preferredLabel",

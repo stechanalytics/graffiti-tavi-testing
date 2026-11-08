@@ -65,6 +65,7 @@
      "core:Creditors",
      "core:DateAuthorisationFinancialStatementsForIssue",
      "core:DirectorSigningFinancialStatements",
+     "core:DisposalsInvestmentPropertyFairValueModel",
      "core:Equity",
      "core:FunctionalPresentationCurrencyPolicy",
      "core:GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements",
@@ -74,7 +75,6 @@
      "core:NetAssetsLiabilities",
      "core:NetCurrentAssetsLiabilities",
      "core:OtherCreditors",
-     "core:OtherDisposalsInvestmentPropertyFairValueModel",
      "core:PropertyPlantEquipment",
      "core:StatementComplianceWithApplicableReportingFramework",
      "core:TotalAssetsLessCurrentLiabilities",
@@ -239,9 +239,11 @@
      "core:CarryingValueDefault",
      "core:CurrentFinancialInstruments",
      "core:CurrentlyStatedAmountDefault",
+     "core:PlantMachinery",
      "core:RetainedEarningsAccumulatedLosses",
      "core:ShareCapital",
      "core:TotalGeographicSegmentsIncludingAnyUnallocatedAmount",
+     "core:VehiclesPlantMachinery",
      "core:WithinOneYear",
      "countries:EnglandWales",
      "countries:HomeCountriesHeading",
@@ -685,6 +687,11 @@
      {
       "dimension": "xbrl:concept",
       "domainNetwork": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_concepts"
+     },
+     {
+      "dimension": "core:PropertyPlantEquipmentClassesDimension",
+      "domainNetwork": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PropertyPlantEquipmentClassesDimension",
+      "optional": true
      },
      {
       "dimension": "core:GeographicSegmentsDimension",
@@ -2230,7 +2237,7 @@
    {
     "name": "gr:f130",
     "factDimensions": {
-     "xbrl:concept": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+     "xbrl:concept": "core:DisposalsInvestmentPropertyFairValueModel",
      "xbrl:period": "2025-05-01T00:00:00/2026-05-01T00:00:00",
      "xbrl:entity": "ch:15651172",
      "xbrl:unit": "iso4217:GBP"
@@ -2264,7 +2271,8 @@
      "xbrl:concept": "core:PropertyPlantEquipment",
      "xbrl:period": "2026-05-01T00:00:00",
      "xbrl:entity": "ch:15651172",
-     "xbrl:unit": "iso4217:GBP"
+     "xbrl:unit": "iso4217:GBP",
+     "core:PropertyPlantEquipmentClassesDimension": "core:PlantMachinery"
     },
     "factValues": [
      {
@@ -3664,7 +3672,7 @@
      },
      {
       "source": "xbrl:rootSource",
-      "target": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+      "target": "core:DisposalsInvestmentPropertyFairValueModel",
       "order": 2,
       "properties": [
        {
@@ -4443,7 +4451,7 @@
     "value": "Fair value at 1 May 2025"
    },
    {
-    "forObject": "core:OtherDisposalsInvestmentPropertyFairValueModel",
+    "forObject": "core:DisposalsInvestmentPropertyFairValueModel",
     "labelType": "gr:printedLabel",
     "language": "en",
     "value": "Disposals"
@@ -5071,6 +5079,20 @@
     ]
    },
    {
+    "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_PropertyPlantEquipmentClassesDimension",
+    "root": "core:TotalPropertyPlantEquipmentDefault",
+    "relationships": [
+     {
+      "source": "core:TotalPropertyPlantEquipmentDefault",
+      "target": "core:VehiclesPlantMachinery"
+     },
+     {
+      "source": "core:VehiclesPlantMachinery",
+      "target": "core:PlantMachinery"
+     }
+    ]
+   },
+   {
     "name": "gr:Hypercube-PPE-Segments_PPE-SegmentsHypercube_GeographicSegmentsDimension",
     "root": "core:GeographicSegmentsHeading",
     "relationships": [
@@ -5144,7 +5166,7 @@
     "relationships": [
      {
       "source": "xbrl:conceptDomain",
-      "target": "core:OtherDisposalsInvestmentPropertyFairValueModel"
+      "target": "core:DisposalsInvestmentPropertyFairValueModel"
      }
     ]
    },

@@ -48,9 +48,6 @@
    },
    {
     "name": "gr:NetBookValueHeading"
-   },
-   {
-    "name": "gr:DisposalsHeading"
    }
   ],
   "concepts": [
@@ -983,7 +980,7 @@
    },
    {
     "name": "core:FinancialInstrumentCurrentNon-currentDimension",
-    "domainClass": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "domainClass": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "properties": [
      {
       "property": "gr:defaultMember",
@@ -1514,7 +1511,7 @@
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
-    "name": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "name": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "allowedDomainItem": "xbrl:memberObject"
    },
    {
@@ -1799,6 +1796,12 @@
     ]
    },
    {
+    "name": "core:AfterOneYear",
+    "domainClasses": [
+     "core:AllPeriods"
+    ]
+   },
+   {
     "name": "core:AllContractTypesDefault",
     "domainClasses": [
      "core:FinanceLeaseContractTypeDimensionDomainClass"
@@ -1821,12 +1824,6 @@
     "name": "core:ContinuingDiscontinuedOperationsTotalDefault",
     "domainClasses": [
      "core:ContinuingDiscontinuedOperationsDimensionDomainClass"
-    ]
-   },
-   {
-    "name": "core:CurrentFinancialInstruments",
-    "domainClasses": [
-     "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
     ]
    },
    {
@@ -1887,6 +1884,12 @@
     "name": "core:TotalAllowanceAccountDefault",
     "domainClasses": [
      "core:AllowanceAccountMeasurementTypeDimensionDomainClass"
+    ]
+   },
+   {
+    "name": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "domainClasses": [
+     "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass"
     ]
    },
    {
@@ -3732,18 +3735,6 @@
     "value": "Offeryn ariannol cyfredol ac anghyfredol [Dimensiwn]"
    },
    {
-    "forObject": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Total current and non-current financial instruments [default]"
-   },
-   {
-    "forObject": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Cyfanswm offerynnau ariannol cyfredol ac anghyfredol [diofyn]"
-   },
-   {
     "forObject": "core:FinancialInstrumentLevelDimension",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4656,6 +4647,18 @@
     "value": "Ddim yn gymwys [diofyn]"
    },
    {
+    "forObject": "core:AfterOneYear",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "After one year"
+   },
+   {
+    "forObject": "core:AfterOneYear",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Ar ôl blwyddyn"
+   },
+   {
     "forObject": "core:AllContractTypesDefault",
     "labelType": "xbrl:label",
     "language": "en",
@@ -4702,18 +4705,6 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Gweithrediad sy'n parhau ac a derfynwyd, cyfanswm [diofyn]"
-   },
-   {
-    "forObject": "core:CurrentFinancialInstruments",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Current financial instruments"
-   },
-   {
-    "forObject": "core:CurrentFinancialInstruments",
-    "labelType": "xbrl:label",
-    "language": "cy",
-    "value": "Offerynnau ariannol cyfredol"
    },
    {
     "forObject": "core:CurrentlyStatedAmountDefault",
@@ -4834,6 +4825,18 @@
     "labelType": "xbrl:label",
     "language": "cy",
     "value": "Cyfrif cyfanswm lwfans [diofyn]"
+   },
+   {
+    "forObject": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "labelType": "xbrl:label",
+    "language": "en",
+    "value": "Total current and non-current financial instruments [default]"
+   },
+   {
+    "forObject": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "labelType": "xbrl:label",
+    "language": "cy",
+    "value": "Cyfanswm offerynnau ariannol cyfredol ac anghyfredol [diofyn]"
    },
    {
     "forObject": "core:TotalCurrentNon-currentInventoriesDefault",
@@ -5080,12 +5083,6 @@
     "labelType": "xbrl:label",
     "language": "en",
     "value": "5 Debtors 2026 2025"
-   },
-   {
-    "forObject": "gr:DisposalsHeading",
-    "labelType": "xbrl:label",
-    "language": "en",
-    "value": "Disposals -"
    },
    {
     "forObject": "gr:Note6CreditorsAmountsFallingDueWithinOneYear",
@@ -8737,9 +8734,7 @@
      "xbrl:concept": "core:TradeDebtorsTradeReceivables",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:09557724",
-     "xbrl:unit": "iso4217:GBP",
-     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments",
-     "core:MaturitiesOrExpirationPeriodsDimension": "core:WithinOneYear"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -8801,8 +8796,7 @@
      "xbrl:concept": "core:OtherDebtors",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:09557724",
-     "xbrl:unit": "iso4217:GBP",
-     "core:FinancialInstrumentCurrentNon-currentDimension": "core:CurrentFinancialInstruments"
+     "xbrl:unit": "iso4217:GBP"
     },
     "factValues": [
      {
@@ -8859,13 +8853,75 @@
     ]
    },
    {
+    "name": "gr:f227",
+    "factDimensions": {
+     "xbrl:concept": "core:Debtors",
+     "xbrl:period": "2026-04-01T00:00:00",
+     "xbrl:entity": "ch:09557724",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f227_fv",
+      "value": "104740",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 4
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "342.3 144.9 377.5 156.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "gr:f228",
+    "factDimensions": {
+     "xbrl:concept": "core:Debtors",
+     "xbrl:period": "2025-04-01T00:00:00",
+     "xbrl:entity": "ch:09557724",
+     "xbrl:unit": "iso4217:GBP"
+    },
+    "factValues": [
+     {
+      "name": "gr:f228_fv",
+      "value": "11302",
+      "decimals": 0,
+      "reportSource": "gr:pdf",
+      "valueAnchors": [
+       {
+        "properties": [
+         {
+          "property": "xbrl:pdfPage",
+          "value": 4
+         },
+         {
+          "property": "xbrl:pdfBBox",
+          "value": "422.4 144.9 451.5 156.2"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "gr:f236",
     "factDimensions": {
      "xbrl:concept": "core:FinanceLeaseLiabilitiesPresentValueTotal",
      "xbrl:period": "2026-04-01T00:00:00",
      "xbrl:entity": "ch:09557724",
      "xbrl:unit": "iso4217:GBP",
-     "core:MaturitiesOrExpirationPeriodsDimension": "core:WithinOneYear"
+     "core:MaturitiesOrExpirationPeriodsDimension": "core:AfterOneYear"
     },
     "factValues": [
      {
@@ -10634,6 +10690,11 @@
     "order": 1
    },
    {
+    "groupName": "gr:Note5Debtors20262025",
+    "forObject": "gr:Note5Debtors20262025_calculation",
+    "order": 2
+   },
+   {
     "groupName": "gr:Note6CreditorsAmountsFallingDueWithinOneYear",
     "forObject": "gr:Note6CreditorsAmountsFallingDueWithinOneYear_presentation",
     "order": 1
@@ -11040,11 +11101,6 @@
     "relationships": [
      {
       "source": "xbrl:rootSource",
-      "target": "gr:DisposalsHeading",
-      "order": 1
-     },
-     {
-      "source": "gr:DisposalsHeading",
       "target": "core:TradeDebtorsTradeReceivables",
       "order": 1,
       "properties": [
@@ -11055,9 +11111,47 @@
       ]
      },
      {
-      "source": "gr:DisposalsHeading",
+      "source": "xbrl:rootSource",
       "target": "core:OtherDebtors",
       "order": 2
+     },
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:Debtors",
+      "order": 3
+     }
+    ]
+   },
+   {
+    "name": "gr:Note5Debtors20262025_calculation",
+    "relationshipTypeName": "xbrl:summation-item",
+    "relationships": [
+     {
+      "source": "xbrl:rootSource",
+      "target": "core:Debtors",
+      "order": 1
+     },
+     {
+      "source": "core:Debtors",
+      "target": "core:TradeDebtorsTradeReceivables",
+      "order": 1,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "source": "core:Debtors",
+      "target": "core:OtherDebtors",
+      "order": 2,
+      "properties": [
+       {
+        "property": "xbrl:weight",
+        "value": 1
+       }
+      ]
      }
     ]
    },
@@ -11067,11 +11161,6 @@
     "relationships": [
      {
       "source": "xbrl:rootSource",
-      "target": "gr:DisposalsHeading",
-      "order": 1
-     },
-     {
-      "source": "gr:DisposalsHeading",
       "target": "core:FinanceLeaseLiabilitiesPresentValueTotal",
       "order": 1,
       "properties": [
@@ -11082,7 +11171,7 @@
       ]
      },
      {
-      "source": "gr:DisposalsHeading",
+      "source": "xbrl:rootSource",
       "target": "core:TradeCreditorsTradePayables",
       "order": 2,
       "properties": [
@@ -11093,7 +11182,7 @@
       ]
      },
      {
-      "source": "gr:DisposalsHeading",
+      "source": "xbrl:rootSource",
       "target": "core:TaxationSocialSecurityPayable",
       "order": 3,
       "properties": [
@@ -11104,7 +11193,7 @@
       ]
      },
      {
-      "source": "gr:DisposalsHeading",
+      "source": "xbrl:rootSource",
       "target": "core:OtherCreditors",
       "order": 4
      }
@@ -12688,11 +12777,11 @@
    },
    {
     "name": "gr:Hypercube-FinancialAssets-Basic_FinancialAssets-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -12743,6 +12832,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -12848,11 +12941,11 @@
    },
    {
     "name": "gr:Hypercube-FinancialAssets-Full_FinancialAssets-FullHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -12903,6 +12996,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -13380,11 +13477,11 @@
    },
    {
     "name": "gr:Hypercube-FinancialLiabilities-Basic_FinancialLiabilities-BasicHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -13435,6 +13532,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -13816,11 +13917,11 @@
    },
    {
     "name": "gr:Hypercube-Finance-Leases-Liabilities_FinanceLeases-LiabilitiesHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -13841,6 +13942,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -13996,11 +14101,11 @@
    },
    {
     "name": "gr:Hypercube-Debtors_DebtorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -14061,6 +14166,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -14164,11 +14273,11 @@
    },
    {
     "name": "gr:Hypercube-Debtors-Segments_Debtors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -14229,6 +14338,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -14398,11 +14511,11 @@
    },
    {
     "name": "gr:Hypercube-Creditors_CreditorsHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -14433,6 +14546,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -14536,11 +14653,11 @@
    },
    {
     "name": "gr:Hypercube-Creditors-Segments_Creditors-SegmentsHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -14571,6 +14688,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
@@ -14738,11 +14859,11 @@
    },
    {
     "name": "gr:Hypercube-Creditors-FinanceLeases_Creditors-FinanceLeasesHypercube_FinancialInstrumentCurrentNon-currentDimension",
-    "root": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
+    "root": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
     "relationships": [
      {
-      "source": "core:TotalCurrentNon-currentFinancialInstrumentsDefault",
-      "target": "core:CurrentFinancialInstruments"
+      "source": "core:FinancialInstrumentCurrentNon-currentDimensionDomainClass",
+      "target": "core:TotalCurrentNon-currentFinancialInstrumentsDefault"
      }
     ]
    },
@@ -14773,6 +14894,10 @@
      {
       "source": "core:AllPeriods",
       "target": "core:WithinOneYear"
+     },
+     {
+      "source": "core:AllPeriods",
+      "target": "core:AfterOneYear"
      }
     ]
    },
