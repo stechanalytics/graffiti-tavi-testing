@@ -27,6 +27,7 @@ On dimensions, the largest miss is current against within one year, which filers
 | `pdf/<name>.pdf` | The same accounts printed to PDF by Chromium (A4, backgrounds on), with a text layer and no accessibility tags |
 | `tavi/<name>/<name>.tavi.json` | Graffiti's tags as a Tavi file, **module** form: each fact anchored to the PDF by page and box, importing the FRC taxonomy |
 | `tavi/<name>/<name>.compiled.tavi.json` | The same, **compiled**: the concepts, dimensions, members and labels used written in, no imports |
+| `tavi/<name>/<name>.pdf` | A copy of the PDF beside its Tavi files, which name it as `<name>.pdf` in the same folder |
 | `tavi/<name>/<name>.xbr` | A report package (Report Packages 1.0) holding the module Tavi file and its PDF, as Graffiti's Data tab downloads it |
 | `graffiti-figures.csv` | Every figure Graffiti tagged on the PDFs: row label, printed text, concept, period, dimensions, sign, scale |
 | `graffiti-text.csv` | Every text fact Graffiti tagged on the PDFs |
